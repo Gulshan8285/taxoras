@@ -1,0 +1,279 @@
+import React from "react";
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { allResources, getResourceBySlug } from "@/data/resourcesData";
+import { siteConfig } from "@/config/siteConfig";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
+import {
+  ChevronRight,
+  Clock,
+  Calendar,
+  User,
+  ExternalLink,
+  BookOpen,
+  ArrowRight,
+  ShieldAlert,
+  Share2,
+  CheckCircle2,
+  MessageCircle
+} from "lucide-react";
+
+interface ResourcePageProps {
+  params: Promise<{
+    slug: string;
+  }>;
+}
+
+export async function generateStaticParams() {
+  return allResources.map((art) => ({
+    slug: art.slug,
+  }));
+}
+
+export async function generateMetadata({ params }: ResourcePageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const article = getResourceBySlug(slug);
+
+  if (!article) {
+    return { title: "Article Not Found" };
+  }
+
+  return {
+    title: `${article.title} | TaxVeda Compliance Guide`,
+    description: article.summary,
+    openGraph: {
+      title: article.title,
+      description: article.summary,
+      type: "article",
+    }
+  };
+}
+
+export default async function ResourceDetailPage({ params }: ResourcePageProps) {
+  const { slug } = await params;
+  const article = getResourceBySlug(slug);
+
+  if (!article) {
+    notFound();
+  }
+
+  const related = allResources.filter((a) => a.slug !== article.slug).slice(0, 3);
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.title,
+    "description": article.summary,
+    "author": {
+      "@type": "Organization",
+      "name": siteConfig.businessName
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": siteConfig.businessName
+    },
+    "dateModified": "2026-10-15"
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col bg-surface-bg text-text-main">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
+      <Navbar />
+
+      <main className="flex-1 pb-16">
+        {/* Breadcrumb Header */}
+        <div className="bg-white border-b border-surface-border py-3">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav className="flex items-center gap-1.5 text-xs text-text-muted">
+              <Link href="/" className="hover:text-navy transition-colors">
+                Home
+              </Link>
+              <ChevronRight className="w-3.5 h-3.5" />
+              <Link href="/resources" className="hover:text-navy transition-colors">
+                Resources
+              </Link>
+              <ChevronRight className="w-3.5 h-3.5" />
+              <span className="font-semibold text-navy truncate max-w-xs sm:max-w-sm">
+                {article.title}
+              </span>
+            </nav>
+          </div>
+        </div>
+
+        {/* Article Hero */}
+        <section className="bg-white border-b border-surface-border py-10 sm:py-14">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-xs font-bold text-teal bg-teal-light px-3 py-1 rounded-full uppercase tracking-wider">
+                {article.category}
+              </span>
+              <span className="text-xs text-text-muted flex items-center gap-1">
+                <Clock className="w-3 h-3" />
+                {article.readTime}
+              </span>
+              <span className="text-xs text-text-muted">
+                • Last Reviewed: {article.lastReviewed}
+              </span>
+            </div>
+
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy tracking-tight mb-4 leading-tight">
+              {article.title}
+            </h1>
+
+            <p className="text-sm sm:text-base text-text-muted leading-relaxed">
+              {article.summary}
+            </p>
+          </div>
+        </section>
+
+        {/* Article Layout */}
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
+          <div className="space-y-8">
+            
+            {/* Table of Contents */}
+            {article.tableOfContents && article.tableOfContents.length > 0 && (
+              <div className="bg-white rounded-2xl border border-surface-border p-6 shadow-xs">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-navy mb-3 flex items-center gap-2">
+                  <BookOpen className="w-4 h-4 text-brand-blue" />
+                  <span>Table of Contents</span>
+                </h3>
+                <div className="space-y-1.5 text-xs">
+                  {article.tableOfContents.map((toc) => (
+                    <a
+                      key={toc.id}
+                      href={`#${toc.id}`}
+                      className="block text-brand-blue hover:underline py-0.5"
+                    >
+                      {toc.title}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Article Content Sections */}
+            <article className="bg-white rounded-2xl border border-surface-border p-6 sm:p-10 shadow-xs space-y-8">
+              {article.sections.map((sec) => (
+                <div key={sec.id} id={sec.id} className="scroll-mt-24 space-y-3.5">
+                  <h2 className="text-lg sm:text-xl font-bold text-navy pb-1.5 border-b border-slate-100">
+                    {sec.title}
+                  </h2>
+
+                  {sec.paragraphs.map((p, pIdx) => (
+                    <p key={pIdx} className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                      {p}
+                    </p>
+                  ))}
+
+                  {sec.bulletPoints && (
+                    <ul className="space-y-2 pt-1">
+                      {sec.bulletPoints.map((bp, bIdx) => (
+                        <li key={bIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+                          <CheckCircle2 className="w-4 h-4 text-teal shrink-0 mt-0.5" />
+                          <span className="leading-relaxed">{bp}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {sec.callout && (
+                    <div
+                      className={`p-4 rounded-xl text-xs sm:text-sm leading-relaxed border ${
+                        sec.callout.type === "important" || sec.callout.type === "warning"
+                          ? "bg-amber-50 border-amber-200 text-amber-900"
+                          : "bg-blue-50 border-blue-200 text-blue-900"
+                      }`}
+                    >
+                      <strong>
+                        {sec.callout.type === "warning" ? "Caution: " : "Important Note: "}
+                      </strong>
+                      {sec.callout.text}
+                    </div>
+                  )}
+                </div>
+              ))}
+
+              {/* Official Source Reference */}
+              {article.officialSource && (
+                <div className="pt-6 border-t border-slate-100 flex items-center justify-between text-xs text-text-muted">
+                  <span>Official Government Portal Reference:</span>
+                  <a
+                    href={article.officialSource.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand-blue hover:underline inline-flex items-center gap-1 font-semibold"
+                  >
+                    <span>{article.officialSource.title}</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+              )}
+            </article>
+
+            {/* Quick Contextual Consultation Callout */}
+            <div className="bg-navy text-white rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="space-y-1 text-center sm:text-left">
+                <h3 className="text-base sm:text-lg font-bold">
+                  Need Help Implementing This in Your Business?
+                </h3>
+                <p className="text-xs text-slate-300">
+                  Our compliance team assists with documentation, reconciliation, and portal filings.
+                </p>
+              </div>
+
+              <div className="flex items-center gap-2.5 shrink-0">
+                <a
+                  href={siteConfig.links.whatsappUrl(article.title)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-colors inline-flex items-center gap-1.5"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  <span>Ask on WhatsApp</span>
+                </a>
+                <Link
+                  href="/#enquire"
+                  className="bg-brand-blue hover:bg-brand-blue-hover text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-colors"
+                >
+                  <span>Enquire</span>
+                </Link>
+              </div>
+            </div>
+
+            {/* Related Articles */}
+            <div className="space-y-4">
+              <h3 className="text-base font-bold text-navy">Related Compliance Guides</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {related.map((rel) => (
+                  <Link
+                    key={rel.slug}
+                    href={`/resources/${rel.slug}`}
+                    className="bg-white p-4 rounded-xl border border-surface-border hover:border-brand-blue transition-all shadow-xs block group"
+                  >
+                    <span className="text-[10px] font-semibold text-teal block mb-1">
+                      {rel.category}
+                    </span>
+                    <h4 className="text-xs font-bold text-navy group-hover:text-brand-blue transition-colors line-clamp-2">
+                      {rel.title}
+                    </h4>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+
+      <Footer />
+      <FloatingWhatsApp />
+    </div>
+  );
+}
