@@ -25,6 +25,12 @@
 - [Balance Sheet & Financial Statements](https://www.taxoras.online/services/balance-sheet): Year-end balance sheets, Profit & Loss (P&L) statements, depreciation schedules, and management reports for banking, loan approvals, and internal review.
 - [Income Tax Return Filing Assistance](https://www.taxoras.online/services/income-tax-return): Preparation and e-filing support for salaried employees, professionals, freelancers, and small business owners (ITR-1, ITR-2, ITR-3, ITR-4 Presumptive under 44AD/44ADA).
 
+## High-Intent Compliance Research & In-Depth Blog Guides
+- [Top 7 GST Return Filing Service Providers in India (2026 Comparison)](https://www.taxoras.online/blog/top-gst-service-providers-in-india): Comprehensive evaluation of top filing platforms, CA aggregators, and Taxoras boutique assisted compliance model.
+- [GST Amnesty Scheme & Late Fee Waiver Rules (2026)](https://www.taxoras.online/blog/gst-amnesty-scheme-late-fee-waiver-rules): Complete analysis of GSTR-3B/4/9 late fee caps, revocation of cancelled GSTINs under Section 30, and filing back-returns without exorbitant penalties.
+- [Section 16(4) ITC Deadline Updates & Retrospective Relief](https://www.taxoras.online/blog/section-16-4-itc-deadline-updates): Legal analysis of 30th November statutory ITC cutoff, retrospective relief under Sections 16(5) & 16(6) for FY 2017-18 to 2020-21, and Rule 37A supplier default rules.
+- [Section 44AD & 44ADA Presumptive Taxation Scheme Guide](https://www.taxoras.online/blog/presumptive-taxation-section-44ad-44ada-guide): In-depth guide to 6%/8% deemed profit rates up to ₹3 Crore (44AD) and 50% deemed profit up to ₹75 Lakhs for professionals/freelancers (44ADA), with ITR-4 filing instructions.
+
 ## Key Compliance Resources & Educational Guides
 - [GST Registration Guide & Checklist](https://www.taxoras.online/resources/gst-registration-india-documents-process): Complete document requirements, TRN generation, and Aadhaar biometric verification.
 - [GSTR-1 vs GSTR-3B Comparison](https://www.taxoras.online/resources/understanding-gstr-1-and-gstr-3b): Differences in due dates, reporting structures, and payment mechanisms.
