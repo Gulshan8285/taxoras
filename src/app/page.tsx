@@ -13,7 +13,6 @@ import { WhyChooseUsSection } from "@/components/home/WhyChooseUsSection";
 import { EnquiryForm } from "@/components/common/EnquiryForm";
 import { ResourcesPreviewSection } from "@/components/home/ResourcesPreviewSection";
 import { HomeFaqSection } from "@/components/home/HomeFaqSection";
-import { FinalCtaSection } from "@/components/home/FinalCtaSection";
 
 export const metadata: Metadata = {
   title: `${siteConfig.businessName} | ${siteConfig.positioning}`,
@@ -126,8 +125,6 @@ export default function HomePage() {
         {/* K. FAQ Section */}
         <HomeFaqSection />
 
-        {/* L. Final Conversion Section */}
-        <FinalCtaSection />
       </main>
 
       {/* M. Footer */}
