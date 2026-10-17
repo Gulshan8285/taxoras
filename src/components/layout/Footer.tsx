@@ -212,7 +212,7 @@ export const Footer: React.FC = () => {
           </p>
         </div>
 
-        {/* Bottom Bar with Codeorbi.cloud Credit */}
+        {/* Bottom Bar with Codeorbit.cloud Credit */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
             <p>© 2026 {siteConfig.businessName}. All rights reserved.</p>
@@ -220,13 +220,13 @@ export const Footer: React.FC = () => {
             <p className="text-slate-400">
               Created by{" "}
               <a
-                href="https://codeorbi.cloud/"
+                href="https://www.codeorbit.cloud/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-amber-400 hover:text-white transition-colors font-bold underline underline-offset-2"
-                title="Website design and development by Codeorbi.cloud"
+                title="Website design and development by Codeorbit.cloud"
               >
-                Codeorbi.cloud
+                Codeorbit.cloud
               </a>
             </p>
           </div>

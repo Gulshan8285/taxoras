@@ -80,8 +80,8 @@ export const siteConfig: SiteConfig = {
   },
   credit: {
     text: "Created by",
-    brand: "Codeorbi.cloud",
-    url: "https://codeorbi.cloud/",
+    brand: "Codeorbit.cloud",
+    url: "https://www.codeorbit.cloud/",
   },
   links: {
     whatsappUrl: (serviceName?: string, location?: string) => {
