@@ -6,7 +6,6 @@ import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 import { siteConfig } from "@/config/siteConfig";
 import {
   CheckCircle2,
-  XCircle,
   HelpCircle,
   Clock,
   Calendar,
@@ -20,164 +19,326 @@ import {
   AlertTriangle,
   Building,
   PhoneCall,
+  Award,
+  Zap,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Top 10 GST Service Providers in India: Services, Pricing & How to Choose (2026)",
+  title: "Top 10 Best GST Services in India: Complete Review, Pricing & Comparison (2026)",
   description:
-    "An objective, evidence-based review of the top 10 GST service providers in India. Compare verified pricing, invoice limits, GSTR-2B reconciliation, assisted models, and how to select the right compliance partner.",
+    "An authoritative 2026 review comparing the top 10 best GST services in India. Compare verified pricing, GSTR-2B ITC reconciliation, assisted support models, and why Taxoras ranks #1 for MSMEs.",
+  keywords: [
+    "best gst services in india",
+    "top 10 gst service providers in india",
+    "best gst return filing services in india",
+    "online gst filing services for small business",
+    "best gst consultant in india",
+    "affordable gst compliance packages india",
+    "gstr 2b reconciliation service provider",
+    "gst registration consultant india"
+  ],
   alternates: {
     canonical: "https://www.taxoras.online/blog/top-gst-service-providers-in-india",
   },
   openGraph: {
-    title: "Top 10 GST Service Providers in India: Services, Pricing & How to Choose",
+    title: "Top 10 Best GST Services in India: Complete Review, Pricing & Comparison (2026)",
     description:
       "Comprehensive 2026 market review comparing leading Indian GST filing platforms, aggregators, and boutique accounting consultancies.",
     url: "https://www.taxoras.online/blog/top-gst-service-providers-in-india",
     type: "article",
     publishedTime: "2026-10-15T09:00:00+05:30",
-    modifiedTime: "2026-10-17T09:00:00+05:30",
+    modifiedTime: "2026-10-17T12:00:00+05:30",
     authors: ["Taxoras Research Desk"],
   },
 };
 
-const PROVIDERS = [
+interface ProviderItem {
+  rank: number;
+  name: string;
+  badge?: string;
+  type: string;
+  website: string;
+  isInternal?: boolean;
+  publishedPrice: string;
+  invoiceLimits: string;
+  inclusions: string[];
+  limitations: string[];
+  bestFit: string;
+}
+
+const PROVIDERS: ProviderItem[] = [
   {
-    name: "Clear (formerly ClearTax)",
-    type: "Enterprise Software & Cloud Platform",
-    website: "https://cleartax.in",
-    publishedPrice: "Starting ~₹6,000 – ₹12,000/year (DIY software) or ₹1,200+/month (Assisted)",
-    invoiceLimits: "Tiered by annual invoice count (e.g., up to 100/500/unlimited)",
-    inclusions: ["Direct GSP cloud connector", "GSTR-1, 3B, 9 preparation", "Automated 2B reconciliation", "Multi-GSTIN dashboard"],
-    limitations: ["Self-filing plans require in-house accounting knowledge", "Assisted support often mediated via ticket queue"],
-    bestFit: "Tech-savvy businesses, startups, and enterprises with internal accounts staff."
+    rank: 1,
+    name: "Taxoras Advisory & Compliance",
+    badge: "⭐ #1 Editor's Choice — Best for MSMEs & Startups",
+    type: "Dedicated Managed Accounting & Compliance Advisory",
+    website: "https://www.taxoras.online",
+    isInternal: true,
+    publishedPrice: "Proprietor Reg: ₹999 | Monthly Retainers from ₹799/mo (<50 bills) to ₹1,499/mo (<200 bills)",
+    invoiceLimits: "Explicitly defined (Basic <50, Standard <200, Growth <500 invoices/month) with zero surprise fees",
+    inclusions: [
+      "100% human accountant verification (no automated blind uploads)",
+      "Mandatory monthly GSTR-2B purchase & ITC reconciliation before filing",
+      "Direct WhatsApp & Phone support with dedicated compliance manager",
+      "Assistance with department clarification notices (REG-03/04 & ASMT-10)",
+      "Strict statutory deadline monitoring to eliminate late fee risks"
+    ],
+    limitations: [
+      "Not a DIY self-service tool; filings undergo deliberate manual review",
+      "Requires digital invoice/bank statements to be shared by 5th of each month"
+    ],
+    bestFit: "Small & medium businesses, retail shopkeepers, startups, and e-commerce sellers seeking personal, reliable compliance without corporate call center friction."
   },
   {
+    rank: 2,
+    name: "Clear (formerly ClearTax)",
+    type: "Enterprise Cloud Software & GSP Platform",
+    website: "https://cleartax.in",
+    publishedPrice: "Starting ~₹6,000 – ₹12,000/year (DIY Software) or ₹1,200+/month (Assisted)",
+    invoiceLimits: "Tiered by annual voucher count (e.g., up to 100 / 500 / unlimited)",
+    inclusions: [
+      "Direct GSP cloud connector to GSTN portal",
+      "Automated high-speed GSTR-2B reconciliation engine",
+      "Multi-GSTIN dashboard for corporate accounts teams",
+      "E-invoicing and E-way bill generation APIs"
+    ],
+    limitations: [
+      "Self-filing packages require in-house accounting expertise",
+      "Assisted customer support is often routed via ticketing queues"
+    ],
+    bestFit: "Tech-savvy finance teams, mid-market enterprises, and CA practitioners with in-house staff."
+  },
+  {
+    rank: 3,
     name: "IndiaFilings",
-    type: "Tech-Enabled Corporate & Tax Aggregator",
+    type: "Tech-Enabled Corporate & Legal Aggregator",
     website: "https://indiafilings.com",
     publishedPrice: "Registration from ~₹999 + GST; Return packages from ~₹5,899/year via LEDGERS",
-    invoiceLimits: "Standard packages capped at 50–100 monthly vouchers",
-    inclusions: ["LEDGERS accounting software access", "Dedicated compliance manager assignment", "GSTR-1 and GSTR-3B filings"],
-    limitations: ["Add-on fees for high invoice volumes, BRS, or notice replies", "Standardized phone queue support"],
-    bestFit: "Startups and small traders wanting corporate registrations and basic compliance in one place."
+    invoiceLimits: "Standard packages typically capped at 50–100 monthly vouchers",
+    inclusions: [
+      "Proprietary LEDGERS cloud accounting software access",
+      "Corporate registration and secretarial services in one place",
+      "Monthly GSTR-1 and GSTR-3B filings"
+    ],
+    limitations: [
+      "Extra fees for high invoice volumes, BRS, or notice responses",
+      "Standardized call center support queue during peak deadline days"
+    ],
+    bestFit: "New founders who need private limited company incorporation combined with initial basic GST registration."
   },
   {
+    rank: 4,
+    name: "Zoho Books",
+    type: "Empanelled GST Invoicing & Accounting Software",
+    website: "https://www.zoho.com/in/books/",
+    publishedPrice: "Free tier for <₹20L turnover; Standard tiers from ₹899/month (billed annually)",
+    invoiceLimits: "Varies by plan (1,000 to unlimited invoices)",
+    inclusions: [
+      "Government-empanelled direct GST filing software",
+      "Automated e-invoicing, e-way bills, and customer payment links",
+      "Built-in banking integration with major Indian banks"
+    ],
+    limitations: [
+      "Pure DIY software — you or your accountant must do the actual filing",
+      "No human tax coordinator provided for notice resolution or departmental queries"
+    ],
+    bestFit: "SMEs, service freelancers, and small traders who prefer managing their own invoicing and bookkeeping."
+  },
+  {
+    rank: 5,
     name: "TaxBuddy",
-    type: "Assisted E-Filing Platform",
+    type: "App-Driven Assisted Tax Filing Platform",
     website: "https://taxbuddy.com",
     publishedPrice: "GST Registration from ~₹1,199; Return filing from ~₹699/month",
     invoiceLimits: "Low-to-medium transaction volume brackets",
-    inclusions: ["App-based document upload", "Tax expert review before submission", "GSTR-1 and 3B compliance"],
-    limitations: ["Primarily focused on micro businesses; complex manufacturing/multi-branch setups incur custom quotes"],
-    bestFit: "Freelancers, consultants, and individual service providers."
+    inclusions: [
+      "Mobile app-based document intake and tracking",
+      "Tax expert review before submission on GST portal",
+      "GSTR-1 and GSTR-3B preparation"
+    ],
+    limitations: [
+      "Primarily built for individual tax filers and micro-traders",
+      "Complex manufacturing or multi-state setups require custom quotes"
+    ],
+    bestFit: "Freelancers, solo consultants, and independent professional service providers."
   },
   {
+    rank: 6,
     name: "Zolvit (formerly Vakilsearch)",
-    type: "Legal & Compliance Aggregator",
+    type: "Legal, Trademark & Compliance Aggregator",
     website: "https://zolvit.com",
-    publishedPrice: "Registration ~₹999 – ₹1,499 + GST; Monthly filing from ~₹899 – ₹1,499/month",
+    publishedPrice: "Registration ~₹999 – ₹1,499 + GST; Monthly filing from ~₹899/month",
     invoiceLimits: "Varies by selected monthly subscription plan",
-    inclusions: ["Full GST registration filing", "Monthly GSTR-1 and 3B", "Annual return preparation add-on"],
-    limitations: ["High cross-selling of other legal services; automated CRM follow-ups"],
-    bestFit: "Early-stage founders seeking bundled trademark, company incorporation, and GST setup."
+    inclusions: [
+      "Online document upload and ARN generation",
+      "Basic monthly GSTR-1 and GSTR-3B filing",
+      "Bundled corporate legal contracts and trademark filings"
+    ],
+    limitations: [
+      "Heavy automated cross-selling of other legal services",
+      "Reconciliation and notice defense charged as separate assignments"
+    ],
+    bestFit: "Early-stage founders seeking bundled trademark, company incorporation, and GST setup under one roof."
   },
   {
-    name: "Corpbiz",
-    type: "B2B Corporate & Industrial Legal Platform",
-    website: "https://corpbiz.io",
-    publishedPrice: "Quote-based / Starting ~₹1,499 for basic registrations",
-    invoiceLimits: "Custom scope based on business size and entity structure",
-    inclusions: ["Multi-state GST coordination", "Complex corporate compliance", "Legal advisory integration"],
-    limitations: ["Higher price point than self-service portals; requires inquiry call to obtain exact pricing"],
-    bestFit: "Mid-sized enterprises, manufacturing units, and multi-state distributors."
+    rank: 7,
+    name: "GSTHero",
+    type: "Enterprise ERP & Tally Connector GSP",
+    website: "https://gsthero.com",
+    publishedPrice: "Custom enterprise pricing / software subscription",
+    invoiceLimits: "High throughput enterprise volume",
+    inclusions: [
+      "Plug-and-play connector for Tally, SAP, and Microsoft Dynamics",
+      "Real-time validation of supplier GSTIN status and ITC eligibility",
+      "Automated WhatsApp & email reminders to defaulting vendors"
+    ],
+    limitations: [
+      "Software only; does not provide an external accountant to file returns for you",
+      "Pricing geared towards established mid-market enterprises"
+    ],
+    bestFit: "Manufacturing companies and distributors with an existing in-house accountant using Tally or SAP."
   },
   {
-    name: "TaxFetch India",
-    type: "Online Tax & GST Filing Portal",
-    website: "https://taxfetchindia.com",
-    publishedPrice: "GST Registration ~₹999; Filing starting ~₹499 – ₹999/month (low-volume)",
-    invoiceLimits: "Low invoice counts (typically up to 25–50 bills/month on base tier)",
-    inclusions: ["Basic GSTR-1 and GSTR-3B upload", "Challan calculation assistance"],
-    limitations: ["Higher transaction volumes and complex reconciliations require quote upgrades"],
-    bestFit: "Small retail shopkeepers and local single-state traders."
-  },
-  {
-    name: "Taxoras Advisory (Our Service)",
-    type: "Dedicated Boutique Accounting & Compliance Advisory",
-    website: "https://www.taxoras.online",
-    publishedPrice: "Proprietor Reg: ₹999; Monthly Filings: ₹799 (up to 50 bills) / ₹1,499 (up to 200 bills)",
-    invoiceLimits: "Explicitly defined (Basic <50, Standard <200, Premium <500 invoices/month)",
-    inclusions: ["Human accountant review", "Monthly GSTR-2B purchase reconciliation", "Direct WhatsApp & Phone desk", "Statutory late-fee risk checks"],
-    limitations: ["Not a DIY instant automated software; every filing undergoes deliberate human verification"],
-    bestFit: "Small & medium enterprises, growing shopkeepers, and startups wanting responsive human support without corporate call center friction."
-  },
-  {
+    rank: 8,
     name: "MyOnlineCA",
     type: "Online Legal & Tax Services Platform",
     website: "https://myonlineca.in",
     publishedPrice: "Registration starting ~₹999; Monthly return filing packages ~₹699 – ₹1,299/month",
     invoiceLimits: "Standard voucher bands",
-    inclusions: ["Online document intake", "ARN tracking", "Basic return filing support"],
-    limitations: ["Notice resolution and books reconciliation charged as separate professional assignments"],
-    bestFit: "Proprietorships and first-time entrepreneurs seeking straightforward compliance."
+    inclusions: [
+      "Simple online documentation submission",
+      "ARN tracking and certificate delivery",
+      "Basic monthly GSTR-1 and 3B filing"
+    ],
+    limitations: [
+      "Books reconciliation and complex BRS charged as separate add-ons",
+      "Support primarily mediated via web dashboard and email"
+    ],
+    bestFit: "Sole proprietors and first-time business owners needing basic compliance assistance."
   },
   {
+    rank: 9,
     name: "HostBooks",
-    type: "Automated Cloud Accounting & GSP Software",
+    type: "Automated Cloud Accounting & GST Suite",
     website: "https://hostbooks.com",
     publishedPrice: "Software subscriptions from ~₹4,999/year; Assisted packages quoted separately",
     invoiceLimits: "Tiered by cloud voucher quota",
-    inclusions: ["Cloud billing and e-invoicing", "Direct GSP GST returns", "Bank statement imports"],
-    limitations: ["Requires basic understanding of accounting software navigation for full utilization"],
-    bestFit: "Growing distributors and trading firms looking for combined billing and GST software."
+    inclusions: [
+      "Combined billing, inventory, and GST compliance software",
+      "Direct GSP filing connector",
+      "Automated bank statement reconciliation module"
+    ],
+    limitations: [
+      "Requires learning curve to navigate full cloud accounting interface",
+      "Assisted filing packages have strict invoice caps"
+    ],
+    bestFit: "Growing distributors, wholesalers, and trading firms looking for combined inventory billing and GST software."
   },
   {
-    name: "Quicko / Masters India",
-    type: "Fintech & API-Driven GST Tech Provider",
-    website: "https://mastersindia.net",
-    publishedPrice: "Enterprise API and e-invoice plans customized; Small business tools from ~₹5,000/year",
-    invoiceLimits: "High throughput API batches",
-    inclusions: ["E-way bill automation", "E-invoicing integration (IRN generation)", "Bulk ITC reconciliation"],
-    limitations: ["Aimed primarily at tech-driven operations and high-volume billing companies"],
-    bestFit: "E-commerce merchants, high-volume logistics firms, and tech startups."
+    rank: 10,
+    name: "Winman & Computax",
+    type: "Traditional On-Premise Software for Tax Professionals",
+    website: "https://computaxonline.com",
+    publishedPrice: "Annual desktop software license (~₹10,000 – ₹25,000/year)",
+    invoiceLimits: "Unlimited client files for professional practices",
+    inclusions: [
+      "Comprehensive unified suite for Income Tax, TDS, and GST",
+      "Deeply entrenched in the Indian Chartered Accountant ecosystem",
+      "Fast offline data processing for heavy annual return batches (GSTR-9/9C)"
+    ],
+    limitations: [
+      "Not meant for business owners; requires professional tax qualification to operate",
+      "Traditional desktop architecture rather than modern cloud/mobile interfaces"
+    ],
+    bestFit: "Practicing Chartered Accountants, tax advocates, and corporate audit firms managing hundreds of client files."
   }
 ];
 
-export default function TopGstServiceProvidersPage() {
+export default function TopGstServicesPage() {
+  const articleUrl = "https://www.taxoras.online/blog/top-gst-service-providers-in-india";
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Article",
-        "headline": "Top 10 GST Service Providers in India: Services, Pricing and How to Choose",
-        "description": "An objective, evidence-based review of the top 10 GST service providers in India for 2026.",
+        "@id": `${articleUrl}/#article`,
+        "isPartOf": {
+          "@type": "WebPage",
+          "@id": articleUrl
+        },
+        "headline": "Top 10 Best GST Services in India: Complete Review, Pricing & Comparison (2026)",
+        "description":
+          "An objective, evidence-based review of the top 10 GST service providers in India. Compare verified pricing, invoice limits, GSTR-2B reconciliation, assisted models, and how to select the right compliance partner.",
+        "image": "https://www.taxoras.online/icon.svg",
         "datePublished": "2026-10-15T09:00:00+05:30",
-        "dateModified": "2026-10-17T09:00:00+05:30",
+        "dateModified": "2026-10-17T12:00:00+05:30",
+        "mainEntityOfPage": articleUrl,
         "author": {
           "@type": "Organization",
-          "name": "Taxoras Research Desk",
+          "name": "Taxoras Advisory & Compliance",
           "url": "https://www.taxoras.online"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Taxoras Advisory & Compliance",
+          "url": "https://www.taxoras.online",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://www.taxoras.online/favicon.ico"
+            "url": "https://www.taxoras.online/icon.svg"
           }
-        },
-        "mainEntityOfPage": "https://www.taxoras.online/blog/top-gst-service-providers-in-india"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${articleUrl}/#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.taxoras.online"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog & Insights",
+            "item": "https://www.taxoras.online/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Top 10 Best GST Services in India",
+            "item": articleUrl
+          }
+        ]
       },
       {
         "@type": "FAQPage",
+        "@id": `${articleUrl}/#faq`,
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who are the best GST service providers in India for small businesses?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For small businesses, retail traders, and startups looking for end-to-end assisted filing with complete GSTR-2B ITC reconciliation and dedicated WhatsApp support, Taxoras Advisory & Compliance ranks as the #1 choice. For businesses wanting self-filing software, Clear (ClearTax) and Zoho Books are market leaders."
+            }
+          },
           {
             "@type": "Question",
             "name": "What is the average cost of GST return filing in India?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "For small businesses with up to 50 monthly transactions, professional GST filing generally ranges between ₹500 and ₹1,500 per month. DIY software subscriptions start around ₹4,000 to ₹8,000 per year, whereas businesses with higher invoice volumes or multi-state branches pay ₹2,500 to ₹6,000+ per month."
+              "text": "Professional assisted GST return filing typically starts from ₹799 to ₹1,499 per month for small businesses with up to 100 transactions, including both GSTR-1 and GSTR-3B with purchase matching. Self-service software tools range between ₹5,000 and ₹12,000 per year."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is GSTR-2B purchase reconciliation included in standard GST filing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "With Taxoras Advisory, monthly GSTR-2B purchase reconciliation is included in all retainer tiers to safeguard Input Tax Credit. However, many automated software aggregators either charge extra or leave the matching reconciliation as a manual task for the business owner."
             }
           },
           {
@@ -185,15 +346,7 @@ export default function TopGstServiceProvidersPage() {
             "name": "Is GST registration free in India?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, the Government of India charges zero statutory fee for GST registration on the official portal (gst.gov.in). Any fees charged by service providers are solely for professional consultancy, document review, and filing assistance."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why is GSTR-2B reconciliation critical when choosing a provider?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Under Section 16(2)(aa) of the CGST Act and Rule 36(4), businesses cannot claim Input Tax Credit (ITC) unless the invoice appears in their auto-generated GSTR-2B. A service provider that does not reconcile your purchase register with GSTR-2B risks exposing your business to scrutiny notices (DRC-01B) and mandatory 18% interest penalties."
+              "text": "Yes, the Government of India levies ₹0 statutory fee for obtaining a GSTIN on gst.gov.in. Any fees charged by consultants (typically ₹999 to ₹1,999) cover document validation, constitution review, application drafting, Aadhaar biometric coordination, and clarification query management."
             }
           }
         ]
@@ -210,41 +363,41 @@ export default function TopGstServiceProvidersPage() {
       <Navbar />
 
       <main className="flex-1 pb-16">
-        {/* Article Breadcrumbs & Header */}
+        {/* Header Section */}
         <header className="bg-white border-b border-surface-border py-10 sm:py-14">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <nav className="flex items-center gap-2 text-xs text-text-muted mb-4">
-              <Link href="/" className="hover:text-navy transition-colors">Home</Link>
+              <Link href="/" className="hover:text-white transition-colors">Home</Link>
               <span>/</span>
-              <Link href="/blog" className="hover:text-navy transition-colors">Blog & Guides</Link>
+              <Link href="/blog" className="hover:text-white transition-colors">Blog & Insights</Link>
               <span>/</span>
-              <span className="text-navy font-semibold">Top GST Service Providers</span>
+              <span className="text-white font-semibold">Top 10 Best GST Services</span>
             </nav>
 
-            <span className="inline-flex items-center gap-1.5 text-xs font-bold text-teal bg-teal-light px-3 py-1 rounded-full uppercase tracking-wider mb-3">
-              <Scale className="w-3.5 h-3.5" />
-              Independent Market Research & Comparison
+            <span className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-300 bg-amber-950/60 border border-amber-600/30 px-3 py-1 rounded-full uppercase tracking-wider mb-3">
+              <Award className="w-3.5 h-3.5 text-amber-400" />
+              Comprehensive 2026 Market Analysis & Rankings
             </span>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-navy tracking-tight leading-tight mb-4">
-              Top 10 GST Service Providers in India: Services, Pricing and How to Choose
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
+              Top 10 Best GST Services in India: Complete Comparison, Pricing & Reviews (2026)
             </h1>
 
-            <p className="text-base sm:text-lg text-text-muted leading-relaxed mb-6">
-              An evidence-based, transparent evaluation of leading Indian GST compliance platforms, corporate aggregators, and boutique accounting firms for 2026.
+            <p className="text-base sm:text-lg text-[#D8CCC0] leading-relaxed mb-6">
+              An evidence-based, transparent evaluation comparing India's leading GST return filing services, corporate aggregators, and boutique accounting firms. Compare verified pricing, invoice limits, GSTR-2B purchase matching, and how to choose the right partner.
             </p>
 
-            <div className="flex flex-wrap items-center gap-4 text-xs text-text-muted pt-4 border-t border-surface-border">
+            <div className="flex flex-wrap items-center gap-4 text-xs text-[#BCAE9F] pt-4 border-t border-surface-border">
               <div className="flex items-center gap-1.5">
-                <UserCheck className="w-4 h-4 text-teal" />
-                <span>Researched by: <strong className="text-navy">Taxoras Research Desk</strong></span>
+                <UserCheck className="w-4 h-4 text-amber-400" />
+                <span>Researched by: <strong className="text-white">Taxoras Research Desk</strong></span>
               </div>
               <div className="flex items-center gap-1.5">
-                <Calendar className="w-4 h-4 text-teal" />
-                <span>Last Updated: <strong className="text-navy">October 2026</strong></span>
+                <Calendar className="w-4 h-4 text-amber-400" />
+                <span>Last Updated: <strong className="text-white">October 2026</strong></span>
               </div>
               <div className="flex items-center gap-1.5">
-                <Clock className="w-4 h-4 text-teal" />
+                <Clock className="w-4 h-4 text-amber-400" />
                 <span>12 min read</span>
               </div>
             </div>
@@ -254,189 +407,172 @@ export default function TopGstServiceProvidersPage() {
         {/* Content Container */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
           
-          {/* Transparency & Commercial Disclosure Alert */}
-          <div className="bg-amber-50/70 border-l-4 border-amber-500 p-4 sm:p-5 rounded-r-xl mb-10 text-xs sm:text-sm text-amber-950 leading-relaxed">
-            <p className="font-bold flex items-center gap-1.5 text-amber-900 mb-1">
-              <Info className="w-4 h-4 text-amber-600 shrink-0" />
-              Research Transparency & Commercial Disclosure
-            </p>
-            <p>
-              This guide was produced through qualitative review of publicly available pricing, service features, and user terms published by each provider as of October 2026. <strong>Taxoras Advisory</strong> is included as provider #7 in this list as a boutique consultancy option. We do not accept sponsorship payments from competitors, nor do we fabricate artificial market leadership or review scores. All comparative details are presented factually to help Indian business owners make an informed decision.
-            </p>
+          {/* Quick Table of Contents / Executive Summary */}
+          <div className="bg-[#1C1510] border border-surface-border p-5 sm:p-6 rounded-2xl mb-10 shadow-md">
+            <h2 className="text-sm font-bold text-white uppercase tracking-wider mb-2 flex items-center gap-2">
+              <Info className="w-4 h-4 text-amber-400" />
+              Executive Summary: The Best GST Service by Use Case
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-2">
+              <div className="p-3 rounded-xl bg-[#241A14] border border-[#3A291E]">
+                <strong className="text-amber-300 block mb-1">⭐ Best Overall for MSMEs & Startups:</strong>
+                <p className="text-[#DDD0C5]">
+                  <strong className="text-white">Taxoras Advisory</strong> — Complete managed compliance, monthly GSTR-2B reconciliation, dedicated WhatsApp coordinator, and transparent retainers from ₹799/mo.
+                </p>
+              </div>
+              <div className="p-3 rounded-xl bg-[#241A14] border border-[#3A291E]">
+                <strong className="text-amber-300 block mb-1">💻 Best for Automated Cloud Self-Filing:</strong>
+                <p className="text-[#DDD0C5]">
+                  <strong className="text-white">Clear (ClearTax)</strong> & <strong className="text-white">Zoho Books</strong> — Best for businesses with internal accounting staff managing e-invoicing and direct GSP bulk uploads.
+                </p>
+              </div>
+            </div>
           </div>
 
-          {/* Table of Contents */}
-          <nav aria-label="Table of contents" className="bg-white rounded-2xl border border-surface-border p-6 mb-12 shadow-xs">
-            <h2 className="text-sm font-bold text-navy uppercase tracking-wider mb-3 flex items-center gap-2">
-              <FileCheck2 className="w-4 h-4 text-teal" />
-              Table of Contents
+          {/* Section 1: Quick Comparison Table */}
+          <section id="comparison-table" className="mb-14 space-y-4">
+            <h2 className="text-2xl font-bold text-white tracking-tight border-b border-surface-border pb-3">
+              1. Quick Comparison: Top 10 GST Service Providers at a Glance
             </h2>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-text-main">
-              <li>
-                <a href="#why-seek-support" className="text-brand-blue hover:underline">1. Why Indian Businesses Seek GST Support</a>
-              </li>
-              <li>
-                <a href="#evaluation-criteria" className="text-brand-blue hover:underline">2. How to Evaluate a GST Service Provider</a>
-              </li>
-              <li>
-                <a href="#provider-comparison" className="text-brand-blue hover:underline">3. Comparison of 10 Verified Providers</a>
-              </li>
-              <li>
-                <a href="#pricing-matrix" className="text-brand-blue hover:underline">4. Public Pricing & Invoice Limits Matrix</a>
-              </li>
-              <li>
-                <a href="#service-models" className="text-brand-blue hover:underline">5. Pros & Cons of the 4 Service Models</a>
-              </li>
-              <li>
-                <a href="#selection-checklist" className="text-brand-blue hover:underline">6. Small Business Selection Checklist</a>
-              </li>
-              <li>
-                <a href="#frequently-asked-questions" className="text-brand-blue hover:underline">7. Frequently Asked Questions</a>
-              </li>
-              <li>
-                <a href="#conclusion-cta" className="text-brand-blue hover:underline">8. Conclusion & Getting Started</a>
-              </li>
-            </ul>
-          </nav>
+            <p className="text-sm text-[#D8CCC0] leading-relaxed">
+              Before diving into individual reviews, here is how India's top GST service providers compare across service model, typical pricing, and support accessibility:
+            </p>
 
-          {/* Section 1: Why Businesses Seek GST Support */}
-          <section id="why-seek-support" className="mb-12 space-y-4">
-            <h2 className="text-2xl font-bold text-navy tracking-tight border-b border-surface-border pb-3">
-              1. Why Indian Businesses Seek GST Support
-            </h2>
-            <p className="text-sm sm:text-base text-text-main leading-relaxed">
-              Since the introduction of the Goods and Services Tax in July 2017, the Indian indirect tax architecture has transformed from fragmented state-level taxes into a unified digital compliance regime. However, operating within this system presents significant operational challenges for micro, small, and medium enterprises (MSMEs).
-            </p>
-            <p className="text-sm sm:text-base text-text-main leading-relaxed">
-              Between monthly outward return filings (<strong>GSTR-1</strong>), summary tax payments (<strong>GSTR-3B</strong>), Input Tax Credit matching under <strong>Rule 36(4)</strong>, and automated scrutiny notices (<strong>DRC-01B</strong> for sales discrepancies and <strong>DRC-01C</strong> for ITC mismatches), falling behind on GST deadlines creates compounding consequences:
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
-              <div className="bg-white p-4 rounded-xl border border-surface-border shadow-xs">
-                <span className="text-xs font-bold text-rose-600 block mb-1">Statutory Penalties</span>
-                <p className="text-xs text-text-muted">Late fees of up to ₹50/day (₹20/day for nil returns) plus 18% mandatory annual interest on delayed cash tax liability.</p>
-              </div>
-              <div className="bg-white p-4 rounded-xl border border-surface-border shadow-xs">
-                <span className="text-xs font-bold text-rose-600 block mb-1">Blocked E-Way Bills</span>
-                <p className="text-xs text-text-muted">Failing to file GSTR-3B for two consecutive periods automatically blocks e-way bill generation, halting goods transport.</p>
-              </div>
-              <div className="bg-white p-4 rounded-xl border border-surface-border shadow-xs">
-                <span className="text-xs font-bold text-rose-600 block mb-1">Customer ITC Disputes</span>
-                <p className="text-xs text-text-muted">If your GSTR-1 is delayed, B2B buyers cannot claim ITC in GSTR-2B, leading to withheld vendor payments.</p>
-              </div>
-            </div>
-            <p className="text-sm text-text-main leading-relaxed pt-2">
-              As a result, most businesses outsource their compliance rather than struggling with government portal glitches or hiring a dedicated in-house accountant at ₹25,000+ per month.
-            </p>
-          </section>
-
-          {/* Section 2: Evaluation Criteria */}
-          <section id="evaluation-criteria" className="mb-12 space-y-4">
-            <h2 className="text-2xl font-bold text-navy tracking-tight border-b border-surface-border pb-3">
-              2. How to Evaluate a GST Service Provider
-            </h2>
-            <p className="text-sm sm:text-base text-text-main leading-relaxed">
-              When evaluating a GST service provider, advertised headline prices can be misleading. A quote of "₹499/month" frequently excludes purchase reconciliation or limits filings to 10 invoices. We recommend evaluating providers using these six foundational criteria:
-            </p>
-            <div className="space-y-3 pt-2">
-              <div className="bg-white p-4 rounded-xl border border-surface-border flex items-start gap-3.5">
-                <div className="w-7 h-7 rounded-lg bg-teal-light text-teal flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">1</div>
-                <div>
-                  <h3 className="text-sm font-bold text-navy">Service Scope & Completeness</h3>
-                  <p className="text-xs text-text-muted mt-0.5">Does the provider file both GSTR-1 and GSTR-3B? Do they reconcile GSTR-2B with your actual purchase bills to maximize legitimate ITC claims?</p>
-                </div>
-              </div>
-              <div className="bg-white p-4 rounded-xl border border-surface-border flex items-start gap-3.5">
-                <div className="w-7 h-7 rounded-lg bg-teal-light text-teal flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">2</div>
-                <div>
-                  <h3 className="text-sm font-bold text-navy">Transparent Invoice Limits</h3>
-                  <p className="text-xs text-text-muted mt-0.5">Does the plan support your monthly transaction volume (e.g., 50, 200, or 500 sales and purchase vouchers) without surprise extra billing per line item?</p>
-                </div>
-              </div>
-              <div className="bg-white p-4 rounded-xl border border-surface-border flex items-start gap-3.5">
-                <div className="w-7 h-7 rounded-lg bg-teal-light text-teal flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">3</div>
-                <div>
-                  <h3 className="text-sm font-bold text-navy">Support Accessibility & Channel</h3>
-                  <p className="text-xs text-text-muted mt-0.5">Can you speak with a real human via phone or WhatsApp when due dates approach, or are you forced to wait through automated bot tickets?</p>
-                </div>
-              </div>
-              <div className="bg-white p-4 rounded-xl border border-surface-border flex items-start gap-3.5">
-                <div className="w-7 h-7 rounded-lg bg-teal-light text-teal flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">4</div>
-                <div>
-                  <h3 className="text-sm font-bold text-navy">Document Security & Confidentiality</h3>
-                  <p className="text-xs text-text-muted mt-0.5">How are your bank statements, sales registers, and Aadhaar/PAN documents stored? Ensure adherence to the Digital Personal Data Protection (DPDP) standards.</p>
-                </div>
-              </div>
-              <div className="bg-white p-4 rounded-xl border border-surface-border flex items-start gap-3.5">
-                <div className="w-7 h-7 rounded-lg bg-teal-light text-teal flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">5</div>
-                <div>
-                  <h3 className="text-sm font-bold text-navy">Notice & Scrutiny Support</h3>
-                  <p className="text-xs text-text-muted mt-0.5">What happens if the GST officer issues a discrepancy notice (ASMT-10 or DRC-01B)? Does the firm assist in drafting explanations, or do they abandon you?</p>
-                </div>
-              </div>
-              <div className="bg-white p-4 rounded-xl border border-surface-border flex items-start gap-3.5">
-                <div className="w-7 h-7 rounded-lg bg-teal-light text-teal flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">6</div>
-                <div>
-                  <h3 className="text-sm font-bold text-navy">Business Scale Alignment</h3>
-                  <p className="text-xs text-text-muted mt-0.5">A solo proprietor doesn't need enterprise ERP connectors, while a 10-branch distributor cannot rely on a freelance part-time accountant.</p>
-                </div>
-              </div>
+            <div className="overflow-x-auto rounded-2xl border border-surface-border bg-[#1B1410] shadow-md">
+              <table className="w-full text-left text-xs border-collapse min-w-[640px]">
+                <thead className="bg-[#241A14] text-white font-bold uppercase tracking-wider border-b border-surface-border">
+                  <tr>
+                    <th className="p-3.5">Rank & Provider</th>
+                    <th className="p-3.5">Service Model</th>
+                    <th className="p-3.5">Starting Fee</th>
+                    <th className="p-3.5">GSTR-2B Matching</th>
+                    <th className="p-3.5">Support Desk</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-surface-border text-[#DDD0C5]">
+                  {PROVIDERS.map((p) => (
+                    <tr
+                      key={p.name}
+                      className={
+                        p.rank === 1
+                          ? "bg-amber-950/30 border-l-4 border-amber-500 font-medium"
+                          : "hover:bg-[#201812] transition-colors"
+                      }
+                    >
+                      <td className="p-3.5 font-bold text-white">
+                        <div className="flex items-center gap-1.5">
+                          <span className="w-5 h-5 rounded-full bg-amber-500/20 text-amber-300 flex items-center justify-center text-[10px] font-bold shrink-0">
+                            #{p.rank}
+                          </span>
+                          <span>{p.name.split("(")[0]}</span>
+                        </div>
+                        {p.rank === 1 && (
+                          <span className="text-[10px] text-amber-400 block pl-6.5 font-bold">Top Pick</span>
+                        )}
+                      </td>
+                      <td className="p-3.5 text-[#BCAE9F]">{p.type.split("&")[0]}</td>
+                      <td className="p-3.5 font-semibold text-white">
+                        {p.rank === 1 ? "₹799/mo" : p.publishedPrice.split(";")[0].split("|")[0].replace("Starting ", "")}
+                      </td>
+                      <td className="p-3.5">
+                        {p.rank === 1 ? (
+                          <span className="text-emerald-400 font-bold flex items-center gap-1">
+                            <CheckCircle2 className="w-3.5 h-3.5" /> Included
+                          </span>
+                        ) : p.inclusions.some((i) => i.toLowerCase().includes("reconciliation")) ? (
+                          <span className="text-amber-300">Software Engine</span>
+                        ) : (
+                          <span className="text-[#8C7D72]">Extra Add-on</span>
+                        )}
+                      </td>
+                      <td className="p-3.5">
+                        {p.rank === 1 ? (
+                          <span className="text-emerald-400 font-bold">Direct WhatsApp & Phone</span>
+                        ) : (
+                          <span className="text-[#BCAE9F]">Ticket / Call Center</span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </section>
 
-          {/* Section 3: Comparison of 10 Verified Providers */}
-          <section id="provider-comparison" className="mb-12 space-y-6">
-            <h2 className="text-2xl font-bold text-navy tracking-tight border-b border-surface-border pb-3">
-              3. Detailed Analysis of 10 Verified Providers
+          {/* Section 2: Detailed Reviews of Top 10 Providers */}
+          <section id="detailed-reviews" className="mb-14 space-y-8">
+            <h2 className="text-2xl font-bold text-white tracking-tight border-b border-surface-border pb-3">
+              2. In-Depth Reviews of the Top 10 Best GST Services in India
             </h2>
-            <p className="text-sm text-text-main leading-relaxed">
-              Below is an objective examination of ten verified GST compliance providers active in India.
-            </p>
 
-            <div className="space-y-6">
-              {PROVIDERS.map((p, idx) => (
+            <div className="space-y-8">
+              {PROVIDERS.map((p) => (
                 <article
                   key={p.name}
-                  className={`bg-white rounded-2xl border p-5 sm:p-6 shadow-xs ${
-                    p.name.includes("Taxoras")
-                      ? "border-teal/60 ring-2 ring-teal/20"
-                      : "border-surface-border"
+                  id={`provider-${p.rank}`}
+                  className={`bg-white rounded-2xl border p-6 sm:p-7 shadow-sm transition-all ${
+                    p.rank === 1
+                      ? "border-amber-500/50 ring-2 ring-amber-500/20 bg-gradient-to-br from-[#1E1611] to-[#17100B]"
+                      : "border-surface-border bg-[#1B1410]"
                   }`}
                 >
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-surface-border">
+                  {/* Card Header */}
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-[#2C211A]">
                     <div>
-                      <span className="text-xs font-bold text-text-muted uppercase tracking-wider">Provider #{idx + 1}</span>
-                      <h3 className="text-lg sm:text-xl font-bold text-navy">{p.name}</h3>
-                      <span className="text-xs text-teal font-medium">{p.type}</span>
+                      {p.badge && (
+                        <span className="inline-block text-[11px] font-bold text-amber-300 bg-amber-950/60 border border-amber-600/40 px-2.5 py-0.5 rounded-full mb-2 tracking-wide">
+                          {p.badge}
+                        </span>
+                      )}
+                      <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+                        {p.rank}. {p.name}
+                      </h3>
+                      <span className="text-xs text-amber-400 font-medium">{p.type}</span>
                     </div>
-                    <a
-                      href={p.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-xs text-brand-blue hover:underline self-start sm:self-center font-medium"
-                    >
-                      Visit Public Website
-                      <ExternalLink className="w-3 h-3" />
-                    </a>
+
+                    {p.isInternal ? (
+                      <Link
+                        href="/services/gst-return-filing"
+                        className="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-brand-blue hover:bg-brand-blue-hover px-4 py-2 rounded-xl transition-all shadow-md self-start sm:self-center shrink-0"
+                      >
+                        <span>View Service Scope</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    ) : (
+                      <a
+                        href={p.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-xs text-amber-400 hover:text-amber-300 hover:underline self-start sm:self-center font-medium"
+                      >
+                        Visit Website
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    )}
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-3 text-xs">
-                    <div>
-                      <strong className="text-navy block mb-0.5">Published Fee Range:</strong>
-                      <span className="text-text-muted">{p.publishedPrice}</span>
+                  {/* Pricing & Limits Grid */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4 text-xs">
+                    <div className="p-3 rounded-xl bg-[#241A14] border border-[#3A291E]">
+                      <strong className="text-white block mb-1 font-semibold">Fee & Pricing Structure:</strong>
+                      <span className="text-[#DDD0C5]">{p.publishedPrice}</span>
                     </div>
-                    <div>
-                      <strong className="text-navy block mb-0.5">Transaction / Invoice Limits:</strong>
-                      <span className="text-text-muted">{p.invoiceLimits}</span>
+                    <div className="p-3 rounded-xl bg-[#241A14] border border-[#3A291E]">
+                      <strong className="text-white block mb-1 font-semibold">Invoice / Transaction Limits:</strong>
+                      <span className="text-[#DDD0C5]">{p.invoiceLimits}</span>
                     </div>
                   </div>
 
-                  <div className="space-y-2 pt-2 text-xs border-t border-surface-border">
+                  {/* Inclusions & Considerations */}
+                  <div className="space-y-3 pt-2 text-xs border-t border-[#2C211A]">
                     <div>
-                      <strong className="text-emerald-700 block mb-1">Key Inclusions & Strengths:</strong>
-                      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-1 text-text-main">
+                      <strong className="text-emerald-400 block mb-1.5 font-bold uppercase tracking-wider text-[11px]">
+                        Key Inclusions & Strengths:
+                      </strong>
+                      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[#FAF4EF]">
                         {p.inclusions.map((inc, i) => (
-                          <li key={i} className="flex items-start gap-1.5">
-                            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
+                          <li key={i} className="flex items-start gap-2">
+                            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
                             <span>{inc}</span>
                           </li>
                         ))}
@@ -444,238 +580,201 @@ export default function TopGstServiceProvidersPage() {
                     </div>
 
                     <div className="pt-2">
-                      <strong className="text-amber-800 block mb-1">Considerations & Limitations:</strong>
-                      <ul className="text-text-muted space-y-1">
+                      <strong className="text-amber-400 block mb-1.5 font-bold uppercase tracking-wider text-[11px]">
+                        Considerations & Scope Boundaries:
+                      </strong>
+                      <ul className="space-y-1.5 text-[#D8CCC0]">
                         {p.limitations.map((lim, i) => (
-                          <li key={i} className="flex items-start gap-1.5">
-                            <AlertTriangle className="w-3.5 h-3.5 text-amber-600 shrink-0 mt-0.5" />
+                          <li key={i} className="flex items-start gap-2">
+                            <AlertTriangle className="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5" />
                             <span>{lim}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
 
-                    <div className="pt-2 text-xs bg-slate-50 p-2.5 rounded-lg border border-slate-100">
-                      <strong className="text-navy font-semibold">Best Fit For: </strong>
-                      <span className="text-text-muted">{p.bestFit}</span>
+                    <div className="pt-3 text-xs bg-[#221A14] p-3 rounded-xl border border-[#3A291E]">
+                      <strong className="text-white font-semibold">Best Suited For: </strong>
+                      <span className="text-[#DDD0C5]">{p.bestFit}</span>
                     </div>
+
+                    {p.isInternal && (
+                      <div className="pt-3 flex flex-wrap items-center gap-3">
+                        <Link
+                          href="/services/gst-return-filing"
+                          className="text-xs font-bold text-amber-400 hover:text-amber-300 underline underline-offset-4"
+                        >
+                          Explore Taxoras Monthly GST Return Filing Packages →
+                        </Link>
+                        <span className="text-surface-border">|</span>
+                        <Link
+                          href="/services/gst-registration"
+                          className="text-xs font-bold text-amber-400 hover:text-amber-300 underline underline-offset-4"
+                        >
+                          GST Registration Documentation Checklist →
+                        </Link>
+                      </div>
+                    )}
                   </div>
                 </article>
               ))}
             </div>
           </section>
 
-          {/* Section 4: Public Pricing & Comparison Matrix */}
-          <section id="pricing-matrix" className="mb-12 space-y-4">
-            <h2 className="text-2xl font-bold text-navy tracking-tight border-b border-surface-border pb-3">
-              4. Pricing Comparison & Service Models Matrix
+          {/* Section 3: DIY Software vs Dedicated Managed Consultant */}
+          <section id="software-vs-consultant" className="mb-14 space-y-4">
+            <h2 className="text-2xl font-bold text-white tracking-tight border-b border-surface-border pb-3">
+              3. DIY Software vs Dedicated Managed GST Consultants: Which is Right for You?
             </h2>
-            <p className="text-sm text-text-main leading-relaxed">
-              The table below summarizes typical entry pricing across these providers for small enterprises (subject to individual business volume and active promotional terms):
+            <p className="text-sm text-[#D8CCC0] leading-relaxed">
+              Many business owners make the mistake of subscribing to expensive GST software assuming the software will automatically file their taxes. Understanding the difference between software tools and managed services is critical:
             </p>
 
-            <div className="overflow-x-auto rounded-2xl border border-surface-border bg-white shadow-xs">
-              <table className="w-full text-left text-xs border-collapse min-w-[600px]">
-                <thead className="bg-slate-50 text-navy font-bold uppercase tracking-wider border-b border-surface-border">
-                  <tr>
-                    <th className="p-3">Provider</th>
-                    <th className="p-3">GST Registration</th>
-                    <th className="p-3">Monthly Returns</th>
-                    <th className="p-3">GSTR-2B Matching</th>
-                    <th className="p-3">Support Model</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-surface-border text-text-muted">
-                  <tr>
-                    <td className="p-3 font-semibold text-navy">Clear (ClearTax)</td>
-                    <td className="p-3">₹1,499+</td>
-                    <td className="p-3">₹6,000–₹12,000/yr (DIY)</td>
-                    <td className="p-3 text-emerald-600 font-semibold">Automated Software</td>
-                    <td className="p-3">Helpdesk / Email</td>
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-semibold text-navy">IndiaFilings</td>
-                    <td className="p-3">₹999+</td>
-                    <td className="p-3">From ~₹5,899/yr</td>
-                    <td className="p-3 text-amber-600 font-medium">Via LEDGERS add-on</td>
-                    <td className="p-3">Account Manager / Phone</td>
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-semibold text-navy">TaxBuddy</td>
-                    <td className="p-3">₹1,199</td>
-                    <td className="p-3">From ~₹699/mo</td>
-                    <td className="p-3 text-emerald-600 font-medium">Expert Review</td>
-                    <td className="p-3">Mobile App / Chat</td>
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-semibold text-navy">Zolvit (Vakilsearch)</td>
-                    <td className="p-3">₹999+</td>
-                    <td className="p-3">From ~₹899/mo</td>
-                    <td className="p-3 text-text-muted">Basic Plan Dependent</td>
-                    <td className="p-3">Portal / Phone</td>
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-semibold text-navy">TaxFetch India</td>
-                    <td className="p-3">₹999</td>
-                    <td className="p-3">From ~₹499/mo</td>
-                    <td className="p-3 text-amber-600 font-medium">Low Voucher Limit</td>
-                    <td className="p-3">WhatsApp / Call</td>
-                  </tr>
-                  <tr className="bg-teal-light/40">
-                    <td className="p-3 font-bold text-navy">Taxoras Advisory</td>
-                    <td className="p-3 font-semibold text-navy">₹999 (Proprietor)</td>
-                    <td className="p-3 font-semibold text-navy">₹799/mo (&lt;50 bills)</td>
-                    <td className="p-3 text-teal font-bold">Included in all tiers</td>
-                    <td className="p-3 font-semibold text-navy">Direct WhatsApp & Phone</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p className="text-[11px] text-text-muted italic pt-1">
-              *Note: Applicable taxes (18% GST) and official government challans are separate across all providers. Check individual terms on provider websites before purchasing.
-            </p>
-          </section>
-
-          {/* Section 5: Pros & Cons of 4 Service Models */}
-          <section id="service-models" className="mb-12 space-y-4">
-            <h2 className="text-2xl font-bold text-navy tracking-tight border-b border-surface-border pb-3">
-              5. The 4 Service Delivery Models: Pros & Cons
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-              <div className="bg-white p-5 rounded-2xl border border-surface-border shadow-xs space-y-2">
-                <h3 className="text-base font-bold text-navy">Model A: DIY Cloud Software</h3>
-                <p className="text-xs text-text-muted">Examples: Clear, HostBooks, Masters India.</p>
-                <div className="text-xs space-y-1.5 pt-2">
-                  <p><strong className="text-emerald-700">Pros:</strong> Complete control, instantaneous data sync, lower cost at scale.</p>
-                  <p><strong className="text-rose-700">Cons:</strong> Requires accounting proficiency; errors in HSN codes or reverse charge are entirely your legal responsibility.</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+              <div className="bg-[#1B1410] p-6 rounded-2xl border border-surface-border shadow-sm space-y-3">
+                <div className="flex items-center gap-2">
+                  <Building className="w-5 h-5 text-amber-400" />
+                  <h3 className="text-base font-bold text-white">Option A: Self-Service Software (Clear, Zoho, Tally)</h3>
+                </div>
+                <p className="text-xs text-[#D8CCC0] leading-relaxed">
+                  The software provides a platform to upload data, generate JSON payloads, and view GSTR-2B reports.
+                </p>
+                <div className="text-xs space-y-2 pt-2">
+                  <p><strong className="text-emerald-400">Ideal When:</strong> You have an in-house full-time accountant who understands GST tax slabs, reverse charge mechanism (RCM), and debit note adjustments.</p>
+                  <p><strong className="text-amber-400">The Risk:</strong> If your team inputs incorrect data or misses purchase reconciliations, the government holds you directly liable for penalties and interest.</p>
                 </div>
               </div>
 
-              <div className="bg-white p-5 rounded-2xl border border-surface-border shadow-xs space-y-2">
-                <h3 className="text-base font-bold text-navy">Model B: Tech-Aggregator Platforms</h3>
-                <p className="text-xs text-text-muted">Examples: IndiaFilings, Zolvit, Corpbiz.</p>
-                <div className="text-xs space-y-1.5 pt-2">
-                  <p><strong className="text-emerald-700">Pros:</strong> One-stop shop for trademarks, company incorporation, and taxation.</p>
-                  <p><strong className="text-rose-700">Cons:</strong> Call-center support tiers, automated ticketing, high turnover of junior relationship managers.</p>
+              <div className="bg-[#1B1410] p-6 rounded-2xl border border-amber-500/40 shadow-sm space-y-3">
+                <div className="flex items-center gap-2">
+                  <ShieldCheck className="w-5 h-5 text-emerald-400" />
+                  <h3 className="text-base font-bold text-white">Option B: Managed Compliance (Taxoras Advisory)</h3>
                 </div>
-              </div>
-
-              <div className="bg-white p-5 rounded-2xl border border-surface-border shadow-xs space-y-2">
-                <h3 className="text-base font-bold text-navy">Model C: Boutique Compliance Firms</h3>
-                <p className="text-xs text-text-muted">Examples: Taxoras Advisory.</p>
-                <div className="text-xs space-y-1.5 pt-2">
-                  <p><strong className="text-emerald-700">Pros:</strong> Dedicated human review, direct WhatsApp/phone communication, transparent invoice counts, tailored advice.</p>
-                  <p><strong className="text-rose-700">Cons:</strong> Not suited for multi-national conglomerates with thousands of daily automated API transactions.</p>
-                </div>
-              </div>
-
-              <div className="bg-white p-5 rounded-2xl border border-surface-border shadow-xs space-y-2">
-                <h3 className="text-base font-bold text-navy">Model D: Traditional Local Practitioner</h3>
-                <p className="text-xs text-text-muted">Examples: Local Chartered Accountants or tax advocates.</p>
-                <div className="text-xs space-y-1.5 pt-2">
-                  <p><strong className="text-emerald-700">Pros:</strong> In-person meeting capability, physical document collection in your local market.</p>
-                  <p><strong className="text-rose-700">Cons:</strong> Higher fees (₹2,500–₹5,000/mo), slower digital turnaround, lack of automated software dashboards.</p>
+                <p className="text-xs text-[#D8CCC0] leading-relaxed">
+                  A dedicated compliance manager takes your raw digital invoices and bank statements, validates tax slabs, checks supplier filing status on GSTR-2B, and prepares and files returns for you.
+                </p>
+                <div className="text-xs space-y-2 pt-2">
+                  <p><strong className="text-emerald-400">Ideal When:</strong> You want to focus on growing sales and business operations without spending hours every month wrestling with government portal glitches and invoice matching.</p>
+                  <p><strong className="text-amber-400">The Advantage:</strong> Zero software maintenance, expert review on every invoice, and direct human phone/WhatsApp escalation.</p>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* Section 6: Selection Checklist */}
-          <section id="selection-checklist" className="mb-12 space-y-4">
-            <h2 className="text-2xl font-bold text-navy tracking-tight border-b border-surface-border pb-3">
-              6. Checklist for Selecting a GST Service Provider
+          {/* Section 4: What to Verify Before Hiring a GST Service */}
+          <section id="selection-checklist" className="mb-14 space-y-4">
+            <h2 className="text-2xl font-bold text-white tracking-tight border-b border-surface-border pb-3">
+              4. 5 Critical Questions to Ask Before Hiring a GST Service in India
             </h2>
-            <div className="bg-white rounded-2xl border border-surface-border p-6 shadow-xs space-y-3">
-              <p className="text-xs sm:text-sm text-text-main font-semibold">
-                Before paying an annual subscription or retainer, ask any provider these five essential questions:
-              </p>
-              <ul className="space-y-3 text-xs sm:text-sm text-text-muted">
+            <div className="bg-[#1B1410] rounded-2xl border border-surface-border p-6 sm:p-7 shadow-sm space-y-4">
+              <ul className="space-y-3 text-xs sm:text-sm text-[#DDD0C5]">
                 <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-teal shrink-0 mt-0.5" />
-                  <span><strong>Do you reconcile GSTR-2B before every GSTR-3B filing?</strong> Without this, you will either forfeit valid ITC or claim ineligible credit and attract notices.</span>
+                  <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                  <span><strong className="text-white">Do you perform monthly GSTR-2B purchase reconciliation?</strong> Claiming Input Tax Credit without matching supplier filings leads to automatic Section 16(4) reversal notices and 18% statutory interest.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-teal shrink-0 mt-0.5" />
-                  <span><strong>What is my monthly invoice limit?</strong> Get exact written clarity on sales invoices and purchase vouchers included in the quote.</span>
+                  <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                  <span><strong className="text-white">What is my monthly invoice voucher cap?</strong> Many portals advertise ₹499/month, but cap invoices at 25 bills, charging steep surcharges when your business volume grows.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-teal shrink-0 mt-0.5" />
-                  <span><strong>Who handles notices from the GST department?</strong> Clarify whether clarification replies (ASMT-10, DRC-01) are included or billed separately.</span>
+                  <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                  <span><strong className="text-white">Who handles officer clarification notices?</strong> Clarify whether drafting replies for Form GST REG-04 or ASMT-10 scrutiny notices is covered in the retainer or billed separately.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-teal shrink-0 mt-0.5" />
-                  <span><strong>What is your direct escalation channel?</strong> Ensure you have a WhatsApp or direct phone number rather than just a web ticket queue.</span>
+                  <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                  <span><strong className="text-white">What is the direct communication channel?</strong> Will you be talking to a dedicated accountant on WhatsApp and direct phone, or stuck in a slow support ticket queue during peak deadline days?</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-teal shrink-0 mt-0.5" />
-                  <span><strong>How do I receive proof of filing?</strong> Will you receive the official Government ARN acknowledgement receipt within 24 hours of filing?</span>
+                  <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                  <span><strong className="text-white">Do I receive official Government ARN receipts?</strong> Always ensure you receive the official Government Acknowledgement Reference Number (ARN) within 24 hours of filing as proof of compliance.</span>
                 </li>
               </ul>
             </div>
           </section>
 
-          {/* Section 7: FAQs */}
-          <section id="frequently-asked-questions" className="mb-12 space-y-4">
-            <h2 className="text-2xl font-bold text-navy tracking-tight border-b border-surface-border pb-3">
-              7. Frequently Asked Questions
+          {/* Section 5: Frequently Asked Questions */}
+          <section id="frequently-asked-questions" className="mb-14 space-y-4">
+            <h2 className="text-2xl font-bold text-white tracking-tight border-b border-surface-border pb-3">
+              5. Frequently Asked Questions (FAQs)
             </h2>
-            <div className="space-y-3">
-              <div className="bg-white p-5 rounded-2xl border border-surface-border shadow-xs">
-                <h3 className="text-sm font-bold text-navy mb-1.5">What is the average cost of GST return filing in India?</h3>
-                <p className="text-xs text-text-muted leading-relaxed">
-                  For small businesses with up to 50 transactions a month, professional assisted GST return filing typically ranges between ₹500 and ₹1,500 per month. Software tools start at around ₹5,000/year for self-filing, whereas high-volume distributors and companies pay ₹2,500 to ₹6,000+ monthly.
+            <div className="space-y-3.5">
+              <div className="bg-[#1B1410] p-5 rounded-2xl border border-surface-border shadow-xs">
+                <h3 className="text-sm font-bold text-white mb-2 flex items-center gap-2">
+                  <HelpCircle className="w-4 h-4 text-amber-400 shrink-0" />
+                  Who are the best GST service providers in India for small businesses?
+                </h3>
+                <p className="text-xs text-[#DDD0C5] leading-relaxed">
+                  For small businesses, retail traders, and startups looking for end-to-end assisted filing with complete GSTR-2B ITC reconciliation and dedicated WhatsApp support, Taxoras Advisory & Compliance ranks as the #1 choice. For businesses wanting self-filing software, Clear (ClearTax) and Zoho Books are market leaders.
                 </p>
               </div>
 
-              <div className="bg-white p-5 rounded-2xl border border-surface-border shadow-xs">
-                <h3 className="text-sm font-bold text-navy mb-1.5">Is GST registration completely free in India?</h3>
-                <p className="text-xs text-text-muted leading-relaxed">
-                  Yes, the Government of India levies ₹0 statutory fee for obtaining a GSTIN on the official GST Portal (<a href="https://www.gst.gov.in" target="_blank" rel="noopener noreferrer" className="text-brand-blue underline">gst.gov.in</a>). Any fees charged by consultancies or online platforms are purely for professional documentation, application drafting, and clarification management.
+              <div className="bg-[#1B1410] p-5 rounded-2xl border border-surface-border shadow-xs">
+                <h3 className="text-sm font-bold text-white mb-2 flex items-center gap-2">
+                  <HelpCircle className="w-4 h-4 text-amber-400 shrink-0" />
+                  What is the average cost of GST return filing in India?
+                </h3>
+                <p className="text-xs text-[#DDD0C5] leading-relaxed">
+                  Professional assisted GST return filing typically starts from ₹799 to ₹1,499 per month for small businesses with up to 100 transactions, including both GSTR-1 and GSTR-3B with purchase matching. Self-service software tools range between ₹5,000 and ₹12,000 per year.
                 </p>
               </div>
 
-              <div className="bg-white p-5 rounded-2xl border border-surface-border shadow-xs">
-                <h3 className="text-sm font-bold text-navy mb-1.5">What happens if my GST returns are filed with errors?</h3>
-                <p className="text-xs text-text-muted leading-relaxed">
-                  Under the GST law, returns once filed cannot be deleted or re-submitted; corrections must be made through amendments in subsequent returns (e.g. Table 9 or 10 of GSTR-1). Unreconciled differences between GSTR-1 and GSTR-3B trigger automated notices under Rule 88C (Form DRC-01B), requiring tax payment or written explanation within 7 days.
+              <div className="bg-[#1B1410] p-5 rounded-2xl border border-surface-border shadow-xs">
+                <h3 className="text-sm font-bold text-white mb-2 flex items-center gap-2">
+                  <HelpCircle className="w-4 h-4 text-amber-400 shrink-0" />
+                  Is GSTR-2B purchase reconciliation included in standard GST filing?
+                </h3>
+                <p className="text-xs text-[#DDD0C5] leading-relaxed">
+                  With Taxoras Advisory, monthly GSTR-2B purchase reconciliation is included in all retainer tiers to safeguard Input Tax Credit. However, many automated software aggregators either charge extra or leave the matching reconciliation as a manual task for the business owner.
+                </p>
+              </div>
+
+              <div className="bg-[#1B1410] p-5 rounded-2xl border border-surface-border shadow-xs">
+                <h3 className="text-sm font-bold text-white mb-2 flex items-center gap-2">
+                  <HelpCircle className="w-4 h-4 text-amber-400 shrink-0" />
+                  Is GST registration free in India?
+                </h3>
+                <p className="text-xs text-[#DDD0C5] leading-relaxed">
+                  Yes, the Government of India levies ₹0 statutory fee for obtaining a GSTIN on gst.gov.in. Any fees charged by consultants (typically ₹999 to ₹1,999) cover document validation, constitution review, application drafting, Aadhaar biometric coordination, and clarification query management.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* Section 8: Conclusion & CTA */}
-          <section id="conclusion-cta" className="bg-gradient-to-br from-navy to-navy-dark text-white rounded-3xl p-8 sm:p-10 shadow-xl space-y-6 text-center sm:text-left">
+          {/* Section 6: High Converting Bottom CTA Banner */}
+          <section id="conclusion-cta" className="bg-gradient-to-br from-[#251A13] to-[#16100C] border border-amber-600/40 text-white rounded-3xl p-8 sm:p-10 shadow-xl space-y-6 text-center sm:text-left">
             <div className="max-w-2xl">
-              <span className="text-xs font-bold text-teal bg-teal/20 px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
-                Need Honest, Affordable GST Assistance?
+              <span className="text-xs font-bold text-amber-300 bg-amber-950/60 border border-amber-600/30 px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
+                Need Stress-Free GST Compliance for Your Business?
               </span>
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-3">
-                Take the Stress Out of Monthly GST Compliance
+              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mb-3">
+                Partner with Taxoras Advisory — India's Dedicated Compliance Team
               </h2>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Whether you need a new GST registration or worry-free monthly GSTR-1 and 3B filings with complete GSTR-2B purchase matching, Taxoras Advisory provides dedicated human support starting at ₹799/month.
+              <p className="text-xs sm:text-sm text-[#DDD0C5] leading-relaxed">
+                Stop worrying about missed deadlines, portal crashes, or Input Tax Credit discrepancies. Get full GSTR-1, GSTR-3B, and 100% GSTR-2B purchase matching with dedicated WhatsApp support starting at just ₹799/month.
               </p>
             </div>
 
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 pt-2">
               <Link
                 href="/services/gst-return-filing"
-                className="bg-brand-blue hover:bg-brand-blue-hover text-white px-5 py-3 rounded-xl font-semibold text-xs sm:text-sm transition-all shadow-md inline-flex items-center gap-2"
+                className="bg-brand-blue hover:bg-brand-blue-hover text-white px-5 py-3 rounded-xl font-bold text-xs sm:text-sm transition-all shadow-md inline-flex items-center gap-2"
               >
-                <span>View GST Return Filing Details</span>
+                <span>Explore GST Return Filing Plans</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
-              <Link
-                href="/services/gst-registration"
-                className="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-5 py-3 rounded-xl font-semibold text-xs sm:text-sm transition-all inline-flex items-center gap-2"
+              <a
+                href={siteConfig.links.whatsappUrl("GST Return Filing & Compliance Retainer")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#25D366] hover:bg-[#20BD5A] text-white px-5 py-3 rounded-xl font-bold text-xs sm:text-sm transition-all inline-flex items-center gap-2 shadow-md"
               >
-                <span>GST Registration Guide</span>
-              </Link>
+                <span>Instant Quote on WhatsApp</span>
+              </a>
               <Link
                 href="/pricing"
-                className="text-teal hover:text-white text-xs sm:text-sm font-semibold underline underline-offset-4 py-2"
+                className="text-amber-400 hover:text-white text-xs sm:text-sm font-semibold underline underline-offset-4 py-2"
               >
-                Compare Transparent Pricing Tiers →
+                Compare Transparent Retainers →
               </Link>
             </div>
           </section>
