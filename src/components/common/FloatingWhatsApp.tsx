@@ -23,7 +23,7 @@ export const FloatingWhatsApp: React.FC<FloatingWhatsAppProps> = ({ currentServi
         href={siteConfig.links.phoneUrl}
         aria-label="Call Direct Helpline"
         title={`Call Now: ${siteConfig.contact.phoneFormatted} (${siteConfig.contact.workingDays} ${siteConfig.contact.workingHours})`}
-        className="group flex items-center gap-2 bg-white hover:bg-slate-50 text-navy hover:text-brand-blue border border-surface-border shadow-lg hover:shadow-xl px-3 sm:px-3.5 py-2.5 rounded-full transition-all duration-200 active:scale-95 focus:outline-none focus:ring-2 focus:ring-brand-blue/40"
+        className="group flex items-center gap-2 bg-[#1C1511] hover:bg-[#251C16] text-[#FAF4EF] hover:text-amber-400 border border-surface-border shadow-2xl hover:shadow-amber-950/20 px-3 sm:px-3.5 py-2.5 rounded-full transition-all duration-200 active:scale-95 focus:outline-none focus:ring-2 focus:ring-brand-blue/40"
       >
         <span className="w-6 h-6 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors">
           <Phone className="w-3 h-3 shrink-0" />

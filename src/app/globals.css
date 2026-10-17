@@ -1,49 +1,100 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy: #10243A;
-  --color-navy-dark: #091522;
-  --color-navy-light: #1A3654;
-  --color-brand-blue: #2457C5;
-  --color-brand-blue-hover: #1C46A1;
-  --color-teal: #0F9F8F;
-  --color-teal-light: #E6F7F5;
-  --color-teal-dark: #0A7367;
-  --color-surface-bg: #F7F9FC;
-  --color-surface-card: #FFFFFF;
-  --color-surface-border: #E4E9F0;
-  --color-text-main: #1D2939;
-  --color-text-muted: #667085;
-  --color-text-light: #98A2B3;
+  /* Brownish Dark Luxury Theme Tokens */
+  --color-surface-bg: #120D0A;
+  --color-surface-card: #1B1410;
+  --color-surface-card-hover: #241C16;
+  --color-surface-border: #2E221B;
+  
+  --color-navy: #FAF4EF;
+  --color-navy-dark: #FFFFFF;
+  --color-navy-light: #ECE4DC;
+  
+  --color-brand-blue: #D97706;
+  --color-brand-blue-hover: #B45309;
+  
+  --color-teal: #E5A962;
+  --color-teal-light: #2A1E16;
+  --color-teal-dark: #F59E0B;
+  
+  --color-text-main: #ECE4DC;
+  --color-text-muted: #A89A8F;
+  --color-text-light: #7A6D63;
+  
+  /* Readable warm-tinted slate scale for text & backgrounds */
+  --color-slate-50: #18120E;
+  --color-slate-100: #221A14;
+  --color-slate-200: #EFE6DE;
+  --color-slate-300: #DDD0C5;
+  --color-slate-400: #BCAE9F;
+  --color-slate-500: #938478;
+  --color-slate-600: #6B5D53;
+  --color-slate-700: #42342A;
+  --color-slate-800: #241A14;
+  --color-slate-900: #120D0A;
+  
+  --color-blue-50: #251B13;
+  --color-blue-100: #3D2B1F;
 }
 
 :root {
-  --background: #F7F9FC;
-  --foreground: #1D2939;
+  --background: #120D0A;
+  --foreground: #FAF4EF;
 }
 
 html {
   scroll-behavior: smooth;
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: #120D0A;
+  color: #ECE4DC;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   overflow-x: hidden;
 }
 
-/* Glassmorphism & Card Utilities */
+/* Ensure white backgrounds on cards adapt to rich dark mocha surfaces */
+.bg-white {
+  background-color: #1B1410 !important;
+}
+
+.bg-white\/80 {
+  background-color: rgba(27, 20, 16, 0.85) !important;
+}
+
+.bg-white\/90 {
+  background-color: rgba(27, 20, 16, 0.92) !important;
+}
+
+/* Ensure bg-navy on buttons/actions always renders as vibrant warm amber bronze with white text */
+a.bg-navy, button.bg-navy {
+  background-color: #D97706 !important;
+  color: #FFFFFF !important;
+}
+a.bg-navy:hover, button.bg-navy:hover, .hover\:bg-navy-light:hover {
+  background-color: #B45309 !important;
+  color: #FFFFFF !important;
+}
+
+/* Containers with bg-navy become rich dark mocha with subtle bronze border */
+div.bg-navy, section.bg-navy {
+  background-color: #1F1712 !important;
+  border-color: #38291F !important;
+  color: #FAF4EF !important;
+}
+
+/* Glassmorphism on Dark Mocha */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(228, 233, 240, 0.8);
+  background: rgba(27, 20, 16, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(46, 34, 27, 0.85);
 }
 
 .navy-gradient {
-  background: linear-gradient(135deg, #10243A 0%, #16365C 100%);
+  background: linear-gradient(135deg, #1B1410 0%, #261B14 100%);
 }
 
 .card-hover {
@@ -52,22 +103,22 @@ body {
 
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 32px -8px rgba(16, 36, 58, 0.08), 0 4px 12px -2px rgba(16, 36, 58, 0.04);
-  border-color: #CBD5E1;
+  box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.5), 0 4px 12px -2px rgba(217, 119, 6, 0.08);
+  border-color: #453328 !important;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar in warm dark mocha */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #F1F5F9;
+  background: #120D0A;
 }
 ::-webkit-scrollbar-thumb {
-  background: #CBD5E1;
+  background: #33251D;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94A3B8;
+  background: #4A362B;
 }

@@ -131,9 +131,9 @@ export default function AboutPage() {
           </section>
 
           {/* CTA */}
-          <div className="bg-navy text-white rounded-2xl p-8 text-center space-y-4">
+          <div className="bg-[#1C1510] border border-[#3E2C20] text-[#FAF4EF] rounded-2xl p-8 text-center space-y-4 shadow-xl">
             <h3 className="text-xl font-bold">Ready to Simplify Your Business Compliance?</h3>
-            <p className="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto">
+            <p className="text-xs sm:text-sm text-[#BCAE9F] max-w-lg mx-auto">
               Contact our team today to discuss your business volume, receive a requirement checklist, and get a transparent service estimate.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3 pt-2">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -7,6 +7,7 @@ import { siteConfig } from "@/config/siteConfig";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { ServiceIcon } from "@/components/common/ServiceIcon";
 import { EnquiryForm } from "@/components/common/EnquiryForm";
 import {
@@ -16,7 +17,6 @@ import {
   FileText,
   Clock,
   ShieldCheck,
-  MessageCircle,
   Phone,
   ArrowRight,
   HelpCircle,
@@ -63,7 +63,21 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   };
 }
 
-export default async function ServiceDetailPage({ params }: ServicePageProps) {
+export default function ServiceDetailPage(props: ServicePageProps) {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-surface-bg flex items-center justify-center">
+          <div className="w-8 h-8 border-3 border-brand-blue border-t-transparent rounded-full animate-spin" />
+        </div>
+      }
+    >
+      <ServiceDetailContent {...props} />
+    </Suspense>
+  );
+}
+
+async function ServiceDetailContent({ params }: ServicePageProps) {
   const { slug } = await params;
   const service = getServiceBySlug(slug);
 
@@ -148,7 +162,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
               <div className="flex flex-wrap items-center gap-3">
                 <a
                   href="#service-enquiry"
-                  className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white text-xs sm:text-sm font-semibold px-5 py-3 rounded-xl transition-all shadow-sm"
+                  className="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue-hover text-white text-xs sm:text-sm font-bold px-5 py-3 rounded-xl transition-all shadow-md active:scale-95"
                 >
                   <span>{service.ctaText}</span>
                   <ArrowRight className="w-4 h-4" />
@@ -160,7 +174,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow-sm"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <WhatsAppIcon className="w-4 h-4 shrink-0" />
                   <span>WhatsApp Contextual Enquiry</span>
                 </a>
               </div>
@@ -262,7 +276,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                 <div className="space-y-4">
                   {service.processSteps.map((step) => (
                     <div key={step.step} className="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
-                      <div className="w-8 h-8 rounded-lg bg-navy text-white font-bold text-xs flex items-center justify-center shrink-0">
+                      <div className="w-8 h-8 rounded-lg bg-brand-blue text-white font-bold text-xs flex items-center justify-center shrink-0">
                         {step.step}
                       </div>
                       <div>
@@ -380,7 +394,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                     rel="noopener noreferrer"
                     className="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold py-3 px-4 rounded-xl transition-colors shadow-sm"
                   >
-                    <MessageCircle className="w-4 h-4" />
+                    <WhatsAppIcon className="w-4 h-4 shrink-0" />
                     <span>WhatsApp Contextual Enquiry</span>
                   </a>
 

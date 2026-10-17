@@ -19,11 +19,11 @@ import {
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#0B1522] text-slate-300 pt-16 pb-12 border-t border-slate-800/80">
+    <footer className="bg-[#0C0806] text-slate-300 pt-16 pb-12 border-t border-[#261C16]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main 4-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-[#261C16]">
           
           {/* Column 1: Brand & Contact Info */}
           <div className="space-y-4">
@@ -203,11 +203,11 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Regulatory Disclaimer Notice */}
-        <div className="pt-8 pb-6 text-[11px] text-slate-400 leading-relaxed border-b border-slate-800 space-y-2">
+        <div className="pt-8 pb-6 text-xs text-[#BCAE9F] leading-relaxed border-b border-[#261C16] space-y-2 bg-[#120D0A]/40 p-4 rounded-2xl my-2 border border-[#2E221B]">
           <p>
-            <strong className="text-slate-200">Legal & Regulatory Notice:</strong> {siteConfig.disclaimer}
+            <strong className="text-[#FAF4EF] font-bold">Legal & Regulatory Notice:</strong> {siteConfig.disclaimer}
           </p>
-          <p>
+          <p className="text-[#A89A8F] text-[11px]">
             We do not promise zero penalties, guaranteed tax reductions, or unauthorized document certifications. All government portals (gst.gov.in, incometax.gov.in, udyamregistration.gov.in) are official Government of India properties.
           </p>
         </div>
@@ -223,7 +223,7 @@ export const Footer: React.FC = () => {
                 href="https://codeorbi.cloud/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-teal hover:text-white transition-colors font-bold underline underline-offset-2"
+                className="text-amber-400 hover:text-white transition-colors font-bold underline underline-offset-2"
                 title="Website design and development by Codeorbi.cloud"
               >
                 Codeorbi.cloud

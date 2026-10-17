@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import {
   HelpCircle,
   CheckCircle2,
@@ -10,15 +11,46 @@ import {
   Calculator,
   Building2,
   Clock,
-    MapPin,
-  FileCheck2
+  MapPin,
+  FileCheck2,
+  Phone,
+  User,
+  Send
 } from "lucide-react";
 
 export const QuickServiceFinder: React.FC = () => {
   const [need, setNeed] = useState("gst");
   const [businessType, setBusinessType] = useState("proprietorship");
-  const [city, setCity] = useState("delhi");
+  const [city, setCity] = useState("noida");
   const [frequency, setFrequency] = useState("monthly");
+  const [clientName, setClientName] = useState("");
+  const [clientPhone, setClientPhone] = useState("");
+
+  const cityLabels: Record<string, string> = {
+    noida: "Noida & Greater Noida (UP)",
+    delhi: "Delhi NCR (Delhi, Gurugram, Faridabad)",
+    mumbai: "Mumbai & Maharashtra",
+    bengaluru: "Bengaluru & Karnataka",
+    jaipur: "Jaipur & Rajasthan",
+    lucknow: "Lucknow & Uttar Pradesh",
+    ahmedabad: "Ahmedabad & Gujarat",
+    other: "Other City / All India Digital Service"
+  };
+
+  const businessTypeLabels: Record<string, string> = {
+    proprietorship: "Sole Proprietorship",
+    partnership: "Partnership / LLP",
+    company: "Pvt Ltd Company",
+    freelancer: "Freelancer / Consultant",
+    retail: "Retail / Wholesale Trader"
+  };
+
+  const frequencyLabels: Record<string, string> = {
+    onetime: "One-Time Filing",
+    monthly: "Monthly Retainer",
+    quarterly: "Quarterly Compliance",
+    annual: "Annual Filing"
+  };
 
   // Dynamic recommendation logic
   const getRecommendation = () => {
@@ -61,65 +93,112 @@ export const QuickServiceFinder: React.FC = () => {
       };
     } else if (need === "itr") {
       return {
-        service: "Income Tax Return (ITR) Filing",
+        service: "Income Tax Return Filing (ITR-3 / 4 / 5 / 6)",
         slug: "income-tax-return",
-        indicativePrice: "Starting at ₹699 / return",
-        billing: "Annual Filing Fee",
-        turnaround: "24 – 48 hours following AIS reconciliation",
-        description: "AIS/TIS cross-check, Old vs New Regime optimization (115BAC), computation statement, and e-verification."
+        indicativePrice: "Starting at ₹1,499",
+        billing: "Annual Return Assistance",
+        turnaround: "Computation shared in 48 hours",
+        description: "Tax computation, 26AS / AIS reconciliation, depreciation schedules, and electronic acknowledgment receipt."
       };
     } else {
       return {
-        service: "MSME / Udyam Registration",
-        slug: "msme-udyam-registration",
-        indicativePrice: "Fixed ₹799",
-        billing: "One-Time Fixed Fee (Govt fee ₹0)",
-        turnaround: "Same-day application drafting",
-        description: "NIC code mapping, investment review, official Udyam portal submission, and 45-day payment statutory safeguards."
+        service: "Full Monthly Compliance Retainer (GST + Accounting)",
+        slug: "daily-accounting",
+        indicativePrice: "Starting at ₹2,199 / month",
+        billing: "Integrated Monthly Retainer",
+        turnaround: "Ongoing monthly management",
+        description: "Complete peace of mind: invoice bookkeeping, GSTR-1, GSTR-3B, monthly BRS, and quarterly compliance reviews."
       };
     }
   };
 
   const rec = getRecommendation();
 
+  // WhatsApp Send Action
+  const handleWhatsAppQuote = () => {
+    const selectedCity = cityLabels[city] || city;
+    const selectedBT = businessTypeLabels[businessType] || businessType;
+    const selectedFreq = frequencyLabels[frequency] || frequency;
+
+    const lines = [
+      "Hello Taxoras! I would like to get a quote for my business:",
+      `• Service: ${rec.service}`,
+      `• Estimated Price: ${rec.indicativePrice}`,
+      `• City / Location: ${selectedCity}`,
+      `• Business Type: ${selectedBT}`,
+      `• Assistance Frequency: ${selectedFreq}`
+    ];
+
+    if (clientName.trim()) {
+      lines.push(`• Client Name: ${clientName.trim()}`);
+    }
+    if (clientPhone.trim()) {
+      lines.push(`• Phone Number: ${clientPhone.trim()}`);
+    }
+
+    lines.push("Please share the documentation checklist, scope, and onboarding steps.");
+
+    const message = lines.join("\n");
+    const waUrl = `https://wa.me/918103819494?text=${encodeURIComponent(message)}`;
+
+    // Optional silent lead capture
+    try {
+      fetch("/api/enquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          fullName: clientName || "WhatsApp Visitor",
+          mobile: clientPhone || "9999999999",
+          serviceRequired: rec.service,
+          city: selectedCity,
+          businessType: selectedBT,
+          additionalDetails: `Frequency: ${selectedFreq} | Price: ${rec.indicativePrice}`,
+          preferredContact: "WhatsApp",
+          sourceContext: "quick_service_finder"
+        })
+      }).catch(() => {});
+    } catch (_) {}
+
+    window.open(waUrl, "_blank", "noopener,noreferrer");
+  };
+
   return (
-    <section className="py-14 sm:py-20 bg-white border-b border-surface-border" id="service-finder">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-12 sm:py-20 bg-surface-bg border-b border-surface-border scroll-mt-24" id="service-finder">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-10">
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
           <span className="text-xs font-bold text-brand-blue bg-blue-50 px-3 py-1 rounded-full uppercase tracking-wider inline-flex items-center gap-1.5">
-            <Calculator className="w-3.5 h-3.5" />
-            Interactive Tool
+            <Calculator className="w-3.5 h-3.5 text-brand-blue" />
+            <span>Interactive Service & Pricing Calculator</span>
           </span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-navy tracking-tight mt-3 mb-2">
-            Quick Service & Scope Finder
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-navy tracking-tight mt-3 mb-2.5">
+            Find the Exact Compliance Package for Your Business
           </h2>
           <p className="text-xs sm:text-sm text-text-muted leading-relaxed">
-            Answer 4 simple questions to identify your applicable compliance scope and transparent pricing estimate.
+            Select your requirements, business location (Noida, Delhi NCR, Pan-India), and frequency below. Get instant transparent pricing and connect directly with our compliance desk on WhatsApp.
           </p>
         </div>
 
-        {/* Finder Card */}
-        <div className="bg-surface-bg rounded-2xl border border-surface-border p-6 sm:p-8 shadow-xs">
+        {/* Finder Interactive Card */}
+        <div className="bg-[#17110D] rounded-2xl sm:rounded-3xl border border-surface-border p-4 sm:p-8 lg:p-10 shadow-lg">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
-            {/* Left 7 Columns: 4 Questions */}
-            <div className="lg:col-span-7 space-y-5">
+            {/* Left 7 Columns: Selection Questions */}
+            <div className="lg:col-span-7 space-y-6">
               
-              {/* Question 1: What do you need help with? */}
+              {/* Question 1: Immediate Need */}
               <div>
                 <label className="block text-xs font-bold text-navy mb-2">
-                  1. What do you need primary assistance with?
+                  1. What does your business need right now?
                 </label>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                   {[
-                    { id: "gst", label: "GST Compliance" },
+                    { id: "gst", label: "GST Filing & Reg" },
                     { id: "accounting", label: "Daily Accounting" },
-                    { id: "tds", label: "TDS Returns" },
+                    { id: "tds", label: "TDS Return (24Q/26Q)" },
                     { id: "itr", label: "Income Tax (ITR)" },
-                    { id: "udyam", label: "MSME / Udyam" },
-                    { id: "other", label: "Full Retainer" }
+                    { id: "all", label: "All-in-One Retainer" }
                   ].map((opt) => (
                     <button
                       key={opt.id}
@@ -127,8 +206,8 @@ export const QuickServiceFinder: React.FC = () => {
                       onClick={() => setNeed(opt.id)}
                       className={`text-xs font-semibold p-2.5 rounded-xl border text-left transition-all ${
                         need === opt.id
-                          ? "border-brand-blue bg-blue-50/80 text-brand-blue font-bold shadow-xs"
-                          : "border-surface-border bg-white text-text-muted hover:border-slate-300"
+                          ? "border-brand-blue bg-amber-950/50 text-amber-400 font-bold shadow-xs"
+                          : "border-surface-border bg-[#1C1511] text-text-muted hover:border-[#4A382C] hover:text-[#FAF4EF]"
                       }`}
                     >
                       {opt.label}
@@ -156,8 +235,8 @@ export const QuickServiceFinder: React.FC = () => {
                       onClick={() => setBusinessType(bt.id)}
                       className={`text-xs font-semibold p-2.5 rounded-xl border text-left transition-all ${
                         businessType === bt.id
-                          ? "border-brand-blue bg-blue-50/80 text-brand-blue font-bold shadow-xs"
-                          : "border-surface-border bg-white text-text-muted hover:border-slate-300"
+                          ? "border-brand-blue bg-amber-950/50 text-amber-400 font-bold shadow-xs"
+                          : "border-surface-border bg-[#1C1511] text-text-muted hover:border-[#4A382C] hover:text-[#FAF4EF]"
                       }`}
                     >
                       {bt.label}
@@ -174,15 +253,16 @@ export const QuickServiceFinder: React.FC = () => {
                 <select
                   value={city}
                   onChange={(e) => setCity(e.target.value)}
-                  className="w-full text-xs text-text-main bg-white border border-surface-border rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20"
+                  className="w-full text-xs text-[#FAF4EF] bg-[#1C1511] border border-surface-border rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/30 font-medium"
                 >
-                  <option value="delhi">Delhi NCR (Delhi, Noida, Gurugram)</option>
+                  <option value="noida">Noida & Greater Noida (Uttar Pradesh)</option>
+                  <option value="delhi">Delhi NCR (Delhi, Gurugram, Faridabad)</option>
                   <option value="mumbai">Mumbai & Maharashtra</option>
                   <option value="bengaluru">Bengaluru & Karnataka</option>
                   <option value="jaipur">Jaipur & Rajasthan</option>
                   <option value="lucknow">Lucknow & Uttar Pradesh</option>
                   <option value="ahmedabad">Ahmedabad & Gujarat</option>
-                  <option value="other">Other State / All India Digital Service</option>
+                  <option value="other">Other City / All-India Digital Service</option>
                 </select>
               </div>
 
@@ -193,8 +273,8 @@ export const QuickServiceFinder: React.FC = () => {
                 </label>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                   {[
-                    { id: "onetime", label: "One-Time" },
                     { id: "monthly", label: "Monthly" },
+                    { id: "onetime", label: "One-Time" },
                     { id: "quarterly", label: "Quarterly" },
                     { id: "annual", label: "Annual" }
                   ].map((fq) => (
@@ -204,8 +284,8 @@ export const QuickServiceFinder: React.FC = () => {
                       onClick={() => setFrequency(fq.id)}
                       className={`text-xs font-semibold p-2.5 rounded-xl border text-center transition-all ${
                         frequency === fq.id
-                          ? "border-brand-blue bg-blue-50/80 text-brand-blue font-bold shadow-xs"
-                          : "border-surface-border bg-white text-text-muted hover:border-slate-300"
+                          ? "border-brand-blue bg-amber-950/50 text-amber-400 font-bold shadow-xs"
+                          : "border-surface-border bg-[#1C1511] text-text-muted hover:border-[#4A382C] hover:text-[#FAF4EF]"
                       }`}
                     >
                       {fq.label}
@@ -214,31 +294,55 @@ export const QuickServiceFinder: React.FC = () => {
                 </div>
               </div>
 
+              {/* Optional Quick Customer Details */}
+              <div className="pt-2 border-t border-slate-200/80">
+                <label className="block text-xs font-bold text-navy mb-2">
+                  5. Quick Contact Info (Optional – prefilled in WhatsApp)
+                </label>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <input
+                    type="text"
+                    placeholder="Your Name / Business Name"
+                    value={clientName}
+                    onChange={(e) => setClientName(e.target.value)}
+                    className="w-full text-xs text-[#FAF4EF] bg-[#1C1511] border border-surface-border rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/30 placeholder:text-stone-500"
+                  />
+                  <input
+                    type="tel"
+                    placeholder="10-Digit Mobile Number"
+                    value={clientPhone}
+                    onChange={(e) => setClientPhone(e.target.value)}
+                    maxLength={10}
+                    className="w-full text-xs text-[#FAF4EF] bg-[#1C1511] border border-surface-border rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/30 placeholder:text-stone-500"
+                  />
+                </div>
+              </div>
+
             </div>
 
             {/* Right 5 Columns: Dynamic Result Card */}
-            <div className="lg:col-span-5 bg-white rounded-2xl border border-brand-blue/30 p-6 shadow-sm flex flex-col justify-between space-y-4">
+            <div className="lg:col-span-5 bg-[#201813] rounded-2xl border-2 border-brand-blue/40 p-5 sm:p-6 shadow-xl flex flex-col justify-between space-y-4 relative">
               <div>
                 <div className="flex items-center justify-between pb-3 border-b border-surface-border mb-3">
                   <span className="text-[11px] font-bold uppercase tracking-wider text-teal flex items-center gap-1.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-teal" />
-                    Recommended Scope
+                    Recommended Package
                   </span>
-                  <span className="text-[10px] font-medium bg-slate-100 text-text-muted px-2 py-0.5 rounded">
-                    India-Wide
+                  <span className="text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 px-2 py-0.5 rounded-full">
+                    {cityLabels[city]?.split(" ")[0] || "Live"}
                   </span>
                 </div>
 
-                <h3 className="text-lg font-bold text-navy mb-1">
+                <h3 className="text-base sm:text-lg font-bold text-navy mb-1 leading-snug">
                   {rec.service}
                 </h3>
 
-                <div className="my-2.5 p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
+                <div className="my-3 p-3.5 rounded-xl bg-[#16110D] border border-surface-border flex items-center justify-between">
                   <div>
-                    <span className="text-base font-extrabold text-brand-blue block">
+                    <span className="text-lg sm:xl font-extrabold text-brand-blue block leading-none">
                       {rec.indicativePrice}
                     </span>
-                    <span className="text-[10px] text-text-muted">
+                    <span className="text-[10px] text-text-muted mt-1 block">
                       {rec.billing}
                     </span>
                   </div>
@@ -251,37 +355,53 @@ export const QuickServiceFinder: React.FC = () => {
                   </div>
                 </div>
 
-                <p className="text-xs text-text-muted leading-relaxed mb-4">
+                <p className="text-xs text-text-muted leading-relaxed mb-3">
                   {rec.description}
                 </p>
 
                 <div className="space-y-1.5 pt-2 border-t border-slate-100 text-xs">
-                  <div className="flex items-center gap-2 text-slate-700">
+                  <div className="flex items-center gap-2 text-slate-700 text-[11px]">
                     <CheckCircle2 className="w-3.5 h-3.5 text-teal shrink-0" />
                     <span>Includes written scope & document checklist</span>
                   </div>
-                  <div className="flex items-center gap-2 text-slate-700">
+                  <div className="flex items-center gap-2 text-slate-700 text-[11px]">
                     <CheckCircle2 className="w-3.5 h-3.5 text-teal shrink-0" />
-                    <span>Dedicated point of contact via WhatsApp & Email</span>
+                    <span>Dedicated coordinator via WhatsApp & Phone</span>
                   </div>
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-surface-border space-y-2">
-                <Link
-                  href={`/services/${rec.slug}`}
-                  className="w-full flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white text-xs font-semibold py-2.5 rounded-xl transition-colors shadow-sm"
+              {/* Direct Action Buttons */}
+              <div className="pt-4 border-t border-surface-border space-y-2.5">
+                {/* 1. Primary WhatsApp Action */}
+                <button
+                  type="button"
+                  onClick={handleWhatsAppQuote}
+                  className="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs sm:text-sm font-bold py-3 px-4 rounded-xl transition-all shadow-md hover:shadow-lg active:scale-98 cursor-pointer"
                 >
-                  <span>View Full Service Details</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
+                  <WhatsAppIcon className="w-4 h-4 shrink-0" />
+                  <span>Send to WhatsApp for Instant Quote</span>
+                </button>
 
+                {/* 2. Direct Call Helpline */}
                 <a
-                  href={`#enquire`}
-                  className="w-full flex items-center justify-center gap-1.5 bg-blue-50 hover:bg-blue-100/80 text-brand-blue text-xs font-semibold py-2 rounded-xl transition-colors"
+                  href={siteConfig.links.phoneUrl}
+                  className="w-full flex items-center justify-center gap-2 bg-[#16110D] hover:bg-[#1E1712] text-[#FAF4EF] text-xs font-semibold py-2.5 px-4 rounded-xl border border-surface-border transition-colors"
                 >
-                  <span>Request Custom Quote for This Scope</span>
+                  <Phone className="w-3.5 h-3.5 text-brand-blue" />
+                  <span>Call Helpline: {siteConfig.contact.phoneFormatted}</span>
                 </a>
+
+                {/* 3. Link to detailed service page */}
+                <div className="text-center pt-1">
+                  <Link
+                    href={`/services/${rec.slug}`}
+                    className="text-[11px] font-semibold text-brand-blue hover:underline inline-flex items-center gap-1"
+                  >
+                    <span>View detailed requirements for {rec.service}</span>
+                    <ArrowRight className="w-3 h-3" />
+                  </Link>
+                </div>
               </div>
             </div>
 

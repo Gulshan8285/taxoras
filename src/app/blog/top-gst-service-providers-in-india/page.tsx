@@ -20,7 +20,6 @@ import {
   AlertTriangle,
   Building,
   PhoneCall,
-  MessageCircle
 } from "lucide-react";
 
 export const metadata: Metadata = {

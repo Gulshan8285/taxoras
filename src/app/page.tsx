@@ -101,17 +101,17 @@ export default function HomePage() {
         <WhyChooseUsSection />
 
         {/* Working Customer Enquiry Form Section */}
-        <section className="py-16 sm:py-24 bg-surface-bg border-b border-surface-border">
+        <section className="py-12 sm:py-20 bg-surface-bg border-b border-surface-border scroll-mt-24" id="enquire">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
               <span className="text-xs font-bold text-teal bg-teal-light px-3 py-1 rounded-full uppercase tracking-wider">
-                Start the Conversation
+                Direct WhatsApp Consultation
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-navy tracking-tight mt-3">
-                Request a Callback & Requirement Checklist
+                Get an Instant Quote & Scope on WhatsApp
               </h2>
               <p className="text-xs sm:text-sm text-text-muted mt-2 max-w-xl mx-auto">
-                No automated bot queues. Our accounting and tax compliance desk will review your entity details and reach out with transparent scope guidelines.
+                Share your business details below. A dedicated Taxoras compliance coordinator will review your requirements and reply directly on WhatsApp with itemized pricing.
               </p>
             </div>
 

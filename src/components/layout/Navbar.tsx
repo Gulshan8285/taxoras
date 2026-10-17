@@ -97,8 +97,8 @@ export const Navbar: React.FC = () => {
         <header
           className={`rounded-full transition-all duration-300 flex items-center justify-between px-4 sm:px-6 py-2.5 sm:py-3 ${
             scrolled
-              ? "bg-white/95 backdrop-blur-2xl border border-surface-border shadow-[0_12px_40px_rgba(16,36,58,0.12)]"
-              : "bg-white/90 backdrop-blur-xl border border-slate-200/90 shadow-[0_8px_30px_rgba(16,36,58,0.06)] hover:shadow-[0_12px_36px_rgba(16,36,58,0.09)]"
+              ? "bg-[#18120E]/95 backdrop-blur-2xl border border-surface-border shadow-2xl"
+              : "bg-[#18120E]/90 backdrop-blur-xl border border-surface-border shadow-xl hover:shadow-2xl"
           }`}
         >
           {/* Logo with New Taxoras Branding */}
@@ -107,11 +107,11 @@ export const Navbar: React.FC = () => {
             className="flex items-center shrink-0 group select-none"
             title="Taxoras Advisory & Compliance"
           >
-            <BrandLogo variant="dark" showTagline={false} />
+            <BrandLogo variant="light" showTagline={false} />
           </Link>
 
           {/* Desktop Nav Items (Pill Capsule Layout Matching Reference) */}
-          <nav className="hidden lg:flex items-center gap-1 xl:gap-2 bg-slate-100/70 p-1 rounded-full border border-slate-200/60">
+          <nav className="hidden lg:flex items-center gap-1 xl:gap-2 bg-[#120D0A]/90 p-1 rounded-full border border-surface-border">
             
             {/* Services Dropdown */}
             <div className="relative" ref={dropdownRef}>
@@ -120,8 +120,8 @@ export const Navbar: React.FC = () => {
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
                 className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all flex items-center gap-1 ${
                   pathname.startsWith("/services") || servicesDropdownOpen
-                    ? "bg-navy text-white shadow-xs"
-                    : "text-text-main hover:text-navy hover:bg-white/80"
+                    ? "bg-brand-blue text-white shadow-xs"
+                    : "text-text-main hover:text-navy hover:bg-[#251C16]"
                 }`}
                 aria-expanded={servicesDropdownOpen}
               >
@@ -134,7 +134,7 @@ export const Navbar: React.FC = () => {
               </button>
 
               {servicesDropdownOpen && (
-                <div className="absolute left-0 top-full mt-3 w-[720px] bg-white/95 backdrop-blur-2xl rounded-3xl shadow-2xl border border-surface-border p-5 grid grid-cols-2 gap-4 animate-in fade-in slide-in-from-top-2 duration-150 z-50">
+                <div className="absolute left-0 top-full mt-3 w-[720px] bg-[#18120E]/95 backdrop-blur-2xl rounded-3xl shadow-2xl border border-surface-border p-5 grid grid-cols-2 gap-4 animate-in fade-in slide-in-from-top-2 duration-150 z-50">
                   <div className="col-span-2 pb-2 mb-1 border-b border-surface-border flex items-center justify-between">
                     <span className="text-xs font-bold text-navy uppercase tracking-wider flex items-center gap-1.5">
                       <Receipt className="w-3.5 h-3.5 text-brand-blue" />
@@ -152,7 +152,7 @@ export const Navbar: React.FC = () => {
                   {serviceCategories.map((group, idx) => (
                     <div
                       key={idx}
-                      className={`p-3 rounded-2xl bg-slate-50/80 border border-slate-100 ${
+                      className={`p-3 rounded-2xl bg-[#140F0C] border border-surface-border ${
                         idx === 4 ? "col-span-2" : ""
                       }`}
                     >
@@ -166,7 +166,7 @@ export const Navbar: React.FC = () => {
                             key={svc.slug}
                             href={`/services/${svc.slug}`}
                             onClick={() => setServicesDropdownOpen(false)}
-                            className="block p-1.5 rounded-xl text-xs font-medium text-text-main hover:text-brand-blue hover:bg-white transition-colors"
+                            className="block p-1.5 rounded-xl text-xs font-medium text-text-main hover:text-brand-blue hover:bg-[#241C16] transition-colors"
                           >
                             <span className="font-semibold text-navy">{svc.title}</span>
                             <span className="block text-[11px] text-text-muted line-clamp-1">
@@ -186,8 +186,8 @@ export const Navbar: React.FC = () => {
               href="/industries"
               className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all ${
                 pathname === "/industries"
-                  ? "bg-navy text-white shadow-xs"
-                  : "text-text-main hover:text-navy hover:bg-white/80"
+                  ? "bg-brand-blue text-white shadow-xs"
+                  : "text-text-main hover:text-navy hover:bg-[#251C16]"
               }`}
             >
               Industries
@@ -198,8 +198,8 @@ export const Navbar: React.FC = () => {
               href="/locations"
               className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all ${
                 pathname.startsWith("/locations")
-                  ? "bg-navy text-white shadow-xs"
-                  : "text-text-main hover:text-navy hover:bg-white/80"
+                  ? "bg-brand-blue text-white shadow-xs"
+                  : "text-text-main hover:text-navy hover:bg-[#251C16]"
               }`}
             >
               Locations
@@ -210,8 +210,8 @@ export const Navbar: React.FC = () => {
               href="/blog"
               className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all ${
                 pathname.startsWith("/blog") || pathname.startsWith("/resources")
-                  ? "bg-navy text-white shadow-xs"
-                  : "text-text-main hover:text-navy hover:bg-white/80"
+                  ? "bg-brand-blue text-white shadow-xs"
+                  : "text-text-main hover:text-navy hover:bg-[#251C16]"
               }`}
             >
               Blog & Guides
@@ -222,8 +222,8 @@ export const Navbar: React.FC = () => {
               href="/about"
               className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all ${
                 pathname === "/about"
-                  ? "bg-navy text-white shadow-xs"
-                  : "text-text-main hover:text-navy hover:bg-white/80"
+                  ? "bg-brand-blue text-white shadow-xs"
+                  : "text-text-main hover:text-navy hover:bg-[#251C16]"
               }`}
             >
               About
@@ -234,8 +234,8 @@ export const Navbar: React.FC = () => {
               href="/contact"
               className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all ${
                 pathname === "/contact"
-                  ? "bg-navy text-white shadow-xs"
-                  : "text-text-main hover:text-navy hover:bg-white/80"
+                  ? "bg-brand-blue text-white shadow-xs"
+                  : "text-text-main hover:text-navy hover:bg-[#251C16]"
               }`}
             >
               Contact
@@ -260,7 +260,7 @@ export const Navbar: React.FC = () => {
             {/* Get a Quote Capsule Button */}
             <Link
               href="/#enquire"
-              className="inline-flex items-center gap-1.5 bg-navy hover:bg-navy-light text-white text-xs font-bold px-4 py-2.5 rounded-full transition-all shadow-sm hover:shadow-md active:scale-95"
+              className="inline-flex items-center gap-1.5 bg-brand-blue hover:bg-brand-blue-hover text-white text-xs font-bold px-4 py-2.5 rounded-full transition-all shadow-md hover:shadow-lg active:scale-95"
             >
               <span>Get a Quote</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -282,7 +282,7 @@ export const Navbar: React.FC = () => {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2.5 rounded-full text-navy hover:bg-slate-100 focus:outline-none transition-colors border border-slate-200"
+              className="p-2.5 rounded-full text-navy hover:bg-[#251C16] focus:outline-none transition-colors border border-slate-200"
               aria-label="Toggle Navigation Menu"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -293,12 +293,12 @@ export const Navbar: React.FC = () => {
 
         {/* Mobile Slide-out Menu: Rounded Glass Card */}
         {mobileMenuOpen && (
-          <div className="mt-3 bg-white/95 backdrop-blur-2xl rounded-3xl border border-surface-border shadow-2xl p-5 space-y-3 animate-in fade-in slide-in-from-top-2 duration-200 pointer-events-auto">
+          <div className="mt-3 bg-[#18120E]/95 backdrop-blur-2xl rounded-3xl border border-surface-border shadow-2xl p-5 space-y-3 animate-in fade-in slide-in-from-top-2 duration-200 pointer-events-auto">
             <div className="flex flex-col space-y-1.5 text-xs font-bold text-navy">
               <Link
                 href="/#services"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3.5 py-2.5 rounded-2xl hover:bg-slate-100 flex items-center justify-between"
+                className="px-3.5 py-2.5 rounded-2xl hover:bg-[#251C16] flex items-center justify-between"
               >
                 <span>Services (10 Categories)</span>
                 <ArrowRight className="w-3.5 h-3.5 text-text-muted" />
@@ -306,7 +306,7 @@ export const Navbar: React.FC = () => {
               <Link
                 href="/industries"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3.5 py-2.5 rounded-2xl hover:bg-slate-100 flex items-center justify-between"
+                className="px-3.5 py-2.5 rounded-2xl hover:bg-[#251C16] flex items-center justify-between"
               >
                 <span>Industries</span>
                 <ArrowRight className="w-3.5 h-3.5 text-text-muted" />
@@ -314,7 +314,7 @@ export const Navbar: React.FC = () => {
               <Link
                 href="/locations"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3.5 py-2.5 rounded-2xl hover:bg-slate-100 flex items-center justify-between"
+                className="px-3.5 py-2.5 rounded-2xl hover:bg-[#251C16] flex items-center justify-between"
               >
                 <span>Locations (India Hubs)</span>
                 <ArrowRight className="w-3.5 h-3.5 text-text-muted" />
@@ -322,7 +322,7 @@ export const Navbar: React.FC = () => {
               <Link
                 href="/blog"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3.5 py-2.5 rounded-2xl hover:bg-slate-100 flex items-center justify-between"
+                className="px-3.5 py-2.5 rounded-2xl hover:bg-[#251C16] flex items-center justify-between"
               >
                 <span>Blog & Compliance Guides</span>
                 <ArrowRight className="w-3.5 h-3.5 text-text-muted" />
@@ -330,7 +330,7 @@ export const Navbar: React.FC = () => {
               <Link
                 href="/about"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3.5 py-2.5 rounded-2xl hover:bg-slate-100 flex items-center justify-between"
+                className="px-3.5 py-2.5 rounded-2xl hover:bg-[#251C16] flex items-center justify-between"
               >
                 <span>About Us</span>
                 <ArrowRight className="w-3.5 h-3.5 text-text-muted" />
@@ -338,7 +338,7 @@ export const Navbar: React.FC = () => {
               <Link
                 href="/contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3.5 py-2.5 rounded-2xl hover:bg-slate-100 flex items-center justify-between"
+                className="px-3.5 py-2.5 rounded-2xl hover:bg-[#251C16] flex items-center justify-between"
               >
                 <span>Contact Office</span>
                 <ArrowRight className="w-3.5 h-3.5 text-text-muted" />
@@ -360,7 +360,7 @@ export const Navbar: React.FC = () => {
               <Link
                 href="/#enquire"
                 onClick={() => setMobileMenuOpen(false)}
-                className="w-full flex items-center justify-center gap-2 bg-navy text-white text-xs font-bold py-3 rounded-full shadow-sm"
+                className="w-full flex items-center justify-center gap-2 bg-brand-blue hover:bg-brand-blue-hover text-white text-xs font-bold py-3 rounded-full shadow-md"
               >
                 <span>Get a Quote</span>
                 <ArrowRight className="w-4 h-4" />

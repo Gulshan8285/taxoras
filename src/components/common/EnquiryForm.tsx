@@ -9,8 +9,8 @@ import {
   AlertCircle,
   Clock,
   ShieldCheck,
-  MessageCircle,
   PhoneCall,
+  Phone,
   Mail,
   Loader2,
   Building,
@@ -169,8 +169,8 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
   };
 
   // WhatsApp Enquiry Action
-  const handleWhatsAppEnquiry = async (e: React.MouseEvent) => {
-    e.preventDefault();
+  const handleWhatsAppEnquiry = async (e?: React.SyntheticEvent) => {
+    if (e) e.preventDefault();
     setApiError("");
 
     if (!validate()) return;
@@ -268,7 +268,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
         </h3>
         <p className="text-xs sm:text-sm text-text-muted max-w-md mx-auto mb-6 leading-relaxed">
           Your request for <strong className="text-navy">{formData.serviceRequired}</strong> has been logged with Reference ID:{" "}
-          <span className="font-mono font-semibold text-brand-blue bg-blue-50 px-2 py-0.5 rounded">
+          <span className="font-mono font-semibold text-brand-blue bg-[#2A1E15] text-amber-400 px-2 py-0.5 rounded">
             {submissionId}
           </span>
         </p>
@@ -329,7 +329,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
         </div>
       )}
 
-      <form onSubmit={handleCallbackSubmit} className="space-y-4">
+      <form onSubmit={(e) => { e.preventDefault(); handleWhatsAppEnquiry(e); }} className="space-y-4">
         {/* Anti-spam honeypot */}
         <input
           type="text"
@@ -352,7 +352,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
               placeholder="e.g. Ramesh Kumar"
               value={formData.fullName}
               onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-              className={`w-full text-xs text-text-main bg-slate-50/60 border rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all ${
+              className={`w-full text-xs text-text-main bg-[#150F0B] text-[#FAF4EF] border rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all ${
                 errors.fullName ? "border-red-400 bg-red-50/20" : "border-surface-border focus:border-brand-blue"
               }`}
             />
@@ -378,7 +378,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
                   const val = e.target.value.replace(/[^0-9]/g, "");
                   setFormData({ ...formData, mobile: val });
                 }}
-                className={`w-full text-xs text-text-main pl-12 pr-3.5 py-2.5 bg-slate-50/60 border rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all ${
+                className={`w-full text-xs text-text-main pl-12 pr-3.5 py-2.5 bg-[#150F0B] text-[#FAF4EF] border rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all ${
                   errors.mobile ? "border-red-400 bg-red-50/20" : "border-surface-border focus:border-brand-blue"
                 }`}
               />
@@ -400,7 +400,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
             <select
               value={formData.serviceRequired}
               onChange={(e) => setFormData({ ...formData, serviceRequired: e.target.value })}
-              className="w-full text-xs text-text-main bg-slate-50/60 border border-surface-border rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-all"
+              className="w-full text-xs text-text-main bg-[#150F0B] text-[#FAF4EF] border border-surface-border rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-all"
             >
               {SERVICE_OPTIONS.map((svc) => (
                 <option key={svc} value={svc}>
@@ -419,14 +419,14 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
               placeholder="e.g. Kumar Traders"
               value={formData.businessName}
               onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
-              className="w-full text-xs text-text-main bg-slate-50/60 border border-surface-border rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-all"
+              className="w-full text-xs text-text-main bg-[#150F0B] text-[#FAF4EF] border border-surface-border rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-all"
             />
           </div>
         </div>
 
         {/* Dynamic field when Multiple Services or Other is chosen */}
         {(formData.serviceRequired === "Multiple Services" || formData.serviceRequired === "Other") && (
-          <div className="p-3.5 rounded-xl bg-blue-50/60 border border-blue-100">
+          <div className="p-3.5 rounded-xl bg-[#2A1E15] text-amber-400/60 border border-blue-100">
             <label className="block text-xs font-semibold text-navy mb-1.5">
               Specify Services or Requirements <span className="text-red-500">*</span>
             </label>
@@ -448,15 +448,29 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
         {/* Row 3: City, State & Business Type */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           <div>
-            <label className="block text-xs font-semibold text-navy mb-1.5">
-              City <span className="text-text-muted font-normal">(Optional)</span>
-            </label>
+            <div className="flex items-center justify-between mb-1.5">
+              <label className="block text-xs font-semibold text-navy">
+                City <span className="text-text-muted font-normal">(Optional)</span>
+              </label>
+              <div className="flex items-center gap-1 text-[10px]">
+                {["Noida", "Delhi", "Gurugram"].map((quickCity) => (
+                  <button
+                    key={quickCity}
+                    type="button"
+                    onClick={() => setFormData({ ...formData, city: quickCity })}
+                    className="text-brand-blue hover:underline bg-[#2A1E15] text-amber-400 px-1.5 py-0.5 rounded text-[10px]"
+                  >
+                    +{quickCity}
+                  </button>
+                ))}
+              </div>
+            </div>
             <input
               type="text"
-              placeholder="e.g. New Delhi"
+              placeholder="e.g. Noida, Delhi, Mumbai"
               value={formData.city}
               onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-              className="w-full text-xs text-text-main bg-slate-50/60 border border-surface-border rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20"
+              className="w-full text-xs text-text-main bg-[#150F0B] text-[#FAF4EF] border border-surface-border rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20"
             />
           </div>
 
@@ -467,7 +481,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
             <select
               value={formData.state}
               onChange={(e) => setFormData({ ...formData, state: e.target.value })}
-              className="w-full text-xs text-text-main bg-slate-50/60 border border-surface-border rounded-xl px-2.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20"
+              className="w-full text-xs text-text-main bg-[#150F0B] text-[#FAF4EF] border border-surface-border rounded-xl px-2.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20"
             >
               {INDIAN_STATES.map((st) => (
                 <option key={st} value={st}>
@@ -484,7 +498,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
             <select
               value={formData.businessType}
               onChange={(e) => setFormData({ ...formData, businessType: e.target.value })}
-              className="w-full text-xs text-text-main bg-slate-50/60 border border-surface-border rounded-xl px-2.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20"
+              className="w-full text-xs text-text-main bg-[#150F0B] text-[#FAF4EF] border border-surface-border rounded-xl px-2.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20"
             >
               {BUSINESS_TYPES.map((bt) => (
                 <option key={bt} value={bt}>
@@ -506,7 +520,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
               placeholder="ramesh@company.in"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className={`w-full text-xs text-text-main bg-slate-50/60 border rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20 ${
+              className={`w-full text-xs text-text-main bg-[#150F0B] text-[#FAF4EF] border rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20 ${
                 errors.email ? "border-red-400" : "border-surface-border focus:border-brand-blue"
               }`}
             />
@@ -524,7 +538,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
               placeholder="e.g. Urgent filing, pending past returns, etc."
               value={formData.additionalDetails}
               onChange={(e) => setFormData({ ...formData, additionalDetails: e.target.value })}
-              className="w-full text-xs text-text-main bg-slate-50/60 border border-surface-border rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20"
+              className="w-full text-xs text-text-main bg-[#150F0B] text-[#FAF4EF] border border-surface-border rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/20"
             />
           </div>
         </div>
@@ -548,43 +562,33 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
         </div>
 
         {/* Security Notice */}
-        <div className="bg-slate-50 rounded-xl p-2.5 border border-slate-100 flex items-center gap-2 text-[11px] text-text-muted">
+        <div className="bg-[#150F0B] rounded-xl p-2.5 border border-surface-border flex items-center gap-2 text-[11px] text-text-muted">
           <ShieldCheck className="w-4 h-4 text-teal shrink-0" />
           <span>
             We never collect bank passwords, PINs, or Aadhaar OTPs through public forms.
           </span>
         </div>
 
-        {/* Dual High-Conversion CTA Buttons */}
+        {/* Direct WhatsApp & Helpline Action Buttons */}
         <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
           {/* WhatsApp Primary Action */}
           <button
             type="button"
             onClick={handleWhatsAppEnquiry}
-            className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold text-xs sm:text-sm py-3 px-4 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-2"
+            className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold text-xs sm:text-sm py-3 px-4 rounded-xl transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 active:scale-98 cursor-pointer"
           >
-            <WhatsAppIcon className="w-4 h-4" />
-            <span>Enquire on WhatsApp</span>
+            <WhatsAppIcon className="w-4 h-4 text-white" />
+            <span>Send Enquiry on WhatsApp</span>
           </button>
 
-          {/* Callback / Online Submit Action */}
-          <button
-            type="submit"
-            disabled={submitting}
-            className="w-full bg-navy hover:bg-navy-light text-white font-semibold text-xs sm:text-sm py-3 px-4 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-2 disabled:opacity-60"
+          {/* Direct Call Helpline */}
+          <a
+            href={siteConfig.links.phoneUrl}
+            className="w-full bg-[#16110D] hover:bg-[#201812] text-[#FAF4EF] font-semibold text-xs sm:text-sm py-3 px-4 rounded-xl border border-surface-border transition-colors flex items-center justify-center gap-2"
           >
-            {submitting ? (
-              <>
-                <Loader2 className="w-4 h-4 animate-spin" />
-                <span>Submitting...</span>
-              </>
-            ) : (
-              <>
-                <Send className="w-4 h-4" />
-                <span>Request a Callback</span>
-              </>
-            )}
-          </button>
+            <Phone className="w-4 h-4 text-brand-blue" />
+            <span>Direct Call: {siteConfig.contact.phoneFormatted}</span>
+          </a>
         </div>
 
         <p className="text-[10px] text-center text-text-muted pt-1">

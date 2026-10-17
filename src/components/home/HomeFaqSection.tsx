@@ -2,7 +2,8 @@
 
 import React, { useState } from "react";
 import { mainFaqs } from "@/data/faqsData";
-import { ChevronDown, HelpCircle, MessageCircle } from "lucide-react";
+import { ChevronDown, HelpCircle } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { siteConfig } from "@/config/siteConfig";
 
 export const HomeFaqSection: React.FC = () => {
@@ -36,7 +37,7 @@ export const HomeFaqSection: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-2xl border border-surface-border overflow-hidden transition-all bg-surface-bg/40"
+                className="rounded-2xl border border-surface-border overflow-hidden transition-all bg-[#17110D] shadow-xs"
               >
                 <button
                   type="button"
@@ -56,7 +57,7 @@ export const HomeFaqSection: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 pb-5 pt-1 text-xs text-text-muted leading-relaxed border-t border-slate-100 bg-white animate-in fade-in duration-150">
+                  <div className="px-5 pb-5 pt-2 text-xs text-[#BCAE9F] leading-relaxed border-t border-surface-border bg-[#150F0B] animate-in fade-in duration-150">
                     {faq.answer}
                   </div>
                 )}
@@ -74,7 +75,7 @@ export const HomeFaqSection: React.FC = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-emerald-700 font-semibold hover:underline"
           >
-            <MessageCircle className="w-3.5 h-3.5" />
+            <WhatsAppIcon className="w-3.5 h-3.5 shrink-0 text-emerald-600" />
             <span>Ask us directly on WhatsApp</span>
           </a>
         </div>

@@ -3,11 +3,12 @@
 import React from "react";
 import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
-import { ArrowRight, MessageCircle, Phone, ShieldCheck } from "lucide-react";
+import { ArrowRight, Phone, ShieldCheck } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 
 export const FinalCtaSection: React.FC = () => {
   return (
-    <section className="py-16 sm:py-20 bg-navy text-white relative overflow-hidden">
+    <section className="py-16 sm:py-20 bg-gradient-to-br from-[#241A13] via-[#1B130E] to-[#140D0A] text-[#FAF4EF] border-t border-b border-[#3E2B1F] relative overflow-hidden">
       {/* Background radial accent */}
       <div className="absolute right-0 bottom-0 w-96 h-96 bg-brand-blue/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -21,7 +22,7 @@ export const FinalCtaSection: React.FC = () => {
           Tell Us What Your Business Needs.
         </h2>
 
-        <p className="text-xs sm:text-base text-slate-300 max-w-xl mx-auto leading-relaxed">
+        <p className="text-xs sm:text-base text-[#BCAE9F] max-w-xl mx-auto leading-relaxed">
           Share your requirements and receive the next steps, estimated scope, and applicable charges before any work begins.
         </p>
 
@@ -40,7 +41,7 @@ export const FinalCtaSection: React.FC = () => {
             rel="noopener noreferrer"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold px-6 py-3.5 rounded-xl transition-colors shadow-sm"
           >
-            <MessageCircle className="w-4 h-4" />
+            <WhatsAppIcon className="w-4 h-4 shrink-0" />
             <span>Chat on WhatsApp Directly</span>
           </a>
         </div>

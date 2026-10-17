@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -8,6 +8,7 @@ import { siteConfig } from "@/config/siteConfig";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { EnquiryForm } from "@/components/common/EnquiryForm";
 import {
   ChevronRight,
@@ -18,7 +19,6 @@ import {
   ArrowRight,
   HelpCircle,
   Phone,
-  MessageCircle
 } from "lucide-react";
 
 interface ServiceCityProps {
@@ -53,7 +53,21 @@ export async function generateMetadata({ params }: ServiceCityProps): Promise<Me
   };
 }
 
-export default async function ServiceLocationDetailPage({ params }: ServiceCityProps) {
+export default function ServiceLocationDetailPage(props: ServiceCityProps) {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-surface-bg flex items-center justify-center">
+          <div className="w-8 h-8 border-3 border-brand-blue border-t-transparent rounded-full animate-spin" />
+        </div>
+      }
+    >
+      <ServiceLocationDetailContent {...props} />
+    </Suspense>
+  );
+}
+
+async function ServiceLocationDetailContent({ params }: ServiceCityProps) {
   const { city, service } = await params;
   const item = getServiceLocation(city, service);
   const loc = getLocationById(city);
@@ -115,7 +129,7 @@ export default async function ServiceLocationDetailPage({ params }: ServiceCityP
               <div className="flex flex-wrap items-center gap-3">
                 <a
                   href="#quote-form"
-                  className="bg-navy hover:bg-navy-light text-white text-xs sm:text-sm font-semibold px-5 py-3 rounded-xl transition-all shadow-sm"
+                  className="bg-brand-blue hover:bg-brand-blue-hover text-white text-xs sm:text-sm font-bold px-5 py-3 rounded-xl transition-all shadow-md active:scale-95"
                 >
                   <span>Request {loc.city} Service Quote</span>
                 </a>
@@ -125,7 +139,7 @@ export default async function ServiceLocationDetailPage({ params }: ServiceCityP
                   rel="noopener noreferrer"
                   className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow-sm"
                 >
-                  <MessageCircle className="w-4 h-4 inline mr-1.5" />
+                  <WhatsAppIcon className="w-4 h-4 inline mr-1.5" />
                   <span>WhatsApp Contextual Enquiry</span>
                 </a>
               </div>

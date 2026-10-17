@@ -23,9 +23,9 @@ export const HeroSection: React.FC = () => {
   const [activeTab, setActiveTab] = useState<"gst" | "accounting" | "tds">("gst");
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-white via-surface-bg to-surface-bg pt-8 pb-16 lg:pt-14 lg:pb-24 border-b border-surface-border">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#18120E] via-[#140F0B] to-[#120D0A] pt-8 pb-16 lg:pt-14 lg:pb-24 border-b border-surface-border">
       {/* Background Subtle Geometric Pattern */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#10243A_1px,transparent_1px)] [background-size:24px_24px]"></div>
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#D97706_1px,transparent_1px)] [background-size:24px_24px]"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -52,18 +52,18 @@ export const HeroSection: React.FC = () => {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
               <a
-                href="#enquire"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-navy hover:bg-navy-light text-white text-sm font-semibold px-6 py-3.5 rounded-xl transition-all shadow-md hover:shadow-lg shadow-navy/15"
+                href="#service-finder"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-brand-blue hover:bg-brand-blue-hover text-white text-sm font-semibold px-6 py-3.5 rounded-xl transition-all shadow-md hover:shadow-lg shadow-amber-950/40"
               >
-                <span>Get My Service Quote</span>
+                <span>Explore Services & Get Quote</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
 
               <a
-                href="#services"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-navy font-semibold text-sm px-6 py-3.5 rounded-xl border border-surface-border transition-all shadow-xs"
+                href="#enquire"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#221A15] hover:bg-[#2C211B] text-[#FAF4EF] font-semibold text-sm px-6 py-3.5 rounded-xl border border-surface-border transition-all shadow-xs"
               >
-                <span>Explore All Services</span>
+                <span>Quick WhatsApp Enquiry</span>
               </a>
             </div>
 
@@ -124,8 +124,8 @@ export const HeroSection: React.FC = () => {
                     onClick={() => setActiveTab("gst")}
                     className={`py-1.5 rounded-lg transition-all ${
                       activeTab === "gst"
-                        ? "bg-white text-navy font-bold shadow-xs"
-                        : "text-text-muted hover:text-navy"
+                        ? "bg-[#291F18] text-[#FAF4EF] font-bold shadow-xs border border-[#3E2E23]"
+                        : "text-text-muted hover:text-[#FAF4EF]"
                     }`}
                   >
                     GST Timeline
@@ -135,8 +135,8 @@ export const HeroSection: React.FC = () => {
                     onClick={() => setActiveTab("accounting")}
                     className={`py-1.5 rounded-lg transition-all ${
                       activeTab === "accounting"
-                        ? "bg-white text-navy font-bold shadow-xs"
-                        : "text-text-muted hover:text-navy"
+                        ? "bg-[#291F18] text-[#FAF4EF] font-bold shadow-xs border border-[#3E2E23]"
+                        : "text-text-muted hover:text-[#FAF4EF]"
                     }`}
                   >
                     Bookkeeping
@@ -146,8 +146,8 @@ export const HeroSection: React.FC = () => {
                     onClick={() => setActiveTab("tds")}
                     className={`py-1.5 rounded-lg transition-all ${
                       activeTab === "tds"
-                        ? "bg-white text-navy font-bold shadow-xs"
-                        : "text-text-muted hover:text-navy"
+                        ? "bg-[#291F18] text-[#FAF4EF] font-bold shadow-xs border border-[#3E2E23]"
+                        : "text-text-muted hover:text-[#FAF4EF]"
                     }`}
                   >
                     TDS & Bank

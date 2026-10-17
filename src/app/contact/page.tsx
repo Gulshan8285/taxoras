@@ -4,13 +4,13 @@ import { siteConfig } from "@/config/siteConfig";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { EnquiryForm } from "@/components/common/EnquiryForm";
 import {
   MapPin,
   Phone,
   Mail,
   Clock,
-  MessageCircle,
   ShieldCheck,
   Building2,
   Calendar
@@ -88,7 +88,7 @@ export default function ContactPage() {
                   {/* WhatsApp */}
                   <div className="flex items-start gap-3">
                     <div className="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
-                      <MessageCircle className="w-4 h-4" />
+                      <WhatsAppIcon className="w-4 h-4 shrink-0 text-emerald-600" />
                     </div>
                     <div>
                       <span className="font-bold text-navy block text-xs uppercase tracking-wider">

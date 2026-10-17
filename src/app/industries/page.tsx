@@ -114,7 +114,7 @@ export default function IndustriesPage() {
           </div>
 
           {/* Banner */}
-          <div className="bg-navy text-white rounded-2xl p-8 text-center space-y-4">
+          <div className="bg-[#1C1510] border border-[#3E2C20] text-[#FAF4EF] rounded-2xl p-8 text-center space-y-4 shadow-xl">
             <h3 className="text-xl font-bold">Don&apos;t See Your Specific Industry Listed?</h3>
             <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto">
               Our accounting and taxation desk supports wholesale trading, import-export, logistics, education, consulting, and manufacturing across India.

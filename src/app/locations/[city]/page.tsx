@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -7,6 +7,7 @@ import { siteConfig } from "@/config/siteConfig";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { EnquiryForm } from "@/components/common/EnquiryForm";
 import {
   MapPin,
@@ -51,7 +52,21 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
   };
 }
 
-export default async function CityDetailPage({ params }: CityPageProps) {
+export default function CityDetailPage(props: CityPageProps) {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-surface-bg flex items-center justify-center">
+          <div className="w-8 h-8 border-3 border-brand-blue border-t-transparent rounded-full animate-spin" />
+        </div>
+      }
+    >
+      <CityDetailContent {...props} />
+    </Suspense>
+  );
+}
+
+async function CityDetailContent({ params }: CityPageProps) {
   const { city } = await params;
   const loc = getLocationById(city);
 
@@ -109,7 +124,7 @@ export default async function CityDetailPage({ params }: CityPageProps) {
               <div className="flex flex-wrap items-center gap-3">
                 <a
                   href="#city-enquiry"
-                  className="bg-navy hover:bg-navy-light text-white text-xs sm:text-sm font-semibold px-5 py-3 rounded-xl transition-all shadow-sm"
+                  className="bg-brand-blue hover:bg-brand-blue-hover text-white text-xs sm:text-sm font-bold px-5 py-3 rounded-xl transition-all shadow-md active:scale-95"
                 >
                   <span>Discuss {loc.city} Requirements</span>
                 </a>
@@ -117,8 +132,9 @@ export default async function CityDetailPage({ params }: CityPageProps) {
                   href={siteConfig.links.whatsappUrl("Accounting & Tax Compliance", loc.city)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow-sm"
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow-sm inline-flex items-center gap-2"
                 >
+                  <WhatsAppIcon className="w-4 h-4 shrink-0" />
                   <span>WhatsApp Contextual Enquiry</span>
                 </a>
               </div>

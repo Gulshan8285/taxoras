@@ -77,15 +77,15 @@ export default function ResourcesPage() {
             </div>
 
             {/* Category Pills */}
-            <div className="flex flex-wrap items-center gap-1.5 w-full lg:w-auto">
+            <div className="flex overflow-x-auto lg:flex-wrap items-center gap-1.5 w-full lg:w-auto pb-1.5 lg:pb-0 scrollbar-none [scrollbar-width:none]">
               {categories.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
                   className={`text-xs font-semibold px-3 py-1.5 rounded-lg transition-all ${
                     selectedCategory === cat
-                      ? "bg-navy text-white shadow-xs"
-                      : "bg-slate-50 text-text-muted hover:text-navy hover:bg-slate-100"
+                      ? "bg-brand-blue text-white shadow-xs font-bold border border-amber-500/40"
+                      : "bg-[#1C1510] text-[#BCAE9F] hover:text-[#FAF4EF] hover:bg-[#251C16] border border-surface-border"
                   }`}
                 >
                   {cat}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -7,6 +7,7 @@ import { siteConfig } from "@/config/siteConfig";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import {
   ChevronRight,
   Clock,
@@ -18,7 +19,6 @@ import {
   ShieldAlert,
   Share2,
   CheckCircle2,
-  MessageCircle
 } from "lucide-react";
 
 interface ResourcePageProps {
@@ -52,7 +52,21 @@ export async function generateMetadata({ params }: ResourcePageProps): Promise<M
   };
 }
 
-export default async function ResourceDetailPage({ params }: ResourcePageProps) {
+export default function ResourceDetailPage(props: ResourcePageProps) {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-surface-bg flex items-center justify-center">
+          <div className="w-8 h-8 border-3 border-brand-blue border-t-transparent rounded-full animate-spin" />
+        </div>
+      }
+    >
+      <ResourceDetailContent {...props} />
+    </Suspense>
+  );
+}
+
+async function ResourceDetailContent({ params }: ResourcePageProps) {
   const { slug } = await params;
   const article = getResourceBySlug(slug);
 
@@ -218,12 +232,12 @@ export default async function ResourceDetailPage({ params }: ResourcePageProps) 
             </article>
 
             {/* Quick Contextual Consultation Callout */}
-            <div className="bg-navy text-white rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="bg-[#1C1510] border border-[#3E2C20] text-[#FAF4EF] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl">
               <div className="space-y-1 text-center sm:text-left">
                 <h3 className="text-base sm:text-lg font-bold">
                   Need Help Implementing This in Your Business?
                 </h3>
-                <p className="text-xs text-slate-300">
+                <p className="text-xs text-[#BCAE9F]">
                   Our compliance team assists with documentation, reconciliation, and portal filings.
                 </p>
               </div>
@@ -235,7 +249,7 @@ export default async function ResourceDetailPage({ params }: ResourcePageProps) 
                   rel="noopener noreferrer"
                   className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-colors inline-flex items-center gap-1.5"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <WhatsAppIcon className="w-4 h-4 shrink-0" />
                   <span>Ask on WhatsApp</span>
                 </a>
                 <Link

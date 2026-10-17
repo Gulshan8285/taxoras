@@ -25,12 +25,12 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         >
           <defs>
             <linearGradient id="taxorasGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#2457C5" />
-              <stop offset="100%" stopColor="#10243A" />
+              <stop offset="0%" stopColor="#D97706" />
+              <stop offset="100%" stopColor="#2E1C12" />
             </linearGradient>
             <linearGradient id="taxorasGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#0F9F8F" />
-              <stop offset="100%" stopColor="#2DD4BF" />
+              <stop offset="0%" stopColor="#E5A962" />
+              <stop offset="100%" stopColor="#F59E0B" />
             </linearGradient>
           </defs>
           {/* Rounded base badge */}

@@ -3,7 +3,7 @@ import { siteConfig } from "@/config/siteConfig";
 import "./globals.css";
 
 export const viewport: Viewport = {
-  themeColor: "#10243A",
+  themeColor: "#120D0A",
   width: "device-width",
   initialScale: 1,
 };

@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/siteConfig";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import {
   ShieldCheck,
   FileCheck2,
@@ -16,7 +17,6 @@ import {
   FileText,
   AlertCircle,
   Lock,
-  MessageCircle,
   HelpCircle,
   User,
   ArrowRight
@@ -83,7 +83,7 @@ export default function CustomerPortalPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-colors shadow-xs"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <WhatsAppIcon className="w-4 h-4 shrink-0" />
                   <span>Assigned Advisor Chat</span>
                 </a>
               </div>
@@ -95,8 +95,8 @@ export default function CustomerPortalPage() {
                 onClick={() => setActiveTab("checklist")}
                 className={`px-4 py-2 rounded-xl transition-all ${
                   activeTab === "checklist"
-                    ? "bg-navy text-white shadow-xs"
-                    : "bg-slate-50 text-text-muted hover:text-navy hover:bg-slate-100"
+                    ? "bg-brand-blue text-white shadow-xs font-bold border border-amber-500/40"
+                    : "bg-[#1C1510] text-[#BCAE9F] hover:text-[#FAF4EF] hover:bg-[#251C16] border border-surface-border"
                 }`}
               >
                 Document Checklist & Uploads
@@ -105,8 +105,8 @@ export default function CustomerPortalPage() {
                 onClick={() => setActiveTab("status")}
                 className={`px-4 py-2 rounded-xl transition-all ${
                   activeTab === "status"
-                    ? "bg-navy text-white shadow-xs"
-                    : "bg-slate-50 text-text-muted hover:text-navy hover:bg-slate-100"
+                    ? "bg-brand-blue text-white shadow-xs font-bold border border-amber-500/40"
+                    : "bg-[#1C1510] text-[#BCAE9F] hover:text-[#FAF4EF] hover:bg-[#251C16] border border-surface-border"
                 }`}
               >
                 Active Engagement Status
@@ -115,8 +115,8 @@ export default function CustomerPortalPage() {
                 onClick={() => setActiveTab("deliverables")}
                 className={`px-4 py-2 rounded-xl transition-all ${
                   activeTab === "deliverables"
-                    ? "bg-navy text-white shadow-xs"
-                    : "bg-slate-50 text-text-muted hover:text-navy hover:bg-slate-100"
+                    ? "bg-brand-blue text-white shadow-xs font-bold border border-amber-500/40"
+                    : "bg-[#1C1510] text-[#BCAE9F] hover:text-[#FAF4EF] hover:bg-[#251C16] border border-surface-border"
                 }`}
               >
                 Filed Acknowledgements & Proofs

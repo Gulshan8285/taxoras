@@ -64,8 +64,8 @@ export default function PricingPage() {
                   onClick={() => setSelectedServiceId(item.serviceId)}
                   className={`text-xs font-semibold px-4 py-2 rounded-xl transition-all ${
                     selectedServiceId === item.serviceId
-                      ? "bg-navy text-white shadow-xs font-bold"
-                      : "bg-slate-50 text-text-muted hover:text-navy hover:bg-slate-100"
+                      ? "bg-brand-blue text-white shadow-xs font-bold border border-amber-500/40"
+                      : "bg-[#1C1510] text-[#BCAE9F] hover:text-[#FAF4EF] hover:bg-[#251C16] border border-surface-border"
                   }`}
                 >
                   {item.serviceName}
@@ -178,7 +178,7 @@ export default function PricingPage() {
 
                     <a
                       href="#enquire"
-                      className="w-full flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white text-xs font-semibold py-2.5 rounded-xl transition-colors shadow-sm"
+                      className="w-full flex items-center justify-center gap-2 bg-brand-blue hover:bg-brand-blue-hover text-white text-xs font-bold py-2.5 rounded-xl transition-all shadow-md active:scale-95"
                     >
                       <span>Request {pkg.tier} Quote</span>
                       <ArrowRight className="w-3.5 h-3.5" />
