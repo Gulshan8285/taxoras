@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { siteConfig, CustomerEnquiryPayload } from "@/config/siteConfig";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import {
   Send,
   CheckCircle2,
@@ -293,9 +294,9 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
             href={siteConfig.links.formatEnquiryWhatsAppUrl(getCompiledDetails())}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-xs px-5 py-3 rounded-xl transition-colors shadow-sm"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white font-medium text-xs px-5 py-3 rounded-xl transition-colors shadow-sm"
           >
-            <MessageCircle className="w-4 h-4" />
+            <WhatsAppIcon className="w-4 h-4" />
             <span>Open in WhatsApp Now</span>
           </a>
           <button
@@ -560,9 +561,9 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
           <button
             type="button"
             onClick={handleWhatsAppEnquiry}
-            className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs sm:text-sm py-3 px-4 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-2"
+            className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold text-xs sm:text-sm py-3 px-4 rounded-xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-2"
           >
-            <MessageCircle className="w-4 h-4" />
+            <WhatsAppIcon className="w-4 h-4" />
             <span>Enquire on WhatsApp</span>
           </button>
 
