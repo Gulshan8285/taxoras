@@ -354,7 +354,7 @@ export default function TopGstServicesPage() {
             "name": "How can I quickly consult Taxoras for assisted GST return filing or notice resolution?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "You can connect directly with Taxoras via WhatsApp at +91 81038 19494 or call +91 81038 19494. A dedicated senior compliance accountant reviews your GST requirements, verifies previous return filings, and sets up your compliance calendar within 30 minutes."
+              "text": "You can connect directly with Taxoras via WhatsApp at +91 88103 81949 or call +91 88103 81949. A dedicated senior compliance accountant reviews your GST requirements, verifies previous return filings, and sets up your compliance calendar within 30 minutes."
             }
           }
         ]
@@ -752,7 +752,7 @@ export default function TopGstServicesPage() {
                   How can I quickly consult Taxoras for assisted GST return filing or notice resolution?
                 </h3>
                 <p className="text-xs text-[#DDD0C5] leading-relaxed">
-                  You can connect directly with Taxoras via WhatsApp at +91 81038 19494 or call +91 81038 19494. A dedicated senior compliance accountant reviews your GST requirements, verifies previous return filings, and sets up your compliance calendar within 30 minutes.
+                  You can connect directly with Taxoras via WhatsApp at +91 88103 81949 or call +91 88103 81949. A dedicated senior compliance accountant reviews your GST requirements, verifies previous return filings, and sets up your compliance calendar within 30 minutes.
                 </p>
                 <div className="pt-1">
                   <a
@@ -761,7 +761,7 @@ export default function TopGstServicesPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold px-3.5 py-1.5 rounded-lg transition-all"
                   >
-                    <span>Instant WhatsApp Consultation (+91 81038 19494)</span>
+                    <span>Instant WhatsApp Consultation (+91 88103 81949)</span>
                   </a>
                 </div>
               </div>

@@ -86,7 +86,7 @@ async function ResourceDetailContent({ params }: ResourcePageProps) {
   const articleFaqs = article.faqs && article.faqs.length > 0 ? article.faqs : [
     {
       question: `How can I quickly consult a Taxoras specialist regarding ${article.title}?`,
-      answer: `You can reach Taxoras immediately via WhatsApp at +91 81038 19494 or submit an enquiry on our portal. Our dedicated compliance managers review your documents and respond within 15–30 minutes during business hours.`
+      answer: `You can reach Taxoras immediately via WhatsApp at +91 88103 81949 or submit an enquiry on our portal. Our dedicated compliance managers review your documents and respond within 15–30 minutes during business hours.`
     },
     {
       question: "Does Taxoras provide end-to-end documentation and portal filing assistance?",
@@ -342,7 +342,7 @@ async function ResourceDetailContent({ params }: ResourcePageProps) {
                           className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 hover:text-emerald-800 bg-emerald-50 hover:bg-emerald-100/80 px-3 py-1.5 rounded-lg border border-emerald-200 transition-all"
                         >
                           <WhatsAppIcon className="w-3.5 h-3.5" />
-                          <span>Chat with Compliance Desk on WhatsApp (+91 81038 19494)</span>
+                          <span>Chat with Compliance Desk on WhatsApp (+91 88103 81949)</span>
                         </a>
                       </div>
                     )}

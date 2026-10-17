@@ -20,15 +20,15 @@ A comprehensive end-to-end audit was conducted across all 63 production routes a
 
 | Area / Feature | Test Description | Expected Result | Actual Result | Status |
 |---|---|---|---|---|
-| **WhatsApp Configuration** | Primary business number central config in `siteConfig.ts` | Uses `+91 81038 19494` (`918103819494`) | Configured centrally across all CTA triggers | **PASS** |
-| **WhatsApp Click-to-Chat** | Pre-filled URL generation | Generates `https://wa.me/918103819494?text=...` with strict URL encoding | Verified with multi-line encoded query | **PASS** |
+| **WhatsApp Configuration** | Primary business number central config in `siteConfig.ts` | Uses `+91 88103 81949` (`918810381949`) | Configured centrally across all CTA triggers | **PASS** |
+| **WhatsApp Click-to-Chat** | Pre-filled URL generation | Generates `https://wa.me/918810381949?text=...` with strict URL encoding | Verified with multi-line encoded query | **PASS** |
 | **Prefilled Message Format** | Dynamic message compilation from form inputs | Follows exact template with Name, Mobile, Service, City, Requirements | Tested and verified in `formatEnquiryWhatsAppUrl` | **PASS** |
 | **Dual Form Action (WhatsApp)** | Submitting enquiry via "Enquire on WhatsApp" | Validates inputs, asynchronously logs lead, opens WhatsApp in new window | Form validation passed; opens WhatsApp link | **PASS** |
 | **Dual Form Action (Callback)** | Submitting enquiry via "Request a Callback" | Submits POST to `/api/enquiry`, stores to `data/enquiries.json`, shows Lead ID | Status 200 returned with acknowledgement ID `LEAD-3393` | **PASS** |
 | **Mobile Number Validation** | Submitting non-Indian or <10 digit numbers | Rejects with inline error `^[6-9]\d{9}$` | Invalid numbers rejected with HTTP 422 | **PASS** |
 | **Service Dynamic Inputs** | Selecting "Multiple Services" or "Other" | Displays mandatory specific requirements field | Dynamic field reveals and validates | **PASS** |
 | **Floating Contact Dock** | Persistent WhatsApp and Call buttons on all pages | Fixed bottom-right, non-overlapping, accessible labels | Verified across all breakpoints (320px to desktop) | **PASS** |
-| **Click-to-Call** | Persistent Call Now button | Links directly to `tel:+918103819494` | Triggers native phone dialer | **PASS** |
+| **Click-to-Call** | Persistent Call Now button | Links directly to `tel:+918810381949` | Triggers native phone dialer | **PASS** |
 | **Admin Panel Removal** | Public `/admin` route access | `/admin` removed from navigation and file system | Returns HTTP 404; zero public links remain | **PASS** |
 | **Lead Storage Persistence** | Persistence of customer leads after admin UI removal | Backend saves records into `data/enquiries.json` | Verified lead write and read operations intact | **PASS** |
 | **Footer Credit** | Credit in bottom footer bar | Displays "Created by Codeavy.cloud" linking to `https://codeavy.cloud/` | Verified clickable link with `target="_blank" rel="noopener noreferrer"` | **PASS** |
@@ -58,5 +58,5 @@ A comprehensive end-to-end audit was conducted across all 63 production routes a
 
 The website code is 100% production-ready. For live commercial deployment:
 1. **Domain & DNS:** Point DNS records (`A` and `CNAME`) for `taxorasconsultants.in` to the hosting provider (e.g. Vercel, AWS Amplify, or custom VPS).
-2. **WhatsApp Business Account:** Ensure the official WhatsApp Business app or API profile is configured for `+91 81038 19494` with automated welcome greetings.
+2. **WhatsApp Business Account:** Ensure the official WhatsApp Business app or API profile is configured for `+91 88103 81949` with automated welcome greetings.
 3. **Google Search Console & Bing Webmaster:** Submit `https://taxorasconsultants.in/sitemap.xml` upon DNS propagation.

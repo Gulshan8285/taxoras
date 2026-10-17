@@ -140,7 +140,7 @@ export default function GstAmnestySchemePage() {
             "name": "How do I reach out to Taxoras to calculate my late fees and revive my cancelled GSTIN?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Message Taxoras directly on WhatsApp at +91 81038 19494 with your cancelled GSTIN or pending return period. Our compliance accountants calculate your exact capped late fee under the amnesty scheme, prepare overdue GSTR-1 and GSTR-3B filings, draft Form GST REG-21 revocation petitions, and liaise with your jurisdictional GST officer."
+              "text": "Message Taxoras directly on WhatsApp at +91 88103 81949 with your cancelled GSTIN or pending return period. Our compliance accountants calculate your exact capped late fee under the amnesty scheme, prepare overdue GSTR-1 and GSTR-3B filings, draft Form GST REG-21 revocation petitions, and liaise with your jurisdictional GST officer."
             }
           }
         ]
@@ -396,7 +396,7 @@ export default function GstAmnestySchemePage() {
                   How do I reach out to Taxoras to calculate my late fees and revive my cancelled GSTIN?
                 </h3>
                 <p className="text-xs text-[#DDD0C5] leading-relaxed">
-                  Message Taxoras directly on WhatsApp at +91 81038 19494 with your cancelled GSTIN or pending return period. Our compliance accountants calculate your exact capped late fee under the amnesty scheme, prepare overdue GSTR-1 and GSTR-3B filings, draft Form GST REG-21 revocation petitions, and liaise with your jurisdictional GST officer.
+                  Message Taxoras directly on WhatsApp at +91 88103 81949 with your cancelled GSTIN or pending return period. Our compliance accountants calculate your exact capped late fee under the amnesty scheme, prepare overdue GSTR-1 and GSTR-3B filings, draft Form GST REG-21 revocation petitions, and liaise with your jurisdictional GST officer.
                 </p>
                 <div className="pt-1">
                   <a
@@ -405,7 +405,7 @@ export default function GstAmnestySchemePage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold px-3.5 py-1.5 rounded-lg transition-all"
                   >
-                    <span>Instant WhatsApp Consultation (+91 81038 19494)</span>
+                    <span>Instant WhatsApp Consultation (+91 88103 81949)</span>
                   </a>
                 </div>
               </div>

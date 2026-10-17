@@ -50,8 +50,8 @@ export interface SiteConfig {
   trustStatement: string;
 }
 
-const WHATSAPP_RAW = "918103819494";
-const PHONE_DISPLAY = "+91 81038 19494";
+const WHATSAPP_RAW = "918810381949";
+const PHONE_DISPLAY = "+91 88103 81949";
 
 export const siteConfig: SiteConfig = {
   businessName: "Taxoras Advisory & Compliance",
@@ -70,7 +70,7 @@ export const siteConfig: SiteConfig = {
     pincode: "110001",
   },
   contact: {
-    phone: "+918103819494",
+    phone: "+918810381949",
     phoneFormatted: PHONE_DISPLAY,
     whatsappRaw: WHATSAPP_RAW,
     whatsappFormatted: PHONE_DISPLAY,
@@ -127,7 +127,7 @@ export const siteConfig: SiteConfig = {
       const fullMessage = lines.join("\n");
       return `${base}?text=${encodeURIComponent(fullMessage)}`;
     },
-    phoneUrl: "tel:+918103819494",
+    phoneUrl: "tel:+918810381949",
     emailUrl: "mailto:contact@taxoras.online",
   },
   disclaimer: "Taxoras Advisory & Compliance is a professional business accounting and compliance consultancy firm. We provide bookkeeping, data reconciliation, documentation assistance, and statutory compliance coordination. We do not claim government affiliation, nor do we promise zero tax, guaranteed tax savings, or penalty-free filings. All services are rendered strictly based on records provided and applicable Indian laws.",

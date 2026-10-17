@@ -108,7 +108,7 @@ export const allResources: ResourceArticle[] = [
       },
       {
         "question": "How can I quickly reach out to Taxoras to file my GST registration today?",
-        "answer": "You can reach Taxoras immediately via WhatsApp at +91 81038 19494 or submit an online enquiry. Our dedicated compliance team reviews your documents, validates constitution details, and submits your GST REG-01 application within 2 to 4 hours."
+        "answer": "You can reach Taxoras immediately via WhatsApp at +91 88103 81949 or submit an online enquiry. Our dedicated compliance team reviews your documents, validates constitution details, and submits your GST REG-01 application within 2 to 4 hours."
       }
     ]
   },
@@ -215,7 +215,7 @@ export const allResources: ResourceArticle[] = [
       },
       {
         "question": "How can I quickly reach out to Taxoras for monthly GST return filing and GSTR-2B reconciliation?",
-        "answer": "Message Taxoras on WhatsApp at +91 81038 19494. Our compliance accountants perform complete invoice-level GSTR-2B purchase matching, compute net tax, and file both GSTR-1 and GSTR-3B well in advance of statutory deadlines."
+        "answer": "Message Taxoras on WhatsApp at +91 88103 81949. Our compliance accountants perform complete invoice-level GSTR-2B purchase matching, compute net tax, and file both GSTR-1 and GSTR-3B well in advance of statutory deadlines."
       }
     ]
   },
@@ -306,7 +306,7 @@ export const allResources: ResourceArticle[] = [
       },
       {
         "question": "How can I reach out to Taxoras for TAN registration, TDS computation, and quarterly filing?",
-        "answer": "Reach out directly via WhatsApp at +91 81038 19494 or call +91 81038 19494. Taxoras handles TAN setup, monthly TDS payment challans, quarterly 24Q/26Q return filing, and TRACES Form 16/16A generation seamlessly."
+        "answer": "Reach out directly via WhatsApp at +91 88103 81949 or call +91 88103 81949. Taxoras handles TAN setup, monthly TDS payment challans, quarterly 24Q/26Q return filing, and TRACES Form 16/16A generation seamlessly."
       }
     ]
   },
@@ -398,7 +398,7 @@ export const allResources: ResourceArticle[] = [
       },
       {
         "question": "How quickly can Taxoras file my Income Tax Return?",
-        "answer": "Contact Taxoras on WhatsApp at +91 81038 19494. Simply send your PAN and bank statements; our tax professionals reconcile AIS/26AS, maximize eligible deductions under the new vs old regime, and prepare your ITR within 24 to 48 hours."
+        "answer": "Contact Taxoras on WhatsApp at +91 88103 81949. Simply send your PAN and bank statements; our tax professionals reconcile AIS/26AS, maximize eligible deductions under the new vs old regime, and prepare your ITR within 24 to 48 hours."
       }
     ]
   },
@@ -476,7 +476,7 @@ export const allResources: ResourceArticle[] = [
       },
       {
         "question": "How can I reach out to Taxoras to reconcile my company's bank statements?",
-        "answer": "Reach out via WhatsApp at +91 81038 19494. Share your bank statement PDFs or Excel exports; our team reconciles hundreds of transactions with automated ledger matching in 24 to 48 hours."
+        "answer": "Reach out via WhatsApp at +91 88103 81949. Share your bank statement PDFs or Excel exports; our team reconciles hundreds of transactions with automated ledger matching in 24 to 48 hours."
       }
     ]
   },
@@ -556,7 +556,7 @@ export const allResources: ResourceArticle[] = [
       },
       {
         "question": "How does Taxoras help businesses manage debtors, creditors, and MSME 43B(h) compliance?",
-        "answer": "Connect with Taxoras on WhatsApp at +91 81038 19494. We establish automated aging reports, vendor ledger reconciliations, and MSME payment tracking to protect your expense deductions."
+        "answer": "Connect with Taxoras on WhatsApp at +91 88103 81949. We establish automated aging reports, vendor ledger reconciliations, and MSME payment tracking to protect your expense deductions."
       }
     ]
   },
@@ -635,7 +635,7 @@ export const allResources: ResourceArticle[] = [
       },
       {
         "question": "How can I get Taxoras to prepare my Balance Sheet and P&L for bank financing or audits?",
-        "answer": "Contact Taxoras on WhatsApp at +91 81038 19494. Our accounting desk compiles schedule-compliant Balance Sheets, Profit & Loss accounts, and CMA data for bank loan approvals, credit lines, and investor presentations."
+        "answer": "Contact Taxoras on WhatsApp at +91 88103 81949. Our accounting desk compiles schedule-compliant Balance Sheets, Profit & Loss accounts, and CMA data for bank loan approvals, credit lines, and investor presentations."
       }
     ]
   },
@@ -724,7 +724,7 @@ export const allResources: ResourceArticle[] = [
       },
       {
         "question": "How can I reach out to Taxoras to get my Udyam MSME certificate issued?",
-        "answer": "Message Taxoras on WhatsApp at +91 81038 19494 with your Aadhaar and business PAN. Our specialists verify your industry activity and issue your official Udyam Certificate within 24 hours."
+        "answer": "Message Taxoras on WhatsApp at +91 88103 81949 with your Aadhaar and business PAN. Our specialists verify your industry activity and issue your official Udyam Certificate within 24 hours."
       }
     ]
   },
@@ -792,7 +792,7 @@ export const allResources: ResourceArticle[] = [
       },
       {
         "question": "How can I quickly onboard my business for monthly accounting with Taxoras?",
-        "answer": "Connect with our onboarding team on WhatsApp at +91 81038 19494. Monthly retainers start at ₹1,499/month, including complete ledger posting, GST reconciliation, and monthly profit summaries."
+        "answer": "Connect with our onboarding team on WhatsApp at +91 88103 81949. Monthly retainers start at ₹1,499/month, including complete ledger posting, GST reconciliation, and monthly profit summaries."
       }
     ]
   },
@@ -855,7 +855,7 @@ export const allResources: ResourceArticle[] = [
       },
       {
         "question": "How can I reach out to Taxoras for a quick compliance and book audit?",
-        "answer": "Message Taxoras on WhatsApp at +91 81038 19494 or email contact@taxoras.online. We conduct a rapid 20-point diagnostic check of your GST filings, TDS deductions, and bank reconciliations to fix discrepancies before tax authorities take notice."
+        "answer": "Message Taxoras on WhatsApp at +91 88103 81949 or email contact@taxoras.online. We conduct a rapid 20-point diagnostic check of your GST filings, TDS deductions, and bank reconciliations to fix discrepancies before tax authorities take notice."
       }
     ]
   },
@@ -975,7 +975,7 @@ export const allResources: ResourceArticle[] = [
       },
       {
         "question": "How can I quickly reach out to Taxoras for urgent E-Way Bill setup, bulk API integration, or detention notice release?",
-        "answer": "You can connect immediately with the Taxoras emergency compliance desk via WhatsApp at +91 81038 19494 or call +91 81038 19494. Our specialists assist with instant portal generation, Part-B updating, drafting Section 129 objection representations (Form GST MOV-07), and securing expedited vehicle release."
+        "answer": "You can connect immediately with the Taxoras emergency compliance desk via WhatsApp at +91 88103 81949 or call +91 88103 81949. Our specialists assist with instant portal generation, Part-B updating, drafting Section 129 objection representations (Form GST MOV-07), and securing expedited vehicle release."
       }
     ]
   },
@@ -1057,7 +1057,7 @@ export const allResources: ResourceArticle[] = [
       },
       {
         "question": "How can I quickly consult Taxoras to audit and file my GSTR-9 & GSTR-9C before 31st December?",
-        "answer": "Connect with Taxoras on WhatsApp at +91 81038 19494 or submit an enquiry online. Our audit team reconciles your complete 12 months of GSTR-1, GSTR-3B, GSTR-2B, and audited books of accounts, identifying variances and preparing schedule-compliant filings in 48 hours."
+        "answer": "Connect with Taxoras on WhatsApp at +91 88103 81949 or submit an enquiry online. Our audit team reconciles your complete 12 months of GSTR-1, GSTR-3B, GSTR-2B, and audited books of accounts, identifying variances and preparing schedule-compliant filings in 48 hours."
       }
     ]
   }

@@ -132,7 +132,7 @@ EDITORIAL_QUEUE = [
             },
             {
                 "question": "How can I quickly reach out to Taxoras for urgent E-Way Bill setup, bulk API integration, or detention notice release?",
-                "answer": "You can connect immediately with the Taxoras emergency compliance desk via WhatsApp at +91 81038 19494 or call +91 81038 19494. Our specialists assist with instant portal generation, Part-B updating, drafting Section 129 objection representations (Form GST MOV-07), and securing expedited vehicle release."
+                "answer": "You can connect immediately with the Taxoras emergency compliance desk via WhatsApp at +91 88103 81949 or call +91 88103 81949. Our specialists assist with instant portal generation, Part-B updating, drafting Section 129 objection representations (Form GST MOV-07), and securing expedited vehicle release."
             }
         ]
     },
@@ -199,7 +199,7 @@ EDITORIAL_QUEUE = [
             },
             {
                 "question": "How can I quickly consult Taxoras to audit and file my GSTR-9 & GSTR-9C before 31st December?",
-                "answer": "Connect with Taxoras on WhatsApp at +91 81038 19494 or submit an enquiry online. Our audit team reconciles your complete 12 months of GSTR-1, GSTR-3B, GSTR-2B, and audited books of accounts, identifying variances and preparing schedule-compliant filings in 48 hours."
+                "answer": "Connect with Taxoras on WhatsApp at +91 88103 81949 or submit an enquiry online. Our audit team reconciles your complete 12 months of GSTR-1, GSTR-3B, GSTR-2B, and audited books of accounts, identifying variances and preparing schedule-compliant filings in 48 hours."
             }
         ]
     }

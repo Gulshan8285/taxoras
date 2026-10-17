@@ -146,7 +146,7 @@ export default function Section164ITCGuidePage() {
         name: "How can I quickly get Taxoras to audit my GSTR-2B and claim missing Input Tax Credit before the deadline?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Send an enquiry on WhatsApp at +91 81038 19494. Our reconciliation specialists run automated purchase-to-2B invoice matching across your entire financial year, identify uncredited vendor bills, and file your GSTR-3B before the statutory 30th November cutoff.",
+          text: "Send an enquiry on WhatsApp at +91 88103 81949. Our reconciliation specialists run automated purchase-to-2B invoice matching across your entire financial year, identify uncredited vendor bills, and file your GSTR-3B before the statutory 30th November cutoff.",
         },
       },
     ],
@@ -563,7 +563,7 @@ export default function Section164ITCGuidePage() {
                   How can I quickly get Taxoras to audit my GSTR-2B and claim missing Input Tax Credit before the deadline?
                 </h3>
                 <p className="text-xs text-[#DDD0C5] leading-relaxed">
-                  Send an enquiry on WhatsApp at +91 81038 19494. Our reconciliation specialists run automated purchase-to-2B invoice matching across your entire financial year, identify uncredited vendor bills, and file your GSTR-3B before the statutory 30th November cutoff.
+                  Send an enquiry on WhatsApp at +91 88103 81949. Our reconciliation specialists run automated purchase-to-2B invoice matching across your entire financial year, identify uncredited vendor bills, and file your GSTR-3B before the statutory 30th November cutoff.
                 </p>
                 <div className="pt-1">
                   <a
@@ -572,7 +572,7 @@ export default function Section164ITCGuidePage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold px-3.5 py-1.5 rounded-lg transition-all"
                   >
-                    <span>Instant WhatsApp Consultation (+91 81038 19494)</span>
+                    <span>Instant WhatsApp Consultation (+91 88103 81949)</span>
                   </a>
                 </div>
               </div>

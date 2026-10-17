@@ -250,7 +250,7 @@ export const Navbar: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold px-4 py-2.5 rounded-full transition-all shadow-sm hover:shadow-md active:scale-95"
-              title="Chat with us on WhatsApp: +91 81038 19494"
+              title="Chat with us on WhatsApp: +91 88103 81949"
               aria-label="Chat on WhatsApp"
             >
               <WhatsAppIcon className="w-4 h-4 shrink-0" />

@@ -139,7 +139,7 @@ export const QuickServiceFinder: React.FC = () => {
     lines.push("Please share the documentation checklist, scope, and onboarding steps.");
 
     const message = lines.join("\n");
-    const waUrl = `https://wa.me/918103819494?text=${encodeURIComponent(message)}`;
+    const waUrl = `https://wa.me/918810381949?text=${encodeURIComponent(message)}`;
 
     // Optional silent lead capture
     try {
