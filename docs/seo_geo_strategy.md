@@ -1,5 +1,5 @@
 # SEO & Generative Engine Optimization (GEO) Strategy
-**Platform:** TaxVeda Advisory & Compliance (`https://taxvedaconsultants.in`)  
+**Platform:** Taxoras Advisory & Compliance (`https://taxorasconsultants.in`)  
 **Target Engines:** Google Search, Bing Webmaster, OpenAI (ChatGPT Search), Google AI Overviews, Perplexity AI  
 **Scope:** India-Wide Business Accounting, GST, TDS & Tax Compliance
 
@@ -9,7 +9,7 @@
 
 ### A. Crawlability & Canonicalization
 - **Predictable Clean URLs:** Strictly slug-based without session variables or trailing hashes (e.g., `/services/gst-return-filing`, `/locations/delhi`, `/resources/understanding-gstr-1-and-gstr-3b`).
-- **Canonical URLs:** Configured in `metadataBase` (`https://taxvedaconsultants.in`) across all 50+ prerendered pages.
+- **Canonical URLs:** Configured in `metadataBase` (`https://taxorasconsultants.in`) across all 50+ prerendered pages.
 - **XML Sitemap Index:** Automatically generated via Next.js metadata route (`/sitemap.xml`) referencing all static, service, article, and location pages with deterministic last-modified timestamps.
 - **HTTP Status Codes:** Verified 200 OK across public routes, 404 on invalid paths, and 422 for form payload validation.
 
@@ -46,7 +46,7 @@ Large Language Models (LLMs) and Search AI Engines prioritize clear, unambiguous
 - Official state commercial tax portal links (`dvat.gov.in`, `mahagst.gov.in`, `karnatakatax.gov.in`, `rajtax.gov.in`, `comtax.up.nic.in`).
 
 ### B. Anti-Doorway Page Compliance
-- TaxVeda explicitly rejects automated mass generation of thin, duplicate city pages.
+- Taxoras explicitly rejects automated mass generation of thin, duplicate city pages.
 - Each location page features verified regional context, local commercial ecosystem analysis, state tax links, and clear declarations of online service delivery.
 
 ---

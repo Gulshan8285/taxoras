@@ -7,7 +7,7 @@ import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 import { Scale, ShieldAlert, AlertTriangle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Professional & Regulatory Disclaimer | TaxVeda",
+  title: "Professional & Regulatory Disclaimer | Taxoras",
   description: "Official regulatory disclaimer regarding accounting consultancy status, government portal independence, and statutory certification rules.",
 };
 

@@ -7,8 +7,8 @@ import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 import { Lock, ShieldCheck, CheckCircle2, Server } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Document Security & Confidentiality Protocol | TaxVeda",
-  description: "Learn how TaxVeda protects client financial records, bank statements, and accounting databases.",
+  title: "Document Security & Confidentiality Protocol | Taxoras",
+  description: "Learn how Taxoras protects client financial records, bank statements, and accounting databases.",
 };
 
 export default function DocumentSecurityPage() {

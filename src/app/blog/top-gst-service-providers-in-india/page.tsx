@@ -19,7 +19,6 @@ import {
   FileCheck2,
   AlertTriangle,
   Building,
-  Sparkles,
   PhoneCall,
   MessageCircle
 } from "lucide-react";
@@ -29,17 +28,17 @@ export const metadata: Metadata = {
   description:
     "An objective, evidence-based review of the top 10 GST service providers in India. Compare verified pricing, invoice limits, GSTR-2B reconciliation, assisted models, and how to select the right compliance partner.",
   alternates: {
-    canonical: "https://taxvedaconsultants.in/blog/top-gst-service-providers-in-india",
+    canonical: "https://taxorasconsultants.in/blog/top-gst-service-providers-in-india",
   },
   openGraph: {
     title: "Top 10 GST Service Providers in India: Services, Pricing & How to Choose",
     description:
       "Comprehensive 2026 market review comparing leading Indian GST filing platforms, aggregators, and boutique accounting consultancies.",
-    url: "https://taxvedaconsultants.in/blog/top-gst-service-providers-in-india",
+    url: "https://taxorasconsultants.in/blog/top-gst-service-providers-in-india",
     type: "article",
     publishedTime: "2026-10-15T09:00:00+05:30",
     modifiedTime: "2026-10-17T09:00:00+05:30",
-    authors: ["TaxVeda Research Desk"],
+    authors: ["Taxoras Research Desk"],
   },
 };
 
@@ -105,9 +104,9 @@ const PROVIDERS = [
     bestFit: "Small retail shopkeepers and local single-state traders."
   },
   {
-    name: "TaxVeda Advisory (Our Service)",
+    name: "Taxoras Advisory (Our Service)",
     type: "Dedicated Boutique Accounting & Compliance Advisory",
-    website: "https://taxvedaconsultants.in",
+    website: "https://taxorasconsultants.in",
     publishedPrice: "Proprietor Reg: ₹999; Monthly Filings: ₹799 (up to 50 bills) / ₹1,499 (up to 200 bills)",
     invoiceLimits: "Explicitly defined (Basic <50, Standard <200, Premium <500 invoices/month)",
     inclusions: ["Human accountant review", "Monthly GSTR-2B purchase reconciliation", "Direct WhatsApp & Phone desk", "Statutory late-fee risk checks"],
@@ -158,18 +157,18 @@ export default function TopGstServiceProvidersPage() {
         "dateModified": "2026-10-17T09:00:00+05:30",
         "author": {
           "@type": "Organization",
-          "name": "TaxVeda Research Desk",
-          "url": "https://taxvedaconsultants.in"
+          "name": "Taxoras Research Desk",
+          "url": "https://taxorasconsultants.in"
         },
         "publisher": {
           "@type": "Organization",
-          "name": "TaxVeda Advisory & Compliance",
+          "name": "Taxoras Advisory & Compliance",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://taxvedaconsultants.in/favicon.ico"
+            "url": "https://taxorasconsultants.in/favicon.ico"
           }
         },
-        "mainEntityOfPage": "https://taxvedaconsultants.in/blog/top-gst-service-providers-in-india"
+        "mainEntityOfPage": "https://taxorasconsultants.in/blog/top-gst-service-providers-in-india"
       },
       {
         "@type": "FAQPage",
@@ -239,7 +238,7 @@ export default function TopGstServiceProvidersPage() {
             <div className="flex flex-wrap items-center gap-4 text-xs text-text-muted pt-4 border-t border-surface-border">
               <div className="flex items-center gap-1.5">
                 <UserCheck className="w-4 h-4 text-teal" />
-                <span>Researched by: <strong className="text-navy">TaxVeda Research Desk</strong></span>
+                <span>Researched by: <strong className="text-navy">Taxoras Research Desk</strong></span>
               </div>
               <div className="flex items-center gap-1.5">
                 <Calendar className="w-4 h-4 text-teal" />
@@ -263,7 +262,7 @@ export default function TopGstServiceProvidersPage() {
               Research Transparency & Commercial Disclosure
             </p>
             <p>
-              This guide was produced through qualitative review of publicly available pricing, service features, and user terms published by each provider as of October 2026. <strong>TaxVeda Advisory</strong> is included as provider #7 in this list as a boutique consultancy option. We do not accept sponsorship payments from competitors, nor do we fabricate artificial market leadership or review scores. All comparative details are presented factually to help Indian business owners make an informed decision.
+              This guide was produced through qualitative review of publicly available pricing, service features, and user terms published by each provider as of October 2026. <strong>Taxoras Advisory</strong> is included as provider #7 in this list as a boutique consultancy option. We do not accept sponsorship payments from competitors, nor do we fabricate artificial market leadership or review scores. All comparative details are presented factually to help Indian business owners make an informed decision.
             </p>
           </div>
 
@@ -399,7 +398,7 @@ export default function TopGstServiceProvidersPage() {
                 <article
                   key={p.name}
                   className={`bg-white rounded-2xl border p-5 sm:p-6 shadow-xs ${
-                    p.name.includes("TaxVeda")
+                    p.name.includes("Taxoras")
                       ? "border-teal/60 ring-2 ring-teal/20"
                       : "border-surface-border"
                   }`}
@@ -524,7 +523,7 @@ export default function TopGstServiceProvidersPage() {
                     <td className="p-3">WhatsApp / Call</td>
                   </tr>
                   <tr className="bg-teal-light/40">
-                    <td className="p-3 font-bold text-navy">TaxVeda Advisory</td>
+                    <td className="p-3 font-bold text-navy">Taxoras Advisory</td>
                     <td className="p-3 font-semibold text-navy">₹999 (Proprietor)</td>
                     <td className="p-3 font-semibold text-navy">₹799/mo (&lt;50 bills)</td>
                     <td className="p-3 text-teal font-bold">Included in all tiers</td>
@@ -564,7 +563,7 @@ export default function TopGstServiceProvidersPage() {
 
               <div className="bg-white p-5 rounded-2xl border border-surface-border shadow-xs space-y-2">
                 <h3 className="text-base font-bold text-navy">Model C: Boutique Compliance Firms</h3>
-                <p className="text-xs text-text-muted">Examples: TaxVeda Advisory.</p>
+                <p className="text-xs text-text-muted">Examples: Taxoras Advisory.</p>
                 <div className="text-xs space-y-1.5 pt-2">
                   <p><strong className="text-emerald-700">Pros:</strong> Dedicated human review, direct WhatsApp/phone communication, transparent invoice counts, tailored advice.</p>
                   <p><strong className="text-rose-700">Cons:</strong> Not suited for multi-national conglomerates with thousands of daily automated API transactions.</p>
@@ -655,7 +654,7 @@ export default function TopGstServiceProvidersPage() {
                 Take the Stress Out of Monthly GST Compliance
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Whether you need a new GST registration or worry-free monthly GSTR-1 and 3B filings with complete GSTR-2B purchase matching, TaxVeda Advisory provides dedicated human support starting at ₹799/month.
+                Whether you need a new GST registration or worry-free monthly GSTR-1 and 3B filings with complete GSTR-2B purchase matching, Taxoras Advisory provides dedicated human support starting at ₹799/month.
               </p>
             </div>
 

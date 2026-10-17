@@ -16,11 +16,11 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Accounting & GST Compliance Blog | TaxVeda Advisory",
+  title: "Accounting & GST Compliance Blog | Taxoras Advisory",
   description:
     "Research-backed guides, market comparisons, and actionable tax compliance insights for Indian businesses, startups, and MSMEs.",
   alternates: {
-    canonical: "https://taxvedaconsultants.in/blog",
+    canonical: "https://taxorasconsultants.in/blog",
   },
 };
 

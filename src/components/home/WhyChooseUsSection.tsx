@@ -60,7 +60,7 @@ export const WhyChooseUsSection: React.FC = () => {
             Our Service Principles
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-navy tracking-tight mt-3 mb-4">
-            Why Businesses Choose TaxVeda
+            Why Businesses Choose Taxoras
           </h2>
           <p className="text-sm text-text-muted leading-relaxed">
             We focus on organized financial workflows, timely statutory coordination, and transparent communication.

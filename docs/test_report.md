@@ -1,5 +1,5 @@
 # Full-Stack Quality Assurance & Verification Report
-**Website:** TaxVeda Advisory & Compliance (`taxvedaconsultants.in`)  
+**Website:** Taxoras Advisory & Compliance (`taxorasconsultants.in`)  
 **Build Engine:** Next.js 16.4.2 (Turbopack) & React 19  
 **Date of Testing:** October 2026  
 **Auditor:** Antigravity Senior Full-Stack & QA Engineering Team
@@ -57,6 +57,6 @@ A comprehensive end-to-end audit was conducted across all 63 production routes a
 ## 4. Pending External Dependencies & Setup Instructions
 
 The website code is 100% production-ready. For live commercial deployment:
-1. **Domain & DNS:** Point DNS records (`A` and `CNAME`) for `taxvedaconsultants.in` to the hosting provider (e.g. Vercel, AWS Amplify, or custom VPS).
+1. **Domain & DNS:** Point DNS records (`A` and `CNAME`) for `taxorasconsultants.in` to the hosting provider (e.g. Vercel, AWS Amplify, or custom VPS).
 2. **WhatsApp Business Account:** Ensure the official WhatsApp Business app or API profile is configured for `+91 81038 19494` with automated welcome greetings.
-3. **Google Search Console & Bing Webmaster:** Submit `https://taxvedaconsultants.in/sitemap.xml` upon DNS propagation.
+3. **Google Search Console & Bing Webmaster:** Submit `https://taxorasconsultants.in/sitemap.xml` upon DNS propagation.

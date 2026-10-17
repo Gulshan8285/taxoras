@@ -20,7 +20,7 @@ import {
 
 export const metadata: Metadata = {
   title: "About Us | Professional Accounting & Compliance Advisory",
-  description: "Learn about TaxVeda Advisory. Our mission, service philosophy, document security standards, and honest approach to business accounting and tax compliance.",
+  description: "Learn about Taxoras Advisory. Our mission, service philosophy, document security standards, and honest approach to business accounting and tax compliance.",
 };
 
 export default function AboutPage() {
@@ -33,7 +33,7 @@ export default function AboutPage() {
         <section className="bg-white border-b border-surface-border py-12 sm:py-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <span className="text-xs font-bold text-teal bg-teal-light px-3 py-1 rounded-full uppercase tracking-wider">
-              About TaxVeda
+              About Taxoras
             </span>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight mt-3 mb-4">
               Practical Accounting & Compliance Advisory for Indian Businesses
@@ -57,7 +57,7 @@ export default function AboutPage() {
               In India, small business owners often struggle with the fragmented nature of accounting and taxation. They have to deal with separate software for invoicing, disconnected tax filers for GST, and last-minute scrambles for year-end income tax returns.
             </p>
             <p className="text-xs sm:text-sm text-text-muted leading-relaxed">
-              At TaxVeda, our philosophy is simple: <strong>Organized financial data throughout the year prevents compliance emergencies at the end of the year.</strong> We establish straightforward digital workflows that turn stressful filing deadlines into routine 15-minute approvals.
+              At Taxoras, our philosophy is simple: <strong>Organized financial data throughout the year prevents compliance emergencies at the end of the year.</strong> We establish straightforward digital workflows that turn stressful filing deadlines into routine 15-minute approvals.
             </p>
           </section>
 
@@ -123,7 +123,7 @@ export default function AboutPage() {
               <span>Professional Standing & Regulatory Disclaimers</span>
             </h3>
             <p>
-              TaxVeda Advisory & Compliance is a professional business accounting, documentation, and compliance consultancy firm. We do not represent ourselves as an authorized Chartered Accountancy (CA) partnership firm, nor do we claim government affiliation.
+              Taxoras Advisory & Compliance is a professional business accounting, documentation, and compliance consultancy firm. We do not represent ourselves as an authorized Chartered Accountancy (CA) partnership firm, nor do we claim government affiliation.
             </p>
             <p>
               Where client assignments involve statutory certifications, tax audit reports under Section 44AB of the Income Tax Act, or company audits under the Companies Act 2013, such statutory assignments are coordinated through independent qualified practicing Chartered Accountants in strict accordance with ICAI regulations.

@@ -666,7 +666,7 @@ export const allServices: ServiceItem[] = [
         "Subsequent annual Udyam profile updates"
       ]
     },
-    "disclaimer": "Udyam registration is governed by the Ministry of MSME, Government of India. TaxVeda is an independent consultancy providing professional preparation support and is not affiliated with the government.",
+    "disclaimer": "Udyam registration is governed by the Ministry of MSME, Government of India. Taxoras is an independent consultancy providing professional preparation support and is not affiliated with the government.",
     "relatedSlugs": [
       "gst-registration",
       "daily-accounting",
@@ -965,7 +965,7 @@ export const allServices: ServiceItem[] = [
     "deadlinesNotice": "For financial year ending March 31st, non-audit ITRs are due July 31st; tax audit financial statements are due September 30th / October 31st.",
     "faqs": [
       {
-        "question": "Can TaxVeda sign or audit my balance sheet as a Statutory Auditor?",
+        "question": "Can Taxoras sign or audit my balance sheet as a Statutory Auditor?",
         "answer": "No. Statutory audits and tax audit reports under Section 44AB require certification by an independent practicing Chartered Accountant (CA) holding a valid Certificate of Practice. We prepare, organize, and compile the financial statements and supporting schedules to make the audit process smooth and hassle-free."
       },
       {

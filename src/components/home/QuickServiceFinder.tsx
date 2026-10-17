@@ -10,8 +10,7 @@ import {
   Calculator,
   Building2,
   Clock,
-  Sparkles,
-  MapPin,
+    MapPin,
   FileCheck2
 } from "lucide-react";
 
@@ -222,7 +221,7 @@ export const QuickServiceFinder: React.FC = () => {
               <div>
                 <div className="flex items-center justify-between pb-3 border-b border-surface-border mb-3">
                   <span className="text-[11px] font-bold uppercase tracking-wider text-teal flex items-center gap-1.5">
-                    <Sparkles className="w-3.5 h-3.5" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-teal" />
                     Recommended Scope
                   </span>
                   <span className="text-[10px] font-medium bg-slate-100 text-text-muted px-2 py-0.5 rounded">

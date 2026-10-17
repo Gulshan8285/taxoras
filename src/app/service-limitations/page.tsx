@@ -7,7 +7,7 @@ import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 import { AlertCircle, Scale, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Service Scope & Limitations | TaxVeda",
+  title: "Service Scope & Limitations | Taxoras",
   description: "Detailed breakdown of consultancy service boundaries, client obligations, and regulatory limitations.",
 };
 
@@ -56,14 +56,14 @@ export default function ServiceLimitationsPage() {
             <div>
               <h2 className="text-base font-bold text-navy mb-2">3. Independent Chartered Accountant Attestations</h2>
               <p>
-                As an accounting consultancy firm, TaxVeda prepares, reconciles, and compiles financial statements. Where statutory certifications (such as Tax Audit Reports under Section 44AB or Company Statutory Audits under Companies Act 2013) are mandated by law, these attestations are coordinated through independent practicing Chartered Accountants holding valid Certificates of Practice issued by the ICAI.
+                As an accounting consultancy firm, Taxoras prepares, reconciles, and compiles financial statements. Where statutory certifications (such as Tax Audit Reports under Section 44AB or Company Statutory Audits under Companies Act 2013) are mandated by law, these attestations are coordinated through independent practicing Chartered Accountants holding valid Certificates of Practice issued by the ICAI.
               </p>
             </div>
 
             <div>
               <h2 className="text-base font-bold text-navy mb-2">4. Government Portal Server Availability</h2>
               <p>
-                While we monitor deadlines proactively, TaxVeda is not liable for temporary technical downtimes, portal crashes, or network slowdowns of government servers (gst.gov.in, incometax.gov.in) occurring during peak deadline hours. We strongly urge clients to provide monthly records by the 5th of each month to avoid deadline rushes.
+                While we monitor deadlines proactively, Taxoras is not liable for temporary technical downtimes, portal crashes, or network slowdowns of government servers (gst.gov.in, incometax.gov.in) occurring during peak deadline hours. We strongly urge clients to provide monthly records by the 5th of each month to avoid deadline rushes.
               </p>
             </div>
 

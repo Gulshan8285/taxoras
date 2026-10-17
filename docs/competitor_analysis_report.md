@@ -19,7 +19,7 @@ Indian MSMEs and startups operate in a rapidly modernizing compliance environmen
 2. **Impersonal Call Centers & High Attrition:** Clients on large aggregator platforms rarely interact with the same compliance executive twice, leading to missed deadlines and untracked notices.
 3. **Hidden Separation of Taxes vs Professional Fees:** Opaque invoices blur statutory taxes (payable via GST PMT-06 or TDS Challan 281) with consultancy fees, creating friction.
 
-**TaxVeda's Strategic Market Position:**
+**Taxoras's Strategic Market Position:**
 - Dedicated boutique advisory model combining digital convenience with direct human communication (WhatsApp & Phone).
 - Transparent 3-tier pricing (Basic, Standard, Premium) with strict, clearly documented invoice counts and zero hidden fees.
 - Uncompromising adherence to Section 16(2)(aa) & Rule 36(4) (GSTR-2B purchase matching included across all tiers).
@@ -57,7 +57,7 @@ To provide high-quality professional accounting and compliance services while su
 5. **Buffer for Scrutiny Notice Review & Clarification:** (Allocated per client pool) ≈ **₹60 – ₹100**
 6. **Total Delivery Cost per Active Account:** ≈ **₹445 – ₹770/month**
 
-### Recommended Pricing Tiers for TaxVeda Advisory:
+### Recommended Pricing Tiers for Taxoras Advisory:
 - **GST Registration (Proprietor): ₹999** (Gross Margin: ~55%)
 - **GST Registration (Pvt Ltd / LLP / Partnership): ₹1,999** (Gross Margin: ~60%)
 - **GST Return Basic (<50 monthly invoices): ₹799/month** (Gross Margin: ~44%)

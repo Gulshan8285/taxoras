@@ -7,7 +7,7 @@ import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 
 export const metadata: Metadata = {
   title: "Terms of Service | Engagement Scope & Terms",
-  description: "Terms of Service governing accounting and compliance advisory engagements with TaxVeda Advisory.",
+  description: "Terms of Service governing accounting and compliance advisory engagements with Taxoras Advisory.",
 };
 
 export default function TermsPage() {
@@ -51,7 +51,7 @@ export default function TermsPage() {
             <div>
               <h2 className="text-base font-bold text-navy mb-2">3. Fee Terms & Direct Tax Payments</h2>
               <p>
-                Consultancy fees are payable against verified tax invoices as per the agreed schedule. For regulatory clarity, TaxVeda does not collect statutory tax payments (GST, TDS, Advance Tax) into its accounts; we generate official government challans for direct client payment from client bank accounts.
+                Consultancy fees are payable against verified tax invoices as per the agreed schedule. For regulatory clarity, Taxoras does not collect statutory tax payments (GST, TDS, Advance Tax) into its accounts; we generate official government challans for direct client payment from client bank accounts.
               </p>
             </div>
 

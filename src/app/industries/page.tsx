@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Industry Accounting & Compliance Solutions | TaxVeda India",
+  title: "Industry Accounting & Compliance Solutions | Taxoras India",
   description: "Specialized accounting, GST, and tax compliance solutions for E-Commerce, Retail, IT Exporters, Manufacturers, Healthcare, and Freelancers.",
 };
 

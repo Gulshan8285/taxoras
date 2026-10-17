@@ -18,7 +18,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Contact Us | Office Location, Phone & WhatsApp Support",
-  description: "Get in touch with TaxVeda Advisory. Office address in New Delhi, direct helpline number, WhatsApp enquiry desk, and operating hours.",
+  description: "Get in touch with Taxoras Advisory. Office address in New Delhi, direct helpline number, WhatsApp enquiry desk, and operating hours.",
 };
 
 export default function ContactPage() {

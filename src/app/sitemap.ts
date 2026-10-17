@@ -4,7 +4,7 @@ import { allResources } from "@/data/resourcesData";
 import { allLocations, allServiceLocations } from "@/data/locationsData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://taxvedaconsultants.in";
+  const baseUrl = "https://taxorasconsultants.in";
   const staticDate = new Date("2026-10-15");
 
   const coreRoutes: MetadataRoute.Sitemap = [

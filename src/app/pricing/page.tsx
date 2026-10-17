@@ -41,8 +41,8 @@ export default function PricingPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight mt-3 mb-3">
               India's Most Affordable Accounting & Compliance Support
             </h1>
-            <div className="inline-block bg-teal-light border border-teal/30 px-3 py-1 rounded-full text-xs font-bold text-teal mb-3">
-              ★ Guaranteed ₹5 Cheaper Than Any Verified Competitor Quote ★
+            <div className="inline-flex items-center gap-2 bg-teal-light border border-teal/30 px-3 py-1 rounded-full text-xs font-bold text-teal mb-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-teal shrink-0"></span><span>Guaranteed ₹5 Cheaper Than Any Verified Competitor Quote</span>
             </div>
             <p className="text-sm sm:text-base text-text-muted leading-relaxed max-w-2xl mx-auto">
               We compete on genuine affordability and clarity. Show us any verified quote from Clear, TaxFetch, Corpbiz, IndiaFilings, or your local accountant — we guarantee our fee is lower by ₹5 or more.
@@ -102,7 +102,7 @@ export default function PricingPage() {
                 >
                   <div>
                     {pkg.tier === "Standard" && (
-                      <span className="inline-block text-[10px] font-bold text-brand-blue bg-blue-100 px-2 py-0.5 rounded-full mb-3 uppercase tracking-wider">
+                      <span className="inline-flex items-center gap-2 text-[10px] font-bold text-brand-blue bg-blue-100 px-2 py-0.5 rounded-full mb-3 uppercase tracking-wider">
                         Most Popular Choice
                       </span>
                     )}

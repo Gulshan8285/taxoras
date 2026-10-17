@@ -195,7 +195,7 @@ export const allServiceLocations: ServiceLocationPage[] = [
     "serviceSlug": "gst-return-filing",
     "title": "GST Return Filing Services in Delhi NCR",
     "headline": "Accurate, Timely GSTR-1 & GSTR-3B Filing for Delhi Businesses",
-    "description": "Avoid daily late fees and input tax credit mismatches. TaxVeda helps Delhi traders, consultants, and distributors file monthly GST returns on time.",
+    "description": "Avoid daily late fees and input tax credit mismatches. Taxoras helps Delhi traders, consultants, and distributors file monthly GST returns on time.",
     "localContext": "Delhi has over 1 million registered GST taxpayers. With active departmental scrutiny on GSTR-2B mismatches and DRC-01B notices, our monthly 2B reconciliation protects your working capital."
   },
   {

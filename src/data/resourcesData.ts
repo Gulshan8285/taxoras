@@ -563,7 +563,7 @@ export const allResources: ResourceArticle[] = [
         ],
         "callout": {
           "type": "tip",
-          "text": "Professional firms like TaxVeda charge a modest consultancy fee for data verification, NIC classification, and filing assistance, but never charge a fake government fee."
+          "text": "Professional firms like Taxoras charge a modest consultancy fee for data verification, NIC classification, and filing assistance, but never charge a fake government fee."
         }
       }
     ]

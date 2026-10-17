@@ -9,7 +9,7 @@ export const mainFaqs: FAQItem[] = [
     "answer": "We assist sole proprietors, partnership firms, LLPs, private limited companies, retail traders, e-commerce sellers, consultants, freelancers, and small manufacturers across India. Whether you need one-time registration help or end-to-end monthly accounting, our services are structured to match your exact business volume."
   },
   {
-    "question": "Can I outsource my complete monthly bookkeeping to TaxVeda?",
+    "question": "Can I outsource my complete monthly bookkeeping to Taxoras?",
     "answer": "Yes. Many of our clients outsource their regular bookkeeping to us. You simply share your digital invoices, bank statements, and expense receipts via our secure folder or email, and our accounting team records transactions, balances ledgers, and generates monthly trial balances and management summaries."
   },
   {
@@ -50,6 +50,6 @@ export const mainFaqs: FAQItem[] = [
   },
   {
     "question": "Are you a Chartered Accountancy (CA) firm?",
-    "answer": "TaxVeda Advisory & Compliance is an independent business accounting, documentation, and compliance consultancy. We provide bookkeeping, data reconciliation, preparation assistance, and filing support. For statutory audits, tax audit reports under Section 44AB, or court representations requiring a practicing Chartered Accountant, assignments are coordinated through independent qualified professionals as per governing regulations."
+    "answer": "Taxoras Advisory & Compliance is an independent business accounting, documentation, and compliance consultancy. We provide bookkeeping, data reconciliation, preparation assistance, and filing support. For statutory audits, tax audit reports under Section 44AB, or court representations requiring a practicing Chartered Accountant, assignments are coordinated through independent qualified professionals as per governing regulations."
   }
 ];

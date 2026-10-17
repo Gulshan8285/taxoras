@@ -8,7 +8,6 @@ import {
   ShieldCheck,
   ArrowRight,
   TrendingDown,
-  Sparkles,
   Zap,
   MessageCircle,
   PhoneCall,
@@ -40,7 +39,7 @@ export const PricingEstimator: React.FC = () => {
             </h2>
 
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl mx-auto">
-              Big portals charge expensive subscriptions and trap you in automated bot queues. At TaxVeda, we keep overheads minimal and pass 100% of the savings to Indian business owners.
+              Big portals charge expensive subscriptions and trap you in automated bot queues. At Taxoras, we keep overheads minimal and pass 100% of the savings to Indian business owners.
             </p>
 
             {/* 3 Pillar Highlights */}

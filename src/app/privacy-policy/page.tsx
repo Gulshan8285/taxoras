@@ -7,7 +7,7 @@ import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Document Security & Data Handling",
-  description: "Privacy Policy for TaxVeda Advisory. How we handle client financial records, invoices, bank statements, and personal data.",
+  description: "Privacy Policy for Taxoras Advisory. How we handle client financial records, invoices, bank statements, and personal data.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage() {
             <div>
               <h2 className="text-base font-bold text-navy mb-2">1. Scope of This Policy</h2>
               <p>
-                {siteConfig.businessName} (&quot;TaxVeda&quot;, &quot;we&quot;, &quot;our&quot;) is committed to protecting the confidentiality and integrity of financial documents, business records, and personal identifying data provided by our clients and website visitors.
+                {siteConfig.businessName} (&quot;Taxoras&quot;, &quot;we&quot;, &quot;our&quot;) is committed to protecting the confidentiality and integrity of financial documents, business records, and personal identifying data provided by our clients and website visitors.
               </p>
             </div>
 

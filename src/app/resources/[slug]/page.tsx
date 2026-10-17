@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: ResourcePageProps): Promise<M
   }
 
   return {
-    title: `${article.title} | TaxVeda Compliance Guide`,
+    title: `${article.title} | Taxoras Compliance Guide`,
     description: article.summary,
     openGraph: {
       title: article.title,

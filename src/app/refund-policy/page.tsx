@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 
 export const metadata: Metadata = {
-  title: "Refund & Cancellation Policy | TaxVeda",
+  title: "Refund & Cancellation Policy | Taxoras",
   description: "Transparent refund and cancellation terms for accounting and compliance consultancy services.",
 };
 
@@ -53,7 +53,7 @@ export default function RefundPolicyPage() {
             <div>
               <h2 className="text-base font-bold text-navy mb-2">4. Government Fees & Taxes Non-Refundable</h2>
               <p>
-                Statutory payments made directly by the client to government portals (such as GST challans, advance tax, or MCA filing fees) are non-refundable by TaxVeda as these are paid directly to the Central or State Governments.
+                Statutory payments made directly by the client to government portals (such as GST challans, advance tax, or MCA filing fees) are non-refundable by Taxoras as these are paid directly to the Central or State Governments.
               </p>
             </div>
 

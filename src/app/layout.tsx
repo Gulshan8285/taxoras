@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.shortName}`
   },
   description: siteConfig.description,
-  metadataBase: new URL("https://taxvedaconsultants.in"),
+  metadataBase: new URL("https://taxoras.in"),
   authors: [{ name: siteConfig.businessName }],
   creator: siteConfig.businessName,
   robots: {
@@ -25,6 +25,11 @@ export const metadata: Metadata = {
     siteName: siteConfig.businessName,
     type: "website",
     locale: "en_IN",
+  },
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
   },
 };
 

@@ -53,8 +53,8 @@ const WHATSAPP_RAW = "918103819494";
 const PHONE_DISPLAY = "+91 81038 19494";
 
 export const siteConfig: SiteConfig = {
-  businessName: "TaxVeda Advisory & Compliance",
-  shortName: "TaxVeda",
+  businessName: "Taxoras Advisory & Compliance",
+  shortName: "Taxoras",
   tagline: "Accounting | Taxation | Compliance",
   positioning: "Affordable Accounting, GST & Tax Compliance Services for Indian Businesses.",
   supportingPositioning: "Professional assistance, transparent pricing, organized documentation and responsive support — wherever your business operates in India.",
@@ -72,7 +72,7 @@ export const siteConfig: SiteConfig = {
     phoneFormatted: PHONE_DISPLAY,
     whatsappRaw: WHATSAPP_RAW,
     whatsappFormatted: PHONE_DISPLAY,
-    email: "contact@taxvedaconsultants.in",
+    email: "contact@taxoras.in",
     workingHours: "9:30 AM – 6:30 PM IST",
     workingDays: "Monday to Saturday",
   },
@@ -126,8 +126,8 @@ export const siteConfig: SiteConfig = {
       return `${base}?text=${encodeURIComponent(fullMessage)}`;
     },
     phoneUrl: "tel:+918103819494",
-    emailUrl: "mailto:contact@taxvedaconsultants.in",
+    emailUrl: "mailto:contact@taxoras.in",
   },
-  disclaimer: "TaxVeda Advisory & Compliance is a professional business accounting and compliance consultancy firm. We provide bookkeeping, data reconciliation, documentation assistance, and statutory compliance coordination. We do not claim government affiliation, nor do we promise zero tax, guaranteed tax savings, or penalty-free filings. All services are rendered strictly based on records provided and applicable Indian laws.",
+  disclaimer: "Taxoras Advisory & Compliance is a professional business accounting and compliance consultancy firm. We provide bookkeeping, data reconciliation, documentation assistance, and statutory compliance coordination. We do not claim government affiliation, nor do we promise zero tax, guaranteed tax savings, or penalty-free filings. All services are rendered strictly based on records provided and applicable Indian laws.",
   trustStatement: "Practical accounting and compliance support for businesses at every stage.",
 };

@@ -1,0 +1,15 @@
+<svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="taxorasFav1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2457C5" />
+      <stop offset="100%" stop-color="#10243A" />
+    </linearGradient>
+    <linearGradient id="taxorasFav2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F9F8F" />
+      <stop offset="100%" stop-color="#2DD4BF" />
+    </linearGradient>
+  </defs>
+  <rect width="40" height="40" rx="10" fill="url(#taxorasFav1)" />
+  <path d="M20 8.5L29 15V22.5L20 16L11 22.5V15L20 8.5Z" fill="url(#taxorasFav2)" opacity="0.95" />
+  <path d="M12 13.5H28V17.5H22.5V31H17.5V17.5H12V13.5Z" fill="#FFFFFF" />
+</svg>
