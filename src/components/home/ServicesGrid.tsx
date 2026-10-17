@@ -77,45 +77,45 @@ export const ServicesGrid: React.FC = () => {
                   <div className="w-12 h-12 rounded-xl bg-blue-50/80 text-brand-blue flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition-colors">
                     <ServiceIcon name={service.icon} className="w-6 h-6" />
                   </div>
-                  <span className="text-[11px] font-semibold text-[#E5A962] bg-[#251A13] border border-[#3E2C1F] px-2.5 py-1 rounded-md">
+                  <span className="text-[11px] font-semibold text-amber-300 bg-amber-950/60 border border-amber-600/30 px-2.5 py-1 rounded-md tracking-wide">
                     {service.categoryLabel}
                   </span>
                 </div>
 
                 {/* Title & Badge */}
-                <h3 className="text-lg font-bold text-navy group-hover:text-brand-blue transition-colors mb-2">
+                <h3 className="text-lg font-bold text-white group-hover:text-brand-blue transition-colors mb-2">
                   <Link href={`/services/${service.slug}`}>
                     {service.title}
                   </Link>
                 </h3>
 
                 {service.heroBadge && (
-                  <span className="inline-block text-[10px] font-semibold text-teal bg-teal-light px-2 py-0.5 rounded mb-2.5">
+                  <span className="inline-block text-[11px] font-medium text-amber-200 bg-amber-900/40 border border-amber-700/30 px-2.5 py-0.5 rounded-md mb-3">
                     {service.heroBadge}
                   </span>
                 )}
 
-                {/* Short Description */}
-                <p className="text-xs text-text-muted leading-relaxed mb-4">
+                {/* Short Description (High Contrast Readable) */}
+                <p className="text-xs text-[#D8CCC0] leading-relaxed mb-4">
                   {service.shortDescription}
                 </p>
 
-                {/* Key Benefits List */}
-                <div className="space-y-2 pt-2 border-t border-slate-100 mb-6">
+                {/* Key Benefits List (Crisp White Text on Dark Card) */}
+                <div className="space-y-2.5 pt-3 border-t border-[#2C211A] mb-6">
                   {service.benefits.slice(0, 3).map((benefit, bIdx) => (
-                    <div key={bIdx} className="flex items-start gap-2 text-xs text-text-main">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-teal shrink-0 mt-0.5" />
-                      <span className="leading-tight text-slate-700">{benefit}</span>
+                    <div key={bIdx} className="flex items-start gap-2.5 text-xs">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
+                      <span className="leading-tight text-[#FAF4EF] font-normal">{benefit}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
               {/* Card Footer CTAs */}
-              <div className="pt-4 border-t border-slate-100 flex items-center justify-between gap-2">
+              <div className="pt-4 border-t border-[#2C211A] flex items-center justify-between gap-2">
                 <Link
                   href={`/services/${service.slug}`}
-                  className="text-xs font-bold text-brand-blue hover:text-brand-blue-hover inline-flex items-center gap-1 group-hover:translate-x-0.5 transition-transform"
+                  className="text-xs font-bold text-brand-blue hover:text-amber-400 inline-flex items-center gap-1 group-hover:translate-x-0.5 transition-transform"
                 >
                   <span>Learn More</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -125,9 +125,9 @@ export const ServicesGrid: React.FC = () => {
                   href={siteConfig.links.whatsappUrl(service.title)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-text-muted hover:text-emerald-700 bg-slate-50 hover:bg-emerald-50 px-3 py-1.5 rounded-lg border border-surface-border transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#DDD0C5] hover:text-emerald-300 bg-[#251A13] hover:bg-emerald-950/40 px-3 py-1.5 rounded-lg border border-[#3A291E] transition-colors"
                 >
-                  <WhatsAppIcon className="w-3.5 h-3.5 shrink-0 text-emerald-600" />
+                  <WhatsAppIcon className="w-3.5 h-3.5 shrink-0 text-emerald-400" />
                   <span>Enquire</span>
                 </a>
               </div>

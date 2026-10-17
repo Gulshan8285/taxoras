@@ -359,12 +359,12 @@ export const QuickServiceFinder: React.FC = () => {
                   {rec.description}
                 </p>
 
-                <div className="space-y-1.5 pt-2 border-t border-slate-100 text-xs">
-                  <div className="flex items-center gap-2 text-slate-700 text-[11px]">
+                <div className="space-y-1.5 pt-2 border-t border-[#2C211A] text-xs">
+                  <div className="flex items-center gap-2 text-[#FAF4EF] text-[11px]">
                     <CheckCircle2 className="w-3.5 h-3.5 text-teal shrink-0" />
                     <span>Includes written scope & document checklist</span>
                   </div>
-                  <div className="flex items-center gap-2 text-slate-700 text-[11px]">
+                  <div className="flex items-center gap-2 text-[#FAF4EF] text-[11px]">
                     <CheckCircle2 className="w-3.5 h-3.5 text-teal shrink-0" />
                     <span>Dedicated coordinator via WhatsApp & Phone</span>
                   </div>

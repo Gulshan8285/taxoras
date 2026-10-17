@@ -18,21 +18,21 @@
   --color-teal-light: #2A1E16;
   --color-teal-dark: #F59E0B;
   
-  --color-text-main: #ECE4DC;
-  --color-text-muted: #A89A8F;
-  --color-text-light: #7A6D63;
+  --color-text-main: #FAF4EF;
+  --color-text-muted: #D1C3B7;
+  --color-text-light: #B8A99C;
   
-  /* Readable warm-tinted slate scale for text & backgrounds */
+  /* High contrast readable warm-tinted slate scale for text & backgrounds */
   --color-slate-50: #18120E;
   --color-slate-100: #221A14;
-  --color-slate-200: #EFE6DE;
-  --color-slate-300: #DDD0C5;
-  --color-slate-400: #BCAE9F;
-  --color-slate-500: #938478;
-  --color-slate-600: #6B5D53;
-  --color-slate-700: #42342A;
-  --color-slate-800: #241A14;
-  --color-slate-900: #120D0A;
+  --color-slate-200: #2C211A;
+  --color-slate-300: #D1C3B7;
+  --color-slate-400: #D8CCC0;
+  --color-slate-500: #E4D8CE;
+  --color-slate-600: #ECE4DC;
+  --color-slate-700: #F3ECE5;
+  --color-slate-800: #F8F3EE;
+  --color-slate-900: #FFFFFF;
   
   --color-blue-50: #251B13;
   --color-blue-100: #3D2B1F;

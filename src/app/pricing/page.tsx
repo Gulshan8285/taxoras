@@ -117,7 +117,7 @@ export default function PricingPage() {
                     <h3 className="text-lg font-bold text-navy mb-3">{pkg.name}</h3>
 
                     {/* Price Box */}
-                    <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 mb-4">
+                    <div className="p-3.5 rounded-xl bg-slate-50 border border-[#2C211A] mb-4">
                       <div className="flex items-baseline gap-1">
                         <span className="text-2xl font-black text-navy">
                           ₹{pkg.basePrice.toLocaleString("en-IN")}
@@ -133,7 +133,7 @@ export default function PricingPage() {
                     </div>
 
                     {/* Limits and Turnaround */}
-                    <div className="space-y-1.5 pb-4 mb-4 border-b border-slate-100 text-xs">
+                    <div className="space-y-1.5 pb-4 mb-4 border-b border-[#2C211A] text-xs">
                       <div className="flex items-start justify-between">
                         <span className="text-text-muted">Volume Limit:</span>
                         <span className="font-semibold text-navy text-right">{pkg.transactionLimits}</span>
@@ -151,7 +151,7 @@ export default function PricingPage() {
                     <div className="space-y-2 mb-4">
                       <span className="text-xs font-bold text-navy block">Included Deliverables:</span>
                       {pkg.inclusions.map((inc, iIdx) => (
-                        <div key={iIdx} className="flex items-start gap-2 text-xs text-slate-700">
+                        <div key={iIdx} className="flex items-start gap-2 text-xs text-[#FAF4EF]">
                           <CheckCircle2 className="w-3.5 h-3.5 text-teal shrink-0 mt-0.5" />
                           <span>{inc}</span>
                         </div>
@@ -159,7 +159,7 @@ export default function PricingPage() {
                     </div>
 
                     {/* Exclusions */}
-                    <div className="space-y-1.5 pt-3 border-t border-slate-100 mb-4 text-[11px] text-text-muted">
+                    <div className="space-y-1.5 pt-3 border-t border-[#2C211A] mb-4 text-[11px] text-text-muted">
                       <span className="font-bold text-text-muted block">Exclusions:</span>
                       {pkg.exclusions.map((exc, eIdx) => (
                         <div key={eIdx} className="flex items-start gap-1.5">
@@ -196,15 +196,15 @@ export default function PricingPage() {
               <span>How We Maintain True Pricing Transparency</span>
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-text-muted leading-relaxed">
-              <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
+              <div className="p-3.5 rounded-xl bg-slate-50 border border-[#2C211A] space-y-1">
                 <strong className="text-navy block">Separation of Tax from Fees</strong>
                 Consultancy fees are strictly separated from statutory government taxes. You pay your cash tax directly through official challans.
               </div>
-              <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
+              <div className="p-3.5 rounded-xl bg-slate-50 border border-[#2C211A] space-y-1">
                 <strong className="text-navy block">Written Scope Agreement</strong>
                 Every engagement is preceded by an itemized written quote defining voucher limits, exclusions, and deliverables.
               </div>
-              <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
+              <div className="p-3.5 rounded-xl bg-slate-50 border border-[#2C211A] space-y-1">
                 <strong className="text-navy block">Zero Hidden Penalty Costs</strong>
                 We remind you well in advance of the 7th, 11th, and 20th so you never incur compounding daily late fees.
               </div>
