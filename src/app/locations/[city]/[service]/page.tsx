@@ -43,12 +43,17 @@ export async function generateMetadata({ params }: ServiceCityProps): Promise<Me
     return { title: "Page Not Found" };
   }
 
+  const pageUrl = `${siteConfig.canonicalUrl}/locations/${item.citySlug}/${item.serviceSlug}`;
   return {
     title: item.title,
     description: item.description,
+    alternates: {
+      canonical: pageUrl,
+    },
     openGraph: {
       title: item.title,
       description: item.description,
+      url: pageUrl,
     }
   };
 }
@@ -77,8 +82,67 @@ async function ServiceLocationDetailContent({ params }: ServiceCityProps) {
     notFound();
   }
 
+  const pageUrl = `${siteConfig.canonicalUrl}/locations/${item.citySlug}/${item.serviceSlug}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": `${pageUrl}/#service`,
+        "name": item.title,
+        "url": pageUrl,
+        "description": item.description,
+        "provider": {
+          "@type": "AccountingService",
+          "@id": `${siteConfig.canonicalUrl}/#organization`,
+          "name": siteConfig.businessName,
+          "telephone": siteConfig.contact.phone,
+          "url": siteConfig.canonicalUrl
+        },
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": `${loc.city}, ${loc.state}, India`
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${pageUrl}/#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": siteConfig.canonicalUrl
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Locations",
+            "item": `${siteConfig.canonicalUrl}/locations`
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": loc.city,
+            "item": `${siteConfig.canonicalUrl}/locations/${loc.id}`
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": item.title,
+            "item": pageUrl
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-surface-bg text-text-main">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar />
 
       <main className="flex-1 pb-16">

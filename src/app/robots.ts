@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://taxorasconsultants.in";
+  const baseUrl = "https://www.taxoras.online";
 
   return {
     rules: [
@@ -11,23 +11,19 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/portal/session"],
       },
       {
-        // Explicitly permit OpenAI / ChatGPT Search crawler
-        userAgent: "OAI-SearchBot",
+        userAgent: [
+          "Googlebot",
+          "Bingbot",
+          "OAI-SearchBot",
+          "GPTBot",
+          "PerplexityBot",
+          "ClaudeBot",
+          "Google-Extended",
+          "Applebot",
+        ],
         allow: "/",
         disallow: ["/api/"],
       },
-      {
-        // Permit Google AI & Search extended crawlers
-        userAgent: "Google-Extended",
-        allow: "/",
-        disallow: ["/api/"],
-      },
-      {
-        // Permit PerplexityBot
-        userAgent: "PerplexityBot",
-        allow: "/",
-        disallow: ["/api/"],
-      }
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
   };

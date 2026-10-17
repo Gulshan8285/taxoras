@@ -17,6 +17,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: `${siteConfig.canonicalUrl}/contact`,
+  },
   title: "Contact Us | Office Location, Phone & WhatsApp Support",
   description: "Get in touch with Taxoras Advisory. Office address in New Delhi, direct helpline number, WhatsApp enquiry desk, and operating hours.",
 };

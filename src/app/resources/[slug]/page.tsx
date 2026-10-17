@@ -44,9 +44,13 @@ export async function generateMetadata({ params }: ResourcePageProps): Promise<M
   return {
     title: `${article.title} | Taxoras Compliance Guide`,
     description: article.summary,
+    alternates: {
+      canonical: `${siteConfig.canonicalUrl}/resources/${article.slug}`,
+    },
     openGraph: {
       title: article.title,
       description: article.summary,
+      url: `${siteConfig.canonicalUrl}/resources/${article.slug}`,
       type: "article",
     }
   };
@@ -76,20 +80,63 @@ async function ResourceDetailContent({ params }: ResourcePageProps) {
 
   const related = allResources.filter((a) => a.slug !== article.slug).slice(0, 3);
 
+  const articleUrl = `${siteConfig.canonicalUrl}/resources/${article.slug}`;
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": article.title,
-    "description": article.summary,
-    "author": {
-      "@type": "Organization",
-      "name": siteConfig.businessName
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": siteConfig.businessName
-    },
-    "dateModified": "2026-10-15"
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": `${articleUrl}/#article`,
+        "isPartOf": {
+          "@type": "WebPage",
+          "@id": articleUrl
+        },
+        "headline": article.title,
+        "description": article.summary,
+        "image": `${siteConfig.canonicalUrl}/icon.svg`,
+        "datePublished": "2026-10-15T00:00:00+05:30",
+        "dateModified": "2026-10-17T00:00:00+05:30",
+        "mainEntityOfPage": articleUrl,
+        "author": {
+          "@type": "Organization",
+          "name": siteConfig.businessName,
+          "url": siteConfig.canonicalUrl
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": siteConfig.businessName,
+          "url": siteConfig.canonicalUrl,
+          "logo": {
+            "@type": "ImageObject",
+            "url": `${siteConfig.canonicalUrl}/icon.svg`
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${articleUrl}/#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": siteConfig.canonicalUrl
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Resources",
+            "item": `${siteConfig.canonicalUrl}/resources`
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": article.title,
+            "item": articleUrl
+          }
+        ]
+      }
+    ]
   };
 
   return (

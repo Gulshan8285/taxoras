@@ -14,17 +14,33 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.shortName}`
   },
   description: siteConfig.description,
-  metadataBase: new URL("https://taxoras.in"),
+  metadataBase: new URL("https://www.taxoras.online"),
+  alternates: {
+    canonical: "./",
+  },
   authors: [{ name: siteConfig.businessName }],
   creator: siteConfig.businessName,
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   openGraph: {
     siteName: siteConfig.businessName,
     type: "website",
     locale: "en_IN",
+    url: "https://www.taxoras.online",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.businessName,
+    description: siteConfig.description,
   },
   icons: {
     icon: "/icon.svg",

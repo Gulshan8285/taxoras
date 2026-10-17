@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description:
     "Research-backed guides, market comparisons, and actionable tax compliance insights for Indian businesses, startups, and MSMEs.",
   alternates: {
-    canonical: "https://taxorasconsultants.in/blog",
+    canonical: "https://www.taxoras.online/blog",
   },
 };
 

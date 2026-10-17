@@ -13,6 +13,7 @@ import { WhyChooseUsSection } from "@/components/home/WhyChooseUsSection";
 import { EnquiryForm } from "@/components/common/EnquiryForm";
 import { ResourcesPreviewSection } from "@/components/home/ResourcesPreviewSection";
 import { HomeFaqSection } from "@/components/home/HomeFaqSection";
+import { mainFaqs } from "@/data/faqsData";
 
 export const metadata: Metadata = {
   title: `${siteConfig.businessName} | ${siteConfig.positioning}`,
@@ -29,9 +30,13 @@ export const metadata: Metadata = {
     "Income tax return filing",
     "MSME Udyam registration assistance"
   ],
+  alternates: {
+    canonical: siteConfig.canonicalUrl,
+  },
   openGraph: {
     title: `${siteConfig.businessName} - ${siteConfig.positioning}`,
     description: siteConfig.description,
+    url: siteConfig.canonicalUrl,
     type: "website",
     locale: "en_IN",
   }
@@ -40,33 +45,81 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "AccountingService",
-    "name": siteConfig.businessName,
-    "description": siteConfig.description,
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": siteConfig.location.address,
-      "addressLocality": siteConfig.location.city,
-      "addressRegion": siteConfig.location.state,
-      "postalCode": siteConfig.location.pincode,
-      "addressCountry": "IN"
-    },
-    "telephone": siteConfig.contact.phone,
-    "openingHours": "Mo-Sa 09:30-18:30",
-    "priceRange": "₹₹",
-    "areaServed": "India",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Accounting & Tax Services",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GST Registration" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GST Return Filing" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "TDS Return Filing" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Day-to-Day Accounting" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bank Reconciliation" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Income Tax Return Filing" } }
-      ]
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${siteConfig.canonicalUrl}/#website`,
+        "url": siteConfig.canonicalUrl,
+        "name": siteConfig.businessName,
+        "description": siteConfig.description,
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "AccountingService",
+        "@id": `${siteConfig.canonicalUrl}/#organization`,
+        "name": siteConfig.businessName,
+        "url": siteConfig.canonicalUrl,
+        "logo": `${siteConfig.canonicalUrl}/icon.svg`,
+        "image": `${siteConfig.canonicalUrl}/icon.svg`,
+        "description": siteConfig.description,
+        "telephone": siteConfig.contact.phone,
+        "email": siteConfig.contact.email,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": siteConfig.location.address,
+          "addressLocality": siteConfig.location.city,
+          "addressRegion": siteConfig.location.state,
+          "postalCode": siteConfig.location.pincode,
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "28.6289",
+          "longitude": "77.2219"
+        },
+        "openingHours": "Mo-Sa 09:30-18:30",
+        "priceRange": "₹₹",
+        "areaServed": {
+          "@type": "Country",
+          "name": "India"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": siteConfig.contact.phone,
+          "contactType": "customer service",
+          "areaServed": "IN",
+          "availableLanguage": ["English", "Hindi"]
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Taxoras Accounting & GST Compliance Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GST Registration" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GST Return Filing (GSTR-1 & 3B)" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GSTR-2B ITC Reconciliation" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Quarterly TDS Return Filing (24Q/26Q)" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Day-to-Day Bookkeeping & Accounting" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bank Reconciliation (BRS)" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Debtors & Creditors Reconciliation" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "MSME Udyam Registration" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Balance Sheet & P&L Preparation" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Income Tax Return Filing" } }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${siteConfig.canonicalUrl}/#faq`,
+        "mainEntity": mainFaqs.map((faq) => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
   };
 
   return (

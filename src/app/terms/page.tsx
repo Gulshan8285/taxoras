@@ -6,6 +6,9 @@ import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: `${siteConfig.canonicalUrl}/terms`,
+  },
   title: "Terms of Service | Engagement Scope & Terms",
   description: "Terms of Service governing accounting and compliance advisory engagements with Taxoras Advisory.",
 };

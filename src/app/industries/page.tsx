@@ -18,6 +18,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: `${siteConfig.canonicalUrl}/industries`,
+  },
   title: "Industry Accounting & Compliance Solutions | Taxoras India",
   description: "Specialized accounting, GST, and tax compliance solutions for E-Commerce, Retail, IT Exporters, Manufacturers, Healthcare, and Freelancers.",
 };

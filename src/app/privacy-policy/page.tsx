@@ -6,6 +6,9 @@ import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: `${siteConfig.canonicalUrl}/privacy-policy`,
+  },
   title: "Privacy Policy | Document Security & Data Handling",
   description: "Privacy Policy for Taxoras Advisory. How we handle client financial records, invoices, bank statements, and personal data.",
 };

@@ -55,9 +55,13 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
       `${service.title} assistance`,
       "business compliance India"
     ],
+    alternates: {
+      canonical: `${siteConfig.canonicalUrl}/services/${service.slug}`,
+    },
     openGraph: {
       title: `${service.title} - ${siteConfig.businessName}`,
       description: service.shortDescription,
+      url: `${siteConfig.canonicalUrl}/services/${service.slug}`,
       type: "website",
     }
   };
@@ -87,23 +91,79 @@ async function ServiceDetailContent({ params }: ServicePageProps) {
 
   const related = getRelatedServices(service.relatedSlugs);
 
+  const serviceUrl = `${siteConfig.canonicalUrl}/services/${service.slug}`;
+  const schemaGraph: any[] = [
+    {
+      "@type": "Service",
+      "@id": `${serviceUrl}/#service`,
+      "name": service.title,
+      "url": serviceUrl,
+      "description": service.shortDescription,
+      "provider": {
+        "@type": "AccountingService",
+        "@id": `${siteConfig.canonicalUrl}/#organization`,
+        "name": siteConfig.businessName,
+        "telephone": siteConfig.contact.phone,
+        "url": siteConfig.canonicalUrl,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": siteConfig.location.address,
+          "addressLocality": siteConfig.location.city,
+          "addressRegion": siteConfig.location.state,
+          "postalCode": siteConfig.location.pincode,
+          "addressCountry": "IN"
+        }
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "termsOfService": `${siteConfig.businessName} Terms apply. Services rendered strictly based on client documentation and statutory timelines.`
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${serviceUrl}/#breadcrumb`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": siteConfig.canonicalUrl
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": `${siteConfig.canonicalUrl}/#services`
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": service.title,
+          "item": serviceUrl
+        }
+      ]
+    }
+  ];
+
+  if (service.faqs && service.faqs.length > 0) {
+    schemaGraph.push({
+      "@type": "FAQPage",
+      "@id": `${serviceUrl}/#faq`,
+      "mainEntity": service.faqs.map((f) => ({
+        "@type": "Question",
+        "name": f.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": f.answer
+        }
+      }))
+    });
+  }
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": service.title,
-    "description": service.shortDescription,
-    "provider": {
-      "@type": "AccountingService",
-      "name": siteConfig.businessName,
-      "telephone": siteConfig.contact.phone,
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": siteConfig.location.city,
-        "addressCountry": "IN"
-      }
-    },
-    "areaServed": "India",
-    "termsOfService": `${siteConfig.businessName} Terms apply. Services based on customer documentation.`
+    "@graph": schemaGraph
   };
 
   return (

@@ -27,13 +27,13 @@ export const metadata: Metadata = {
   description:
     "An objective, evidence-based review of the top 10 GST service providers in India. Compare verified pricing, invoice limits, GSTR-2B reconciliation, assisted models, and how to select the right compliance partner.",
   alternates: {
-    canonical: "https://taxorasconsultants.in/blog/top-gst-service-providers-in-india",
+    canonical: "https://www.taxoras.online/blog/top-gst-service-providers-in-india",
   },
   openGraph: {
     title: "Top 10 GST Service Providers in India: Services, Pricing & How to Choose",
     description:
       "Comprehensive 2026 market review comparing leading Indian GST filing platforms, aggregators, and boutique accounting consultancies.",
-    url: "https://taxorasconsultants.in/blog/top-gst-service-providers-in-india",
+    url: "https://www.taxoras.online/blog/top-gst-service-providers-in-india",
     type: "article",
     publishedTime: "2026-10-15T09:00:00+05:30",
     modifiedTime: "2026-10-17T09:00:00+05:30",
@@ -105,7 +105,7 @@ const PROVIDERS = [
   {
     name: "Taxoras Advisory (Our Service)",
     type: "Dedicated Boutique Accounting & Compliance Advisory",
-    website: "https://taxorasconsultants.in",
+    website: "https://www.taxoras.online",
     publishedPrice: "Proprietor Reg: ₹999; Monthly Filings: ₹799 (up to 50 bills) / ₹1,499 (up to 200 bills)",
     invoiceLimits: "Explicitly defined (Basic <50, Standard <200, Premium <500 invoices/month)",
     inclusions: ["Human accountant review", "Monthly GSTR-2B purchase reconciliation", "Direct WhatsApp & Phone desk", "Statutory late-fee risk checks"],
@@ -157,17 +157,17 @@ export default function TopGstServiceProvidersPage() {
         "author": {
           "@type": "Organization",
           "name": "Taxoras Research Desk",
-          "url": "https://taxorasconsultants.in"
+          "url": "https://www.taxoras.online"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Taxoras Advisory & Compliance",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://taxorasconsultants.in/favicon.ico"
+            "url": "https://www.taxoras.online/favicon.ico"
           }
         },
-        "mainEntityOfPage": "https://taxorasconsultants.in/blog/top-gst-service-providers-in-india"
+        "mainEntityOfPage": "https://www.taxoras.online/blog/top-gst-service-providers-in-india"
       },
       {
         "@type": "FAQPage",

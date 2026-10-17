@@ -7,6 +7,9 @@ import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 import { AlertCircle, Scale, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: `${siteConfig.canonicalUrl}/service-limitations`,
+  },
   title: "Service Scope & Limitations | Taxoras",
   description: "Detailed breakdown of consultancy service boundaries, client obligations, and regulatory limitations.",
 };

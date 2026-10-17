@@ -7,6 +7,9 @@ import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 import { Lock, ShieldCheck, CheckCircle2, Server } from "lucide-react";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: `${siteConfig.canonicalUrl}/document-security`,
+  },
   title: "Document Security & Confidentiality Protocol | Taxoras",
   description: "Learn how Taxoras protects client financial records, bank statements, and accounting databases.",
 };

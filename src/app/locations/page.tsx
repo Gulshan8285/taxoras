@@ -17,6 +17,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: `${siteConfig.canonicalUrl}/locations`,
+  },
   title: "India-Wide Locations & Commercial Hubs | Taxoras",
   description: "Explore our accounting, GST, and tax compliance coverage across Tier 1, Tier 2, and Tier 3 cities in India. Remote digital onboarding with nationwide support.",
 };

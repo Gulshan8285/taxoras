@@ -6,6 +6,9 @@ import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: `${siteConfig.canonicalUrl}/refund-policy`,
+  },
   title: "Refund & Cancellation Policy | Taxoras",
   description: "Transparent refund and cancellation terms for accounting and compliance consultancy services.",
 };

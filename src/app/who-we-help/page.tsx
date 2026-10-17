@@ -17,6 +17,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: `${siteConfig.canonicalUrl}/who-we-help`,
+  },
   title: "Who We Help | Compliance Guidance for Indian Businesses & Startups",
   description: "Explore tailored accounting, GST, and tax compliance solutions for startups, SMEs, retailers, freelancers, e-commerce sellers, and manufacturers.",
 };

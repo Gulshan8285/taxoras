@@ -39,6 +39,7 @@ export interface SiteConfig {
     brand: string;
     url: string;
   };
+  canonicalUrl: string;
   links: {
     whatsappUrl: (serviceName?: string, location?: string) => string;
     formatEnquiryWhatsAppUrl: (data: CustomerEnquiryPayload) => string;
@@ -60,6 +61,7 @@ export const siteConfig: SiteConfig = {
   supportingPositioning: "Professional assistance, transparent pricing, organized documentation and responsive support — wherever your business operates in India.",
   announcement: "Affordable Accounting & Tax Compliance Services Across India.",
   description: "Affordable, professional accounting, GST registration, return filing, TDS compliance, and financial reporting support for Indian businesses, startups, and traders across Tier 1, Tier 2, and Tier 3 cities.",
+  canonicalUrl: "https://www.taxoras.online",
   location: {
     city: "New Delhi",
     state: "Delhi",
@@ -72,7 +74,7 @@ export const siteConfig: SiteConfig = {
     phoneFormatted: PHONE_DISPLAY,
     whatsappRaw: WHATSAPP_RAW,
     whatsappFormatted: PHONE_DISPLAY,
-    email: "contact@taxoras.in",
+    email: "contact@taxoras.online",
     workingHours: "9:30 AM – 6:30 PM IST",
     workingDays: "Monday to Saturday",
   },
@@ -126,7 +128,7 @@ export const siteConfig: SiteConfig = {
       return `${base}?text=${encodeURIComponent(fullMessage)}`;
     },
     phoneUrl: "tel:+918103819494",
-    emailUrl: "mailto:contact@taxoras.in",
+    emailUrl: "mailto:contact@taxoras.online",
   },
   disclaimer: "Taxoras Advisory & Compliance is a professional business accounting and compliance consultancy firm. We provide bookkeeping, data reconciliation, documentation assistance, and statutory compliance coordination. We do not claim government affiliation, nor do we promise zero tax, guaranteed tax savings, or penalty-free filings. All services are rendered strictly based on records provided and applicable Indian laws.",
   trustStatement: "Practical accounting and compliance support for businesses at every stage.",

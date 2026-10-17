@@ -44,9 +44,13 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
   return {
     title: `Accounting, GST & Tax Compliance Services in ${loc.city}, ${loc.state}`,
     description: `Professional, affordable bookkeeping, GST return filing, TDS compliance, and financial reporting for businesses in ${loc.city}, ${loc.state}.`,
+    alternates: {
+      canonical: `${siteConfig.canonicalUrl}/locations/${loc.id}`,
+    },
     openGraph: {
       title: `${loc.city} Accounting & Tax Compliance | ${siteConfig.businessName}`,
       description: loc.description,
+      url: `${siteConfig.canonicalUrl}/locations/${loc.id}`,
       type: "website",
     }
   };
@@ -75,9 +79,75 @@ async function CityDetailContent({ params }: CityPageProps) {
   }
 
   const cityServicePages = allServiceLocations.filter((sl) => sl.citySlug === loc.id);
+  const pageUrl = `${siteConfig.canonicalUrl}/locations/${loc.id}`;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": `${pageUrl}/#service`,
+        "name": `${siteConfig.businessName} - ${loc.city}`,
+        "url": pageUrl,
+        "description": loc.description,
+        "telephone": siteConfig.contact.phone,
+        "email": siteConfig.contact.email,
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": `${loc.city}, ${loc.state}, India`
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": loc.city,
+          "addressRegion": loc.state,
+          "addressCountry": "IN"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${pageUrl}/#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": siteConfig.canonicalUrl
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Locations",
+            "item": `${siteConfig.canonicalUrl}/locations`
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": loc.city,
+            "item": pageUrl
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${pageUrl}/#faq`,
+        "mainEntity": loc.localFaqs.map((f) => ({
+          "@type": "Question",
+          "name": f.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": f.answer
+          }
+        }))
+      }
+    ]
+  };
 
   return (
     <div className="min-h-screen flex flex-col bg-surface-bg text-text-main">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar />
 
       <main className="flex-1 pb-16">

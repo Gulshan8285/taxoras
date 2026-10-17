@@ -19,6 +19,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: `${siteConfig.canonicalUrl}/about`,
+  },
   title: "About Us | Professional Accounting & Compliance Advisory",
   description: "Learn about Taxoras Advisory. Our mission, service philosophy, document security standards, and honest approach to business accounting and tax compliance.",
 };
