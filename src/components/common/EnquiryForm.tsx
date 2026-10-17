@@ -101,6 +101,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
   // Sync if initialService changes
   useEffect(() => {
     if (initialService) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setFormData((prev) => ({ ...prev, serviceRequired: initialService }));
     }
   }, [initialService]);

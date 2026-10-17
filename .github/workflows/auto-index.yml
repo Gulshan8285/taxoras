@@ -1,0 +1,33 @@
+name: Automated Search Engine Indexing & Sitemap Dispatch
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    # Run once daily at 04:00 UTC (09:30 IST) to keep crawlers active
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  auto-index:
+    name: Submit Articles to Search Engines
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Wait for Vercel deployment to settle
+        run: sleep 15
+
+      - name: Trigger Automated Search Engine Indexing (IndexNow & Google)
+        run: |
+          python3 scripts/submit_to_google.py
+
+      - name: Ping Live Website Auto-Indexing API Route
+        run: |
+          curl -sS -X GET "https://www.taxoras.online/api/seo/submit-indexing" || true

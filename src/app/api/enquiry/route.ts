@@ -183,7 +183,7 @@ export async function POST(req: NextRequest) {
       enquiryId: newEnquiry.id,
       lead: newEnquiry
     });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Enquiry API error:", error);
     return NextResponse.json(
       { success: false, error: "Failed to process enquiry. Please try again." },

@@ -134,6 +134,14 @@ export default function GstAmnestySchemePage() {
               "@type": "Answer",
               "text": "Yes. If your GSTIN was cancelled due to continuous non-filing of returns under Section 29, the special amnesty procedure allows you to apply for revocation of cancellation under Section 30, subject to filing all overdue returns up to the cancellation date."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I reach out to Taxoras to calculate my late fees and revive my cancelled GSTIN?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Message Taxoras directly on WhatsApp at +91 81038 19494 with your cancelled GSTIN or pending return period. Our compliance accountants calculate your exact capped late fee under the amnesty scheme, prepare overdue GSTR-1 and GSTR-3B filings, draft Form GST REG-21 revocation petitions, and liaise with your jurisdictional GST officer."
+            }
           }
         ]
       }
@@ -380,6 +388,26 @@ export default function GstAmnestySchemePage() {
                 <p className="text-xs text-[#DDD0C5] leading-relaxed">
                   Yes. If your GSTIN was cancelled due to continuous non-filing of returns under Section 29, the special amnesty procedure allows you to apply for revocation of cancellation under Section 30, subject to filing all overdue returns up to the cancellation date.
                 </p>
+              </div>
+
+              <div className="bg-[#1B1410] p-5 rounded-2xl border border-amber-500/30 shadow-xs space-y-2.5">
+                <h3 className="text-sm font-bold text-white flex items-center gap-2">
+                  <HelpCircle className="w-4 h-4 text-amber-400 shrink-0" />
+                  How do I reach out to Taxoras to calculate my late fees and revive my cancelled GSTIN?
+                </h3>
+                <p className="text-xs text-[#DDD0C5] leading-relaxed">
+                  Message Taxoras directly on WhatsApp at +91 81038 19494 with your cancelled GSTIN or pending return period. Our compliance accountants calculate your exact capped late fee under the amnesty scheme, prepare overdue GSTR-1 and GSTR-3B filings, draft Form GST REG-21 revocation petitions, and liaise with your jurisdictional GST officer.
+                </p>
+                <div className="pt-1">
+                  <a
+                    href={siteConfig.links.whatsappUrl("GST Amnesty Backlog & Late Fee Waiver")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold px-3.5 py-1.5 rounded-lg transition-all"
+                  >
+                    <span>Instant WhatsApp Consultation (+91 81038 19494)</span>
+                  </a>
+                </div>
               </div>
             </div>
           </section>

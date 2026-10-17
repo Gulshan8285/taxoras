@@ -15,11 +15,30 @@ articles = [
       "url": "https://www.gst.gov.in"
     },
     "tableOfContents": [
-      {"id": "who-needs-gst", "title": "1. Who Needs Mandatory GST Registration?"},
-      {"id": "turnover-limits", "title": "2. Statutory Turnover Thresholds"},
-      {"id": "documents-checklist", "title": "3. Required Documents by Entity Type"},
-      {"id": "step-by-step", "title": "4. Step-by-Step Portal Filing Process"},
-      {"id": "common-rejections", "title": "5. Why Applications Get Rejected"}
+      {
+        "id": "who-needs-gst",
+        "title": "1. Who Needs Mandatory GST Registration?"
+      },
+      {
+        "id": "turnover-limits",
+        "title": "2. Statutory Turnover Thresholds"
+      },
+      {
+        "id": "documents-checklist",
+        "title": "3. Required Documents by Entity Type"
+      },
+      {
+        "id": "step-by-step",
+        "title": "4. Step-by-Step Portal Filing Process"
+      },
+      {
+        "id": "common-rejections",
+        "title": "5. Why Applications Get Rejected"
+      },
+      {
+        "id": "faqs",
+        "title": "6. Frequently Asked Questions"
+      }
     ],
     "sections": [
       {
@@ -73,6 +92,24 @@ articles = [
           "The most common cause of rejection is illegible electricity bills where the consumer number, address, or landlord name is unreadable. Another common issue is mismatch between trade name on rent agreement and PAN card. Ensuring these match before submission saves weeks of delay."
         ]
       }
+    ],
+    "faqs": [
+      {
+        "question": "How long does it take to obtain a GST registration certificate in India?",
+        "answer": "With Aadhaar OTP biometric authentication, approval is typically granted by the GST portal within 3 to 7 working days. If the department raises a clarification query (Form GST REG-03), an additional 7 working days apply after submitting the response."
+      },
+      {
+        "question": "Is an electricity bill mandatory for GST registration at a home or rented address?",
+        "answer": "Yes, a recent electricity bill (less than 2 months old), water bill, or municipal property tax receipt is mandatory to verify the premises address. If rented, a notarized rent agreement and Landlord No Objection Certificate (NOC) are also required."
+      },
+      {
+        "question": "Can I register for GST without having a commercial office?",
+        "answer": "Yes. You can register your GST using your residential premises or a shared/virtual office, provided you submit a valid electricity bill, owner NOC, and identity KYC documents."
+      },
+      {
+        "question": "How can I quickly reach out to Taxoras to file my GST registration today?",
+        "answer": "You can reach Taxoras immediately via WhatsApp at +91 81038 19494 or submit an online enquiry. Our dedicated compliance team reviews your documents, validates constitution details, and submits your GST REG-01 application within 2 to 4 hours."
+      }
     ]
   },
   {
@@ -89,11 +126,30 @@ articles = [
       "url": "https://www.gst.gov.in"
     },
     "tableOfContents": [
-      {"id": "the-two-pillars", "title": "1. The Two Pillars of GST Compliance"},
-      {"id": "gstr1-breakdown", "title": "2. What is GSTR-1?"},
-      {"id": "gstr3b-breakdown", "title": "3. What is GSTR-3B?"},
-      {"id": "gstr2b-link", "title": "4. The Crucial Role of GSTR-2B"},
-      {"id": "penalties-late-fees", "title": "5. Late Fees & Interest Calculation"}
+      {
+        "id": "the-two-pillars",
+        "title": "1. The Two Pillars of GST Compliance"
+      },
+      {
+        "id": "gstr1-breakdown",
+        "title": "2. What is GSTR-1?"
+      },
+      {
+        "id": "gstr3b-breakdown",
+        "title": "3. What is GSTR-3B?"
+      },
+      {
+        "id": "gstr2b-link",
+        "title": "4. The Crucial Role of GSTR-2B"
+      },
+      {
+        "id": "penalties-late-fees",
+        "title": "5. Late Fees & Interest Calculation"
+      },
+      {
+        "id": "faqs",
+        "title": "6. Frequently Asked Questions"
+      }
     ],
     "sections": [
       {
@@ -143,6 +199,24 @@ articles = [
           "Delay in filing GSTR-3B attracts a daily statutory late fee (₹50/day for tax liability returns, ₹20/day for NIL returns, subject to statutory maximum caps). Additionally, any unpaid tax liability incurs interest at 18% per annum under Section 50 of the CGST Act."
         ]
       }
+    ],
+    "faqs": [
+      {
+        "question": "What is the key difference between GSTR-1 and GSTR-3B?",
+        "answer": "GSTR-1 is your monthly sales declaration where invoice-level outward supplies are reported (due by the 11th). GSTR-3B is your monthly summary tax payment return where output liability is settled against available GSTR-2B Input Tax Credit and cash ledger (due by the 20th)."
+      },
+      {
+        "question": "What happens if sales in GSTR-1 do not match tax paid in GSTR-3B?",
+        "answer": "Under Rule 88C of CGST Rules, if outward tax liability reported in GSTR-1 exceeds GSTR-3B by more than the tolerance threshold, the GST portal generates an automated DRC-01B notice. You must either pay the differential tax with interest or file an explanation within 7 days, failing which subsequent GSTR-1 filings are blocked."
+      },
+      {
+        "question": "What is the late fee for missing the GSTR-3B filing due date?",
+        "answer": "Late fee is ₹50 per day (₹25 CGST + ₹25 SGST) for regular returns with tax liability, capped based on annual turnover. For Nil returns, the late fee is ₹20 per day (₹10 CGST + ₹10 SGST). Interest at 18% per annum also applies on net cash liability under Section 50."
+      },
+      {
+        "question": "How can I quickly reach out to Taxoras for monthly GST return filing and GSTR-2B reconciliation?",
+        "answer": "Message Taxoras on WhatsApp at +91 81038 19494. Our compliance accountants perform complete invoice-level GSTR-2B purchase matching, compute net tax, and file both GSTR-1 and GSTR-3B well in advance of statutory deadlines."
+      }
     ]
   },
   {
@@ -159,10 +233,26 @@ articles = [
       "url": "https://www.tdscpc.gov.in"
     },
     "tableOfContents": [
-      {"id": "concept", "title": "1. What is Tax Deducted at Source?"},
-      {"id": "key-sections", "title": "2. Key Business TDS Sections"},
-      {"id": "deposit-schedule", "title": "3. Payment Deadlines & Challan 281"},
-      {"id": "penalties", "title": "4. Consequences of Non-Deduction or Non-Payment"}
+      {
+        "id": "concept",
+        "title": "1. What is Tax Deducted at Source?"
+      },
+      {
+        "id": "key-sections",
+        "title": "2. Key Business TDS Sections"
+      },
+      {
+        "id": "deposit-schedule",
+        "title": "3. Payment Deadlines & Challan 281"
+      },
+      {
+        "id": "penalties",
+        "title": "4. Consequences of Non-Deduction or Non-Payment"
+      },
+      {
+        "id": "faqs",
+        "title": "5. Frequently Asked Questions"
+      }
     ],
     "sections": [
       {
@@ -200,6 +290,24 @@ articles = [
           "2. Expense Disallowance: Under Section 40(a)(ia), 30% of the expenditure paid to a resident is disallowed as a business deduction in your income tax calculation if TDS was not deducted or paid, directly increasing your taxable business profit."
         ]
       }
+    ],
+    "faqs": [
+      {
+        "question": "What are the most common TDS sections applicable to businesses and freelancers?",
+        "answer": "The most common sections are Section 194C (contractor and advertising payments at 1% or 2%), Section 194J (professional and technical fees at 2% or 10%), Section 194I (rent on property at 10% or equipment at 2%), and Section 194H (commission or brokerage at 5%)."
+      },
+      {
+        "question": "What is the monthly deadline for depositing TDS to the government?",
+        "answer": "TDS deducted during any calendar month must be deposited to the government account via Challan ITNS 281 by the 7th of the subsequent month (except for March deductions, which are due by April 30th)."
+      },
+      {
+        "question": "What is the penalty for delayed quarterly TDS return filing (Form 24Q / 26Q)?",
+        "answer": "Late filing attracts a mandatory statutory fee of ₹200 per day under Section 234E until the return is submitted, up to the total TDS deducted. Additionally, assessing officers can levy a penalty of ₹10,000 to ₹1,00,000 under Section 271H."
+      },
+      {
+        "question": "How can I reach out to Taxoras for TAN registration, TDS computation, and quarterly filing?",
+        "answer": "Reach out directly via WhatsApp at +91 81038 19494 or call +91 81038 19494. Taxoras handles TAN setup, monthly TDS payment challans, quarterly 24Q/26Q return filing, and TRACES Form 16/16A generation seamlessly."
+      }
     ]
   },
   {
@@ -216,10 +324,26 @@ articles = [
       "url": "https://www.incometax.gov.in"
     },
     "tableOfContents": [
-      {"id": "key-documents", "title": "1. Essential Documents Checklist"},
-      {"id": "ais-importance", "title": "2. Why the Annual Information Statement (AIS) Matters"},
-      {"id": "old-vs-new", "title": "3. Old vs New Tax Regime Decision"},
-      {"id": "presumptive-tax", "title": "4. Section 44AD / 44ADA for Small Businesses"}
+      {
+        "id": "key-documents",
+        "title": "1. Essential Documents Checklist"
+      },
+      {
+        "id": "ais-importance",
+        "title": "2. Why the Annual Information Statement (AIS) Matters"
+      },
+      {
+        "id": "old-vs-new",
+        "title": "3. Old vs New Tax Regime Decision"
+      },
+      {
+        "id": "presumptive-tax",
+        "title": "4. Section 44AD / 44ADA for Small Businesses"
+      },
+      {
+        "id": "faqs",
+        "title": "5. Frequently Asked Questions"
+      }
     ],
     "sections": [
       {
@@ -258,6 +382,24 @@ articles = [
           "- Section 44ADA: Allows professionals (IT, consultants, doctors, lawyers) with gross receipts up to ₹50 Lakhs (₹75 Lakhs with digital receipts) to declare 50% of receipts as profit."
         ]
       }
+    ],
+    "faqs": [
+      {
+        "question": "What is the Annual Information Statement (AIS) and why is it critical for ITR filing?",
+        "answer": "AIS is an official record generated by the Income Tax Department showing interest earnings, dividends, stock and mutual fund transactions, and foreign remittances. Filing an ITR that doesn't match AIS data triggers automated defective return notices under Section 139(9)."
+      },
+      {
+        "question": "Which ITR form is appropriate for small business owners and freelancers?",
+        "answer": "Small businesses and professionals opting for presumptive taxation under Section 44AD (up to ₹3 Cr turnover) or Section 44ADA (up to ₹75 Lakhs receipts) can file simplified Form ITR-4. Those maintaining books or subject to tax audits must file Form ITR-3."
+      },
+      {
+        "question": "What is the last date to file Income Tax Returns for non-audit entities?",
+        "answer": "The statutory due date is July 31st following the end of the financial year. Belated or revised returns can be filed until December 31st with mandatory late filing fees under Section 234F."
+      },
+      {
+        "question": "How quickly can Taxoras file my Income Tax Return?",
+        "answer": "Contact Taxoras on WhatsApp at +91 81038 19494. Simply send your PAN and bank statements; our tax professionals reconcile AIS/26AS, maximize eligible deductions under the new vs old regime, and prepare your ITR within 24 to 48 hours."
+      }
     ]
   },
   {
@@ -270,10 +412,26 @@ articles = [
     "lastReviewed": "October 2026",
     "author": "Audit & Bookkeeping Practice",
     "tableOfContents": [
-      {"id": "what-is-brs", "title": "1. What is a Bank Reconciliation Statement?"},
-      {"id": "common-causes", "title": "2. Common Causes of Discrepancies"},
-      {"id": "risks-neglect", "title": "3. The Hidden Dangers of Skipping Reconciliation"},
-      {"id": "best-practices", "title": "4. Recommended Monthly Routine"}
+      {
+        "id": "what-is-brs",
+        "title": "1. What is a Bank Reconciliation Statement?"
+      },
+      {
+        "id": "common-causes",
+        "title": "2. Common Causes of Discrepancies"
+      },
+      {
+        "id": "risks-neglect",
+        "title": "3. The Hidden Dangers of Skipping Reconciliation"
+      },
+      {
+        "id": "best-practices",
+        "title": "4. Recommended Monthly Routine"
+      },
+      {
+        "id": "faqs",
+        "title": "5. Frequently Asked Questions"
+      }
     ],
     "sections": [
       {
@@ -306,6 +464,20 @@ articles = [
           "Always perform BRS within the first 5 working days following the end of each month. Post adjusting journal entries for bank charges and interest before locking monthly financials."
         ]
       }
+    ],
+    "faqs": [
+      {
+        "question": "Why is monthly Bank Reconciliation (BRS) essential for small businesses?",
+        "answer": "Monthly BRS detects bank charges, uncredited client cheques, unauthorized deductions, and duplicate payments. It ensures your accounting ledgers reflect true cash balances and prevents surprises during audit season."
+      },
+      {
+        "question": "How does skipping bank reconciliation create tax compliance issues?",
+        "answer": "Unreconciled bank lines cause discrepancies between sales recorded in books and revenue reported in GSTR-1, as well as unexplained deposits that tax authorities can tax as unexplained cash credits under Section 68."
+      },
+      {
+        "question": "How can I reach out to Taxoras to reconcile my company's bank statements?",
+        "answer": "Reach out via WhatsApp at +91 81038 19494. Share your bank statement PDFs or Excel exports; our team reconciles hundreds of transactions with automated ledger matching in 24 to 48 hours."
+      }
     ]
   },
   {
@@ -318,10 +490,26 @@ articles = [
     "lastReviewed": "October 2026",
     "author": "Commercial Accounting Team",
     "tableOfContents": [
-      {"id": "importance", "title": "1. Why Party Ledger Reconciliations Matter"},
-      {"id": "anatomy-dispute", "title": "2. Anatomy of a Vendor/Customer Variance"},
-      {"id": "msme-rule", "title": "3. The Section 43B(h) MSME 45-Day Payment Mandate"},
-      {"id": "action-steps", "title": "4. Implementing a Quarterly Confirmation Process"}
+      {
+        "id": "importance",
+        "title": "1. Why Party Ledger Reconciliations Matter"
+      },
+      {
+        "id": "anatomy-dispute",
+        "title": "2. Anatomy of a Vendor/Customer Variance"
+      },
+      {
+        "id": "msme-rule",
+        "title": "3. The Section 43B(h) MSME 45-Day Payment Mandate"
+      },
+      {
+        "id": "action-steps",
+        "title": "4. Implementing a Quarterly Confirmation Process"
+      },
+      {
+        "id": "faqs",
+        "title": "5. Frequently Asked Questions"
+      }
     ],
     "sections": [
       {
@@ -356,6 +544,20 @@ articles = [
           "Send formal balance confirmation emails to your top 20 vendors and customers at least twice a year. Resolve variances immediately rather than waiting for year-end audit."
         ]
       }
+    ],
+    "faqs": [
+      {
+        "question": "What is Section 43B(h) and what is the strict 45-day payment rule?",
+        "answer": "Section 43B(h) mandates that payments to registered Micro and Small enterprises must be settled within the time agreed in writing (maximum 45 days) or within 15 days if no agreement exists. Unpaid dues are disallowed as business expenses in that financial year and added back to taxable income."
+      },
+      {
+        "question": "How often should Indian businesses send balance confirmation letters to parties?",
+        "answer": "High-volume trading businesses should reconcile top debtor/creditor balances monthly, and dispatch formal quarterly balance confirmation letters at the end of June, September, December, and March."
+      },
+      {
+        "question": "How does Taxoras help businesses manage debtors, creditors, and MSME 43B(h) compliance?",
+        "answer": "Connect with Taxoras on WhatsApp at +91 81038 19494. We establish automated aging reports, vendor ledger reconciliations, and MSME payment tracking to protect your expense deductions."
+      }
     ]
   },
   {
@@ -368,10 +570,26 @@ articles = [
     "lastReviewed": "October 2026",
     "author": "Financial Advisory Desk",
     "tableOfContents": [
-      {"id": "definition", "title": "1. The Anatomy of a Balance Sheet"},
-      {"id": "pnl-vs-bs", "title": "2. Profit & Loss vs Balance Sheet"},
-      {"id": "key-ratios", "title": "3. Three Ratios Every Business Owner Must Track"},
-      {"id": "bank-lending", "title": "4. What Bankers Look For"}
+      {
+        "id": "definition",
+        "title": "1. The Anatomy of a Balance Sheet"
+      },
+      {
+        "id": "pnl-vs-bs",
+        "title": "2. Profit & Loss vs Balance Sheet"
+      },
+      {
+        "id": "key-ratios",
+        "title": "3. Three Ratios Every Business Owner Must Track"
+      },
+      {
+        "id": "bank-lending",
+        "title": "4. What Bankers Look For"
+      },
+      {
+        "id": "faqs",
+        "title": "5. Frequently Asked Questions"
+      }
     ],
     "sections": [
       {
@@ -405,6 +623,20 @@ articles = [
           "When evaluating loan or CC/OD limit requests, lenders examine debt service coverage ratios (DSCR), inventory turnover cycles, and consistent net worth growth. Transparent, well-maintained books are the first prerequisite for approval."
         ]
       }
+    ],
+    "faqs": [
+      {
+        "question": "What is the basic equation behind every Balance Sheet?",
+        "answer": "Assets = Liabilities + Owner's Equity. It shows the cumulative financial position of a business at a specific point in time, detailing what the business owns versus what it owes to lenders and owners."
+      },
+      {
+        "question": "What Current Ratio do Indian banks look for when sanctioning OD/CC limits?",
+        "answer": "Most commercial banks and NBFCs require a minimum Current Ratio of 1.33:1, showing that current assets exceed short-term obligations by at least 33%."
+      },
+      {
+        "question": "How can I get Taxoras to prepare my Balance Sheet and P&L for bank financing or audits?",
+        "answer": "Contact Taxoras on WhatsApp at +91 81038 19494. Our accounting desk compiles schedule-compliant Balance Sheets, Profit & Loss accounts, and CMA data for bank loan approvals, credit lines, and investor presentations."
+      }
     ]
   },
   {
@@ -421,10 +653,26 @@ articles = [
       "url": "https://udyamregistration.gov.in"
     },
     "tableOfContents": [
-      {"id": "udyam-intro", "title": "1. What is Udyam Registration?"},
-      {"id": "brackets", "title": "2. Micro, Small & Medium Classifications"},
-      {"id": "key-benefits", "title": "3. Prime Benefits of Udyam Certification"},
-      {"id": "free-gov-fee", "title": "4. Beware of Fake Government Fees"}
+      {
+        "id": "udyam-intro",
+        "title": "1. What is Udyam Registration?"
+      },
+      {
+        "id": "brackets",
+        "title": "2. Micro, Small & Medium Classifications"
+      },
+      {
+        "id": "key-benefits",
+        "title": "3. Prime Benefits of Udyam Certification"
+      },
+      {
+        "id": "free-gov-fee",
+        "title": "4. Beware of Fake Government Fees"
+      },
+      {
+        "id": "faqs",
+        "title": "5. Frequently Asked Questions"
+      }
     ],
     "sections": [
       {
@@ -461,8 +709,22 @@ articles = [
         ],
         "callout": {
           "type": "tip",
-          "text": "Professional firms like TaxVeda charge a modest consultancy fee for data verification, NIC classification, and filing assistance, but never charge a fake government fee."
+          "text": "Professional firms like Taxoras charge a modest consultancy fee for data verification, NIC classification, and filing assistance, but never charge a fake government fee."
         }
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does the government charge any fee for Udyam registration?",
+        "answer": "No. Udyam registration on the official government portal (udyamregistration.gov.in) is completely free (₹0). Any advisory fee charged by Taxoras covers verification of NIC codes, Aadhaar-PAN linking, and application filing assistance."
+      },
+      {
+        "question": "What are the key benefits of getting an Udyam certificate?",
+        "answer": "Key benefits include lower interest rates on bank loans, collateral-free credit under CGTMSE, protection against delayed buyer payments under the MSMED Act, 50% subsidy on trademark and patent filings, and exemption from earnest money deposits (EMD) on government tenders."
+      },
+      {
+        "question": "How can I reach out to Taxoras to get my Udyam MSME certificate issued?",
+        "answer": "Message Taxoras on WhatsApp at +91 81038 19494 with your Aadhaar and business PAN. Our specialists verify your industry activity and issue your official Udyam Certificate within 24 hours."
       }
     ]
   },
@@ -476,9 +738,22 @@ articles = [
     "lastReviewed": "October 2026",
     "author": "Accounting Operations Desk",
     "tableOfContents": [
-      {"id": "the-march-panic", "title": "1. The March Panic Phenomenon"},
-      {"id": "benefits-regularity", "title": "2. Five Advantages of Ongoing Accounting"},
-      {"id": "digital-flow", "title": "3. Creating a Simple Digital Invoice Protocol"}
+      {
+        "id": "the-march-panic",
+        "title": "1. The March Panic Phenomenon"
+      },
+      {
+        "id": "benefits-regularity",
+        "title": "2. Five Advantages of Ongoing Accounting"
+      },
+      {
+        "id": "digital-flow",
+        "title": "3. Creating a Simple Digital Invoice Protocol"
+      },
+      {
+        "id": "faqs",
+        "title": "4. Frequently Asked Questions"
+      }
     ],
     "sections": [
       {
@@ -505,6 +780,20 @@ articles = [
           "Modern cloud accounting makes physical paper filing obsolete. Establishing a single shared email or mobile folder where bills are snapped and uploaded immediately ensures your accounts stay updated effortlessly."
         ]
       }
+    ],
+    "faqs": [
+      {
+        "question": "Why should a business maintain day-to-day bookkeeping instead of doing it yearly?",
+        "answer": "Daily bookkeeping provides real-time cash flow visibility, avoids missing input tax credit on vendor purchases, ensures accurate advance tax payments, and eliminates March filing panic and late fees."
+      },
+      {
+        "question": "Can I manage bookkeeping with Taxoras if I don't have an in-house accountant?",
+        "answer": "Yes. Taxoras acts as your dedicated virtual accounting department. Simply send your sales bills, purchase invoices, and bank statements digitally via WhatsApp or cloud folders, and we keep your Tally or Zoho Books updated weekly."
+      },
+      {
+        "question": "How can I quickly onboard my business for monthly accounting with Taxoras?",
+        "answer": "Connect with our onboarding team on WhatsApp at +91 81038 19494. Monthly retainers start at ₹1,499/month, including complete ledger posting, GST reconciliation, and monthly profit summaries."
+      }
     ]
   },
   {
@@ -517,8 +806,18 @@ articles = [
     "lastReviewed": "October 2026",
     "author": "Senior Tax Auditor",
     "tableOfContents": [
-      {"id": "top-mistakes", "title": "1. The Top 10 Compliance Blunders"},
-      {"id": "corrective-actions", "title": "2. Action Steps to Safeguard Your Entity"}
+      {
+        "id": "top-mistakes",
+        "title": "1. The Top 10 Compliance Blunders"
+      },
+      {
+        "id": "corrective-actions",
+        "title": "2. Action Steps to Safeguard Your Entity"
+      },
+      {
+        "id": "faqs",
+        "title": "3. Frequently Asked Questions"
+      }
     ],
     "sections": [
       {
@@ -544,24 +843,240 @@ articles = [
           "Schedule a quarterly health check with your accounting consultant. Address discrepancies as they happen rather than waiting for tax authorities to issue audit notices."
         ]
       }
+    ],
+    "faqs": [
+      {
+        "question": "Can a proprietor claim GST input tax credit on personal car maintenance or groceries?",
+        "answer": "No. Section 17(5) of the CGST Act explicitly prohibits claiming ITC on personal consumption, motor vehicles (with specific commercial exceptions), and food or catering. Claiming blocked credit results in recovery notices, 18% interest, and 100% penalty."
+      },
+      {
+        "question": "For how many years must Indian businesses retain accounting records and bills?",
+        "answer": "Under Section 36 of the CGST Act and Section 44AA of the Income Tax Act, all books of account, ledgers, and original tax invoices must be retained for at least 72 months (6 years) from the due date of the relevant annual return."
+      },
+      {
+        "question": "How can I reach out to Taxoras for a quick compliance and book audit?",
+        "answer": "Message Taxoras on WhatsApp at +91 81038 19494 or email contact@taxoras.online. We conduct a rapid 20-point diagnostic check of your GST filings, TDS deductions, and bank reconciliations to fix discrepancies before tax authorities take notice."
+      }
+    ]
+  },
+  {
+    "id": "eway-bill-rules-guide",
+    "slug": "eway-bill-rules-thresholds-vehicle-breakdown-guide",
+    "title": "E-Way Bill Rules & Thresholds: Complete Multi-State Transport & Validity Guide (2026)",
+    "category": "GST Guides",
+    "summary": "Master electronic way bill statutory requirements under Rule 138 of CGST Rules. Understand ₹50,000 consignment thresholds, distance-based validity, Part-B vehicle updates, and penalty mitigation under Section 129.",
+    "readTime": "8 min read",
+    "lastReviewed": "October 2026",
+    "author": "Logistics & Indirect Tax Desk",
+    "officialSource": {
+      "title": "National E-Way Bill Portal (NIC)",
+      "url": "https://ewaybillgst.gov.in"
+    },
+    "tableOfContents": [
+      {
+        "id": "what-is-eway-bill",
+        "title": "1. What is an E-Way Bill & When is it Mandatory?"
+      },
+      {
+        "id": "statutory-thresholds",
+        "title": "2. State-Wise & Consignment Threshold Limits"
+      },
+      {
+        "id": "part-a-vs-part-b",
+        "title": "3. Generating Part-A vs Part-B (Transporter Details)"
+      },
+      {
+        "id": "validity-breakdown",
+        "title": "4. Distance-Based Validity & Vehicle Breakdown Rules"
+      },
+      {
+        "id": "penalties-section-129",
+        "title": "5. Interception, Detentions & Penalties under Section 129"
+      },
+      {
+        "id": "faqs",
+        "title": "6. Frequently Asked Questions"
+      }
+    ],
+    "sections": [
+      {
+        "id": "what-is-eway-bill",
+        "title": "1. What is an E-Way Bill & When is it Mandatory?",
+        "paragraphs": [
+          "An Electronic Way Bill (E-Way Bill) is a mandatory digital document generated on ewaybillgst.gov.in for the movement of goods in a vehicle whose consignment value exceeds ₹50,000 (whether for supply, returns, or job-work).",
+          "Under Rule 138 of the CGST Rules, every registered person who causes movement of taxable goods must generate the E-Way Bill before consignment dispatch. Movement without a valid E-Way Bill allows tax authorities to intercept, seize, and penalize both the vehicle and consignments."
+        ],
+        "callout": {
+          "type": "important",
+          "text": "For inter-state transport of handicraft goods or goods sent for job work, E-Way Bill generation is mandatory regardless of consignment value, even if the value is under ₹50,000."
+        }
+      },
+      {
+        "id": "statutory-thresholds",
+        "title": "2. State-Wise & Consignment Threshold Limits",
+        "paragraphs": [
+          "While inter-state movement uniformly mandates an E-Way Bill for consignments exceeding ₹50,000, several state governments have raised intra-state (within state) thresholds to reduce compliance friction for local retail:",
+          "Delhi: Intra-state threshold is ₹1,00,000 (all goods except tobacco and pan masala).",
+          "Maharashtra: Intra-state threshold is ₹1,00,000 for standard commodities.",
+          "West Bengal: Intra-state threshold is ₹1,00,000.",
+          "Gujarat: Intra-state threshold is ₹50,000 across specified taxable commodities."
+        ],
+        "bulletPoints": [
+          "Consignment Value calculation includes Central Tax, State Tax, Integrated Tax, and Cess, but excludes exempt supply value.",
+          "Multiple small consignments in a single conveyance: Transporters must carry a Consolidated E-Way Bill (Form GST EWB-02) if total aggregated value exceeds ₹50,000."
+        ]
+      },
+      {
+        "id": "part-a-vs-part-b",
+        "title": "3. Generating Part-A vs Part-B (Transporter Details)",
+        "paragraphs": [
+          "An E-Way Bill consists of two distinct components that must be fully reconciled:",
+          "Part-A: Contains recipient GSTIN, dispatch address, delivery PIN code, invoice number, HSN code, and taxable value. Entering Part-A generates a 12-digit E-Way Bill Number (EBN).",
+          "Part-B: Contains transporter ID, vehicle registration number (e.g. DL-01-AB-1234), or railway/airway receipt number. An E-Way Bill is NOT legally valid for transit until Part-B is filled."
+        ],
+        "callout": {
+          "type": "warning",
+          "text": "Moving goods with only Part-A filled is legally treated as transport without an E-Way Bill, attracting full detention under Section 129."
+        }
+      },
+      {
+        "id": "validity-breakdown",
+        "title": "4. Distance-Based Validity & Vehicle Breakdown Rules",
+        "paragraphs": [
+          "E-Way Bill validity is strictly tied to transit distance computed by the portal based on postal PIN codes:",
+          "Regular Cargo: 1 day validity for every 200 kilometers (or part thereof).",
+          "Over Dimensional Cargo (ODC): 1 day validity for every 20 kilometers (or part thereof).",
+          "Vehicle Breakdown Protocol: If a transport vehicle breaks down or suffers accident in transit, the transporter or supplier must update Part-B with the new vehicle registration number before resuming transit. The E-Way Bill validity can also be extended within 8 hours before or 8 hours after expiry on the portal."
+        ]
+      },
+      {
+        "id": "penalties-section-129",
+        "title": "5. Interception, Detentions & Penalties under Section 129",
+        "paragraphs": [
+          "Under Section 129 of the CGST Act (amended), transporting goods without a valid E-Way Bill or with expired validity attracts severe statutory penalties:",
+          "Where owner comes forward: Penalty is equal to 200% of the applicable tax payable on the intercepted goods.",
+          "For exempt goods: Penalty is equal to 2% of the value of goods or ₹25,000, whichever is lower.",
+          "Where owner does not come forward: Penalty equals 50% of the value of goods or 200% of tax payable, whichever is higher."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can an expired E-Way Bill be extended while the truck is in transit?",
+        "answer": "Yes. The law allows validity extension within 8 hours before or up to 8 hours after the exact expiry timestamp. The transporter must log into ewaybillgst.gov.in, select 'Extend Validity', input current location, reason for delay (e.g., breakdown, traffic blockage), and remaining distance."
+      },
+      {
+        "question": "What happens if there is a minor spelling mistake in the vehicle number on the E-Way Bill?",
+        "answer": "As per CBIC Circular No. 64/38/2018-GST, minor errors like a 1 or 2 digit clerical mistake in the vehicle number attract a nominal token penalty of ₹500 CGST + ₹500 SGST under Section 125, rather than full detention and 200% penalty under Section 129."
+      },
+      {
+        "question": "Is an E-Way Bill mandatory if goods are transported by rail, air, or sea?",
+        "answer": "Yes. While Part-B allows entry of railway receipt (RR) number, airway bill (AWB), or bill of lading instead of vehicle number, the E-Way Bill must be generated prior to goods handover or before delivery release."
+      },
+      {
+        "question": "How can I quickly reach out to Taxoras for urgent E-Way Bill setup, bulk API integration, or detention notice release?",
+        "answer": "You can connect immediately with the Taxoras emergency compliance desk via WhatsApp at +91 81038 19494 or call +91 81038 19494. Our specialists assist with instant portal generation, Part-B updating, drafting Section 129 objection representations (Form GST MOV-07), and securing expedited vehicle release."
+      }
+    ]
+  },
+  {
+    "id": "gstr-9-annual-return-guide",
+    "slug": "gstr-9-annual-return-filing-rules-reconciliation-guide",
+    "title": "GSTR-9 & GSTR-9C Annual Return Filing: Rules, Turnover Limits & Reconciliation (2026)",
+    "category": "GST Guides",
+    "summary": "Step-by-step master guide to filing Form GSTR-9 annual return and GSTR-9C reconciliation statement. Master turnover exemption limits, Table 8A vs GSTR-2A variances, DRC-03 tax payments, and late fee caps.",
+    "readTime": "10 min read",
+    "lastReviewed": "October 2026",
+    "author": "Direct & Indirect Tax Audit Desk",
+    "officialSource": {
+      "title": "GSTN Annual Return Portal",
+      "url": "https://www.gst.gov.in"
+    },
+    "tableOfContents": [
+      {
+        "id": "who-must-file-gstr9",
+        "title": "1. Who is Mandated to File GSTR-9 & GSTR-9C?"
+      },
+      {
+        "id": "table8a-reconciliation",
+        "title": "2. Table 8A vs GSTR-2B ITC Reconciliation"
+      },
+      {
+        "id": "drc03-differential-tax",
+        "title": "3. Voluntary Tax Payment via Form DRC-03"
+      },
+      {
+        "id": "statutory-deadlines-late-fees",
+        "title": "4. Statutory Deadlines & Reduced Late Fee Caps"
+      },
+      {
+        "id": "faqs",
+        "title": "5. Frequently Asked Questions"
+      }
+    ],
+    "sections": [
+      {
+        "id": "who-must-file-gstr9",
+        "title": "1. Who is Mandated to File GSTR-9 & GSTR-9C?",
+        "paragraphs": [
+          "Form GSTR-9 is an annual return filed once for each financial year by all registered regular taxpayers. It consolidates monthly declarations made in GSTR-1 and GSTR-3B.",
+          "Exemptions by Turnover: Taxpayers whose aggregate annual turnover is up to ₹2 Crore are exempt from mandatory filing of GSTR-9. Taxpayers with aggregate turnover above ₹5 Crore must file both GSTR-9 and a self-certified reconciliation statement in Form GSTR-9C."
+        ]
+      },
+      {
+        "id": "table8a-reconciliation",
+        "title": "2. Table 8A vs GSTR-2B ITC Reconciliation",
+        "paragraphs": [
+          "Table 8 of GSTR-9 compares total Input Tax Credit availed in GSTR-3B with figures auto-populated from vendor GSTR-1 filings in Table 8A. Any unexplained negative variance indicates excess ITC claimed, which must either be reversed or paid with Section 50 interest."
+        ]
+      },
+      {
+        "id": "drc03-differential-tax",
+        "title": "3. Voluntary Tax Payment via Form DRC-03",
+        "paragraphs": [
+          "If annual reconciliation uncovers unpaid outward tax or ineligible ITC claimed, taxpayers can voluntarily pay the shortfall with interest through Form DRC-03 under the 'Annual Return' cause of payment before submitting GSTR-9, avoiding penal proceedings under Section 73 or 74."
+        ]
+      },
+      {
+        "id": "statutory-deadlines-late-fees",
+        "title": "4. Statutory Deadlines & Reduced Late Fee Caps",
+        "paragraphs": [
+          "The statutory deadline for filing Form GSTR-9 and GSTR-9C is 31st December following the close of the financial year.",
+          "Under rationalized rules, for taxpayers with turnover up to ₹5 Crore, late fee is capped at ₹50 per day (₹25 CGST + ₹25 SGST) subject to a maximum of 0.04% of turnover (0.02% CGST + 0.02% SGST)."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I claim new Input Tax Credit in Form GSTR-9 that was missed in monthly GSTR-3B?",
+        "answer": "No. Form GSTR-9 is strictly a consolidation return. No new Input Tax Credit can be claimed directly in GSTR-9. Unclaimed ITC could only be availed up to 30th November following the end of the financial year in monthly GSTR-3B returns."
+      },
+      {
+        "question": "Can Form GSTR-9 be revised once submitted on the GST portal?",
+        "answer": "No. There is no provision under the CGST Act to file a revised Form GSTR-9 once filed. All tables, sales figures, and ITC reconciliations must be thoroughly verified before final digital signature or EVC verification."
+      },
+      {
+        "question": "How can I quickly consult Taxoras to audit and file my GSTR-9 & GSTR-9C before 31st December?",
+        "answer": "Connect with Taxoras on WhatsApp at +91 81038 19494 or submit an enquiry online. Our audit team reconciles your complete 12 months of GSTR-1, GSTR-3B, GSTR-2B, and audited books of accounts, identifying variances and preparing schedule-compliant filings in 48 hours."
+      }
     ]
   }
 ]
 
 res_ts = f"""import {{ ResourceArticle }} from "@/types";
 
-export const allResources: ResourceArticle[] = {json.dumps(articles, indent=2)};
+export const allResources: ResourceArticle[] = {json.dumps(articles, indent=2, ensure_ascii=False)};
 
-export function getResourceBySlug(slug: string): ResourceArticle | undefined {{
+export function getResourceBySlug(slug: string): ResourceArticle | undefined {{ 
   return allResources.find((r) => r.slug === slug);
 }}
 
-export function getResourcesByCategory(category: string): ResourceArticle[] {{
+export function getResourcesByCategory(category: string): ResourceArticle[] {{ 
   return allResources.filter((r) => r.category === category);
 }}
 """
 
-with open("src/data/resourcesData.ts", "w") as f:
+with open("src/data/resourcesData.ts", "w", encoding="utf-8") as f:
     f.write(res_ts)
 
-print("Successfully generated resourcesData.ts with 10 comprehensive articles!")
+print("Successfully regenerated resourcesData.ts!")

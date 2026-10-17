@@ -19,6 +19,8 @@ import {
   ShieldAlert,
   Share2,
   CheckCircle2,
+  HelpCircle,
+  PhoneCall,
 } from "lucide-react";
 
 interface ResourcePageProps {
@@ -79,8 +81,19 @@ async function ResourceDetailContent({ params }: ResourcePageProps) {
   }
 
   const related = allResources.filter((a) => a.slug !== article.slug).slice(0, 3);
-
   const articleUrl = `${siteConfig.canonicalUrl}/resources/${article.slug}`;
+
+  const articleFaqs = article.faqs && article.faqs.length > 0 ? article.faqs : [
+    {
+      question: `How can I quickly consult a Taxoras specialist regarding ${article.title}?`,
+      answer: `You can reach Taxoras immediately via WhatsApp at +91 81038 19494 or submit an enquiry on our portal. Our dedicated compliance managers review your documents and respond within 15–30 minutes during business hours.`
+    },
+    {
+      question: "Does Taxoras provide end-to-end documentation and portal filing assistance?",
+      answer: "Yes, Taxoras provides complete assisted filing, ledger reconciliation, documentation validation, and portal submission with transparent, upfront pricing."
+    }
+  ];
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -135,6 +148,18 @@ async function ResourceDetailContent({ params }: ResourcePageProps) {
             "item": articleUrl
           }
         ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${articleUrl}/#faqs`,
+        "mainEntity": articleFaqs.map((faq) => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
       }
     ]
   };
@@ -277,6 +302,54 @@ async function ResourceDetailContent({ params }: ResourcePageProps) {
                 </div>
               )}
             </article>
+
+            {/* Frequently Asked Questions */}
+            <section id="faqs" className="bg-white rounded-2xl border border-surface-border p-6 sm:p-10 shadow-xs space-y-6 scroll-mt-24">
+              <div className="border-b border-slate-100 pb-4">
+                <div className="flex items-center gap-2 mb-1.5">
+                  <span className="text-[11px] font-bold text-amber-700 bg-amber-50 border border-amber-200/70 px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                    Instant Answers & Assistance
+                  </span>
+                </div>
+                <h2 className="text-xl sm:text-2xl font-bold text-navy flex items-center gap-2.5">
+                  <HelpCircle className="w-5 h-5 text-amber-500 shrink-0" />
+                  <span>Frequently Asked Questions</span>
+                </h2>
+                <p className="text-xs text-text-muted mt-1">
+                  Answers to statutory rules, common filing dilemmas, and how to get rapid expert help from Taxoras.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                {articleFaqs.map((faq, fIdx) => (
+                  <div
+                    key={fIdx}
+                    className="p-4 sm:p-5 rounded-xl border border-surface-border bg-slate-50/70 hover:bg-slate-50 transition-colors space-y-2.5"
+                  >
+                    <h3 className="text-sm font-bold text-navy flex items-start gap-2.5">
+                      <span className="text-amber-600 font-extrabold text-xs mt-0.5 shrink-0">Q{fIdx + 1}.</span>
+                      <span>{faq.question}</span>
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-700 leading-relaxed pl-5 sm:pl-6">
+                      {faq.answer}
+                    </p>
+                    {faq.answer.includes("WhatsApp") && (
+                      <div className="pl-5 sm:pl-6 pt-1">
+                        <a
+                          href={siteConfig.links.whatsappUrl(article.title)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 hover:text-emerald-800 bg-emerald-50 hover:bg-emerald-100/80 px-3 py-1.5 rounded-lg border border-emerald-200 transition-all"
+                        >
+                          <WhatsAppIcon className="w-3.5 h-3.5" />
+                          <span>Chat with Compliance Desk on WhatsApp (+91 81038 19494)</span>
+                        </a>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </section>
 
             {/* Quick Contextual Consultation Callout */}
             <div className="bg-[#1C1510] border border-[#3E2C20] text-[#FAF4EF] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl">

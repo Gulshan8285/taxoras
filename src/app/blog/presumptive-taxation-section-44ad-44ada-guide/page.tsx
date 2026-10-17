@@ -142,6 +142,14 @@ export default function PresumptiveTaxationGuidePage() {
           text: "If an eligible taxpayer opts for Section 44AD and then declares profits lower than presumptive rates in any of the subsequent 5 assessment years, they cannot opt back into Section 44AD for the next 5 assessment years and must undergo compulsory tax audit under Section 44AB if income exceeds the basic exemption limit.",
         },
       },
+      {
+        "@type": "Question",
+        name: "How can I consult Taxoras to determine if 44AD or 44ADA is right for my freelancing or trading business?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Connect with our direct tax specialists via WhatsApp at +91 81038 19494 or submit your details online. We evaluate your gross receipts, digital transaction percentage, and bank statements to compute your optimum tax liability under the new vs old regime, ensuring zero books of accounts and full compliance.",
+        },
+      },
     ],
   };
 
@@ -502,6 +510,26 @@ export default function PresumptiveTaxationGuidePage() {
                 <p className="text-xs text-[#DDD0C5] leading-relaxed">
                   If an eligible taxpayer opts for Section 44AD and then declares profits lower than presumptive rates in any of the subsequent 5 assessment years, they cannot opt back into Section 44AD for the next 5 assessment years and must undergo compulsory tax audit under Section 44AB if income exceeds the basic exemption limit.
                 </p>
+              </div>
+
+              <div className="bg-[#1B1410] p-5 rounded-2xl border border-amber-500/30 shadow-xs space-y-2.5">
+                <h3 className="text-sm font-bold text-white flex items-center gap-2">
+                  <HelpCircle className="w-4 h-4 text-amber-400 shrink-0" />
+                  How can I consult Taxoras to determine if 44AD or 44ADA is right for my freelancing or trading business?
+                </h3>
+                <p className="text-xs text-[#DDD0C5] leading-relaxed">
+                  Connect with our direct tax specialists via WhatsApp at +91 81038 19494 or submit your details online. We evaluate your gross receipts, digital transaction percentage, and bank statements to compute your optimum tax liability under the new vs old regime, ensuring zero books of accounts and full compliance.
+                </p>
+                <div className="pt-1">
+                  <a
+                    href={siteConfig.links.whatsappUrl("Section 44AD/44ADA Presumptive Tax Consultation")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold px-3.5 py-1.5 rounded-lg transition-all"
+                  >
+                    <span>Instant WhatsApp Consultation (+91 81038 19494)</span>
+                  </a>
+                </div>
               </div>
             </div>
           </section>

@@ -39,7 +39,7 @@ export default function PricingPage() {
               Transparent Fee Engine
             </span>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight mt-3 mb-3">
-              India's Most Affordable Accounting & Compliance Support
+              India&apos;s Most Affordable Accounting & Compliance Support
             </h1>
             <div className="inline-flex items-center gap-2 bg-teal-light border border-teal/30 px-3 py-1 rounded-full text-xs font-bold text-teal mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-teal shrink-0"></span><span>Guaranteed ₹5 Cheaper Than Any Verified Competitor Quote</span>

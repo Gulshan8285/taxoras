@@ -124,4 +124,9 @@ export interface ResourceArticle {
       text: string;
     };
   }[];
+  faqs?: {
+    question: string;
+    answer: string;
+  }[];
 }
+

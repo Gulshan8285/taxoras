@@ -348,6 +348,14 @@ export default function TopGstServicesPage() {
               "@type": "Answer",
               "text": "Yes, the Government of India levies ₹0 statutory fee for obtaining a GSTIN on gst.gov.in. Any fees charged by consultants (typically ₹999 to ₹1,999) cover document validation, constitution review, application drafting, Aadhaar biometric coordination, and clarification query management."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I quickly consult Taxoras for assisted GST return filing or notice resolution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can connect directly with Taxoras via WhatsApp at +91 81038 19494 or call +91 81038 19494. A dedicated senior compliance accountant reviews your GST requirements, verifies previous return filings, and sets up your compliance calendar within 30 minutes."
+            }
           }
         ]
       }
@@ -384,7 +392,7 @@ export default function TopGstServicesPage() {
             </h1>
 
             <p className="text-base sm:text-lg text-[#D8CCC0] leading-relaxed mb-6">
-              An evidence-based, transparent evaluation comparing India's leading GST return filing services, corporate aggregators, and boutique accounting firms. Compare verified pricing, invoice limits, GSTR-2B purchase matching, and how to choose the right partner.
+              An evidence-based, transparent evaluation comparing India&apos;s leading GST return filing services, corporate aggregators, and boutique accounting firms. Compare verified pricing, invoice limits, GSTR-2B purchase matching, and how to choose the right partner.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 text-xs text-[#BCAE9F] pt-4 border-t border-surface-border">
@@ -435,7 +443,7 @@ export default function TopGstServicesPage() {
               1. Quick Comparison: Top 10 GST Service Providers at a Glance
             </h2>
             <p className="text-sm text-[#D8CCC0] leading-relaxed">
-              Before diving into individual reviews, here is how India's top GST service providers compare across service model, typical pricing, and support accessibility:
+              Before diving into individual reviews, here is how India&apos;s top GST service providers compare across service model, typical pricing, and support accessibility:
             </p>
 
             <div className="overflow-x-auto rounded-2xl border border-surface-border bg-[#1B1410] shadow-md">
@@ -737,6 +745,26 @@ export default function TopGstServicesPage() {
                   Yes, the Government of India levies ₹0 statutory fee for obtaining a GSTIN on gst.gov.in. Any fees charged by consultants (typically ₹999 to ₹1,999) cover document validation, constitution review, application drafting, Aadhaar biometric coordination, and clarification query management.
                 </p>
               </div>
+
+              <div className="bg-[#1B1410] p-5 rounded-2xl border border-amber-500/30 shadow-xs space-y-2.5">
+                <h3 className="text-sm font-bold text-white flex items-center gap-2">
+                  <HelpCircle className="w-4 h-4 text-amber-400 shrink-0" />
+                  How can I quickly consult Taxoras for assisted GST return filing or notice resolution?
+                </h3>
+                <p className="text-xs text-[#DDD0C5] leading-relaxed">
+                  You can connect directly with Taxoras via WhatsApp at +91 81038 19494 or call +91 81038 19494. A dedicated senior compliance accountant reviews your GST requirements, verifies previous return filings, and sets up your compliance calendar within 30 minutes.
+                </p>
+                <div className="pt-1">
+                  <a
+                    href={siteConfig.links.whatsappUrl("Top GST Providers Review & Advisory")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold px-3.5 py-1.5 rounded-lg transition-all"
+                  >
+                    <span>Instant WhatsApp Consultation (+91 81038 19494)</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </section>
 
@@ -747,7 +775,7 @@ export default function TopGstServicesPage() {
                 Need Stress-Free GST Compliance for Your Business?
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mb-3">
-                Partner with Taxoras Advisory — India's Dedicated Compliance Team
+                Partner with Taxoras Advisory — India&apos;s Dedicated Compliance Team
               </h2>
               <p className="text-xs sm:text-sm text-[#DDD0C5] leading-relaxed">
                 Stop worrying about missed deadlines, portal crashes, or Input Tax Credit discrepancies. Get full GSTR-1, GSTR-3B, and 100% GSTR-2B purchase matching with dedicated WhatsApp support starting at just ₹799/month.

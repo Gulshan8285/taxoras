@@ -92,7 +92,7 @@ async function ServiceDetailContent({ params }: ServicePageProps) {
   const related = getRelatedServices(service.relatedSlugs);
 
   const serviceUrl = `${siteConfig.canonicalUrl}/services/${service.slug}`;
-  const schemaGraph: any[] = [
+  const schemaGraph: Record<string, unknown>[] = [
     {
       "@type": "Service",
       "@id": `${serviceUrl}/#service`,

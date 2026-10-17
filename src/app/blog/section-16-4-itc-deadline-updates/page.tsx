@@ -141,6 +141,14 @@ export default function Section164ITCGuidePage() {
           text: "No. Statutory ITC entitlement in GSTR-3B is strictly determined by GSTR-2B, which is a static monthly statement generated on the 14th of each month under Section 16(2)(aa). GSTR-2A is dynamic and cannot serve as legal basis for claiming credit in GSTR-3B.",
         },
       },
+      {
+        "@type": "Question",
+        name: "How can I quickly get Taxoras to audit my GSTR-2B and claim missing Input Tax Credit before the deadline?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Send an enquiry on WhatsApp at +91 81038 19494. Our reconciliation specialists run automated purchase-to-2B invoice matching across your entire financial year, identify uncredited vendor bills, and file your GSTR-3B before the statutory 30th November cutoff.",
+        },
+      },
     ],
   };
 
@@ -547,6 +555,26 @@ export default function Section164ITCGuidePage() {
                 <p className="text-xs text-[#DDD0C5] leading-relaxed">
                   No. Statutory ITC entitlement in GSTR-3B is strictly determined by GSTR-2B, which is a static monthly statement generated on the 14th of each month under Section 16(2)(aa). GSTR-2A is dynamic and cannot serve as legal basis for claiming credit in GSTR-3B.
                 </p>
+              </div>
+
+              <div className="bg-[#1B1410] p-5 rounded-2xl border border-amber-500/30 shadow-xs space-y-2.5">
+                <h3 className="text-sm font-bold text-white flex items-center gap-2">
+                  <HelpCircle className="w-4 h-4 text-amber-400 shrink-0" />
+                  How can I quickly get Taxoras to audit my GSTR-2B and claim missing Input Tax Credit before the deadline?
+                </h3>
+                <p className="text-xs text-[#DDD0C5] leading-relaxed">
+                  Send an enquiry on WhatsApp at +91 81038 19494. Our reconciliation specialists run automated purchase-to-2B invoice matching across your entire financial year, identify uncredited vendor bills, and file your GSTR-3B before the statutory 30th November cutoff.
+                </p>
+                <div className="pt-1">
+                  <a
+                    href={siteConfig.links.whatsappUrl("GSTR-2B Audit & Missing ITC Reconciliation")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs font-bold px-3.5 py-1.5 rounded-lg transition-all"
+                  >
+                    <span>Instant WhatsApp Consultation (+91 81038 19494)</span>
+                  </a>
+                </div>
               </div>
             </div>
           </section>
