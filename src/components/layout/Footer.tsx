@@ -177,6 +177,11 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/who-we-help" className="hover:text-white transition-colors">
+                  Who We Help (Entities We Support)
+                </Link>
+              </li>
+              <li>
                 <Link href="/about" className="hover:text-white transition-colors">
                   About TaxVeda Advisory
                 </Link>
@@ -245,13 +250,13 @@ export const Footer: React.FC = () => {
             <p className="text-slate-400">
               Created by{" "}
               <a
-                href="https://codeavy.cloud/"
+                href="https://codeorbi.cloud/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-teal hover:text-white transition-colors font-medium underline underline-offset-2"
-                title="Website design and development by Codeavy.cloud"
+                title="Website design and development by Codeorbi.cloud"
               >
-                Codeavy.cloud
+                Codeorbi.cloud
               </a>
             </p>
           </div>

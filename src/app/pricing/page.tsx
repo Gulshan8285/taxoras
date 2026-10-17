@@ -38,11 +38,14 @@ export default function PricingPage() {
               <Scale className="w-3.5 h-3.5" />
               Transparent Fee Engine
             </span>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight mt-3 mb-4">
-              Professional Support. Clear Pricing. No Unpleasant Surprises.
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight mt-3 mb-3">
+              India's Most Affordable Accounting & Compliance Support
             </h1>
+            <div className="inline-block bg-teal-light border border-teal/30 px-3 py-1 rounded-full text-xs font-bold text-teal mb-3">
+              ★ Guaranteed ₹5 Cheaper Than Any Verified Competitor Quote ★
+            </div>
             <p className="text-sm sm:text-base text-text-muted leading-relaxed max-w-2xl mx-auto">
-              We compete on affordability and clarity without cutting corners on compliance rigor. Compare packages below with exact invoice limits, turnaround estimates, and deliverables.
+              We compete on genuine affordability and clarity. Show us any verified quote from Clear, TaxFetch, Corpbiz, IndiaFilings, or your local accountant — we guarantee our fee is lower by ₹5 or more.
             </p>
           </div>
         </section>

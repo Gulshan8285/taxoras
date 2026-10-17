@@ -7,7 +7,6 @@ import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 import { HeroSection } from "@/components/home/HeroSection";
 import { QuickServiceFinder } from "@/components/home/QuickServiceFinder";
 import { ServicesGrid } from "@/components/home/ServicesGrid";
-import { WhoWeHelpSection } from "@/components/home/WhoWeHelpSection";
 import { HowItWorksSection } from "@/components/home/HowItWorksSection";
 import { PricingEstimator } from "@/components/home/PricingEstimator";
 import { WhyChooseUsSection } from "@/components/home/WhyChooseUsSection";
@@ -98,9 +97,6 @@ export default function HomePage() {
 
         {/* G. How It Works (4-Step Timeline) */}
         <HowItWorksSection />
-
-        {/* H. Who We Serve */}
-        <WhoWeHelpSection />
 
         {/* I. Trust & Process Section */}
         <WhyChooseUsSection />

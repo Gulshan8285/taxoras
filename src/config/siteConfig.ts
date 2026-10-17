@@ -78,8 +78,8 @@ export const siteConfig: SiteConfig = {
   },
   credit: {
     text: "Created by",
-    brand: "Codeavy.cloud",
-    url: "https://codeavy.cloud/",
+    brand: "Codeorbi.cloud",
+    url: "https://codeorbi.cloud/",
   },
   links: {
     whatsappUrl: (serviceName?: string, location?: string) => {
