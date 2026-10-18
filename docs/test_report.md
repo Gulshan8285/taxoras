@@ -1,5 +1,5 @@
 # Full-Stack Quality Assurance & Verification Report
-**Website:** Taxoras Advisory & Compliance (`taxorasconsultants.in`)  
+**Website:** Taxoras Advisory & Compliance (`https://www.taxoras.online`)  
 **Build Engine:** Next.js 16.4.2 (Turbopack) & React 19  
 **Date of Testing:** October 2026  
 **Auditor:** Antigravity Senior Full-Stack & QA Engineering Team
@@ -31,7 +31,7 @@ A comprehensive end-to-end audit was conducted across all 63 production routes a
 | **Click-to-Call** | Persistent Call Now button | Links directly to `tel:+918810381949` | Triggers native phone dialer | **PASS** |
 | **Admin Panel Removal** | Public `/admin` route access | `/admin` removed from navigation and file system | Returns HTTP 404; zero public links remain | **PASS** |
 | **Lead Storage Persistence** | Persistence of customer leads after admin UI removal | Backend saves records into `data/enquiries.json` | Verified lead write and read operations intact | **PASS** |
-| **Footer Credit** | Credit in bottom footer bar | Displays "Created by Codeavy.cloud" linking to `https://codeavy.cloud/` | Verified clickable link with `target="_blank" rel="noopener noreferrer"` | **PASS** |
+| **Footer Credit** | Credit in bottom footer bar | Displays "Created by Codeorbit.cloud" linking to `https://www.codeorbit.cloud/` | Verified clickable link with `target="_blank" rel="noopener noreferrer"` | **PASS** |
 | **Top 10 GST Article** | Researched comparison page `/blog/top-gst-service-providers-in-india` | Objective 10-provider comparison, pricing tables, FAQ schema | Loaded with 200 OK, full semantic structure | **PASS** |
 | **Blog Index** | Knowledge hub at `/blog` | Curated listing of articles, guides, and search filters | Loaded with 200 OK | **PASS** |
 | **Sitemap XML** | Next.js sitemap generator at `/sitemap.xml` | Lists core, blog, services, locations, resources | Valid XML returned with 200 OK | **PASS** |
@@ -57,6 +57,6 @@ A comprehensive end-to-end audit was conducted across all 63 production routes a
 ## 4. Pending External Dependencies & Setup Instructions
 
 The website code is 100% production-ready. For live commercial deployment:
-1. **Domain & DNS:** Point DNS records (`A` and `CNAME`) for `taxorasconsultants.in` to the hosting provider (e.g. Vercel, AWS Amplify, or custom VPS).
+1. **Domain & DNS:** Already live at `https://www.taxoras.online` via Vercel (`vercel.json` headers/redirects verified). Ensure `A` and `CNAME` remain pointed to Vercel.
 2. **WhatsApp Business Account:** Ensure the official WhatsApp Business app or API profile is configured for `+91 88103 81949` with automated welcome greetings.
-3. **Google Search Console & Bing Webmaster:** Submit `https://taxorasconsultants.in/sitemap.xml` upon DNS propagation.
+3. **Google Search Console & Bing Webmaster:** Submit `https://www.taxoras.online/sitemap.xml` and verify `https://www.taxoras.online/7b3e10fa14db45be8a3a29ec672e8f1b.txt` (IndexNow key) + sitemap ping via `GET /api/seo/submit-indexing`.

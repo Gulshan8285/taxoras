@@ -59,7 +59,7 @@ export default function PresumptiveTaxationGuidePage() {
     headline: "Section 44AD & 44ADA Presumptive Taxation Scheme: Eligibility, Limits & Tax Savings Guide",
     description:
       "Complete statutory analysis of presumptive taxation under Section 44AD and 44ADA for Indian businesses, consultants, and professionals.",
-    image: "https://www.taxoras.online/images/og-default.jpg",
+    image: "https://www.taxoras.online/opengraph-image",
     author: {
       "@type": "Organization",
       name: "Taxoras Direct Tax Advisory",
@@ -70,7 +70,7 @@ export default function PresumptiveTaxationGuidePage() {
       name: "Taxoras Advisory & Compliance",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.taxoras.online/logo.png",
+        url: "https://www.taxoras.online/icon.svg",
       },
     },
     datePublished: "2026-10-17T11:00:00+05:30",

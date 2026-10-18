@@ -77,6 +77,21 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/gst-registration",
+        destination: "/services/gst-registration",
+        permanent: true,
+      },
+      {
+        source: "/gst-return-filing",
+        destination: "/services/gst-return-filing",
+        permanent: true,
+      },
+      {
+        source: "/tds-return-filing",
+        destination: "/services/tds-return-filing",
+        permanent: true,
+      },
     ];
   },
   experimental: {

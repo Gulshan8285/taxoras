@@ -58,7 +58,7 @@ export default function Section164ITCGuidePage() {
     headline: "Section 16(4) ITC Deadline Updates & Retrospective Relief: Law & Reconciliation Guide",
     description:
       "Statutory breakdown of Section 16(4) Input Tax Credit cutoffs, Section 16(5) & 16(6) retrospective relief, and Rule 37A compliance.",
-    image: "https://www.taxoras.online/images/og-default.jpg",
+    image: "https://www.taxoras.online/opengraph-image",
     author: {
       "@type": "Organization",
       name: "Taxoras Compliance Desk",
@@ -69,7 +69,7 @@ export default function Section164ITCGuidePage() {
       name: "Taxoras Advisory & Compliance",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.taxoras.online/logo.png",
+        url: "https://www.taxoras.online/icon.svg",
       },
     },
     datePublished: "2026-10-17T10:00:00+05:30",

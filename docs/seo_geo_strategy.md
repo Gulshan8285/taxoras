@@ -1,5 +1,5 @@
 # SEO & Generative Engine Optimization (GEO) Strategy
-**Platform:** Taxoras Advisory & Compliance (`https://taxorasconsultants.in`)  
+**Platform:** Taxoras Advisory & Compliance (`https://www.taxoras.online`)  
 **Target Engines:** Google Search, Bing Webmaster, OpenAI (ChatGPT Search), Google AI Overviews, Perplexity AI  
 **Scope:** India-Wide Business Accounting, GST, TDS & Tax Compliance
 
@@ -9,7 +9,7 @@
 
 ### A. Crawlability & Canonicalization
 - **Predictable Clean URLs:** Strictly slug-based without session variables or trailing hashes (e.g., `/services/gst-return-filing`, `/locations/delhi`, `/resources/understanding-gstr-1-and-gstr-3b`).
-- **Canonical URLs:** Configured in `metadataBase` (`https://taxorasconsultants.in`) across all 50+ prerendered pages.
+- **Canonical URLs:** Configured via `siteConfig.canonicalUrl` (`https://www.taxoras.online`) with `metadataBase` across all 50+ prerendered pages — each page emits a self-referencing `rel=\"canonical\"`.
 - **XML Sitemap Index:** Automatically generated via Next.js metadata route (`/sitemap.xml`) referencing all static, service, article, and location pages with deterministic last-modified timestamps.
 - **HTTP Status Codes:** Verified 200 OK across public routes, 404 on invalid paths, and 422 for form payload validation.
 

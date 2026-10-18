@@ -1,8 +1,8 @@
-# TaxVeda Advisory & Compliance — Pan-India Accounting, GST & Tax Platform
+# Taxoras Advisory & Compliance — Pan-India Accounting, GST & Tax Platform
 
-A complete, production-grade, customer-focused web platform for an Indian Accounting, Taxation, and Business Compliance Consultancy Firm built with **Next.js 16 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Lucide Icons**.
+A complete, production-grade, customer-focused web platform for an Indian Accounting, Taxation, and Business Compliance Consultancy Firm built with **Next.js 16 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Lucide Icons** — live at **https://www.taxoras.online**.
 
-Inspired by modern fintech platforms and strategic analysis of Indian competitors (TaxFetch India & Corpbiz), TaxVeda delivers a more transparent, approachable, and affordable compliance experience.
+Inspired by modern fintech platforms and strategic analysis of Indian competitors (TaxFetch India & Corpbiz), Taxoras delivers a more transparent, approachable, and affordable compliance experience.
 
 ---
 
