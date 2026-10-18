@@ -22,6 +22,22 @@ export const metadata: Metadata = {
   },
   title: "India-Wide Locations & Commercial Hubs | Taxoras",
   description: "Explore our accounting, GST, and tax compliance coverage across Tier 1, Tier 2, and Tier 3 cities in India. Remote digital onboarding with nationwide support.",
+  keywords: ["GST filing Delhi", "GST services Mumbai", "accounting services Bangalore", "GST filing Jaipur", "GST compliance India"],
+  openGraph: {
+    title: "Pan-India Accounting & GST Coverage | Taxoras",
+    description: "Digital GST & accounting support across Delhi, Mumbai, Bengaluru, Jaipur, Lucknow, Ahmedabad & more.",
+    url: `${siteConfig.canonicalUrl}/locations`,
+    type: "website",
+    locale: "en_IN",
+    siteName: siteConfig.businessName,
+    images: [{ url: `${siteConfig.canonicalUrl}/opengraph-image`, width: 1200, height: 630, alt: "Taxoras Pan-India Locations" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pan-India GST & Accounting | Taxoras",
+    description: "Serving businesses across all states & UTs via digital onboarding.",
+    images: [`${siteConfig.canonicalUrl}/opengraph-image`],
+  },
 };
 
 export default function LocationsIndexPage() {

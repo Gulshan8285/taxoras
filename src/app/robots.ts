@@ -34,7 +34,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/admin", "/portal/session"],
       },
     ],
-    sitemap: [`${baseUrl}/sitemap.xml`, `${baseUrl}/llms.txt`],
+    sitemap: [`${baseUrl}/sitemap.xml`],
     host: baseUrl,
   };
 }

@@ -9,7 +9,9 @@ export const metadata: Metadata = {
     "accounting fees India",
     "bookkeeping packages",
     "TDS return cost",
-    "affordable compliance retainer"
+    "affordable compliance retainer",
+    "GST return filing pricing India",
+    "monthly GST fees"
   ],
   alternates: {
     canonical: `${siteConfig.canonicalUrl}/pricing`,
@@ -19,6 +21,15 @@ export const metadata: Metadata = {
     description: "Clear, upfront pricing for GST return filing, bookkeeping, and TDS compliance across India.",
     url: `${siteConfig.canonicalUrl}/pricing`,
     type: "website",
+    locale: "en_IN",
+    siteName: siteConfig.businessName,
+    images: [{ url: `${siteConfig.canonicalUrl}/opengraph-image`, width: 1200, height: 630, alt: "Taxoras Pricing - Transparent GST & Accounting Fees" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Transparent Accounting & GST Pricing | Taxoras",
+    description: "Compare GST, TDS and bookkeeping retainers with no hidden fees. From ₹799/mo.",
+    images: [`${siteConfig.canonicalUrl}/opengraph-image`],
   },
 };
 

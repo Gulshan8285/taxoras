@@ -24,6 +24,20 @@ export const metadata: Metadata = {
   },
   title: "About Us | Professional Accounting & Compliance Advisory",
   description: "Learn about Taxoras Advisory. Our mission, service philosophy, document security standards, and honest approach to business accounting and tax compliance.",
+  openGraph: {
+    title: "About Taxoras Advisory & Compliance",
+    description: "Our mission, service philosophy, document security standards, and honest approach to business accounting and tax compliance.",
+    url: `${siteConfig.canonicalUrl}/about`,
+    type: "website",
+    locale: "en_IN",
+    images: [{ url: `${siteConfig.canonicalUrl}/opengraph-image`, width: 1200, height: 630, alt: "Taxoras Advisory & Compliance" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Taxoras Advisory & Compliance",
+    description: "Practical accounting & compliance advisory for Indian businesses.",
+    images: [`${siteConfig.canonicalUrl}/opengraph-image`],
+  },
 };
 
 export default function AboutPage() {

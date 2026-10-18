@@ -46,6 +46,7 @@ export async function generateMetadata({ params }: ResourcePageProps): Promise<M
   return {
     title: `${article.title} | Taxoras Compliance Guide`,
     description: article.summary,
+    keywords: [article.category, article.title, "GST guide India", "Taxoras compliance"],
     alternates: {
       canonical: `${siteConfig.canonicalUrl}/resources/${article.slug}`,
     },
@@ -54,7 +55,16 @@ export async function generateMetadata({ params }: ResourcePageProps): Promise<M
       description: article.summary,
       url: `${siteConfig.canonicalUrl}/resources/${article.slug}`,
       type: "article",
-    }
+      locale: "en_IN",
+      siteName: siteConfig.businessName,
+      images: [{ url: `${siteConfig.canonicalUrl}/opengraph-image`, width: 1200, height: 630, alt: article.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.summary,
+      images: [`${siteConfig.canonicalUrl}/opengraph-image`],
+    },
   };
 }
 

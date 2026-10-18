@@ -47,6 +47,7 @@ export async function generateMetadata({ params }: ServiceCityProps): Promise<Me
   return {
     title: item.title,
     description: item.description,
+    keywords: [item.title, `${item.serviceSlug} ${item.citySlug}`, `GST ${item.citySlug}`, "Taxoras"],
     alternates: {
       canonical: pageUrl,
     },
@@ -54,7 +55,17 @@ export async function generateMetadata({ params }: ServiceCityProps): Promise<Me
       title: item.title,
       description: item.description,
       url: pageUrl,
-    }
+      type: "website",
+      locale: "en_IN",
+      siteName: siteConfig.businessName,
+      images: [{ url: `${siteConfig.canonicalUrl}/opengraph-image`, width: 1200, height: 630, alt: item.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: item.title,
+      description: item.description,
+      images: [`${siteConfig.canonicalUrl}/opengraph-image`],
+    },
   };
 }
 

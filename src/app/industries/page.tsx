@@ -23,6 +23,22 @@ export const metadata: Metadata = {
   },
   title: "Industry Accounting & Compliance Solutions | Taxoras India",
   description: "Specialized accounting, GST, and tax compliance solutions for E-Commerce, Retail, IT Exporters, Manufacturers, Healthcare, and Freelancers.",
+  keywords: ["industry GST filing", "ecommerce accounting India", "retail GST compliance", "IT exporter LUT filing", "healthcare accounting"],
+  openGraph: {
+    title: "Industry-Specific Accounting & Tax Solutions | Taxoras",
+    description: "Tailored GST & accounting blueprints for E-Commerce, Retail, IT, Manufacturing, Healthcare & Freelancers.",
+    url: `${siteConfig.canonicalUrl}/industries`,
+    type: "website",
+    locale: "en_IN",
+    siteName: siteConfig.businessName,
+    images: [{ url: `${siteConfig.canonicalUrl}/opengraph-image`, width: 1200, height: 630, alt: "Taxoras Industries Solutions" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Industry Solutions | Taxoras",
+    description: "Sector-specific GST & accounting for Indian businesses.",
+    images: [`${siteConfig.canonicalUrl}/opengraph-image`],
+  },
 };
 
 export default function IndustriesPage() {

@@ -53,7 +53,9 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
       service.title,
       `${service.title} in ${siteConfig.location.city}`,
       `${service.title} assistance`,
-      "business compliance India"
+      "business compliance India",
+      `${service.title} fees`,
+      `${service.title} consultant India`
     ],
     alternates: {
       canonical: `${siteConfig.canonicalUrl}/services/${service.slug}`,
@@ -63,7 +65,16 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
       description: service.shortDescription,
       url: `${siteConfig.canonicalUrl}/services/${service.slug}`,
       type: "website",
-    }
+      locale: "en_IN",
+      siteName: siteConfig.businessName,
+      images: [{ url: `${siteConfig.canonicalUrl}/opengraph-image`, width: 1200, height: 630, alt: `${service.title} | ${siteConfig.businessName}` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${service.title} | ${siteConfig.businessName}`,
+      description: service.shortDescription,
+      images: [`${siteConfig.canonicalUrl}/opengraph-image`],
+    },
   };
 }
 

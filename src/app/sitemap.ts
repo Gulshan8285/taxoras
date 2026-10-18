@@ -21,7 +21,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog/gst-amnesty-scheme-late-fee-waiver-rules`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/blog/section-16-4-itc-deadline-updates`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/blog/presumptive-taxation-section-44ad-44ada-guide`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/portal`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
     { url: `${baseUrl}/document-security`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${baseUrl}/service-limitations`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${baseUrl}/refund-policy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },

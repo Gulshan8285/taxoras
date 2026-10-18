@@ -44,6 +44,7 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
   return {
     title: `Accounting, GST & Tax Compliance Services in ${loc.city}, ${loc.state}`,
     description: `Professional, affordable bookkeeping, GST return filing, TDS compliance, and financial reporting for businesses in ${loc.city}, ${loc.state}.`,
+    keywords: [`GST filing ${loc.city}`, `accounting services ${loc.city}`, `TDS return filing ${loc.state}`, `GST compliance ${loc.city}`],
     alternates: {
       canonical: `${siteConfig.canonicalUrl}/locations/${loc.id}`,
     },
@@ -52,7 +53,16 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
       description: loc.description,
       url: `${siteConfig.canonicalUrl}/locations/${loc.id}`,
       type: "website",
-    }
+      locale: "en_IN",
+      siteName: siteConfig.businessName,
+      images: [{ url: `${siteConfig.canonicalUrl}/opengraph-image`, width: 1200, height: 630, alt: `GST & Accounting Services in ${loc.city}` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `GST & Accounting Services in ${loc.city} | ${siteConfig.shortName}`,
+      description: loc.description,
+      images: [`${siteConfig.canonicalUrl}/opengraph-image`],
+    },
   };
 }
 

@@ -9,8 +9,24 @@ export const metadata: Metadata = {
   title: "Blog & Compliance Guides | Taxoras Advisory & Compliance",
   description:
     "Expert articles and statutory compliance guides on GST amnesty schemes, Section 16(4) ITC deadlines, Section 44AD/44ADA presumptive taxation, and top GST service provider benchmarks.",
+  keywords: ["GST amnesty scheme", "Section 16(4) ITC deadline", "Section 44AD presumptive taxation", "best GST services India"],
   alternates: {
     canonical: "https://www.taxoras.online/blog",
+  },
+  openGraph: {
+    title: "Taxoras Blog — GST, ITC & Presumptive Tax Guides (2026)",
+    description: "Statutory guides on GST amnesty, ITC deadlines and 44AD/44ADA for Indian businesses.",
+    url: "https://www.taxoras.online/blog",
+    type: "website",
+    locale: "en_IN",
+    siteName: "Taxoras Advisory & Compliance",
+    images: [{ url: "https://www.taxoras.online/opengraph-image", width: 1200, height: 630, alt: "Taxoras Blog & Compliance Guides" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Taxoras Blog — GST & Tax Guides",
+    description: "Expert GST and tax compliance articles for Indian MSMEs.",
+    images: ["https://www.taxoras.online/opengraph-image"],
   },
 };
 

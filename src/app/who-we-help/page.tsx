@@ -22,6 +22,22 @@ export const metadata: Metadata = {
   },
   title: "Who We Help | Compliance Guidance for Indian Businesses & Startups",
   description: "Explore tailored accounting, GST, and tax compliance solutions for startups, SMEs, retailers, freelancers, e-commerce sellers, and manufacturers.",
+  keywords: ["GST for startups", "SME accounting India", "retail trader GST filing", "freelancer tax return India", "ecommerce GST compliance"],
+  openGraph: {
+    title: "Who We Help — Business Segment Guides | Taxoras",
+    description: "Tailored GST & accounting for Startups, SMEs, Retailers, Freelancers & E-Commerce sellers across India.",
+    url: `${siteConfig.canonicalUrl}/who-we-help`,
+    type: "website",
+    locale: "en_IN",
+    siteName: siteConfig.businessName,
+    images: [{ url: `${siteConfig.canonicalUrl}/opengraph-image`, width: 1200, height: 630, alt: "Who We Help — Taxoras" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Who We Help | Taxoras",
+    description: "Segment-specific GST & accounting guides for Indian businesses.",
+    images: [`${siteConfig.canonicalUrl}/opengraph-image`],
+  },
 };
 
 export default function WhoWeHelpPage() {

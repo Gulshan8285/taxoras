@@ -22,6 +22,20 @@ export const metadata: Metadata = {
   },
   title: "Contact Us | Office Location, Phone & WhatsApp Support",
   description: "Get in touch with Taxoras Advisory. Office address in New Delhi, direct helpline number, WhatsApp enquiry desk, and operating hours.",
+  openGraph: {
+    title: "Contact Taxoras | New Delhi & Pan-India GST Support",
+    description: "Office at Barakhamba Road, CP - Delhi. WhatsApp +91 88103 81949. Mon-Sat 9:30 AM - 6:30 PM.",
+    url: `${siteConfig.canonicalUrl}/contact`,
+    type: "website",
+    locale: "en_IN",
+    images: [{ url: `${siteConfig.canonicalUrl}/opengraph-image`, width: 1200, height: 630, alt: "Contact Taxoras Advisory" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Taxoras Advisory & Compliance",
+    description: "Get GST & accounting support via WhatsApp or phone. Serving businesses across India.",
+    images: [`${siteConfig.canonicalUrl}/opengraph-image`],
+  },
 };
 
 export default function ContactPage() {
