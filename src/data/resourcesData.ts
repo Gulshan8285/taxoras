@@ -1,6 +1,7 @@
 import { ResourceArticle } from "@/types";
+import { mujheGstHero } from "./mujheGstHero";
 
-export const allResources: ResourceArticle[] = [
+export const allResources: ResourceArticle[] = [mujheGstHero,
   {
     "id": "gst-reg-guide",
     "slug": "gst-registration-india-documents-process",
