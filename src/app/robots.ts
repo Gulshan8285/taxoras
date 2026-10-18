@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/portal/session"],
+        disallow: ["/api/", "/portal/session", "/admin"],
       },
       {
         userAgent: [
@@ -16,15 +16,25 @@ export default function robots(): MetadataRoute.Robots {
           "Bingbot",
           "OAI-SearchBot",
           "GPTBot",
+          "ChatGPT-User",
           "PerplexityBot",
           "ClaudeBot",
+          "Claude-Web",
           "Google-Extended",
           "Applebot",
+          "Applebot-Extended",
+          "Bytespider",
+          "CCBot",
+          "Diffbot",
+          "FacebookBot",
+          "SemrushBot",
+          "AhrefsBot",
         ],
         allow: "/",
-        disallow: ["/api/"],
+        disallow: ["/api/", "/admin", "/portal/session"],
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: [`${baseUrl}/sitemap.xml`, `${baseUrl}/llms.txt`],
+    host: baseUrl,
   };
 }

@@ -1,0 +1,7 @@
+Contact: mailto:contact@taxoras.online
+Expires: 2027-10-18T00:00:00.000Z
+Acknowledgments: https://www.taxoras.online/contact
+Preferred-Languages: en, hi
+Canonical: https://www.taxoras.online/.well-known/security.txt
+Policy: https://www.taxoras.online/privacy-policy
+Hiring: https://www.taxoras.online/contact

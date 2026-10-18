@@ -1,0 +1,17 @@
+/* TEAM */
+Developer: Codeorbit.cloud — https://www.codeorbit.cloud/
+Contact: Taxoras Engineering Team
+Role: Full-stack, SEO & Compliance Platform Engineering
+Stack: Next.js 16 (App Router), TypeScript, Tailwind CSS v4
+Location: New Delhi, India
+
+/* THANKS */
+Thanks to Next.js, Vercel, and Lucide Icons teams.
+
+/* SITE */
+Standards: HTML5, CSS3, ESNext, WCAG 2.1 AA
+Language: English (en-IN)
+Doctype: HTML5
+IDE: VS Code
+Components: Navbar, Footer, EnquiryForm, PricingEstimator, ServicesGrid
+Last update: 2026/10/18

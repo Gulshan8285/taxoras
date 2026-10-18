@@ -1,0 +1,23 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" }
+      ]
+    }
+  ],
+  "redirects": [
+    { "source": "/home", "destination": "/", "permanent": true },
+    { "source": "/gst-registration", "destination": "/services/gst-registration", "permanent": true },
+    { "source": "/gst-return-filing", "destination": "/services/gst-return-filing", "permanent": true },
+    { "source": "/tds-return-filing", "destination": "/services/tds-return-filing", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/llms.txt", "destination": "/llms.txt" }
+  ],
+  "cleanUrls": true
+}

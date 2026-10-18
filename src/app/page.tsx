@@ -28,7 +28,9 @@ export const metadata: Metadata = {
     "Debtors creditors reconciliation",
     "Balance sheet preparation",
     "Income tax return filing",
-    "MSME Udyam registration assistance"
+    "MSME Udyam registration assistance",
+    "best GST services India",
+    "GST filing services near me",
   ],
   alternates: {
     canonical: siteConfig.canonicalUrl,
@@ -39,7 +41,20 @@ export const metadata: Metadata = {
     url: siteConfig.canonicalUrl,
     type: "website",
     locale: "en_IN",
-  }
+    images: [
+      {
+        url: `${siteConfig.canonicalUrl}/opengraph-image`,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.businessName,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.businessName} - Affordable GST & Accounting`,
+    description: siteConfig.description,
+  },
 };
 
 export default function HomePage() {
