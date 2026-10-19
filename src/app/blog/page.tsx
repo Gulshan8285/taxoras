@@ -43,15 +43,48 @@ interface ArticleItem {
 
 const BLOG_ARTICLES: ArticleItem[] = [
   {
-    title: "Top 7 GST Return Filing Service Providers in India (2026 Tested Comparison)",
+    title: "Top 10 Best GST Services in India: Complete Review, Pricing & Comparison (2026)",
     slug: "/blog/top-gst-service-providers-in-india",
     category: "Market Comparison",
     date: "October 2026",
     readTime: "12 min read",
     summary:
-      "An evidence-based evaluation of leading GST filing platforms, aggregators, and boutique firms in India. Compare verified pricing, invoice limits, GSTR-2B matching, and assisted support.",
-    badge: "Editor'''s Choice Pillar",
+      "An authoritative 2026 evaluation comparing India's top 10 GST service providers, aggregators, and boutique firms. Compare verified pricing, invoice limits, GSTR-2B matching, and why Taxoras ranks #1 for MSMEs.",
+    badge: "Editor's Choice Pillar",
     featured: true,
+  },
+  {
+    title: "Top 10 Best GST Service Providers in Bangalore: 2026 Reviews & Pricing Comparison",
+    slug: "/blog/top-gst-service-providers-in-bangalore",
+    category: "Bangalore Tech Hub",
+    date: "October 2026",
+    readTime: "11 min read",
+    summary:
+      "Complete ranking of Bangalore's leading GST consultants for startups, SaaS exporters, and MSMEs. Compare export LUT filings (RFD-11), co-working space registrations, and retainers from ₹799/mo.",
+    badge: "Bangalore Spotlight",
+    featured: false,
+  },
+  {
+    title: "Cheapest GST Services in India: Low-Cost GST Registration & Filing Price Comparison (2026)",
+    slug: "/blog/cheap-gst-services-india-affordable-filing-comparison",
+    category: "Pricing & Value",
+    date: "October 2026",
+    readTime: "10 min read",
+    summary:
+      "Unmasking the ₹299/mo trap: Compare real costs across 8 provider models, hidden surcharges for GSTR-2B purchase matching, and how Taxoras delivers genuine all-inclusive compliance at ₹799/mo.",
+    badge: "Cost Transparency",
+    featured: false,
+  },
+  {
+    title: "Best MSME Udyam Registration Service in India: Online Application & Free Guide (2026)",
+    slug: "/blog/best-msme-udyam-registration-service-online-guide",
+    category: "MSME Compliance",
+    date: "October 2026",
+    readTime: "9 min read",
+    summary:
+      "Statutory guide to zero-fee Udyam registration, avoiding fake scam portals, accurate 5-digit NIC mapping, and how Section 43B(h) protects your payments within 45 days.",
+    badge: "High Impact MSME",
+    featured: false,
   },
   {
     title: "GST Amnesty Scheme & Late Fee Waiver Rules: Complete Eligibility & Relief Guide (2026)",
@@ -196,7 +229,7 @@ export default function BlogIndexPage() {
                 <Scale className="w-5 h-5 text-amber-400" />
                 Latest Regulatory Guides &amp; Tax Updates
               </h2>
-              <span className="text-xs text-[#DDD0C5]">3 In-Depth Guides</span>
+              <span className="text-xs text-[#DDD0C5]">{otherBlogArticles.length} In-Depth Guides</span>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

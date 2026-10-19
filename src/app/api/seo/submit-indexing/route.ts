@@ -9,6 +9,9 @@ const KEY_LOCATION = `${BASE_URL}/${INDEXNOW_KEY}.txt`;
 // List of blog articles
 const BLOG_SLUGS = [
   "top-gst-service-providers-in-india",
+  "top-gst-service-providers-in-bangalore",
+  "cheap-gst-services-india-affordable-filing-comparison",
+  "best-msme-udyam-registration-service-online-guide",
   "gst-amnesty-scheme-late-fee-waiver-rules",
   "section-16-4-itc-deadline-updates",
   "presumptive-taxation-section-44ad-44ada-guide"

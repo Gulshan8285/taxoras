@@ -168,6 +168,26 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/blog/top-gst-service-providers-in-india" className="hover:text-white transition-colors">
+                  Top 10 GST Services India
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/top-gst-service-providers-in-bangalore" className="hover:text-white transition-colors">
+                  Top 10 GST Providers Bangalore
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/cheap-gst-services-india-affordable-filing-comparison" className="hover:text-white transition-colors">
+                  Cheapest GST Filing Guide
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/best-msme-udyam-registration-service-online-guide" className="hover:text-white transition-colors">
+                  MSME Udyam Registration Guide
+                </Link>
+              </li>
+              <li>
                 <Link href="/resources" className="hover:text-white transition-colors">
                   Compliance Guides & Library
                 </Link>
