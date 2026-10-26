@@ -23,18 +23,18 @@
   --color-text-light: #B8A99C;
   
   /* High contrast readable warm-tinted slate scale for text & backgrounds */
-  --color-slate-50: #18120E;
-  --color-slate-100: #221A14;
-  --color-slate-200: #2C211A;
-  --color-slate-300: #D1C3B7;
-  --color-slate-400: #D8CCC0;
+  --color-slate-50: #241A14;
+  --color-slate-100: #2A1E16;
+  --color-slate-200: #38291F;
+  --color-slate-300: #BCAE9F;
+  --color-slate-400: #D1C3B7;
   --color-slate-500: #E4D8CE;
   --color-slate-600: #ECE4DC;
   --color-slate-700: #F3ECE5;
-  --color-slate-800: #F8F3EE;
+  --color-slate-800: #FAF4EF;
   --color-slate-900: #FFFFFF;
   
-  --color-blue-50: #251B13;
+  --color-blue-50: #2B1D15;
   --color-blue-100: #3D2B1F;
 }
 
@@ -83,6 +83,43 @@ div.bg-navy, section.bg-navy {
   background-color: #1F1712 !important;
   border-color: #38291F !important;
   color: #FAF4EF !important;
+}
+
+/* High visibility & contrast overrides for dark mocha theme */
+.text-slate-700, .text-slate-800, .text-slate-900, .text-gray-700, .text-gray-800, .text-gray-900 {
+  color: #FAF4EF !important;
+}
+
+.text-slate-600, .text-gray-600 {
+  color: #ECE4DC !important;
+}
+
+.text-slate-500, .text-gray-500 {
+  color: #D1C3B7 !important;
+}
+
+.text-slate-400, .text-gray-400 {
+  color: #BCAE9F !important;
+}
+
+.text-text-muted {
+  color: #D1C3B7 !important;
+}
+
+/* Inner card boxes and badges on dark surfaces */
+.bg-slate-50, .bg-slate-100 {
+  background-color: #241A14 !important;
+  border-color: #38291F !important;
+}
+
+.bg-blue-50 {
+  background-color: #2B1D15 !important;
+  border-color: #4A3324 !important;
+}
+
+.bg-teal-light {
+  background-color: #2E1E14 !important;
+  border-color: #4A3324 !important;
 }
 
 /* Glassmorphism on Dark Mocha */
