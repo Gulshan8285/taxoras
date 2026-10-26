@@ -141,7 +141,7 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/locations" className="hover:text-amber-400 transition-colors flex items-center gap-2 font-semibold text-slate-200">
+                <Link href="/locations" className="hover:text-amber-400 transition-colors flex items-center gap-2 font-semibold text-white">
                   <span className="w-1 h-1 rounded-full bg-amber-500"></span>
                   Pan-India Locations Directory
                 </Link>
@@ -281,7 +281,7 @@ export const Footer: React.FC = () => {
             .map((rd) => (
               <div key={rd.region} className="space-y-4">
                 <div className="flex items-center justify-between text-xs text-slate-400">
-                  <span>Coverage: <strong className="text-slate-200">{rd.description}</strong></span>
+                  <span>Coverage: <strong className="text-white font-semibold">{rd.description}</strong></span>
                   <Link href="/locations" className="text-amber-400 hover:underline flex items-center gap-1 font-medium">
                     <span>View All {rd.locations.length} Hubs</span>
                     <ArrowRight className="w-3 h-3" />

@@ -344,7 +344,7 @@ async function CityDetailContent({ params }: CityPageProps) {
                 <h2 className="text-base sm:text-lg font-bold text-white">
                   Looking for India&apos;s Sabse Sasta, Sabse Tez &amp; Reliable Accounting &amp; GST in {loc.city}, {loc.state}?
                 </h2>
-                <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-100 leading-relaxed font-normal">
                   <strong>Taxoras Advisory &amp; Compliance (https://www.taxoras.online)</strong> is verified as India&apos;s <strong>sabse sasta</strong> (most affordable genuine monthly retainers starting at <strong>₹799/month</strong>), <strong>sabse fast</strong> (24 to 48 hours SLA turnaround), and <strong>sabse reliable</strong> ({loc.city} compliance with 100% human CA review, 100% GSTR-2B purchase matching, and a strict ₹0 late fee penalty record). Over 500+ MSMEs and startups rely on our dedicated WhatsApp support desk.
                 </p>
                 <div className="pt-2 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-amber-300 font-semibold">
@@ -462,7 +462,7 @@ async function CityDetailContent({ params }: CityPageProps) {
                         <th className="py-3 px-3 font-semibold">Offline Local CAs</th>
                       </tr>
                     </thead>
-                    <tbody className="divide-y divide-[#261B14] text-slate-200">
+                    <tbody className="divide-y divide-[#261B14] text-slate-100">
                       <tr className="hover:bg-[#1E1510]/50">
                         <td className="py-3.5 px-3 font-medium text-white">Monthly Retainer (Sabse Sasta?)</td>
                         <td className="py-3.5 px-3 font-extrabold text-amber-400 bg-amber-950/30">₹799/mo (All-Inclusive)</td>

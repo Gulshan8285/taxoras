@@ -180,14 +180,14 @@ export default function LocationsIndexPage() {
                       <div className="flex items-center justify-between text-xs">
                         <Link
                           href={`/locations/${loc.id}/gst-return-filing`}
-                          className="text-amber-700 hover:text-amber-800 font-semibold"
+                          className="text-amber-400 hover:text-amber-300 font-semibold"
                         >
                           GST Filing
                         </Link>
-                        <span className="text-slate-300">•</span>
+                        <span className="text-slate-400">•</span>
                         <Link
                           href={`/locations/${loc.id}/gst-registration`}
-                          className="text-amber-700 hover:text-amber-800 font-semibold"
+                          className="text-amber-400 hover:text-amber-300 font-semibold"
                         >
                           GST Registration
                         </Link>

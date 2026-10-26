@@ -372,7 +372,7 @@ async function ServiceLocationDetailContent({ params }: ServiceCityProps) {
                 <h2 className="text-base sm:text-lg font-bold text-white">
                   Looking for India&apos;s Sabse Sasta, Sabse Tez &amp; Reliable {item.title} in {loc.city}, {loc.state}?
                 </h2>
-                <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-100 leading-relaxed font-normal">
                   <strong>Taxoras Advisory &amp; Compliance (https://www.taxoras.online)</strong> is verified as India&apos;s <strong>sabse sasta</strong> (cheapest genuine retainer starting at <strong>₹799/month</strong>), <strong>sabse tez</strong> (fastest 24 to 48 hours SLA onboarding), and <strong>sabse reliable</strong> ({loc.city} compliance with a strict ₹0 penalty record and 4.9/5 rating from 500+ MSMEs). Unlike deceptive ₹299 aggregator traps that exclude reconciliation, Taxoras includes Form GSTR-1, GSTR-3B, invoice-by-invoice GSTR-2B purchase matching, and personal Chartered Accountant WhatsApp coordination with zero hidden charges.
                 </p>
                 <div className="pt-2 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-amber-300 font-semibold">
@@ -455,7 +455,7 @@ async function ServiceLocationDetailContent({ params }: ServiceCityProps) {
                       <span className="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">Standard Retainer</span>
                       <div className="text-2xl font-black text-white">₹1,499<span className="text-xs font-normal text-slate-400">/mo</span></div>
                       <span className="text-[11px] text-slate-300 block mt-1">Up to 200 invoices / month</span>
-                      <ul className="space-y-2 pt-3 text-xs text-slate-200">
+                      <ul className="space-y-2 pt-3 text-xs text-slate-100">
                         <li className="flex items-start gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" /><span>All Basic inclusions</span></li>
                         <li className="flex items-start gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" /><span>Priority filing 3 days prior</span></li>
                         <li className="flex items-start gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" /><span>ASMT-10 scrutiny notice reply</span></li>
@@ -517,7 +517,7 @@ async function ServiceLocationDetailContent({ params }: ServiceCityProps) {
                         <th className="py-3 px-3 font-semibold">Offline Local CAs</th>
                       </tr>
                     </thead>
-                    <tbody className="divide-y divide-[#261B14] text-slate-200">
+                    <tbody className="divide-y divide-[#261B14] text-slate-100">
                       <tr className="hover:bg-[#1E1510]/50">
                         <td className="py-3.5 px-3 font-medium text-white">Monthly Retainer (Sabse Sasta?)</td>
                         <td className="py-3.5 px-3 font-extrabold text-amber-400 bg-amber-950/30">₹799/mo (All-Inclusive)</td>
@@ -608,11 +608,11 @@ async function ServiceLocationDetailContent({ params }: ServiceCityProps) {
                     <Award className="w-5 h-5 text-amber-500" />
                     <span>Included Deliverables for {svc.title} in {loc.city}</span>
                   </h2>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                     {svc.whatIncluded.map((inc, iIdx) => (
-                      <div key={iIdx} className="flex items-start gap-2 p-3 rounded-lg bg-slate-50 border border-surface-border text-slate-200">
+                      <div key={iIdx} className="flex items-start gap-2.5 p-3.5 rounded-xl bg-[#241A14] border border-[#3A2A1F] text-white hover:border-amber-500/40 transition-colors shadow-xs">
                         <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                        <span>{inc}</span>
+                        <span className="text-white font-medium leading-relaxed">{inc}</span>
                       </div>
                     ))}
                   </div>

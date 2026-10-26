@@ -68,7 +68,7 @@ export const HowItWorksSection: React.FC = () => {
                   <div className="w-12 h-12 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center">
                     {item.icon}
                   </div>
-                  <span className="text-2xl font-black text-slate-200">
+                  <span className="text-2xl font-black text-amber-500/80">
                     {item.step}
                   </span>
                 </div>

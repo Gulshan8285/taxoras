@@ -284,9 +284,9 @@ async function ServiceDetailContent({ params }: ServicePageProps) {
                 </h2>
                 <div className="space-y-3">
                   {service.commonProblems.map((prob, idx) => (
-                    <div key={idx} className="flex items-start gap-3 p-3 rounded-xl bg-amber-50/50 border border-amber-100 text-xs text-slate-800">
-                      <span className="font-bold text-amber-800 shrink-0">#{idx + 1}</span>
-                      <span className="leading-relaxed">{prob}</span>
+                    <div key={idx} className="flex items-start gap-3 p-3.5 rounded-xl bg-[#241A14] border border-amber-500/30 text-xs text-slate-100">
+                      <span className="font-bold text-amber-400 shrink-0">#{idx + 1}</span>
+                      <span className="leading-relaxed text-slate-100">{prob}</span>
                     </div>
                   ))}
                 </div>
@@ -328,9 +328,9 @@ async function ServiceDetailContent({ params }: ServicePageProps) {
                       </h4>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
                         {docGroup.items.map((item, iIdx) => (
-                          <div key={iIdx} className="flex items-start gap-2 text-slate-700 bg-white p-2.5 rounded-lg border border-slate-100">
-                            <span className="w-1.5 h-1.5 rounded-full bg-teal mt-1.5 shrink-0"></span>
-                            <span className="leading-tight">{item}</span>
+                          <div key={iIdx} className="flex items-start gap-2 text-slate-100 bg-[#241A14] p-2.5 rounded-lg border border-[#38291F]">
+                            <span className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-1.5 shrink-0"></span>
+                            <span className="leading-tight text-slate-100">{item}</span>
                           </div>
                         ))}
                       </div>

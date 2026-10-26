@@ -25,10 +25,10 @@
   /* High contrast readable warm-tinted slate scale for text & backgrounds */
   --color-slate-50: #241A14;
   --color-slate-100: #2A1E16;
-  --color-slate-200: #38291F;
-  --color-slate-300: #BCAE9F;
-  --color-slate-400: #D1C3B7;
-  --color-slate-500: #E4D8CE;
+  --color-slate-200: #FAF4EF;
+  --color-slate-300: #EDE3DA;
+  --color-slate-400: #D6C8BC;
+  --color-slate-500: #C8B9AC;
   --color-slate-600: #ECE4DC;
   --color-slate-700: #F3ECE5;
   --color-slate-800: #FAF4EF;
@@ -85,31 +85,66 @@ div.bg-navy, section.bg-navy {
   color: #FAF4EF !important;
 }
 
-/* High visibility & contrast overrides for dark mocha theme */
-.text-slate-700, .text-slate-800, .text-slate-900, .text-gray-700, .text-gray-800, .text-gray-900 {
+/* High visibility & contrast overrides for dark mocha theme (WCAG AAA) */
+.text-slate-50, .text-slate-100, .text-slate-200, .text-slate-300,
+.text-gray-50, .text-gray-100, .text-gray-200, .text-gray-300,
+.text-zinc-50, .text-zinc-100, .text-zinc-200, .text-zinc-300 {
   color: #FAF4EF !important;
 }
 
-.text-slate-600, .text-gray-600 {
+.text-slate-400, .text-gray-400, .text-zinc-400 {
   color: #ECE4DC !important;
 }
 
-.text-slate-500, .text-gray-500 {
-  color: #D1C3B7 !important;
+.text-slate-500, .text-gray-500, .text-zinc-500 {
+  color: #D6C8BC !important;
 }
 
-.text-slate-400, .text-gray-400 {
-  color: #BCAE9F !important;
+.text-slate-600, .text-slate-700, .text-slate-800, .text-slate-900,
+.text-gray-600, .text-gray-700, .text-gray-800, .text-gray-900,
+.text-zinc-600, .text-zinc-700, .text-zinc-800, .text-zinc-900 {
+  color: #FAF4EF !important;
 }
 
 .text-text-muted {
-  color: #D1C3B7 !important;
+  color: #D6C8BC !important;
+}
+
+.text-text-light {
+  color: #C8B9AC !important;
+}
+
+.text-navy {
+  color: #FAF4EF !important;
+}
+
+/* Ensure dark accent colors on dark backgrounds are converted to vibrant, readable tones */
+.text-amber-700, .text-amber-800, .text-amber-900 {
+  color: #FBBF24 !important;
+}
+
+.text-emerald-700, .text-emerald-800, .text-emerald-900 {
+  color: #34D399 !important;
+}
+
+.text-blue-700, .text-blue-800, .text-blue-900 {
+  color: #60A5FA !important;
+}
+
+.text-red-700, .text-red-800, .text-red-900,
+.text-rose-700, .text-rose-800, .text-rose-900 {
+  color: #F87171 !important;
 }
 
 /* Inner card boxes and badges on dark surfaces */
 .bg-slate-50, .bg-slate-100 {
   background-color: #241A14 !important;
   border-color: #38291F !important;
+}
+
+.bg-slate-200 {
+  background-color: #2B1D15 !important;
+  border-color: #3D2B1F !important;
 }
 
 .bg-blue-50 {

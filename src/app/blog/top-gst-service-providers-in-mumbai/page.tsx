@@ -455,7 +455,7 @@ export default function TopGstServiceProvidersInMumbaiPage() {
                   </div>
 
                   {prov.badge && (
-                    <span className="text-xs font-bold text-amber-800 bg-amber-100 px-3 py-1 rounded-full self-start sm:self-auto">
+                    <span className="text-xs font-bold text-amber-300 bg-amber-950/70 border border-amber-500/40 px-3 py-1 rounded-full self-start sm:self-auto">
                       {prov.badge}
                     </span>
                   )}
