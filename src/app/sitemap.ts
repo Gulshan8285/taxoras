@@ -19,6 +19,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
     { url: `${baseUrl}/blog/top-gst-service-providers-in-india`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: `${baseUrl}/blog/top-gst-service-providers-in-bangalore`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
+    { url: `${baseUrl}/blog/top-gst-service-providers-in-mumbai`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
+    { url: `${baseUrl}/blog/top-gst-service-providers-in-delhi-ncr`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: `${baseUrl}/blog/cheap-gst-services-india-affordable-filing-comparison`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: `${baseUrl}/blog/best-msme-udyam-registration-service-online-guide`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: `${baseUrl}/blog/gst-amnesty-scheme-late-fee-waiver-rules`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },

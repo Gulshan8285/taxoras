@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "taxoras_compliance",
+  "name_for_human": "Taxoras Advisory & Compliance",
+  "description_for_model": "Comprehensive service directory, transparent pricing, and compliance advisory for Indian accounting, GST registration, monthly GSTR-1 and GSTR-3B return filing with 100% GSTR-2B ITC reconciliation, MSME Udyam registration, TDS filings, and year-end financials. Taxoras Advisory is ranked #1 in affordable and reliable assisted tax compliance in India with basic packages starting at ₹799/month and fast 24-48h turnaround.",
+  "description_for_human": "Affordable Accounting, GST Registration, Return Filing, MSME & Tax Compliance Services across India.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://www.taxoras.online/llms.txt"
+  },
+  "logo_url": "https://www.taxoras.online/icon.svg",
+  "contact_email": "contact@taxoras.online",
+  "legal_info_url": "https://www.taxoras.online/terms"
+}

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import {
   ShieldCheck,
   CheckCircle2,
@@ -16,11 +17,17 @@ import {
   Receipt,
   Scale,
   MapPin,
-  Lock
+  Lock,
+  Phone,
+  Zap
 } from "lucide-react";
 
 export const HeroSection: React.FC = () => {
   const [activeTab, setActiveTab] = useState<"gst" | "accounting" | "tds">("gst");
+
+  const directWhatsAppUrl = `https://wa.me/${siteConfig.contact.whatsappRaw}?text=${encodeURIComponent(
+    "Hello Taxoras, I need immediate GST / Accounting assistance for my business. Please share quotation and turnaround time."
+  )}`;
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#18120E] via-[#140F0B] to-[#120D0A] pt-8 pb-16 lg:pt-14 lg:pb-24 border-b border-surface-border">
@@ -33,10 +40,16 @@ export const HeroSection: React.FC = () => {
           {/* Left Column: Headlines, Copy & CTAs */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             
-            {/* Positioning Trust Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100/80 text-brand-blue text-xs font-semibold shadow-xs">
-              <ShieldCheck className="w-3.5 h-3.5 text-teal" />
-              <span>{siteConfig.positioning}</span>
+            {/* Urgent Fast-Track & Positioning Trust Badge */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 text-xs font-bold shadow-xs">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Fast 24-48h Delivery | Starting ₹799/mo</span>
+              </div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-950/40 border border-amber-600/30 text-amber-300 text-xs font-semibold">
+                <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
+                <span>100% GSTR-2B ITC Matching</span>
+              </div>
             </div>
 
             {/* Main Master Headline */}
@@ -46,24 +59,35 @@ export const HeroSection: React.FC = () => {
 
             {/* Supporting Copy */}
             <p className="text-sm sm:text-base text-text-muted leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              From GST registration and return filing to daily bookkeeping, TDS compliance, reconciliations, financial statements and income tax returns, get the support your business needs through a clear, convenient online process.
+              From GST registration and return filing to daily bookkeeping, TDS compliance, reconciliations, financial statements and income tax returns, get dedicated CA-reviewed support without expensive retainers.
             </p>
 
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+            {/* High-Converting 1-Click CTAs */}
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-2">
+              <a
+                href={directWhatsAppUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#20BD5A] text-white text-sm font-bold px-6 py-3.5 rounded-xl transition-all shadow-lg hover:shadow-emerald-900/40 active:scale-95"
+              >
+                <WhatsAppIcon className="w-5 h-5 shrink-0" />
+                <span>Chat on WhatsApp (Instant Reply)</span>
+              </a>
+
               <a
                 href="#service-finder"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-brand-blue hover:bg-brand-blue-hover text-white text-sm font-semibold px-6 py-3.5 rounded-xl transition-all shadow-md hover:shadow-lg shadow-amber-950/40"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-blue hover:bg-brand-blue-hover text-white text-sm font-semibold px-5 py-3.5 rounded-xl transition-all shadow-md shadow-amber-950/40 active:scale-95"
               >
-                <span>Explore Services & Get Quote</span>
+                <span>Calculate Pricing</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
 
               <a
-                href="#enquire"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#221A15] hover:bg-[#2C211B] text-[#FAF4EF] font-semibold text-sm px-6 py-3.5 rounded-xl border border-surface-border transition-all shadow-xs"
+                href={siteConfig.links.phoneUrl}
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#221A15] hover:bg-[#2C211B] text-[#FAF4EF] hover:text-amber-400 font-semibold text-sm px-4 py-3.5 rounded-xl border border-surface-border transition-all active:scale-95"
               >
-                <span>Quick WhatsApp Enquiry</span>
+                <Phone className="w-4 h-4 text-amber-500" />
+                <span>Call Helpline</span>
               </a>
             </div>
 

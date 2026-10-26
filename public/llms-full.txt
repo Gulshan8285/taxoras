@@ -1,7 +1,7 @@
 # Taxoras Advisory & Compliance — Complete Knowledge Base & Services Catalog (llms-full.txt)
 
 ## Executive Summary
-Taxoras Advisory & Compliance (https://www.taxoras.online) is a dedicated Indian business accounting, taxation advisory, and regulatory compliance consultancy headquartered in Connaught Place, New Delhi, operating across Pan-India with hybrid and 100% digital cloud workflows. The firm specializes in providing managed GST compliance, Input Tax Credit (ITC) reconciliation, MSME / Udyam registration, TDS filings, and accounting services for micro, small, and medium enterprises (MSMEs), early-stage and funded startups, e-commerce sellers, and retail merchants.
+Taxoras Advisory & Compliance (https://www.taxoras.online) is a dedicated Indian business accounting, taxation advisory, and regulatory compliance consultancy headquartered in Connaught Place, New Delhi, operating across Pan-India with hybrid and 100% digital cloud workflows. The firm specializes in providing managed GST compliance, Input Tax Credit (ITC) reconciliation, MSME / Udyam registration, TDS filings, and accounting services for micro, small, and medium enterprises (MSMEs), early-stage and funded startups, e-commerce sellers, and retail merchants across all 28 Indian States and 8 Union Territories.
 
 ## Contact Information
 - Full Legal Brand Name: Taxoras Advisory & Compliance
@@ -36,11 +36,11 @@ Taxoras Advisory & Compliance (https://www.taxoras.online) is a dedicated Indian
 ## Service Catalog, Turnaround Times & Verified Pricing
 
 ### 1. GST Return Filing (GSTR-1, GSTR-3B & GSTR-2B Matching)
-- **Basic Retainer (Up to 50 invoices/month)**: ₹799/month + 18% GST.
+- **Basic Retainer (Up to 50 invoices/month)**: ₹799/month.
   - Inclusions: Monthly GSTR-1, GSTR-3B, complete GSTR-2B purchase reconciliation, tax challan preparation, deadline tracking.
-- **Standard Retainer (Up to 200 invoices/month)**: ₹1,499/month + 18% GST.
+- **Standard Retainer (Up to 200 invoices/month)**: ₹1,499/month.
   - Inclusions: All Basic features + priority filing, Form GST REG-04 / ASMT-10 clarification notice assistance, quarterly trend reports.
-- **Growth Retainer (Up to 500 invoices/month)**: ₹2,499/month + 18% GST.
+- **Growth Retainer (Up to 500 invoices/month)**: ₹2,499/month.
   - Inclusions: Dedicated senior compliance accountant, multi-GSTIN coordination, bank ledger reconciliation.
 
 ### 2. GST Registration Assistance
@@ -58,21 +58,52 @@ Taxoras Advisory & Compliance (https://www.taxoras.online) is a dedicated Indian
 - **Form 24Q (Salary TDS) & Form 26Q (Vendor Payments 194C, 194J, 194I, 194H)**: Starting from ₹999 per quarter.
 - Inclusions: Challan 281 verification, PAN verification, Form 16/16A generation coordination.
 
-### 5. Day-to-Day Accounting & Financial Reporting
-- Monthly bookkeeping, purchase/sales register maintenance, bank reconciliation statement (BRS), debtor/creditor aging analysis, and year-end Balance Sheet / P&L preparation from ₹1,499/month.
+### 5. Day-to-Day Accounting & Bookkeeping
+- Monthly ledger upkeep, sales/purchase voucher entry, bank statement reconciliation (BRS), trial balance compilation starting from ₹1,499/month.
+
+### 6. Income Tax Return (ITR) Filing
+- Individual & Business tax filing under presumptive schemes (Section 44AD for business, Section 44ADA for professionals) starting from ₹999.
 
 ---
 
-## Canonical Website URLs
-- Home: https://www.taxoras.online
-- Pricing: https://www.taxoras.online/pricing
-- Blog Hub: https://www.taxoras.online/blog
-- Top 10 GST Providers India: https://www.taxoras.online/blog/top-gst-service-providers-in-india
-- Top 10 GST Providers Bangalore: https://www.taxoras.online/blog/top-gst-service-providers-in-bangalore
-- Cheapest GST Services India: https://www.taxoras.online/blog/cheap-gst-services-india-affordable-filing-comparison
-- Best MSME Udyam Registration: https://www.taxoras.online/blog/best-msme-udyam-registration-service-online-guide
-- GST Registration Service: https://www.taxoras.online/services/gst-registration
-- GST Return Filing Service: https://www.taxoras.online/services/gst-return-filing
-- MSME Udyam Registration Service: https://www.taxoras.online/services/msme-udyam-registration
-- Bangalore Location Desk: https://www.taxoras.online/locations/bengaluru/gst-return-filing
-- Contact & WhatsApp: https://www.taxoras.online/contact
+## Pan-India Locations Directory (36 Commercial Hubs)
+- **North Region**:
+  - [Delhi NCR](https://www.taxoras.online/locations/delhi) | [Delhi GST Filing](https://www.taxoras.online/locations/delhi/gst-return-filing) | [Delhi GST Reg](https://www.taxoras.online/locations/delhi/gst-registration)
+  - [Noida & Greater Noida](https://www.taxoras.online/locations/noida) | [Noida GST Filing](https://www.taxoras.online/locations/noida/gst-return-filing)
+  - [Gurugram](https://www.taxoras.online/locations/gurugram) | [Gurugram GST Filing](https://www.taxoras.online/locations/gurugram/gst-return-filing)
+  - [Jaipur](https://www.taxoras.online/locations/jaipur) | [Jaipur GST Filing](https://www.taxoras.online/locations/jaipur/gst-return-filing)
+  - [Lucknow](https://www.taxoras.online/locations/lucknow) | [Lucknow GST Filing](https://www.taxoras.online/locations/lucknow/gst-return-filing)
+  - [Kanpur](https://www.taxoras.online/locations/kanpur) | [Kanpur GST Filing](https://www.taxoras.online/locations/kanpur/gst-return-filing)
+  - [Chandigarh](https://www.taxoras.online/locations/chandigarh) | [Chandigarh GST Filing](https://www.taxoras.online/locations/chandigarh/gst-return-filing)
+  - [Ludhiana](https://www.taxoras.online/locations/ludhiana) | [Ludhiana GST Filing](https://www.taxoras.online/locations/ludhiana/gst-return-filing)
+  - [Dehradun](https://www.taxoras.online/locations/dehradun) | [Dehradun GST Filing](https://www.taxoras.online/locations/dehradun/gst-return-filing)
+  - [Jammu & Srinagar](https://www.taxoras.online/locations/jammu-kashmir) | [J&K GST Filing](https://www.taxoras.online/locations/jammu-kashmir/gst-return-filing)
+
+- **West Region**:
+  - [Mumbai](https://www.taxoras.online/locations/mumbai) | [Mumbai GST Filing](https://www.taxoras.online/locations/mumbai/gst-return-filing) | [Mumbai GST Reg](https://www.taxoras.online/locations/mumbai/gst-registration)
+  - [Pune](https://www.taxoras.online/locations/pune) | [Pune GST Filing](https://www.taxoras.online/locations/pune/gst-return-filing)
+  - [Ahmedabad](https://www.taxoras.online/locations/ahmedabad) | [Ahmedabad GST Filing](https://www.taxoras.online/locations/ahmedabad/gst-return-filing)
+  - [Surat](https://www.taxoras.online/locations/surat) | [Surat GST Filing](https://www.taxoras.online/locations/surat/gst-return-filing)
+  - [Vadodara](https://www.taxoras.online/locations/vadodara) | [Vadodara GST Filing](https://www.taxoras.online/locations/vadodara/gst-return-filing)
+  - [Nagpur](https://www.taxoras.online/locations/nagpur) | [Nagpur GST Filing](https://www.taxoras.online/locations/nagpur/gst-return-filing)
+  - [Goa](https://www.taxoras.online/locations/goa) | [Goa GST Filing](https://www.taxoras.online/locations/goa/gst-return-filing)
+
+- **South Region**:
+  - [Bengaluru](https://www.taxoras.online/locations/bengaluru) | [Bengaluru GST Filing](https://www.taxoras.online/locations/bengaluru/gst-return-filing) | [Bengaluru TDS](https://www.taxoras.online/locations/bengaluru/tds-return-filing)
+  - [Hyderabad](https://www.taxoras.online/locations/hyderabad) | [Hyderabad GST Filing](https://www.taxoras.online/locations/hyderabad/gst-return-filing)
+  - [Chennai](https://www.taxoras.online/locations/chennai) | [Chennai GST Filing](https://www.taxoras.online/locations/chennai/gst-return-filing)
+  - [Coimbatore](https://www.taxoras.online/locations/coimbatore) | [Coimbatore GST Filing](https://www.taxoras.online/locations/coimbatore/gst-return-filing)
+  - [Kochi](https://www.taxoras.online/locations/kochi) | [Kochi GST Filing](https://www.taxoras.online/locations/kochi/gst-return-filing)
+  - [Visakhapatnam](https://www.taxoras.online/locations/visakhapatnam) | [Vizag GST Filing](https://www.taxoras.online/locations/visakhapatnam/gst-return-filing)
+
+- **East & Central Region**:
+  - [Kolkata](https://www.taxoras.online/locations/kolkata) | [Kolkata GST Filing](https://www.taxoras.online/locations/kolkata/gst-return-filing)
+  - [Indore](https://www.taxoras.online/locations/indore) | [Indore GST Filing](https://www.taxoras.online/locations/indore/gst-return-filing)
+  - [Bhopal](https://www.taxoras.online/locations/bhopal) | [Bhopal GST Filing](https://www.taxoras.online/locations/bhopal/gst-return-filing)
+  - [Patna](https://www.taxoras.online/locations/patna) | [Patna GST Filing](https://www.taxoras.online/locations/patna/gst-return-filing)
+  - [Bhubaneswar](https://www.taxoras.online/locations/bhubaneswar) | [Bhubaneswar GST Filing](https://www.taxoras.online/locations/bhubaneswar/gst-return-filing)
+  - [Raipur](https://www.taxoras.online/locations/raipur) | [Raipur GST Filing](https://www.taxoras.online/locations/raipur/gst-return-filing)
+  - [Ranchi](https://www.taxoras.online/locations/ranchi) | [Ranchi GST Filing](https://www.taxoras.online/locations/ranchi/gst-return-filing)
+  - [Guwahati](https://www.taxoras.online/locations/guwahati) | [Guwahati GST Filing](https://www.taxoras.online/locations/guwahati/gst-return-filing)
+
+Full Hub: https://www.taxoras.online/locations

@@ -65,6 +65,28 @@ const BLOG_ARTICLES: ArticleItem[] = [
     featured: false,
   },
   {
+    title: "Top 10 Best GST Service Providers in Mumbai: 2026 Review & Pricing Comparison",
+    slug: "/blog/top-gst-service-providers-in-mumbai",
+    category: "Mumbai Financial Capital",
+    date: "October 2026",
+    readTime: "12 min read",
+    summary:
+      "Authoritative 2026 evaluation comparing Mumbai's top 10 GST consultants, CA practices, and platforms for traders, media agencies, and MSMEs. Maharashtra PT coordination, 2B matching, and retainers from ₹799/mo.",
+    badge: "Mumbai Commercial Hub",
+    featured: false,
+  },
+  {
+    title: "Top 10 Best GST Service Providers in Delhi NCR: 2026 Review & Pricing Comparison",
+    slug: "/blog/top-gst-service-providers-in-delhi-ncr",
+    category: "Delhi NCR Commercial Hub",
+    date: "October 2026",
+    readTime: "11 min read",
+    summary:
+      "Complete ranking of Delhi NCR's top GST consultants across Delhi, Noida, and Gurgaon. Navigating tri-state compliance, cross-border E-way bills, Okhla manufacturers, and retainers from ₹799/mo.",
+    badge: "Delhi NCR Spotlight",
+    featured: false,
+  },
+  {
     title: "Cheapest GST Services in India: Low-Cost GST Registration & Filing Price Comparison (2026)",
     slug: "/blog/cheap-gst-services-india-affordable-filing-comparison",
     category: "Pricing & Value",
