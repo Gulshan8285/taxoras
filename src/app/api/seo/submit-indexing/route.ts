@@ -10,6 +10,7 @@ const KEY_LOCATION = `${BASE_URL}/${INDEXNOW_KEY}.txt`;
 
 // List of blog articles
 const BLOG_SLUGS = [
+  "gst-return-filing-charges-per-month-noida",
   "top-gst-service-providers-in-india",
   "top-gst-service-providers-in-bangalore",
   "top-gst-service-providers-in-mumbai",

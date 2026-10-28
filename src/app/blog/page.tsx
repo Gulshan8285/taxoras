@@ -43,6 +43,17 @@ interface ArticleItem {
 
 const BLOG_ARTICLES: ArticleItem[] = [
   {
+    title: "GST Return Filing Charges Per Month in Noida (2026): Cheap GST Filing, Registration & TDS Return Filing 24Q 26Q Online",
+    slug: "/blog/gst-return-filing-charges-per-month-noida",
+    category: "GST Pricing & Noida Compliance",
+    date: "October 2026",
+    readTime: "9 min read",
+    summary:
+      "A complete guide to GST return filing charges per month in Noida, comparing cheap GST filing services, GST registration consultant fees, and quarterly TDS return filing 24Q 26Q online with Taxoras.",
+    badge: "Main Featured Pillar",
+    featured: true,
+  },
+  {
     title: "Top 10 Best GST Services in India: Complete Review, Pricing & Comparison (2026)",
     slug: "/blog/top-gst-service-providers-in-india",
     category: "Market Comparison",
@@ -51,7 +62,7 @@ const BLOG_ARTICLES: ArticleItem[] = [
     summary:
       "An authoritative 2026 evaluation comparing India's top 10 GST service providers, aggregators, and boutique firms. Compare verified pricing, invoice limits, GSTR-2B matching, and why Taxoras ranks #1 for MSMEs.",
     badge: "Editor's Choice Pillar",
-    featured: true,
+    featured: false,
   },
   {
     title: "Top 10 Best GST Service Providers in Bangalore: 2026 Reviews & Pricing Comparison",

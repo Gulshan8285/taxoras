@@ -174,6 +174,11 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/blog/gst-return-filing-charges-per-month-noida" className="hover:text-white transition-colors text-amber-200/90 font-medium">
+                  GST Charges & Filing Noida (2026)
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog/top-gst-service-providers-in-india" className="hover:text-white transition-colors">
                   Top 10 GST Services India
                 </Link>

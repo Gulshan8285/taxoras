@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/contact`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
     { url: `${baseUrl}/resources`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
     { url: `${baseUrl}/blog`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+    { url: `${baseUrl}/blog/gst-return-filing-charges-per-month-noida`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: `${baseUrl}/blog/top-gst-service-providers-in-india`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: `${baseUrl}/blog/top-gst-service-providers-in-bangalore`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: `${baseUrl}/blog/top-gst-service-providers-in-mumbai`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
