@@ -174,8 +174,23 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/blog/gst-return-filing-charges-per-month-noida" className="hover:text-white transition-colors text-amber-200/90 font-medium">
-                  GST Charges & Filing Noida (2026)
+                <Link href="/blog/gst-return-filing-charges-per-month-india" className="hover:text-white transition-colors text-amber-200/90 font-medium">
+                  GST Charges Per Month India
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/tds-return-filing-24q-26q-online" className="hover:text-white transition-colors">
+                  TDS 24Q & 26Q Online Guide
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/bank-reconciliation-service-for-small-business" className="hover:text-white transition-colors">
+                  Bank Reconciliation Service
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/gst-return-filing-charges-per-month-noida" className="hover:text-white transition-colors">
+                  GST Charges & Filing Noida
                 </Link>
               </li>
               <li>

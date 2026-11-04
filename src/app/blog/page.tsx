@@ -43,6 +43,83 @@ interface ArticleItem {
 
 const BLOG_ARTICLES: ArticleItem[] = [
   {
+    title: "GST Return Filing Charges Per Month in India: Complete Cost Guide 2026",
+    slug: "/blog/gst-return-filing-charges-per-month-india",
+    category: "GST Pricing & National Guide",
+    date: "November 2026",
+    readTime: "10 min read",
+    summary:
+      "Understand monthly GST return filing charges in India for 2026, comparing nil returns, micro retailers, growing businesses, and how Taxoras delivers guaranteed affordable retainers from ₹799/month.",
+    badge: "Main Featured Pillar",
+    featured: true,
+  },
+  {
+    title: "How Much Does GST Return Filing Cost Per Month in India? Complete 2026 Guide",
+    slug: "/blog/gst-return-filing-cost-per-month-in-india",
+    category: "Pricing & Comparison",
+    date: "November 2026",
+    readTime: "9 min read",
+    summary:
+      "Discover true monthly GST return filing costs, pricing factors, GSTR-2B purchase matching, and how to avoid misleading ₹299/mo budget traps.",
+    badge: "Cost Transparency",
+    featured: false,
+  },
+  {
+    title: "Looking for GST Filing Services in Noida? Here's What You Should Know",
+    slug: "/blog/gst-filing-services-in-noida",
+    category: "Noida Commercial Hub",
+    date: "November 2026",
+    readTime: "9 min read",
+    summary:
+      "A complete guide to professional GST filing and registration services in Noida. Sector 62 & 63 IT exports, UP Commercial Tax rules, and retainers from ₹799/mo.",
+    badge: "Noida Spotlight",
+    featured: false,
+  },
+  {
+    title: "How to File TDS Returns Online for 24Q and 26Q: Step-by-Step Guide (2026)",
+    slug: "/blog/tds-return-filing-24q-26q-online",
+    category: "Direct Tax & TDS",
+    date: "November 2026",
+    readTime: "11 min read",
+    summary:
+      "Complete step-by-step tutorial on filing Form 24Q (salaries) and Form 26Q (vendor retainers) online, Challan 281 verification, Section 234E late fees, and 2026 Form 138/140 rules.",
+    badge: "High Impact Direct Tax",
+    featured: false,
+  },
+  {
+    title: "Udyam Registration Online Charges in India: What Does It Really Cost? (2026)",
+    slug: "/blog/udyam-registration-online-charges-india",
+    category: "MSME Compliance",
+    date: "November 2026",
+    readTime: "8 min read",
+    summary:
+      "The official government fee is ₹0 (free). Learn how to avoid fake scam portals, revised MSME investment and turnover limits, and Section 43B(h) payment protections.",
+    badge: "Zero-Fee Official Guide",
+    featured: false,
+  },
+  {
+    title: "Bank Reconciliation Service for Small Business: Costs, Benefits & What to Expect",
+    slug: "/blog/bank-reconciliation-service-for-small-business",
+    category: "Accounting & Cash Flow",
+    date: "November 2026",
+    readTime: "8 min read",
+    summary:
+      "Explore how professional bank reconciliation helps MSMEs eliminate cash book differences, detect fraud, verify TDS Challan 281 payments, and prepare audit-ready accounts.",
+    badge: "Audit & BRS",
+    featured: false,
+  },
+  {
+    title: "Looking for GST Registration Services in Delhi? Complete Guide",
+    slug: "/blog/gst-registration-services-in-delhi",
+    category: "Delhi Commercial Hub",
+    date: "November 2026",
+    readTime: "9 min read",
+    summary:
+      "Get expert assistance with Delhi GST registration. Turnover thresholds, co-working space address proof validation, Trade & Taxes DVAT ward queries, and retainers from ₹999.",
+    badge: "Delhi NCR Spotlight",
+    featured: false,
+  },
+  {
     title: "GST Return Filing Charges Per Month in Noida (2026): Cheap GST Filing, Registration & TDS Return Filing 24Q 26Q Online",
     slug: "/blog/gst-return-filing-charges-per-month-noida",
     category: "GST Pricing & Noida Compliance",
@@ -50,8 +127,8 @@ const BLOG_ARTICLES: ArticleItem[] = [
     readTime: "9 min read",
     summary:
       "A complete guide to GST return filing charges per month in Noida, comparing cheap GST filing services, GST registration consultant fees, and quarterly TDS return filing 24Q 26Q online with Taxoras.",
-    badge: "Main Featured Pillar",
-    featured: true,
+    badge: "Regional Pillar",
+    featured: false,
   },
   {
     title: "Top 10 Best GST Services in India: Complete Review, Pricing & Comparison (2026)",

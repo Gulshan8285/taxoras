@@ -21,7 +21,20 @@ KEY_LOCATION = f"{BASE_URL}/{INDEXNOW_KEY}.txt"
 SITEMAP_URL = f"{BASE_URL}/sitemap.xml"
 
 BLOG_SLUGS = [
+    "gst-return-filing-charges-per-month-india",
+    "gst-return-filing-cost-per-month-in-india",
+    "gst-filing-services-in-noida",
+    "tds-return-filing-24q-26q-online",
+    "udyam-registration-online-charges-india",
+    "bank-reconciliation-service-for-small-business",
+    "gst-registration-services-in-delhi",
+    "gst-return-filing-charges-per-month-noida",
     "top-gst-service-providers-in-india",
+    "top-gst-service-providers-in-bangalore",
+    "top-gst-service-providers-in-mumbai",
+    "top-gst-service-providers-in-delhi-ncr",
+    "cheap-gst-services-india-affordable-filing-comparison",
+    "best-msme-udyam-registration-service-online-guide",
     "gst-amnesty-scheme-late-fee-waiver-rules",
     "section-16-4-itc-deadline-updates",
     "presumptive-taxation-section-44ad-44ada-guide"
