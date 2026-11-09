@@ -52,7 +52,9 @@ export const Navbar: React.FC = () => {
       icon: <Receipt className="w-4 h-4 text-brand-blue" />,
       items: [
         { title: "GST Registration", slug: "gst-registration", shortDescription: "New GSTIN & Composition schemes" },
-        { title: "GST Return Filing", slug: "gst-return-filing", shortDescription: "GSTR-1, GSTR-3B & 2B Matching" }
+        { title: "GST Return Filing", slug: "gst-return-filing", shortDescription: "Monthly GSTR-1, 3B & 2B Matching" },
+        { title: "GSTR-1 Filing", slug: "gstr-1-filing", shortDescription: "Outward supply & B2B invoices" },
+        { title: "GSTR-3B Filing", slug: "gstr-3b-filing", shortDescription: "Tax settlement & ITC reconciliation" }
       ]
     },
     {
@@ -60,31 +62,28 @@ export const Navbar: React.FC = () => {
       icon: <FileText className="w-4 h-4 text-teal" />,
       items: [
         { title: "TDS Return Filing", slug: "tds-return-filing", shortDescription: "Quarterly 24Q (Salary) & 26Q (Vendor)" },
+        { title: "Form 24Q Filing", slug: "form-24q-filing", shortDescription: "Salary TDS & Form 16 prep" },
+        { title: "Form 26Q Filing", slug: "form-26q-filing", shortDescription: "Vendor 194C, 194J, 194I & Form 16A" },
         { title: "TDS Payment Assistance", slug: "tds-payment", shortDescription: "Challan 281 verification & timing" }
       ]
     },
     {
-      title: "Accounting & Reconciliations",
-      icon: <Coins className="w-4 h-4 text-indigo-600" />,
+      title: "Accounting & Bookkeeping",
+      icon: <Coins className="w-4 h-4 text-indigo-400" />,
       items: [
-        { title: "Day-to-Day Accounting", slug: "daily-accounting", shortDescription: "Sales, purchase & ledger bookkeeping" },
+        { title: "Bookkeeping Services", slug: "bookkeeping-services", shortDescription: "Tally, Zoho & Monthly Ledgers" },
+        { title: "Day-to-Day Accounting", slug: "daily-accounting", shortDescription: "Sales, purchase & ledger entries" },
         { title: "Bank Reconciliation (BRS)", slug: "bank-reconciliation", shortDescription: "Matching statements with ledgers" },
-        { title: "Debtors & Creditors Reconcile", slug: "debtors-creditors-reconciliation", shortDescription: "Vendor aging & outstanding balances" }
+        { title: "Balance Sheet & P&L", slug: "balance-sheet", shortDescription: "Year-end financial statements" }
       ]
     },
     {
-      title: "Financials & Tax Returns",
-      icon: <Scale className="w-4 h-4 text-amber-600" />,
+      title: "Tax Returns & MSME",
+      icon: <Scale className="w-4 h-4 text-amber-500" />,
       items: [
-        { title: "Balance Sheet & P&L", slug: "balance-sheet", shortDescription: "Year-end trial balance & statements" },
-        { title: "Income Tax Return (ITR)", slug: "income-tax-return", shortDescription: "ITR-3, 4, 5 & 6 business returns" }
-      ]
-    },
-    {
-      title: "Registrations",
-      icon: <Building className="w-4 h-4 text-emerald-600" />,
-      items: [
-        { title: "MSME / Udyam Registration", slug: "msme-udyam-registration", shortDescription: "Zero-fee government certificate setup" }
+        { title: "Income Tax Return (ITR)", slug: "income-tax-return", shortDescription: "ITR-1 to 6 business & freelancer returns" },
+        { title: "MSME / Udyam Registration", slug: "msme-udyam-registration", shortDescription: "Zero-fee government certificate setup" },
+        { title: "Debtors & Creditors Reconcile", slug: "debtors-creditors-reconciliation", shortDescription: "Vendor aging & balance confirmation" }
       ]
     }
   ];
@@ -141,11 +140,11 @@ export const Navbar: React.FC = () => {
                       Core Compliance & Accounting Services
                     </span>
                     <Link
-                      href="/#services"
+                      href="/services"
                       onClick={() => setServicesDropdownOpen(false)}
                       className="text-xs font-semibold text-brand-blue hover:underline flex items-center gap-1"
                     >
-                      View All 10 Services <ArrowRight className="w-3 h-3" />
+                      View All 15 Services Directory <ArrowRight className="w-3 h-3" />
                     </Link>
                   </div>
 

@@ -129,13 +129,6 @@ export default function TdsReturnFilingGuidePage() {
           "addressRegion": "Delhi",
           "postalCode": "110001",
           "addressCountry": "IN"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "196",
-          "bestRating": "5",
-          "worstRating": "1"
         }
       },
       {

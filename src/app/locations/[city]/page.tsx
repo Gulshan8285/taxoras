@@ -154,13 +154,6 @@ async function CityDetailContent({ params }: CityPageProps) {
         telephone: siteConfig.contact.phone,
         email: siteConfig.contact.email,
         priceRange: "₹799 - ₹2499/month",
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.9",
-          reviewCount: "184",
-          bestRating: "5",
-          worstRating: "1",
-        },
         offers: {
           "@type": "Offer",
           price: "799",

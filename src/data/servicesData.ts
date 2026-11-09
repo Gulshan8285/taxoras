@@ -1114,6 +1114,611 @@ export const allServices: ServiceItem[] = [
       "tds-return-filing",
       "daily-accounting"
     ]
+  },
+  {
+    "id": "gstr-1-filing",
+    "slug": "gstr-1-filing",
+    "title": "GSTR-1 Filing Online",
+    "shortTitle": "GSTR-1 Filing",
+    "category": "gst",
+    "categoryLabel": "GST Services",
+    "heroBadge": "Monthly & Quarterly Outward Supply Reporting",
+    "shortDescription": "Professional GSTR-1 return filing support for B2B invoices, B2C sales summaries, credit notes, export supplies, and HSN code reporting before statutory due dates.",
+    "ctaText": "Enquire About GSTR-1 Filing",
+    "icon": "Receipt",
+    "benefits": [
+      "Accurate B2B invoice upload ensuring your buyers receive Input Tax Credit (ITC) without delay.",
+      "Comprehensive HSN/SAC summary compilation meeting mandatory 4/6-digit portal requirements.",
+      "Credit note, debit note, and advance adjustment reporting in compliance with GST Rule 88C.",
+      "Filing completed 2 to 3 days prior to the 11th/13th deadline to prevent late fees and portal freeze."
+    ],
+    "whoNeeds": [
+      "Regular GST taxpayers filing monthly outward supply statements.",
+      "Small taxpayers under the Quarterly Return Monthly Payment (QRMP) scheme filing quarterly GSTR-1 or utilizing the Invoice Furnishing Facility (IFF).",
+      "Wholesale traders and service providers whose commercial clients demand verified B2B invoice reflection on GSTR-2B.",
+      "E-commerce suppliers and interstate traders requiring precise place-of-supply (POS) reporting."
+    ],
+    "commonProblems": [
+      "Buyer ITC denial and delayed client payments due to invoice upload errors or wrong GSTIN entries.",
+      "Rule 88C discrepancy notices (Form DRC-01B) when GSTR-1 outward supply exceeds GSTR-3B figures.",
+      "Mismatches in B2B taxable value and IGST/CGST/SGST tax distribution.",
+      "Accumulation of statutory late fees under Section 47 for delayed submission after due date."
+    ],
+    "whatIncluded": [
+      "Detailed verification of sales ledger, tax invoices, debit notes, and credit memos.",
+      "HSN-wise summary preparation with correct unit quantity codes (UQC).",
+      "Table-wise portal entry (Table 4 B2B, Table 5/7 B2C, Table 6 Exports, Table 9 Amendments, Table 12 HSN).",
+      "Reconciliation check against GSTR-3B drafts to eliminate Rule 88C DRC-01B notice triggers.",
+      "Filing with OTP (EVC) or Digital Signature Certificate (DSC) and sharing ARN acknowledgement."
+    ],
+    "requiredDocuments": [
+      {
+        "category": "Sales Invoices & Registers",
+        "items": [
+          "Detailed Sales Register (Excel / Tally / Accounting Software)",
+          "B2B Invoices with buyer GSTIN, place of supply, and invoice numbers",
+          "Export invoices / shipping bills (if applicable)",
+          "Credit and debit notes issued during the tax period"
+        ]
+      },
+      {
+        "category": "Portal Credentials",
+        "items": [
+          "GST Common Portal Username & Password (or API E-way Bill credentials)",
+          "Registered mobile number for OTP / authorized DSC for private limited companies"
+        ]
+      }
+    ],
+    "processSteps": [
+      {
+        "step": 1,
+        "title": "Sales Register Ingestion",
+        "description": "You share your monthly sales register or invoice spreadsheets via WhatsApp or secure cloud folder."
+      },
+      {
+        "step": 2,
+        "title": "Validation & HSN Check",
+        "description": "We validate customer GSTINs, check place-of-supply rules, and confirm HSN codes and rate slabs."
+      },
+      {
+        "step": 3,
+        "title": "Portal Draft & Table Entry",
+        "description": "We prepare and upload your outward supplies into the GST Common Portal across B2B, B2C, and credit note tables."
+      },
+      {
+        "step": 4,
+        "title": "Review & EVC Filing",
+        "description": "You review the draft summary, authenticate via OTP/DSC, and receive the official ARN receipt immediately."
+      }
+    ],
+    "deadlinesNotice": "Monthly GSTR-1 is due on the 11th of every subsequent month. Quarterly filers under QRMP must file by the 13th of the month following the quarter.",
+    "faqs": [
+      {
+        "question": "What happens if I miss the GSTR-1 due date?",
+        "answer": "Filing GSTR-1 after the 11th attracts statutory late fees under Section 47 (auto-populated in subsequent GSTR-3B). More critically, your buyers cannot view or claim ITC in their GSTR-2B for that month, which frequently causes client friction and withheld payments."
+      },
+      {
+        "question": "Can I amend an invoice uploaded in an earlier GSTR-1?",
+        "answer": "Yes. Table 9 of GSTR-1 allows amendments to previous taxable supplies, invoice values, tax amounts, and buyer GSTINs, subject to the statutory time limits prescribed under Section 39(9)."
+      },
+      {
+        "question": "What is the minimum HSN code requirement in GSTR-1?",
+        "answer": "Taxpayers with aggregate turnover up to \u20b95 Crores must report minimum 4-digit HSN codes for B2B supplies. Taxpayers with turnover exceeding \u20b95 Crores must mandatorily report 6-digit HSN codes across all supplies."
+      },
+      {
+        "question": "How much does GSTR-1 filing assistance cost with Taxoras?",
+        "answer": "GSTR-1 filing is included inside our all-inclusive monthly compliance retainers starting at \u20b9799/month for small businesses with up to 50 invoices, or available as dedicated individual filing support."
+      }
+    ],
+    "pricingApproach": {
+      "model": "Included in Retainer or Standalone per Return",
+      "description": "Transparent pricing based on invoice volume with zero per-invoice hidden charges.",
+      "factors": [
+        "Number of monthly B2B invoices",
+        "Complexity of interstate e-commerce sales",
+        "Frequency (Monthly vs QRMP)"
+      ],
+      "inclusions": [
+        "Sales ledger review",
+        "HSN summary preparation",
+        "Portal drafting",
+        "Filing and ARN generation"
+      ],
+      "exclusions": [
+        "Retrospective audit of multi-year unfiled returns"
+      ]
+    },
+    "disclaimer": "Return data is compiled based on sales invoices and documentation furnished by the client. The taxpayer remains responsible for the accuracy of underlying sales figures.",
+    "relatedSlugs": [
+      "gstr-3b-filing",
+      "gst-return-filing",
+      "gst-registration"
+    ]
+  },
+  {
+    "id": "gstr-3b-filing",
+    "slug": "gstr-3b-filing",
+    "title": "GSTR-3B Filing Services",
+    "shortTitle": "GSTR-3B Filing",
+    "category": "gst",
+    "categoryLabel": "GST Services",
+    "heroBadge": "Monthly Summary Return & ITC Settlement",
+    "shortDescription": "Accurate monthly GSTR-3B return filing with 100% GSTR-2B purchase matching, eligible ITC settlement, cash ledger challan generation, and Rule 88D notice prevention.",
+    "ctaText": "Enquire About GSTR-3B Filing",
+    "icon": "FileCheck2",
+    "benefits": [
+      "100% invoice-by-invoice GSTR-2B matching to maximize eligible Input Tax Credit and prevent loss.",
+      "Strict adherence to Rule 88D to prevent automated DRC-01C notices for excess ITC claims.",
+      "Optimal utilization of electronic credit ledger against IGST, CGST, and SGST liabilities.",
+      "Challan generation (PMT-06) and settlement assistance to avoid 18% p.a. interest under Section 50(1)."
+    ],
+    "whoNeeds": [
+      "Every taxpayer registered under the regular GST scheme (mandatory even for Nil periods).",
+      "Traders, manufacturers, and service firms seeking verified ITC matching before claiming credit.",
+      "Businesses wanting to avoid statutory late fees and blocking of outward E-way bill generation.",
+      "Startups needing predictable monthly compliance retainers without hidden surprise fees."
+    ],
+    "commonProblems": [
+      "Claiming ITC in excess of GSTR-2B, which automatically triggers Form DRC-01C demand notices.",
+      "Accumulation of \u20b950/day late fees (\u20b920/day for nil returns) capped up to statutory thresholds.",
+      "18% per annum mandatory interest charges on delayed net cash tax dues under Section 50(1).",
+      "E-way bill generation portal blocking after defaulting on two consecutive return periods."
+    ],
+    "whatIncluded": [
+      "Reconciliation of Table 3.1 outward tax liability against filed GSTR-1 figures.",
+      "Download and line-item analysis of official auto-drafted GSTR-2B purchase statement.",
+      "Segregation of eligible ITC, ineligible ITC under Section 17(5), and reversals under Rule 38/42/43.",
+      "Net cash tax computation and electronic challan generation on gst.gov.in.",
+      "Return verification, filing via EVC/DSC, and ARN receipt delivery."
+    ],
+    "requiredDocuments": [
+      {
+        "category": "Compliance Records",
+        "items": [
+          "Filed GSTR-1 summary for the tax period",
+          "Purchase register and expense bills for the month",
+          "Bank statement showing vendor payments and tax payments",
+          "Details of any credit reversals or capital goods purchases"
+        ]
+      },
+      {
+        "category": "Portal Access",
+        "items": [
+          "GST Common Portal credentials",
+          "Authorised signatory mobile number for OTP / valid DSC token"
+        ]
+      }
+    ],
+    "processSteps": [
+      {
+        "step": 1,
+        "title": "GSTR-2B Auto-Reconciliation",
+        "description": "On the 14th of the month, we pull your auto-generated GSTR-2B statement and reconcile every supplier invoice against your purchase books."
+      },
+      {
+        "step": 2,
+        "title": "Tax Liability Matching",
+        "description": "We cross-check Table 3.1 tax figures with your filed GSTR-1 to ensure exact alignment and zero Rule 88C variance."
+      },
+      {
+        "step": 3,
+        "title": "Credit Offset & Challan",
+        "description": "We maximize legal credit offsets, compute the net cash balance payable (if any), and generate your PMT-06 challan."
+      },
+      {
+        "step": 4,
+        "title": "Final E-Filing & ARN",
+        "description": "Upon tax payment, we file Form GSTR-3B with OTP verification and deliver your official GST filing receipt."
+      }
+    ],
+    "deadlinesNotice": "Monthly GSTR-3B must be filed by the 20th of the following month. QRMP quarterly taxpayers must file by the 22nd or 24th depending on their state classification.",
+    "faqs": [
+      {
+        "question": "Can I file GSTR-3B without filing GSTR-1 first?",
+        "answer": "No. Following statutory amendments to Section 39(10) of the CGST Act, the GST portal strictly blocks taxpayers from filing GSTR-3B unless their corresponding GSTR-1 for that period is already submitted."
+      },
+      {
+        "question": "Is GSTR-3B filing mandatory if there was zero revenue in a month?",
+        "answer": "Yes. Registered taxpayers must submit a Nil GSTR-3B even if there were zero sales and zero purchases. Failing to file a Nil return incurs a daily statutory late fee of \u20b920/day."
+      },
+      {
+        "question": "What is Rule 88D and Form DRC-01C in GSTR-3B?",
+        "answer": "Rule 88D automatically generates an electronic notice (DRC-01C) whenever ITC claimed in GSTR-3B exceeds the eligible ITC reflected in auto-drafted GSTR-2B by a specified percentage. Taxpayers must either pay back the excess ITC or explain the variance within 7 days."
+      },
+      {
+        "question": "How does Taxoras help protect businesses during GSTR-3B filing?",
+        "answer": "Taxoras matches your purchase ledger line-by-line against GSTR-2B before filing, ensuring you claim every single rupee of valid credit without ever exceeding portal thresholds."
+      }
+    ],
+    "pricingApproach": {
+      "model": "Monthly Compliance Retainer",
+      "description": "Full GSTR-1, GSTR-3B, and GSTR-2B purchase matching bundled into an affordable monthly retainer.",
+      "factors": [
+        "Monthly transaction and invoice volume",
+        "Number of purchase vouchers needing GSTR-2B matching",
+        "Reverse charge mechanism (RCM) applicability"
+      ],
+      "inclusions": [
+        "GSTR-2B matching",
+        "Tax offset computation",
+        "Challan generation",
+        "Filing and ARN confirmation"
+      ],
+      "exclusions": [
+        "Appellate representation before GST Appellate Tribunal"
+      ]
+    },
+    "disclaimer": "GSTR-3B figures are finalized based on client records and GSTR-2B portal data. The taxpayer must deposit requisite cash taxes to enable final return submission.",
+    "relatedSlugs": [
+      "gstr-1-filing",
+      "gst-return-filing",
+      "bank-reconciliation"
+    ]
+  },
+  {
+    "id": "form-24q-filing",
+    "slug": "form-24q-filing",
+    "title": "Form 24Q Filing: Salary TDS Return",
+    "shortTitle": "Form 24Q Salary TDS",
+    "category": "tds",
+    "categoryLabel": "TDS Compliance",
+    "heroBadge": "Quarterly Payroll TDS & Form 16 Preparation",
+    "shortDescription": "Timely Form 24Q quarterly return preparation and filing for employee salary TDS deductions under Section 192, with challan matching, FVU validation, and Form 16 Part A & B generation.",
+    "ctaText": "Enquire About Form 24Q Filing",
+    "icon": "FileSpreadsheet",
+    "benefits": [
+      "Timely quarterly compliance eliminating statutory \u20b9200/day late fees under Section 234E.",
+      "Accurate tax deduction under both Old and New Tax Regimes (Section 115BAC).",
+      "CSI challan verification on TRACES to ensure zero uncredited payment notices.",
+      "Quarter 4 Annexure II salary computation breakdown for seamless Form 16 issuance."
+    ],
+    "whoNeeds": [
+      "Corporate employers, startups, and private limited companies paying monthly salaries.",
+      "Partnership firms, LLPs, and trusts with salaried staff.",
+      "Proprietors and individuals liable to tax audit under Section 44AB who employ salaried workforce.",
+      "HR and payroll teams needing expert tax filing without hiring costly dedicated tax attorneys."
+    ],
+    "commonProblems": [
+      "Section 234E late filing fees accumulating at \u20b9200 every single day until the return is submitted.",
+      "TRACES short deduction defaults due to PAN errors or incorrect regime slab calculations.",
+      "Challan mapping mismatch between bank BSR codes and return annexures.",
+      "Delayed Form 16 generation leading to employee dissatisfaction during personal ITR filing."
+    ],
+    "whatIncluded": [
+      "Monthly payroll TDS deduction schedule review and slab verification.",
+      "Challan verification (ITNS 281) via TRACES portal and CSI file download.",
+      "Quarterly Form 24Q preparation using latest e-TDS Return Preparation Utility (RPU).",
+      "File Validation Utility (FVU) verification and error correction.",
+      "Submission on Income Tax E-filing portal and delivery of provisional receipt.",
+      "Form 16 Part A (TRACES) and Part B guidance for Q4."
+    ],
+    "requiredDocuments": [
+      {
+        "category": "Salary & Deductions",
+        "items": [
+          "Monthly salary sheet showing gross pay, deductions, and TDS deducted under Section 192",
+          "Employee PAN numbers and tax regime choices (Old vs New Regime)",
+          "Investment proof declarations (80C, 80D, HRA receipts) for Q4 Annexure II"
+        ]
+      },
+      {
+        "category": "Payment Challans & TAN",
+        "items": [
+          "Tax Deduction and Collection Account Number (TAN) of the employer",
+          "Paid ITNS 281 challans with BSR code, tender date, and challan serial number",
+          "TRACES portal login credentials"
+        ]
+      }
+    ],
+    "processSteps": [
+      {
+        "step": 1,
+        "title": "Data Collection & Verification",
+        "description": "We collect your quarterly payroll summary, employee PANs, and ITNS 281 tax deposit challans."
+      },
+      {
+        "step": 2,
+        "title": "CSI File Matching",
+        "description": "We download the official Challan Status Inquiry (CSI) file from TIN-NSDL/e-filing portal to match amounts down to the rupee."
+      },
+      {
+        "step": 3,
+        "title": "RPU Preparation & FVU Pass",
+        "description": "We populate Annexure I (and Annexure II for Q4), run the file through NSDL validation utility, and generate clean .fvu files."
+      },
+      {
+        "step": 4,
+        "title": "E-filing & Form 16 Support",
+        "description": "We upload the validated return to the Income Tax portal and assist with downloading digitally signed Form 16 Part A from TRACES."
+      }
+    ],
+    "deadlinesNotice": "Quarterly Form 24Q filing deadlines: Q1 (Apr-Jun) by 31st July; Q2 (Jul-Sep) by 31st October; Q3 (Oct-Dec) by 31st January; Q4 (Jan-Mar) by 31st May.",
+    "faqs": [
+      {
+        "question": "What is the late fee for delayed Form 24Q filing?",
+        "answer": "Under Section 234E of the Income Tax Act, a mandatory late fee of \u20b9200 per day is levied for every day the default continues, capped at the total TDS amount deducted during the quarter. In addition, Section 271H penalty ranging from \u20b910,000 to \u20b91,00,000 may be imposed for delays exceeding one year."
+      },
+      {
+        "question": "What is the difference between Annexure I and Annexure II in Form 24Q?",
+        "answer": "Annexure I details deductor, challan, and employee-wise monthly TDS deductions for the respective quarter (filed in all 4 quarters). Annexure II provides the comprehensive annual salary breakdown, exemptions, deductions, and total tax computation for each employee (filed exclusively in Quarter 4)."
+      },
+      {
+        "question": "Can Form 24Q be corrected after submission?",
+        "answer": "Yes. If employee PANs, challans, or deduction amounts require alteration, a Form 24Q Correction Return (C1, C2, C3, C5) can be submitted on the e-filing portal after TRACES processes the original return."
+      },
+      {
+        "question": "How much does Taxoras charge for quarterly Form 24Q filing?",
+        "answer": "Our Form 24Q filing assistance starts at \u20b9799/quarter for small employers with up to 10 employees, with transparent tiered packages for growing enterprises."
+      }
+    ],
+    "pricingApproach": {
+      "model": "Fixed Quarterly Fee per Return",
+      "description": "Tiered pricing based on the total number of salaried employees on payroll.",
+      "factors": [
+        "Number of employee deduction records",
+        "Quarter (Q1-Q3 standard vs Q4 Annexure II comprehensive)",
+        "Number of tax deposit challans"
+      ],
+      "inclusions": [
+        "CSI challan reconciliation",
+        "RPU drafting",
+        "FVU validation",
+        "E-filing token generation"
+      ],
+      "exclusions": [
+        "Appeals against CPC-TDS penalty orders before Commissioner Appeals"
+      ]
+    },
+    "disclaimer": "TDS returns are prepared using salary statements and paid challans supplied by the employer. The deductor is responsible for ensuring timely monthly tax deposit by the 7th of each month.",
+    "relatedSlugs": [
+      "form-26q-filing",
+      "tds-return-filing",
+      "tds-payment"
+    ]
+  },
+  {
+    "id": "form-26q-filing",
+    "slug": "form-26q-filing",
+    "title": "Form 26Q Filing: Vendor & Professional TDS Return",
+    "shortTitle": "Form 26Q Vendor TDS",
+    "category": "tds",
+    "categoryLabel": "TDS Compliance",
+    "heroBadge": "Non-Salary TDS: Contractor, Rent, Professional Fees & Commission",
+    "shortDescription": "Expert quarterly Form 26Q preparation and submission covering Section 194C (contractors), 194J (professional/technical fees), 194I (rent), and 194H (commission) with zero TRACES short-deduction defaults.",
+    "ctaText": "Enquire About Form 26Q Filing",
+    "icon": "CreditCard",
+    "benefits": [
+      "Comprehensive vendor payment coverage across Section 194C, 194J, 194I, 194H, 194Q, and 194A.",
+      "Automated PAN verification to avoid 20% penalty deductions under Section 206AA.",
+      "Section 206AB compliance check to verify non-filer higher deduction applicability.",
+      "Zero TRACES short-deduction notices and prompt Form 16A TDS certificate issuance for your vendors."
+    ],
+    "whoNeeds": [
+      "Businesses paying contractor fees, marketing agencies, software developers, or freelance consultants.",
+      "Tenants paying commercial or high-value residential rent under Section 194I.",
+      "Corporate entities and firms liable to deduct TDS on interest, commission, or professional fees.",
+      "Startups needing clean quarterly vendor tax compliance to maintain good vendor relationships."
+    ],
+    "commonProblems": [
+      "Section 234E late filing fees of \u20b9200 per day for delayed quarterly returns.",
+      "TRACES short deduction notices caused by confusing Section 194J(a) (technical fees at 2%) with 194J(b) (professional fees at 10%).",
+      "Deductions against invalid or inoperative PANs resulting in demand notices under Section 206AA.",
+      "Vendor dissatisfaction and friction due to uncredited TDS not appearing in their Form 26AS/AIS."
+    ],
+    "whatIncluded": [
+      "Vendor ledger review and section-wise deduction verification.",
+      "Paid ITNS 281 challan matching with TRACES Challan Status Inquiry (CSI).",
+      "Verification of lower deduction certificates under Section 197 (if applicable).",
+      "Form 26Q preparation using latest NSDL return preparation utility.",
+      "Validation using FVU utility and error correction.",
+      "Submission on Income Tax e-filing portal and delivery of filing receipt.",
+      "Download of quarterly Form 16A certificates from TRACES for distribution to vendors."
+    ],
+    "requiredDocuments": [
+      {
+        "category": "Vendor Ledgers & Deductions",
+        "items": [
+          "Vendor payment register showing bill amount, deduction date, and TDS amount",
+          "Vendor PAN cards and business constitution details",
+          "Applicable section mapping (194C, 194J, 194I, 194H, 194Q)"
+        ]
+      },
+      {
+        "category": "Challans & Credentials",
+        "items": [
+          "TAN number of the deductor",
+          "Paid ITNS 281 challans with BSR codes and Challan Serial Numbers",
+          "Income Tax E-filing portal and TRACES login access"
+        ]
+      }
+    ],
+    "processSteps": [
+      {
+        "step": 1,
+        "title": "Vendor Payment Analysis",
+        "description": "We audit your quarterly expense ledgers to confirm correct TDS rates (e.g. 1% / 2% for 194C, 2% / 10% for 194J, 10% for 194I)."
+      },
+      {
+        "step": 2,
+        "title": "CSI File Download & Match",
+        "description": "We pull the official CSI challan file from TRACES and map every vendor payment to the deposited government challans."
+      },
+      {
+        "step": 3,
+        "title": "RPU Entry & FVU Validation",
+        "description": "We generate the Form 26Q data file and run it through NSDL FVU software to verify checksums and eliminate validation errors."
+      },
+      {
+        "step": 4,
+        "title": "Filing & Form 16A Issuance",
+        "description": "We upload the return to the income tax portal, provide you with the provisional receipt, and subsequently download Form 16A certificates."
+      }
+    ],
+    "deadlinesNotice": "Quarterly Form 26Q filing deadlines: Q1 (Apr-Jun) by 31st July; Q2 (Jul-Sep) by 31st October; Q3 (Oct-Dec) by 31st January; Q4 (Jan-Mar) by 31st May.",
+    "faqs": [
+      {
+        "question": "What is the rate of TDS under Section 194J for technical vs professional services?",
+        "answer": "TDS on fees for technical services (FTS), royalty, or call center operations is deducted at 2%. TDS on professional services (such as legal, medical, engineering, accountancy, or consultancy) is deducted at 10% under Section 194J."
+      },
+      {
+        "question": "What happens if a vendor does not provide their PAN?",
+        "answer": "Under Section 206AA, if a payee fails to furnish a valid PAN, TDS must be deducted at higher of: the rate specified in the Act, the rates in force, or 20%. Form 26Q requires proper flagging to avoid short deduction demand notices."
+      },
+      {
+        "question": "When can I download Form 16A for my vendors?",
+        "answer": "Form 16A becomes available on the TRACES portal approximately 3 to 7 working days after your Form 26Q return is successfully processed by the Centralized Processing Cell (TDS)."
+      },
+      {
+        "question": "How much does Taxoras charge for quarterly Form 26Q filing?",
+        "answer": "Our Form 26Q filing retainers start from \u20b9799/quarter for small businesses with up to 15 vendor payment records, providing an affordable alternative to high-fee corporate consultancies."
+      }
+    ],
+    "pricingApproach": {
+      "model": "Fixed Quarterly Fee per Return",
+      "description": "Tiered pricing determined by the number of vendor deduction lines and challans.",
+      "factors": [
+        "Total number of vendor deduction records",
+        "Number of monthly deposit challans",
+        "Section 197 lower deduction verification requirements"
+      ],
+      "inclusions": [
+        "Vendor PAN check",
+        "CSI challan reconciliation",
+        "FVU file validation",
+        "Portal submission",
+        "Form 16A download support"
+      ],
+      "exclusions": [
+        "High Court writ petitions or judicial appeals"
+      ]
+    },
+    "disclaimer": "TDS returns are compiled based on vendor invoices and paid challans supplied by the client. Deductors are responsible for depositing monthly deducted taxes into government account by the 7th of each month.",
+    "relatedSlugs": [
+      "form-24q-filing",
+      "tds-return-filing",
+      "tds-payment"
+    ]
+  },
+  {
+    "id": "bookkeeping-services",
+    "slug": "bookkeeping-services",
+    "title": "Bookkeeping Services for Small Business",
+    "shortTitle": "Bookkeeping Services",
+    "category": "accounting",
+    "categoryLabel": "Accounting & Bookkeeping",
+    "heroBadge": "Monthly Ledger Maintenance, Bank Entry & Invoicing",
+    "shortDescription": "Affordable, dedicated bookkeeping services for Indian small businesses, freelancers, startups, and traders in Tally Prime, Zoho Books, Busy, and QuickBooks with real-time financial tracking.",
+    "ctaText": "Enquire About Bookkeeping Services",
+    "icon": "BookOpenCheck",
+    "benefits": [
+      "Clean, organized books maintained in Tally Prime, Zoho Books, Busy, or QuickBooks.",
+      "Up-to-date bank account entry and monthly reconciliation eliminating missing voucher headaches.",
+      "Vendor and customer aging analysis to improve cash collections and monitor payables.",
+      "Seamless year-end data handoff for ITR filing, tax audit (Section 44AB), and balance sheet finalization."
+    ],
+    "whoNeeds": [
+      "Retail shopkeepers, traders, and distributors handling high daily cash and bank transactions.",
+      "Startups, marketing agencies, and IT service providers needing monthly management reports.",
+      "Freelancers, creators, and professionals needing structured expense ledgers for ITR-3/4 filing.",
+      "Small business owners who want to eliminate the high overhead of a full-time in-house accountant."
+    ],
+    "commonProblems": [
+      "Unreconciled bank balances with unexplained debits and missing invoice vouchers.",
+      "Unorganized physical receipts resulting in disallowed business deductions during tax scrutiny.",
+      "Overdue debtor receivables due to lack of customer ledger tracking and aging reports.",
+      "Year-end compliance chaos and late penalties before tax audit deadlines."
+    ],
+    "whatIncluded": [
+      "Sales and purchase invoice voucher entry.",
+      "Bank statement debit and credit transaction posting.",
+      "Expense voucher booking with correct GST input credit tagging.",
+      "Monthly bank reconciliation statement (BRS) preparation.",
+      "Debtors and creditors balance ledger reconciliation.",
+      "Monthly Trial Balance and Profit & Loss statement reporting."
+    ],
+    "requiredDocuments": [
+      {
+        "category": "Bank & Financial Records",
+        "items": [
+          "Bank account statements (PDF or Excel format)",
+          "Credit card or payment gateway settlement summaries",
+          "Opening trial balance / previous year balance sheet (for existing businesses)"
+        ]
+      },
+      {
+        "category": "Transaction Invoices",
+        "items": [
+          "Sales invoices and POS daily summaries",
+          "Purchase bills and vendor invoices",
+          "Business expense receipts and rent payment slips"
+        ]
+      }
+    ],
+    "processSteps": [
+      {
+        "step": 1,
+        "title": "Document Handover",
+        "description": "Share monthly bank statements and invoices via WhatsApp or our secure shared cloud folder."
+      },
+      {
+        "step": 2,
+        "title": "Ledger Entry & Categorization",
+        "description": "Our accounting team posts all sales, purchases, bank charges, and operating expenses into your designated accounting software."
+      },
+      {
+        "step": 3,
+        "title": "Bank & Ledger Reconciliation",
+        "description": "We perform a line-by-line bank reconciliation (BRS) to ensure bank statement balances match your software books to the rupee."
+      },
+      {
+        "step": 4,
+        "title": "Monthly Financial Review",
+        "description": "You receive a clean Profit & Loss summary, balance overview, and outstanding receivable list every month."
+      }
+    ],
+    "deadlinesNotice": "Monthly bookkeeping is completed within the first 7 to 10 days of the subsequent calendar month, ensuring clean data is ready before GST return due dates.",
+    "faqs": [
+      {
+        "question": "Which accounting software do you support for bookkeeping?",
+        "answer": "We support all leading accounting platforms in India, including Tally Prime, Zoho Books, Busy Accounting, QuickBooks Online, and Marg ERP, as well as customized spreadsheet accounting."
+      },
+      {
+        "question": "How is outsourced bookkeeping cheaper than hiring an in-house accountant?",
+        "answer": "A full-time in-house accountant in Tier 1 or Tier 2 Indian cities costs \u20b918,000 to \u20b935,000 per month, plus employee overheads, software licenses, and training. Taxoras outsourced bookkeeping plans start from just \u20b9799 to \u20b91,999 per month, delivering higher accuracy with zero HR overhead."
+      },
+      {
+        "question": "Do I need to send physical paper bills to your office?",
+        "answer": "No. We operate a 100% digital, paperless workflow. You can easily photograph or scan your bills and upload them via WhatsApp or secure cloud folder."
+      },
+      {
+        "question": "Does your bookkeeping service include GST and TDS filing?",
+        "answer": "Yes. We offer bundled monthly retainers that combine daily bookkeeping with GSTR-1, GSTR-3B, and quarterly TDS compliance for complete hands-free convenience."
+      }
+    ],
+    "pricingApproach": {
+      "model": "Monthly Bookkeeping Retainer",
+      "description": "Affordable monthly plans scaled by transaction volume with zero hidden setup fees.",
+      "factors": [
+        "Monthly transaction count (bank entries + sales/purchase vouchers)",
+        "Number of bank accounts and credit cards",
+        "Preferred software platform (Tally / Zoho / Busy)"
+      ],
+      "inclusions": [
+        "Voucher entry",
+        "Bank reconciliation",
+        "Vendor ledger matching",
+        "Monthly P&L summary"
+      ],
+      "exclusions": [
+        "Physical on-site inventory stocktaking visits"
+      ]
+    },
+    "disclaimer": "Bookkeeping entries are posted based on transaction documents, bank statements, and classifications supplied by the business owner.",
+    "relatedSlugs": [
+      "bank-reconciliation",
+      "daily-accounting",
+      "balance-sheet"
+    ]
   }
 ];
 

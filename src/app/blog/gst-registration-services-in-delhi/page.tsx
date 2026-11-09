@@ -134,14 +134,7 @@ export default function GstRegistrationDelhiPage() {
         "areaServed": [
           { "@type": "City", "name": "New Delhi" },
           { "@type": "AdministrativeArea", "name": "Delhi NCR" }
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "240",
-          "bestRating": "5",
-          "worstRating": "1"
-        }
+        ]
       },
       {
         "@type": "FAQPage",

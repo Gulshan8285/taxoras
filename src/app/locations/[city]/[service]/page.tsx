@@ -171,13 +171,6 @@ async function ServiceLocationDetailContent({ params }: ServiceCityProps) {
           telephone: siteConfig.contact.phone,
           url: siteConfig.canonicalUrl,
           priceRange: "₹799 - ₹2499/month",
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: "4.9",
-            reviewCount: "184",
-            bestRating: "5",
-            worstRating: "1",
-          },
         },
         offers: {
           "@type": "Offer",

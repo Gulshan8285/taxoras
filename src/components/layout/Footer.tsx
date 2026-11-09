@@ -72,9 +72,9 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2.5 text-xs text-slate-400">
               <li>
-                <Link href="/services/gst-registration" className="hover:text-amber-400 transition-colors flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-slate-500"></span>
-                  GST Registration Assistance
+                <Link href="/services" className="text-amber-400 font-semibold hover:text-white transition-colors flex items-center gap-2">
+                  <ArrowRight className="w-3 h-3 text-amber-500" />
+                  All 15 Services Directory
                 </Link>
               </li>
               <li>
@@ -84,27 +84,39 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/services/gstr-1-filing" className="hover:text-amber-400 transition-colors flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-slate-500"></span>
+                  GSTR-1 Outward Supply Filing
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/gstr-3b-filing" className="hover:text-amber-400 transition-colors flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-slate-500"></span>
+                  GSTR-3B Monthly Tax & ITC Filing
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/gst-registration" className="hover:text-amber-400 transition-colors flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-slate-500"></span>
+                  GST Registration Assistance
+                </Link>
+              </li>
+              <li>
                 <Link href="/services/tds-return-filing" className="hover:text-amber-400 transition-colors flex items-center gap-2">
                   <span className="w-1 h-1 rounded-full bg-slate-500"></span>
                   TDS Return Filing (24Q & 26Q)
                 </Link>
               </li>
               <li>
-                <Link href="/services/tds-payment" className="hover:text-amber-400 transition-colors flex items-center gap-2">
+                <Link href="/services/form-24q-filing" className="hover:text-amber-400 transition-colors flex items-center gap-2">
                   <span className="w-1 h-1 rounded-full bg-slate-500"></span>
-                  TDS Payment & Challan 281
+                  Form 24Q Salary TDS Return
                 </Link>
               </li>
               <li>
-                <Link href="/services/daily-accounting" className="hover:text-amber-400 transition-colors flex items-center gap-2">
+                <Link href="/services/form-26q-filing" className="hover:text-amber-400 transition-colors flex items-center gap-2">
                   <span className="w-1 h-1 rounded-full bg-slate-500"></span>
-                  Day-to-Day Accounting & Ledgers
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/bank-reconciliation" className="hover:text-amber-400 transition-colors flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-slate-500"></span>
-                  Bank Statement Reconciliation (BRS)
+                  Form 26Q Vendor & Rent TDS
                 </Link>
               </li>
             </ul>
@@ -120,6 +132,18 @@ export const Footer: React.FC = () => {
                 <Link href="/services/msme-udyam-registration" className="hover:text-amber-400 transition-colors flex items-center gap-2">
                   <span className="w-1 h-1 rounded-full bg-slate-500"></span>
                   MSME / Udyam Registration
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/bookkeeping-services" className="hover:text-amber-400 transition-colors flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-slate-500"></span>
+                  Bookkeeping &amp; Daily Accounting
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/bank-reconciliation" className="hover:text-amber-400 transition-colors flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-slate-500"></span>
+                  Bank Reconciliation Service (BRS)
                 </Link>
               </li>
               <li>

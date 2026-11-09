@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { siteConfig, CustomerEnquiryPayload } from "@/config/siteConfig";
 import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
+import { trackFormSubmission, trackWhatsAppClick } from "@/lib/analytics";
 import {
   Send,
   CheckCircle2,
@@ -226,6 +227,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
       if (res.ok && data.success) {
         setSubmitted(true);
         setSubmissionId(data.enquiryId || "LEAD-ACK");
+        trackFormSubmission(formData.serviceRequired || "General Consultation");
       } else {
         setApiError(data.error || "Failed to submit enquiry. Please try again or use WhatsApp.");
       }

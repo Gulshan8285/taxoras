@@ -102,6 +102,15 @@ async function ServiceDetailContent({ params }: ServicePageProps) {
 
   const related = getRelatedServices(service.relatedSlugs);
 
+  let tailoredWhatsAppCta = "Get Affordable Quote – Chat on WhatsApp";
+  if (service.category === "gst") {
+    tailoredWhatsAppCta = "Get GST Filing at Affordable Prices – Chat on WhatsApp";
+  } else if (service.category === "tds") {
+    tailoredWhatsAppCta = "Need TDS Filing? Get an Affordable Quote Today";
+  } else if (service.category === "accounting") {
+    tailoredWhatsAppCta = "Stop Paying High Accounting Fees – Talk to Taxoras";
+  }
+
   const serviceUrl = `${siteConfig.canonicalUrl}/services/${service.slug}`;
   const schemaGraph: Record<string, unknown>[] = [
     {
@@ -246,7 +255,7 @@ async function ServiceDetailContent({ params }: ServicePageProps) {
                   className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow-sm"
                 >
                   <WhatsAppIcon className="w-4 h-4 shrink-0" />
-                  <span>WhatsApp Contextual Enquiry</span>
+                  <span>{tailoredWhatsAppCta}</span>
                 </a>
               </div>
             </div>
@@ -463,10 +472,10 @@ async function ServiceDetailContent({ params }: ServicePageProps) {
                     href={siteConfig.links.whatsappUrl(service.title)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold py-3 px-4 rounded-xl transition-colors shadow-sm"
+                    className="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold py-3 px-4 rounded-xl transition-colors shadow-sm text-center"
                   >
                     <WhatsAppIcon className="w-4 h-4 shrink-0" />
-                    <span>WhatsApp Contextual Enquiry</span>
+                    <span>{tailoredWhatsAppCta}</span>
                   </a>
 
                   <a

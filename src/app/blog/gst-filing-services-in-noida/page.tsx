@@ -135,14 +135,7 @@ export default function GstFilingServicesNoidaPage() {
           { "@type": "City", "name": "Noida" },
           { "@type": "City", "name": "Greater Noida" },
           { "@type": "AdministrativeArea", "name": "Gautam Buddh Nagar" }
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "188",
-          "bestRating": "5",
-          "worstRating": "1"
-        }
+        ]
       },
       {
         "@type": "FAQPage",

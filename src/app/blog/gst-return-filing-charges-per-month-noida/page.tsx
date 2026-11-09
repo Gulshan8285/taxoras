@@ -144,14 +144,7 @@ export default function GstReturnFilingChargesNoidaPage() {
           { "@type": "City", "name": "Greater Noida" },
           { "@type": "AdministrativeArea", "name": "Gautam Buddh Nagar" },
           { "@type": "AdministrativeArea", "name": "Delhi NCR" }
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "194",
-          "bestRating": "5",
-          "worstRating": "1"
-        }
+        ]
       },
       {
         "@type": "FAQPage",

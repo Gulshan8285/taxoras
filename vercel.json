@@ -14,7 +14,16 @@
     { "source": "/home", "destination": "/", "permanent": true },
     { "source": "/gst-registration", "destination": "/services/gst-registration", "permanent": true },
     { "source": "/gst-return-filing", "destination": "/services/gst-return-filing", "permanent": true },
-    { "source": "/tds-return-filing", "destination": "/services/tds-return-filing", "permanent": true }
+    { "source": "/tds-return-filing", "destination": "/services/tds-return-filing", "permanent": true },
+    { "source": "/gstr-1-filing", "destination": "/services/gstr-1-filing", "permanent": true },
+    { "source": "/gstr-3b-filing", "destination": "/services/gstr-3b-filing", "permanent": true },
+    { "source": "/form-24q-filing", "destination": "/services/form-24q-filing", "permanent": true },
+    { "source": "/form-26q-filing", "destination": "/services/form-26q-filing", "permanent": true },
+    { "source": "/bookkeeping-services", "destination": "/services/bookkeeping-services", "permanent": true },
+    { "source": "/services/itr-filing", "destination": "/services/income-tax-return", "permanent": true },
+    { "source": "/services/accounting-services", "destination": "/services/daily-accounting", "permanent": true },
+    { "source": "/services/msme-registration", "destination": "/services/msme-udyam-registration", "permanent": true },
+    { "source": "/services/balance-sheet-preparation", "destination": "/services/balance-sheet", "permanent": true }
   ],
   "rewrites": [
     { "source": "/llms.txt", "destination": "/llms.txt" }

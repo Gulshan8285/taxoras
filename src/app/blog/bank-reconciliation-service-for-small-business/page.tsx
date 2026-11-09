@@ -130,13 +130,6 @@ export default function BankReconciliationServicePage() {
           "addressRegion": "Delhi",
           "postalCode": "110001",
           "addressCountry": "IN"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "182",
-          "bestRating": "5",
-          "worstRating": "1"
         }
       },
       {
