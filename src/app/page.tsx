@@ -13,24 +13,39 @@ import { WhyChooseUsSection } from "@/components/home/WhyChooseUsSection";
 import { EnquiryForm } from "@/components/common/EnquiryForm";
 import { ResourcesPreviewSection } from "@/components/home/ResourcesPreviewSection";
 import { HomeFaqSection } from "@/components/home/HomeFaqSection";
+import { PopularKeywordsSection } from "@/components/home/PopularKeywordsSection";
 import { mainFaqs } from "@/data/faqsData";
 
 export const metadata: Metadata = {
   title: `${siteConfig.businessName} | ${siteConfig.positioning}`,
   description: siteConfig.description,
   keywords: [
-    "Affordable accounting services India",
-    "GST registration India",
-    "GST return filing Delhi",
-    "TDS return filing 24Q 26Q",
-    "Day to day accounting for small businesses",
-    "Bank reconciliation BRS",
-    "Debtors creditors reconciliation",
-    "Balance sheet preparation",
-    "Income tax return filing",
-    "MSME Udyam registration assistance",
-    "best GST services India",
-    "GST filing services near me",
+    "GST Return Filing Services",
+    "GST Return Filing Online India",
+    "Cheapest GST Filing Services",
+    "Affordable GST Return Filing",
+    "GST Return Filing Charges Per Month",
+    "GSTR-1 Filing Online",
+    "GSTR-3B Return Filing Services",
+    "Monthly GST Filing Retainers",
+    "GST Registration Online ₹999",
+    "TDS Return Filing Services",
+    "Form 24Q Salary TDS Return",
+    "Form 26Q Vendor TDS Return",
+    "TDS Payment Assistance Challan 281",
+    "Affordable Accounting Services India",
+    "Bookkeeping Services for Small Business",
+    "Tally Prime Accounting Services Online",
+    "Zoho Books Accounting Services",
+    "Bank Reconciliation Service BRS",
+    "Debtors Creditors Reconciliation",
+    "Balance Sheet Preparation for Bank Loan",
+    "Online Income Tax Return Filing",
+    "ITR Filing for Freelancers Section 44ADA",
+    "MSME Udyam Registration Online Charges",
+    "Section 43B(h) 45 Days MSME Payment Rule",
+    "GST Filing Services in Delhi Noida Gurgaon Mumbai Bangalore",
+    "Small Business Accountant India"
   ],
   alternates: {
     canonical: siteConfig.canonicalUrl,
@@ -192,6 +207,9 @@ export default function HomePage() {
 
         {/* K. FAQ Section */}
         <HomeFaqSection />
+
+        {/* L. High-Intent Commercial Keywords & Query Directory */}
+        <PopularKeywordsSection />
 
       </main>
 

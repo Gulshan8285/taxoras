@@ -8,6 +8,7 @@ import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { ServiceIcon } from "@/components/common/ServiceIcon";
+import { PopularKeywordsSection } from "@/components/home/PopularKeywordsSection";
 import {
   ShieldCheck,
   CheckCircle2,
@@ -28,13 +29,21 @@ export const metadata: Metadata = {
   keywords: [
     "affordable tax compliance services India",
     "cheapest GST filing services",
+    "GST return filing charges per month",
     "low cost TDS return filing",
     "small business bookkeeping India",
     "affordable accounting services",
     "GSTR-1 filing online",
     "GSTR-3B filing assistance",
+    "Form 24Q salary TDS return",
+    "Form 26Q vendor TDS return",
     "MSME Udyam registration",
-    "ITR filing consultant India"
+    "Bank reconciliation service BRS",
+    "Balance sheet preparation for bank loan",
+    "ITR filing consultant India",
+    "monthly GST retainers from ₹799",
+    "GST registration online ₹999",
+    "small business accountant India"
   ],
   alternates: {
     canonical: `${siteConfig.canonicalUrl}/services`,
@@ -395,6 +404,9 @@ export default function ServicesPage() {
             </div>
           </div>
         </section>
+
+        {/* Commercial Searches & Queries Directory */}
+        <PopularKeywordsSection />
 
         {/* FAQs */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">

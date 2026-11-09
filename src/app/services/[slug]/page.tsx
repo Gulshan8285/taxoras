@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { allServices, getServiceBySlug, getRelatedServices } from "@/data/servicesData";
+import { SERVICE_SEO_MAP } from "@/data/servicesKeywords";
 import { siteConfig } from "@/config/siteConfig";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -21,7 +22,8 @@ import {
   ArrowRight,
   HelpCircle,
   Share2,
-  ExternalLink
+  ExternalLink,
+  Sparkles
 } from "lucide-react";
 
 interface ServicePageProps {
@@ -46,17 +48,25 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     };
   }
 
-  return {
-    title: `${service.title} Services in ${siteConfig.location.city}, India`,
-    description: service.shortDescription,
-    keywords: [
+  const seoData = SERVICE_SEO_MAP[slug];
+  const combinedKeywords = Array.from(
+    new Set([
+      ...(seoData?.searchKeywords || []),
       service.title,
-      `${service.title} in ${siteConfig.location.city}`,
-      `${service.title} assistance`,
-      "business compliance India",
-      `${service.title} fees`,
-      `${service.title} consultant India`
-    ],
+      `${service.title} Services in ${siteConfig.location.city}`,
+      `${service.title} online India`,
+      `affordable ${service.title.toLowerCase()} services`,
+      `cheapest ${service.title.toLowerCase()} in India`,
+      `${service.title} charges per month`,
+      `${service.title} consultant near me`,
+      "business compliance India"
+    ])
+  );
+
+  return {
+    title: `${service.title} Services in ${siteConfig.location.city}, India | Taxoras`,
+    description: service.shortDescription,
+    keywords: combinedKeywords,
     alternates: {
       canonical: `${siteConfig.canonicalUrl}/services/${service.slug}`,
     },
@@ -100,6 +110,7 @@ async function ServiceDetailContent({ params }: ServicePageProps) {
     notFound();
   }
 
+  const seoData = SERVICE_SEO_MAP[slug];
   const related = getRelatedServices(service.relatedSlugs);
 
   let tailoredWhatsAppCta = "Get Affordable Quote – Chat on WhatsApp";
@@ -439,6 +450,56 @@ async function ServiceDetailContent({ params }: ServicePageProps) {
                   </div>
                 </div>
               </section>
+
+              {/* 8B. Commercial Search Intent & Popular Compliance Queries */}
+              {seoData && (
+                <section className="bg-[#1B1410] rounded-2xl border border-surface-border p-6 sm:p-8 shadow-xs space-y-4">
+                  <div className="flex items-center gap-2">
+                    <Sparkles className="w-5 h-5 text-amber-400" />
+                    <h3 className="text-base sm:text-lg font-bold text-white">
+                      Popular Searches &amp; Business Queries for {service.title}
+                    </h3>
+                  </div>
+                  <p className="text-xs text-[#DDD0C5] leading-relaxed">
+                    Indian MSMEs, startups, and traders frequently search for these exact solutions. Click any query to chat directly on WhatsApp with our compliance desk:
+                  </p>
+                  
+                  <div className="flex flex-wrap gap-2 pt-1">
+                    {seoData.searchKeywords.map((kw, kwIdx) => (
+                      <a
+                        key={kwIdx}
+                        href={`https://wa.me/${siteConfig.contact.phone.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hi Taxoras, I am looking for assistance with "${kw}". Please share pricing and process.`)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#120D0A] hover:bg-amber-500 hover:text-slate-950 text-amber-300 text-xs border border-amber-500/20 transition-all font-medium"
+                      >
+                        <span>{kw}</span>
+                        <ArrowRight className="w-3 h-3 opacity-60" />
+                      </a>
+                    ))}
+                  </div>
+
+                  {seoData.popularQueries && seoData.popularQueries.length > 0 && (
+                    <div className="pt-4 border-t border-surface-border space-y-2">
+                      <span className="text-xs font-semibold text-white block">Frequently Answered Client Questions:</span>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        {seoData.popularQueries.map((q, qIdx) => (
+                          <a
+                            key={qIdx}
+                            href={`https://wa.me/${siteConfig.contact.phone.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hi Taxoras, I have a query: "${q}". Can you assist?`)}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2.5 rounded-lg bg-[#120D0A]/70 border border-surface-border hover:border-amber-500/50 text-[11px] text-[#DDD0C5] hover:text-amber-300 transition-colors flex items-start justify-between gap-2"
+                          >
+                            <span>{q}</span>
+                            <span className="text-amber-400 text-xs shrink-0 font-bold">Ask &rarr;</span>
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </section>
+              )}
 
               {/* 9. Regulatory Disclaimer */}
               <div className="p-4 rounded-xl bg-slate-100/70 border border-slate-200 text-[11px] text-text-muted leading-relaxed">

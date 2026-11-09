@@ -43,6 +43,8 @@ export interface ServiceItem {
   };
   disclaimer: string;
   relatedSlugs: string[];
+  searchKeywords?: string[];
+  popularQueries?: string[];
 }
 
 export type LeadStatus =
