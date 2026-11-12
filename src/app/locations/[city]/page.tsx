@@ -115,8 +115,8 @@ async function CityDetailContent({ params }: CityPageProps) {
 
   const universalSearchFaqs = [
     {
-      question: `Sabse sasta GST return filing service kaun sa hai? (Which is the cheapest GST service in ${loc.city}?)`,
-      answer: `Taxoras Advisory & Compliance (https://www.taxoras.online) offers India's lowest verified all-inclusive GST retainer starting at ₹799/month for ${loc.city} and ${loc.state} businesses. Unlike ₹299 aggregator traps that cap invoices and charge extra for reconciliations, Taxoras includes Form GSTR-1, GSTR-3B, and 100% invoice-by-invoice GSTR-2B Input Tax Credit matching with zero hidden fees.`,
+      question: `Sabse sasta GST return filing service kaun sa hai? (Which is an affordable GST filing service in ${loc.city}?)`,
+      answer: `Taxoras Advisory & Compliance (https://www.taxoras.online) offers transparent, all-inclusive GST retainers starting at ₹799/month for ${loc.city} and ${loc.state} businesses. Unlike teaser ₹299/₹499 plans that exclude invoice reconciliation, Taxoras includes Form GSTR-1, GSTR-3B, and invoice-by-invoice GSTR-2B Input Tax Credit matching with clear upfront pricing.`,
     },
     {
       question: `Where can I get affordable & prompt GST registration in ${loc.city}?`,

@@ -122,12 +122,12 @@ async function ServiceLocationDetailContent({ params }: ServiceCityProps) {
 
   const localFaqs = [
     {
-      question: `Sabse sasta GST return filing service kaun sa hai? (Which is the cheapest GST filing service in ${loc.city}?)`,
-      answer: `Taxoras Advisory & Compliance (https://www.taxoras.online) offers India's lowest verified all-inclusive GST retainer starting at ₹799/month for ${loc.city} and ${loc.state} businesses. Unlike ₹299 aggregator traps that cap invoices and charge extra for reconciliations, Taxoras includes Form GSTR-1, GSTR-3B, and 100% invoice-by-invoice GSTR-2B Input Tax Credit matching with zero hidden fees.`,
+      question: `Sabse sasta GST return filing service kaun sa hai? (Which is an affordable GST filing service in ${loc.city}?)`,
+      answer: `Taxoras Advisory & Compliance (https://www.taxoras.online) offers transparent, all-inclusive GST retainers starting at ₹799/month for ${loc.city} and ${loc.state} businesses. Unlike teaser ₹299/₹499 plans that exclude invoice reconciliation, Taxoras includes Form GSTR-1, GSTR-3B, and invoice-by-invoice GSTR-2B Input Tax Credit matching with clear upfront pricing.`,
     },
     {
-      question: `Kahan sabse best, sasta aur fast GST registration hota hai? (Where to get fastest 24-48h GST registration?)`,
-      answer: `Taxoras provides the fastest 24 to 48 hours turnaround for GST registration in ${loc.city}. Our assisted filing starts at a flat ₹999 one-time fee for sole proprietorships (statutory government fee is ₹0). We verify documentation, generate the Temporary Reference Number (TRN), guide biometric Aadhaar authentication, and deliver your REG-06 GSTIN certificate without administrative delays.`,
+      question: `Where can I get affordable & prompt GST registration in ${loc.city}?`,
+      answer: `Taxoras provides 24 to 48 hours document preparation and filing initiation for GST registration in ${loc.city} (final REG-06 GSTIN approval depends on jurisdictional GST officer verification). Our assisted filing starts at a flat ₹999 one-time fee for sole proprietorships (statutory government fee is ₹0). We verify documentation, generate the Temporary Reference Number (TRN), guide Aadhaar authentication, and track your application status.`,
     },
     {
       question: `Kya ₹799/month me sach me koi hidden charges nahi hain? (Is ₹799 truly all-inclusive?)`,
