@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "GST Return Filing Cost Per Month in India: Complete Guide | Taxoras",
+  title: "GST Return Filing Cost Per Month in India: Complete Guide",
   description:
     "Discover GST return filing costs per month in India, pricing factors, filing requirements and how to choose a cheap GST return filing service with transparent retainers.",
   keywords: [

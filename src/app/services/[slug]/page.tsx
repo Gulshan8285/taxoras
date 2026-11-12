@@ -56,15 +56,15 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
       `${service.title} Services in ${siteConfig.location.city}`,
       `${service.title} online India`,
       `affordable ${service.title.toLowerCase()} services`,
-      `cheapest ${service.title.toLowerCase()} in India`,
-      `${service.title} charges per month`,
+      `low cost ${service.title.toLowerCase()} in India`,
+      `${service.title} charges India`,
       `${service.title} consultant near me`,
       "business compliance India"
     ])
   );
 
   return {
-    title: `${service.title} Services in ${siteConfig.location.city}, India | Taxoras`,
+    title: `${service.title} Online Services in India (Affordable & Assisted)`,
     description: service.shortDescription,
     keywords: combinedKeywords,
     alternates: {
@@ -165,7 +165,7 @@ async function ServiceDetailContent({ params }: ServicePageProps) {
           "@type": "ListItem",
           "position": 2,
           "name": "Services",
-          "item": `${siteConfig.canonicalUrl}/#services`
+          "item": `${siteConfig.canonicalUrl}/services`
         },
         {
           "@type": "ListItem",
@@ -188,6 +188,22 @@ async function ServiceDetailContent({ params }: ServicePageProps) {
           "@type": "Answer",
           "text": f.answer
         }
+      }))
+    });
+  }
+
+  if (service.processSteps && service.processSteps.length > 0) {
+    schemaGraph.push({
+      "@type": "HowTo",
+      "@id": `${serviceUrl}/#howto`,
+      "name": `How to Complete ${service.title} Online with Taxoras`,
+      "description": service.shortDescription,
+      "step": service.processSteps.map((s) => ({
+        "@type": "HowToStep",
+        "position": s.step,
+        "name": s.title,
+        "text": s.description,
+        "url": `${serviceUrl}#process`
       }))
     });
   }
@@ -215,7 +231,7 @@ async function ServiceDetailContent({ params }: ServicePageProps) {
                 Home
               </Link>
               <ChevronRight className="w-3.5 h-3.5" />
-              <Link href="/#services" className="hover:text-navy transition-colors">
+              <Link href="/services" className="hover:text-navy transition-colors">
                 Services
               </Link>
               <ChevronRight className="w-3.5 h-3.5" />
@@ -360,7 +376,7 @@ async function ServiceDetailContent({ params }: ServicePageProps) {
               </section>
 
               {/* 5. Step-by-Step Execution Process */}
-              <section className="bg-white rounded-2xl border border-surface-border p-6 sm:p-8 shadow-xs">
+              <section id="process" className="bg-white rounded-2xl border border-surface-border p-6 sm:p-8 shadow-xs">
                 <h2 className="text-lg sm:text-xl font-bold text-navy mb-6">
                   Step-by-Step Execution Process
                 </h2>
@@ -554,8 +570,26 @@ async function ServiceDetailContent({ params }: ServicePageProps) {
                     <span className="font-semibold text-navy">{siteConfig.contact.workingHours}</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span>Service Location:</span>
+                    <span>Head Office:</span>
                     <span className="font-semibold text-navy">{siteConfig.location.city}, India</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Pricing Matrix:</span>
+                    <Link href="/pricing" className="font-semibold text-brand-blue hover:underline">
+                      View Plans &rarr;
+                    </Link>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Official Portals:</span>
+                    <span className="font-semibold text-navy">
+                      {service.category === "gst"
+                        ? "gst.gov.in"
+                        : service.category === "tds"
+                        ? "tdscpc.gov.in"
+                        : service.slug === "msme-udyam-registration"
+                        ? "udyamregistration.gov.in"
+                        : "incometax.gov.in"}
+                    </span>
                   </div>
                 </div>
 

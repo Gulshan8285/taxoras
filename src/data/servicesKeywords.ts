@@ -202,7 +202,7 @@ export const SERVICE_SEO_MAP: Record<string, ServiceSEOData> = {
       "Quarterly Retainers from ₹999"
     ]
   },
-  "tds-payment-assistance": {
+  "tds-payment": {
     searchKeywords: [
       "tds challan 281 verification online",
       "tds payment assistance online",
@@ -397,5 +397,71 @@ export const SERVICE_SEO_MAP: Record<string, ServiceSEOData> = {
       "Section 43B(h) 45-Day Payment Legal Armor",
       "Assisted Processing from ₹499"
     ]
+  },
+  "gst-annual-return-gstr-9": {
+    searchKeywords: [
+      "gstr 9 filing online",
+      "gst annual return filing services",
+      "gstr 9c reconciliation statement service",
+      "gstr 9 filing charges india",
+      "gstr 9 applicability turnover limit 2 crore",
+      "table 8a vs 8b gstr 9 reconciliation",
+      "gstr 9 late fee section 47"
+    ],
+    popularQueries: [
+      "What is the turnover limit for mandatory GSTR-9 and GSTR-9C?",
+      "What happens if GSTR-9 is not filed by December 31?",
+      "How do you reconcile GSTR-2B ITC with GSTR-9 Table 8?"
+    ],
+    commercialHighlights: [
+      "12-Month GSTR-1 vs 3B vs 2B Match",
+      "Table 6/8 & HSN Summary Verification",
+      "DRC-03 Liability Check Before Submission",
+      "Transparent Annual Fixed Fees"
+    ]
+  },
+  "gst-nil-return-filing": {
+    searchKeywords: [
+      "gst nil return filing online",
+      "nil gstr 1 and 3b filing service",
+      "gst nil return filing charges per month",
+      "dormant gstin compliance service",
+      "nil gst return late fee section 47",
+      "gst nil return filing india"
+    ],
+    popularQueries: [
+      "Is GST return filing compulsory when sales are zero?",
+      "What is the late fee for Nil GSTR-3B return?",
+      "Can I avoid GSTIN cancellation on an inactive registration?"
+    ],
+    commercialHighlights: [
+      "Nil GSTR-1 & Nil GSTR-3B Tracking",
+      "Prevents ₹20/Day Late Fee & Suspension",
+      "WhatsApp Deadline Reminders",
+      "Instant Upgrade When Sales Resume"
+    ]
+  },
+  "tds-correction-filing": {
+    searchKeywords: [
+      "tds return correction statement filing online",
+      "tds correction charges india",
+      "traces conso file correction service",
+      "form 26as mismatch default resolution",
+      "tds short deduction notice reply",
+      "challan 281 mismatch tds correction",
+      "pan error correction form 24q 26q"
+    ],
+    popularQueries: [
+      "How do I fix a wrong PAN or challan mismatch in a filed TDS return?",
+      "How long does TRACES take to process a TDS correction statement?",
+      "What is a TRACES Justification Report?"
+    ],
+    commercialHighlights: [
+      "Justification Report & Conso File Audit",
+      "C1 / C2 / C3 / C5 & Online Tagging",
+      "FVU Generation & Validation",
+      "Unlocks Form 16 / 16A Downloads"
+    ]
   }
 };
+

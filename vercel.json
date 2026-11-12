@@ -23,7 +23,8 @@
     { "source": "/services/itr-filing", "destination": "/services/income-tax-return", "permanent": true },
     { "source": "/services/accounting-services", "destination": "/services/daily-accounting", "permanent": true },
     { "source": "/services/msme-registration", "destination": "/services/msme-udyam-registration", "permanent": true },
-    { "source": "/services/balance-sheet-preparation", "destination": "/services/balance-sheet", "permanent": true }
+    { "source": "/services/balance-sheet-preparation", "destination": "/services/balance-sheet", "permanent": true },
+    { "source": "/services/tds-payment-assistance", "destination": "/services/tds-payment", "permanent": true }
   ],
   "rewrites": [
     { "source": "/llms.txt", "destination": "/llms.txt" }

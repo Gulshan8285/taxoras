@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "GST Filing Services in Noida | Registration & Tax Support | Taxoras",
+  title: "GST Filing Services in Noida — Registration & Return Support",
   description:
     "Looking for GST filing services in Noida? Understand GST returns, registration, compliance, documentation, Sector 62/63 IT support, and professional CA assistance with Taxoras.",
   keywords: [

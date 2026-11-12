@@ -42,10 +42,10 @@ export default function PricingPage() {
               India&apos;s Most Affordable Accounting & Compliance Support
             </h1>
             <div className="inline-flex items-center gap-2 bg-teal-light border border-teal/30 px-3 py-1 rounded-full text-xs font-bold text-teal mb-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-teal shrink-0"></span><span>Guaranteed ₹5 Cheaper Than Any Verified Competitor Quote</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-teal shrink-0"></span><span>Transparent All-Inclusive Retainers • Zero Hidden Add-Ons</span>
             </div>
             <p className="text-sm sm:text-base text-text-muted leading-relaxed max-w-2xl mx-auto">
-              We compete on genuine affordability and clarity. Show us any verified quote from Clear, TaxFetch, Corpbiz, IndiaFilings, or your local accountant — we guarantee our fee is lower by ₹5 or more.
+              We compete on genuine affordability and full-scope clarity. Compare what our monthly plans actually include — GSTR-1, GSTR-3B, GSTR-2B purchase matching, and direct WhatsApp coordination — with zero surprise reconciliation fees.
             </p>
           </div>
         </section>

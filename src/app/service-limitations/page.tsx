@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.canonicalUrl}/service-limitations`,
   },
-  title: "Service Scope & Limitations | Taxoras",
+  title: "Service Scope & Limitations",
   description: "Detailed breakdown of consultancy service boundaries, client obligations, and regulatory limitations.",
 };
 

@@ -59,7 +59,7 @@ export const HeroSection: React.FC = () => {
 
             {/* Supporting Copy */}
             <p className="text-sm sm:text-base text-text-muted leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              From GST registration and return filing to daily bookkeeping, TDS compliance, reconciliations, financial statements and income tax returns, get dedicated CA-reviewed support without expensive retainers.
+              From GST registration and return filing to daily bookkeeping, TDS compliance, reconciliations, financial statements and income tax returns, get dedicated compliance-specialist support without expensive retainers.
             </p>
 
             {/* High-Converting 1-Click CTAs */}

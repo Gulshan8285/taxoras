@@ -22,6 +22,7 @@ import {
   Clock,
   HelpCircle,
   CheckCircle2,
+  AlertTriangle,
   LucideProps
 } from "lucide-react";
 
@@ -73,6 +74,8 @@ export const ServiceIcon: React.FC<ServiceIconProps> = ({ name, ...props }) => {
       return <Clock {...props} />;
     case "CheckCircle2":
       return <CheckCircle2 {...props} />;
+    case "AlertTriangle":
+      return <AlertTriangle {...props} />;
     default:
       return <HelpCircle {...props} />;
   }

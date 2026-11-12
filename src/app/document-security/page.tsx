@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.canonicalUrl}/document-security`,
   },
-  title: "Document Security & Confidentiality Protocol | Taxoras",
+  title: "Document Security & Confidentiality Protocol",
   description: "Learn how Taxoras protects client financial records, bank statements, and accounting databases.",
 };
 

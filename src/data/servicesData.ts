@@ -1448,7 +1448,7 @@ export const allServices: ServiceItem[] = [
       },
       {
         "question": "How much does Taxoras charge for quarterly Form 24Q filing?",
-        "answer": "Our Form 24Q filing assistance starts at \u20b9799/quarter for small employers with up to 10 employees, with transparent tiered packages for growing enterprises."
+        "answer": "Our Form 24Q filing assistance starts at \u20b9999/quarter for small employers with up to 10 employees, with transparent tiered packages for growing enterprises."
       }
     ],
     "pricingApproach": {
@@ -1570,7 +1570,7 @@ export const allServices: ServiceItem[] = [
       },
       {
         "question": "How much does Taxoras charge for quarterly Form 26Q filing?",
-        "answer": "Our Form 26Q filing retainers start from \u20b9799/quarter for small businesses with up to 15 vendor payment records, providing an affordable alternative to high-fee corporate consultancies."
+        "answer": "Our Form 26Q filing retainers start from \u20b9999/quarter for small businesses with up to 15 vendor payment records, providing an affordable alternative to high-fee corporate consultancies."
       }
     ],
     "pricingApproach": {
@@ -1718,6 +1718,328 @@ export const allServices: ServiceItem[] = [
       "bank-reconciliation",
       "daily-accounting",
       "balance-sheet"
+    ]
+  },
+  {
+    "id": "gst-annual-return-gstr-9",
+    "slug": "gst-annual-return-gstr-9",
+    "title": "GST Annual Return Filing (GSTR-9 & 9C)",
+    "shortTitle": "GSTR-9 & 9C Filing",
+    "category": "gst",
+    "categoryLabel": "GST Compliance",
+    "heroBadge": "Annual Turnkey Reconciliation",
+    "shortDescription": "Comprehensive year-end GSTR-9 preparation and GSTR-9C reconciliation statement support matching 12 months of GSTR-1, GSTR-3B, GSTR-2B, and audited financial books.",
+    "ctaText": "Enquire About GSTR-9 Filing",
+    "icon": "FileCheck2",
+    "benefits": [
+      "Complete 12-month reconciliation across GSTR-1, GSTR-3B, GSTR-2B, and books of accounts.",
+      "Accurate classification of Table 6/7/8 Input Tax Credit, reversals under Rule 37/42/43, and HSN outward/inward summaries.",
+      "Identification of excess ITC claimed or short-paid tax to resolve via Form DRC-03 before scrutiny.",
+      "Seamless coordination with independent practicing Chartered Accountants where GSTR-9C certification/review is required.",
+      "Transparent annual fixed fees starting below typical boutique audit overheads."
+    ],
+    "whoNeeds": [
+      "Regular GST-registered businesses with aggregate annual turnover exceeding ₹2 Crore (mandatory GSTR-9 threshold).",
+      "Enterprises with turnover above ₹5 Crore requiring Form GSTR-9C reconciliation statements.",
+      "High-volume traders seeking clean Table 8A vs 8B reconciliation before December 31 statutory deadlines.",
+      "Companies preparing year-end tax schedules free of future ASMT-10 or Section 73/74 demand notices."
+    ],
+    "commonProblems": [
+      "Unreconciled differences between monthly GSTR-3B tax paid and auto-drafted GSTR-1 turnover leading to Table 4 mismatches.",
+      "Failure to reflect unclaimed or reversed Input Tax Credit accurately in Table 6 and Table 8 of GSTR-9.",
+      "Missing the mandatory December 31 due date, triggering daily Section 47(2) late fees (up to 0.04% of turnover for ≤₹5 Cr / 0.50% max).",
+      "Omitting mandatory 6-digit or 4-digit HSN-wise summary for inward and outward supplies."
+    ],
+    "whatIncluded": [
+      "Full annual download and consolidation of 12 months of GSTR-1, GSTR-3B, GSTR-2B, and Electronic Credit Ledger.",
+      "Invoice-by-invoice matching against Tally Prime, Zoho Books, or Excel purchase & sales registers.",
+      "Preparation of Table 4 through Table 18 schedules, including prior-year FY adjustment tracking (Table 10/11/12/13).",
+      "Computation of any unpaid liability or excess ITC reversal and Form GST DRC-03 payment assistance.",
+      "Online preparation on gst.gov.in, pre-filing JSON/PDF verification by client, and ARN submission."
+    ],
+    "requiredDocuments": [
+      {
+        "category": "Annual GST & Books Pack",
+        "items": [
+          "12 months filed GSTR-1 and GSTR-3B summaries (and portal credentials)",
+          "Full-year GSTR-2B & GSTR-2A Excel/JSON extracts",
+          "Audited / finalized Trial Balance, P&L, and Sales/Purchase Registers",
+          "Summary of Credit/Debit notes and DRC-03 challans paid during the FY"
+        ]
+      }
+    ],
+    "processSteps": [
+      {
+        "step": 1,
+        "title": "12-Month Portal & Books Extract",
+        "description": "We retrieve all filed monthly returns alongside your finalized Trial Balance and books of accounts."
+      },
+      {
+        "step": 2,
+        "title": "Annual 3-Way Reconciliation",
+        "description": "Our specialists reconcile turnover, tax rate slabs, ITC availed vs GSTR-2B, and HSN totals."
+      },
+      {
+        "step": 3,
+        "title": "Draft GSTR-9 / 9C & DRC-03 Check",
+        "description": "You receive a clear variance sheet showing whether any DRC-03 adjustment or client approval is required."
+      },
+      {
+        "step": 4,
+        "title": "Portal Filing & ARN Archival",
+        "description": "Upon your sign-off, GSTR-9 (and GSTR-9C JSON where applicable) is submitted before the December 31 deadline."
+      }
+    ],
+    "deadlinesNotice": "Form GSTR-9 and GSTR-9C for a Financial Year are due on or before December 31 of the subsequent financial year (e.g., Dec 31 for the preceding FY). Late fees under Section 47(2) apply on daily delays.",
+    "faqs": [
+      {
+        "question": "Who is mandatorily required to file GSTR-9?",
+        "answer": "As per CBIC notifications, filing Form GSTR-9 is optional for regular taxpayers with aggregate annual turnover up to ₹2 Crore, and mandatory for turnover exceeding ₹2 Crore. Taxpayers above ₹5 Crore must also submit self-certified Form GSTR-9C."
+      },
+      {
+        "question": "Can GSTR-9 be revised after filing on the GST portal?",
+        "answer": "No. Under GST law, once Form GSTR-9 is submitted with OTP/DSC on gst.gov.in, it cannot be revised. That is why Taxoras executes a complete 3-way reconciliation before final submission."
+      },
+      {
+        "question": "What are the charges for GSTR-9 filing at Taxoras?",
+        "answer": "GSTR-9 annual return assistance starts transparently based on annual turnover slab and whether your books are cleanly tallied, significantly lower than typical high-overhead retainers."
+      }
+    ],
+    "pricingApproach": {
+      "model": "Annual Fixed Filing Fee (Turnover-Based)",
+      "description": "Clear one-time annual fee based on turnover tier (₹2 Cr–₹5 Cr or ₹5 Cr+) and reconciliation readiness.",
+      "factors": [
+        "Aggregate annual turnover & GSTR-9C applicability",
+        "Volume of monthly discrepancies between books and portal",
+        "Availability of structured Tally / Zoho / Excel registers"
+      ],
+      "inclusions": [
+        "12-month GSTR-1 vs 3B vs 2B reconciliation",
+        "Draft GSTR-9 preparation & HSN validation",
+        "DRC-03 tax payment challan guidance"
+      ],
+      "exclusions": [
+        "Independent practicing CA statutory audit certification (coordinated separately if required)"
+      ]
+    },
+    "disclaimer": "Taxoras Advisory & Compliance prepares GSTR-9 and GSTR-9C reconciliation schedules based on client accounting records. Where independent Chartered Accountant audit attestation is required, it is coordinated separately.",
+    "relatedSlugs": [
+      "gst-return-filing",
+      "gstr-3b-filing",
+      "balance-sheet"
+    ]
+  },
+  {
+    "id": "gst-nil-return-filing",
+    "slug": "gst-nil-return-filing",
+    "title": "GST Nil Return Filing Services",
+    "shortTitle": "GST Nil Return Filing",
+    "category": "gst",
+    "categoryLabel": "GST Compliance",
+    "heroBadge": "Dormant & Zero-Sale GSTINs",
+    "shortDescription": "On-time monthly or quarterly Nil GSTR-1 and Nil GSTR-3B filing for inactive or zero-turnover GST registrations to prevent ₹20/day late fees and GSTIN cancellation.",
+    "ctaText": "Start Nil GST Filing",
+    "icon": "Receipt",
+    "benefits": [
+      "Keeps inactive or newly registered GSTINs active and compliant without missed deadlines.",
+      "Prevents daily ₹20 late fees (₹10 CGST + ₹10 SGST per return) under Section 47.",
+      "Protects against suo-moto GST registration suspension or cancellation for 6 consecutive missed returns.",
+      "Transparent budget pricing with reminder tracking on WhatsApp before the 11th and 20th.",
+      "Seamless upgrade path whenever your business resumes taxable billing."
+    ],
+    "whoNeeds": [
+      "Newly incorporated startups or freelancers holding a GSTIN prior to their first commercial invoice.",
+      "Seasonal businesses experiencing months with zero outward sales and zero inward ITC claims.",
+      "Consultants and agencies temporarily paused who want to retain their active GST registration.",
+      "Businesses intending to surrender GST later (since all pending returns must be up to date first)."
+    ],
+    "commonProblems": [
+      "Assuming zero turnover means no GST return is required, resulting in automatic ₹20/day late fees on both GSTR-1 and GSTR-3B.",
+      "Receiving REG-17 show-cause notices for cancellation after 6 consecutive months of unfiled Nil returns.",
+      "Blocking bank credit facilities or B2B vendor onboarding because the GSTIN status turned suspended."
+    ],
+    "whatIncluded": [
+      "Verification of zero outward supply and zero inward reverse-charge / ITC eligibility for the period.",
+      "Timely Nil GSTR-1 filing (due 11th monthly / 13th QRMP quarterly).",
+      "Timely Nil GSTR-3B filing via portal OTP/EVC verification (due 20th monthly / 22nd or 24th QRMP).",
+      "Immediate WhatsApp delivery of filed ARN receipts and next-month reminder scheduling."
+    ],
+    "requiredDocuments": [
+      {
+        "category": "Nil Return Verification",
+        "items": [
+          "GSTIN and gst.gov.in login credentials",
+          "Confirmation of zero sales, zero purchases, and zero RCM liability for the tax period",
+          "Authorized signatory mobile access for final OTP EVC submission"
+        ]
+      }
+    ],
+    "processSteps": [
+      {
+        "step": 1,
+        "title": "Monthly Activity Confirmation",
+        "description": "Before the 10th of the month, you confirm on WhatsApp that there were no sales or ITC purchases."
+      },
+      {
+        "step": 2,
+        "title": "Portal Check & Pre-Validation",
+        "description": "We check gst.gov.in to confirm no supplier uploaded a B2B invoice or TDS/TCS credit on your GSTIN."
+      },
+      {
+        "step": 3,
+        "title": "Nil GSTR-1 & Nil GSTR-3B Filing",
+        "description": "Both returns are prepared and filed using EVC/OTP within statutory dates."
+      },
+      {
+        "step": 4,
+        "title": "ARN Proof Delivery",
+        "description": "Official government acknowledgement receipts are shared directly on your WhatsApp."
+      }
+    ],
+    "deadlinesNotice": "Even with zero sales, Nil GSTR-1 is due by the 11th and Nil GSTR-3B by the 20th for monthly filers. Taxpayers can also file Nil returns free of cost directly via SMS or gst.gov.in, or opt for managed Taxoras tracking.",
+    "faqs": [
+      {
+        "question": "Is GST return filing compulsory even if my turnover is zero?",
+        "answer": "Yes. Under Section 39 of the CGST Act, filing Nil GSTR-1 and Nil GSTR-3B is mandatory for every active regular GST registration even when there are zero business transactions during the tax period."
+      },
+      {
+        "question": "Can I file a Nil GST return for free on the government portal?",
+        "answer": "Yes. Both gst.gov.in and the official GST SMS facility allow taxpayers to file Nil returns without any government fee. Businesses choose Taxoras managed Nil plans when they want proactive deadline alerts, portal monitoring, and zero missed dates."
+      },
+      {
+        "question": "What happens if I stop filing Nil returns?",
+        "answer": "Non-filing attracts ₹20 per day late fees per Nil return and can trigger GSTIN suspension or cancellation under Section 29(2) after consecutive defaults."
+      }
+    ],
+    "pricingApproach": {
+      "model": "Low-Cost Monthly / Quarterly Nil Plan",
+      "description": "Economical tracking and filing for dormant or zero-transaction GSTINs with instant upgrade when billing starts.",
+      "factors": [
+        "Monthly vs QRMP quarterly filing frequency",
+        "Number of historical pending periods to clear"
+      ],
+      "inclusions": [
+        "GSTR-2B check to confirm no stray vendor bills",
+        "Nil GSTR-1 & Nil GSTR-3B submission",
+        "WhatsApp ARN receipt confirmation"
+      ],
+      "exclusions": [
+        "Historical late fee challans (payable on portal per statutory norms)"
+      ]
+    },
+    "disclaimer": "Official government fee for Nil return filing on gst.gov.in is ₹0. Managed service fees cover portal checks, deadline reminders, and filing assistance.",
+    "relatedSlugs": [
+      "gst-return-filing",
+      "gstr-1-filing",
+      "gstr-3b-filing"
+    ]
+  },
+  {
+    "id": "tds-correction-filing",
+    "slug": "tds-correction-filing",
+    "title": "TDS Return Correction & Default Resolution",
+    "shortTitle": "TDS Correction Filing",
+    "category": "tds",
+    "categoryLabel": "TDS Compliance",
+    "heroBadge": "TRACES Default & Conso File Fix",
+    "shortDescription": "Expert assistance in downloading TRACES Conso files, preparing C1/C2/C3/C4/C5 TDS correction statements, resolving PAN/challan mismatches, and clearing Form 26AS defaults.",
+    "ctaText": "Fix TDS Defaults Now",
+    "icon": "AlertTriangle",
+    "benefits": [
+      "Resolves TRACES 'Short Deduction', 'Challan Mismatch', and 'Invalid PAN' demand notices accurately.",
+      "Re-establishes proper Form 26AS and Form 16/16A tax credit for your employees and vendors.",
+      "Handles full Conso file extraction from tdscpc.gov.in and NSDL/Protean RPU FVU generation.",
+      "Identifies unjustified interest computations and maps unconsumed Challan 281 balances.",
+      "Affordable per-quarter correction fees compared to steep compliance retainers."
+    ],
+    "whoNeeds": [
+      "Employers who discovered an incorrect employee PAN or salary deduction error in a filed Form 24Q.",
+      "Businesses facing TRACES default notices due to unmatched Challan 281 BSR code, serial number, or date.",
+      "Deductors needing to add missed vendor invoices or revise section codes (e.g., 194C vs 194J) in Form 26Q.",
+      "Companies unable to download Form 16 / Form 16A due to pending portal defaults."
+    ],
+    "commonProblems": [
+      "Vendors withholding future business because TDS deducted from them does not reflect in their Form 26AS / AIS.",
+      "Challan mismatch defaults triggered by minor errors in Assessment Year, Minor Head (200 vs 400), or BSR code.",
+      "Incorrect deductee PAN entries causing automatic 20% higher TDS default demands under Section 206AA."
+    ],
+    "whatIncluded": [
+      "Review of TRACES Justification Report to pinpoint exact short-deduction or challan errors.",
+      "Request and download of the official Consolidated TDS/TCS File (.tds) from tdscpc.gov.in.",
+      "Preparation of online/offline correction statements (C1 Personal/Deductor details, C2 Challan, C3 Deductee, C5 PAN update).",
+      "CSI challan file matching, FVU validation generation, and portal submission.",
+      "Re-verification on TRACES until default status reflects 'Nil Demand' and fresh Form 16/16A downloads are unlocked."
+    ],
+    "requiredDocuments": [
+      {
+        "category": "TRACES & Correction Data",
+        "items": [
+          "TAN and TRACES (tdscpc.gov.in) portal login details",
+          "Copy of the TRACES Justification Report / Default Notice",
+          "Original Provisional Receipt Number (PRN / Token Number)",
+          "Corrected PAN details, deductee amount breakdown, or Challan 281 copies"
+        ]
+      }
+    ],
+    "processSteps": [
+      {
+        "step": 1,
+        "title": "TRACES Justification Audit",
+        "description": "We log into tdscpc.gov.in and download the Justification Report and Consolidated File for the affected quarter."
+      },
+      {
+        "step": 2,
+        "title": "Correction Mapping (C1–C5 / C9)",
+        "description": "Our TDS team aligns challans, PAN updates, or deductee entries using the latest Protean RPU utility."
+      },
+      {
+        "step": 3,
+        "title": "FVU Validation & Submission",
+        "description": "After generating an error-free .fvu file with CSI verification, the revised statement is submitted."
+      },
+      {
+        "step": 4,
+        "title": "Default Closure & Form 16A",
+        "description": "Once processed by CPC-TDS, we confirm zero outstanding defaults and help issue revised Form 16/16A certificates."
+      }
+    ],
+    "deadlinesNotice": "Unlike original TDS returns, TDS correction statements have no fixed quarterly due date and should be filed promptly as soon as a TRACES demand notice or Form 26AS mismatch is identified to prevent accruing monthly interest.",
+    "faqs": [
+      {
+        "question": "How long does it take for a TDS correction statement to process on TRACES?",
+        "answer": "Once submitted, CPC-TDS typically processes online or RPU correction statements within 3 to 7 working days, after which Form 26AS and Form 16/16A reflect the updated credits."
+      },
+      {
+        "question": "Can I fix an unmatched Challan 281 BSR code or Assessment Year mistake?",
+        "answer": "Yes. Depending on the nature of the error, challan tagging can be corrected via TRACES online challan correction / C2 statement or via jurisdictional AO OLTAS rectification."
+      },
+      {
+        "question": "What are the charges for TDS correction filing?",
+        "answer": "TDS correction assistance is priced transparently per quarter and correction type depending on the number of challan or deductee rows involved."
+      }
+    ],
+    "pricingApproach": {
+      "model": "Per-Statement Fixed Fee",
+      "description": "Transparent one-time fee per quarterly correction statement based on whether it is a PAN/challan fix or bulk deductee revision.",
+      "factors": [
+        "Correction type (Online PAN/Challan tagging vs full RPU C3/C9 return)",
+        "Number of challans and deductee line items requiring revision"
+      ],
+      "inclusions": [
+        "Justification Report & Conso file download",
+        "Correction file preparation & FVU validation",
+        "Default clearance verification"
+      ],
+      "exclusions": [
+        "Actual statutory short-deduction tax, interest (201(1A)), or Section 234E late fees payable by the deductor"
+      ]
+    },
+    "disclaimer": "TDS correction outcomes depend on CPC-TDS processing rules and validity of underlying Challan 281 deposits under the Income Tax Act, 1961.",
+    "relatedSlugs": [
+      "tds-return-filing",
+      "form-24q-filing",
+      "form-26q-filing",
+      "tds-payment"
     ]
   }
 ];

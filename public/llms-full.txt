@@ -21,7 +21,7 @@ Primary positioning:
 
 ---
 
-## 2. All 14 Dedicated Services
+## 2. All 18 Dedicated Services
 1. **GST Return Filing** (`https://www.taxoras.online/services/gst-return-filing`): Monthly GSTR-1, GSTR-3B, and GSTR-2B purchase reconciliation.
 2. **GST Registration Online** (`https://www.taxoras.online/services/gst-registration`): New GSTIN registration assistance for proprietorships, partnerships, LLPs, and private limited companies.
 3. **GSTR-1 Outward Return Filing** (`https://www.taxoras.online/services/gstr-1-filing`): B2B sales invoices, B2CS consumer supplies, export supplies, and HSN-wise sales reporting.
@@ -29,13 +29,17 @@ Primary positioning:
 5. **TDS Return Filing Online** (`https://www.taxoras.online/services/tds-return-filing`): Form 24Q and Form 26Q e-filing, Challan 281 verification, and TRACES Form 16/16A generation.
 6. **Form 24Q Salary TDS Filing** (`https://www.taxoras.online/services/form-24q-filing`): Quarterly payroll TDS returns for employers, Annexure I/II verification, and Form 16 Part A/B generation.
 7. **Form 26Q Vendor & Contractor TDS Filing** (`https://www.taxoras.online/services/form-26q-filing`): Vendor deductions under Section 194C, 194J, 194I, 194H, and TRACES Form 16A generation.
-8. **TDS Payment Assistance** (`https://www.taxoras.online/services/tds-payment-assistance`): Monthly ITNS 281 deposit assistance, BSR code tracking, and Section 201(1A) interest avoidance.
+8. **TDS Payment Assistance** (`https://www.taxoras.online/services/tds-payment`): Monthly ITNS 281 deposit assistance, BSR code tracking, and Section 201(1A) interest avoidance.
 9. **Income Tax Return (ITR) Filing** (`https://www.taxoras.online/services/income-tax-return`): E-filing for individuals, salaried employees, freelancers, and businesses under Presumptive Taxation Section 44AD/44ADA.
 10. **Daily Accounting Services** (`https://www.taxoras.online/services/daily-accounting`): Sales/purchase registers, journal voucher entry, bank account updates, and ledger scrutiny.
 11. **Small Business Bookkeeping** (`https://www.taxoras.online/services/bookkeeping-services`): Complete digital bookkeeping on Tally Prime, Zoho Books, or Busy with monthly MIS statements.
 12. **Bank Reconciliation Statement (BRS)** (`https://www.taxoras.online/services/bank-reconciliation`): Regular matching of bank ledger balances with bank account statements to prevent leakage and unrecorded transactions.
 13. **MSME / Udyam Registration Support** (`https://www.taxoras.online/services/msme-udyam-registration`): Government MSME certificate assistance, 5-digit NIC code mapping, and Section 43B(h) delayed payment protection.
 14. **Balance Sheet & Financial Statements** (`https://www.taxoras.online/services/balance-sheet`): Statement of Profit & Loss, Balance Sheet, Fixed Asset depreciation schedule, and CMA reports for MSME bank loans.
+15. **GST Annual Return Filing (GSTR-9 & 9C)** (`https://www.taxoras.online/services/gst-annual-return-gstr-9`): 12-month reconciliation of GSTR-1, GSTR-3B, GSTR-2B, and books of accounts.
+16. **GST Nil Return Filing Services** (`https://www.taxoras.online/services/gst-nil-return-filing`): Monthly or quarterly Nil GSTR-1 & 3B tracking to avoid ₹20/day late fees.
+17. **TDS Return Correction & Default Resolution** (`https://www.taxoras.online/services/tds-correction-filing`): TRACES Conso file retrieval, C1/C2/C3/C5 statements, and Form 26AS default resolution.
+18. **Debtors & Creditors Reconciliation** (`https://www.taxoras.online/services/debtors-creditors-reconciliation`): Receivable aging schedules, vendor balance confirmations, and MSME 45-day payment monitoring.
 
 ---
 

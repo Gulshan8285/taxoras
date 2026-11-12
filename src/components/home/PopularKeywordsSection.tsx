@@ -26,7 +26,8 @@ const POPULAR_KEYWORD_GROUPS: KeywordGroup[] = [
       { text: "GST Filing for Small Business", link: "/services/gst-return-filing" },
       { text: "GST Registration Online ₹999", link: "/services/gst-registration" },
       { text: "GSTR-2B Purchase Matching", link: "/services/gst-return-filing" },
-      { text: "GST Nil Return Filing Charges", link: "/blog/gst-return-filing-charges-per-month-india" },
+      { text: "GSTR-9 Annual Return Filing", link: "/services/gst-annual-return-gstr-9" },
+      { text: "GST Nil Return Filing Services", link: "/services/gst-nil-return-filing" },
       { text: "GST Notice Reply DRC-01B/C", link: "/services/gst-return-filing" }
     ]
   },
@@ -39,11 +40,11 @@ const POPULAR_KEYWORD_GROUPS: KeywordGroup[] = [
       { text: "TDS Return Filing Online", link: "/services/tds-return-filing" },
       { text: "Form 24Q Salary TDS Return", link: "/services/form-24q-filing" },
       { text: "Form 26Q Vendor & Professional TDS", link: "/services/form-26q-filing" },
-      { text: "TDS Payment Assistance Challan 281", link: "/services/tds-payment-assistance" },
+      { text: "TDS Payment Assistance Challan 281", link: "/services/tds-payment" },
       { text: "Form 16 Generation TRACES", link: "/services/form-24q-filing" },
       { text: "Section 194C Contractor TDS", link: "/services/form-26q-filing" },
       { text: "Section 194J Professional TDS", link: "/services/form-26q-filing" },
-      { text: "TDS Correction Filing Services", link: "/services/tds-return-filing" },
+      { text: "TDS Correction Filing Services", link: "/services/tds-correction-filing" },
       { text: "Section 234E Late Fee Solutions", link: "/blog/tds-return-filing-24q-26q-online" }
     ]
   },
@@ -228,3 +229,4 @@ export function PopularKeywordsSection() {
     </section>
   );
 }
+

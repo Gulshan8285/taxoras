@@ -69,25 +69,33 @@
 - **Balance Sheet & Financial Statements**:
   - Year-end balance sheets, Profit & Loss accounts, and depreciation schedules from ₹2,999.
 - **Income Tax Return (ITR)**:
-  - *ITR-1 / ITR-4 Presumptive (Section 44AD/44ADA)*: From ₹999.
+  - *ITR-1 / ITR-4 Presumptive (Section 44AD/44ADA)*: From ₹699–₹999.
+- **GST Annual Return (GSTR-9 / 9C) & GST Nil Return Filing**:
+  - Turnover-based annual reconciliation and dormant GSTIN compliance tracking.
+- **TDS Return Correction & Default Resolution**:
+  - TRACES Conso file audit, C1/C2/C3/C5 statements, and Section 200A default resolution.
 
 ---
 
-## 14 Dedicated Service Landing Pages
+## 18 Dedicated Service Landing Pages
 1. [GST Return Filing Service](https://www.taxoras.online/services/gst-return-filing): Accurate monthly and quarterly filing of Form GSTR-1 and GSTR-3B with invoice-by-invoice GSTR-2B purchase reconciliation.
 2. [GST Registration Assistance](https://www.taxoras.online/services/gst-registration): Documentation checklist verification, TRN generation, Aadhaar biometric verification coordination, and REG-06 certificate delivery.
 3. [GSTR-1 Outward Return Filing](https://www.taxoras.online/services/gstr-1-filing): Monthly B2B and B2C sales invoice reporting, HSN summaries, and CDN credit note filings.
 4. [GSTR-3B Return Filing & ITC Reconciliation](https://www.taxoras.online/services/gstr-3b-filing): Net tax calculation, electronic cash ledger payments, and GSTR-2B vs 3B ITC matching.
-5. [TDS Return Filing Online](https://www.taxoras.online/services/tds-return-filing): Quarterly Form 24Q and 26Q e-filing, FVU validation, and Challan 281 matching.
-6. [Form 24Q Salary TDS Return Filing](https://www.taxoras.online/services/form-24q-filing): Annexure I & II employee salary tax deductions, Annexure verification, and Form 16 Part A/B generation.
-7. [Form 26Q Vendor & Contractor TDS Return](https://www.taxoras.online/services/form-26q-filing): Section 194C, 194J, 194I, 194H vendor payments, lower deduction certificate handling, and Form 16A generation.
-8. [TDS Payment Assistance & Challan 281](https://www.taxoras.online/services/tds-payment-assistance): Timely 7th-of-month challan creation, correct major/minor head selection, and BSR code tracking.
-9. [Income Tax Return (ITR) Filing](https://www.taxoras.online/services/income-tax-return): Preparation and e-filing for businesses, freelancers, and professionals (ITR-1, 2, 3, and ITR-4 Presumptive under 44AD/44ADA).
-10. [Daily Accounting Services](https://www.taxoras.online/services/daily-accounting): Upkeep of sales registers, purchase registers, journal vouchers, and monthly trial balances.
-11. [Small Business Bookkeeping Services](https://www.taxoras.online/services/bookkeeping-services): Cloud ledger maintenance on Tally Prime, Zoho Books, or Busy with expense categorization.
-12. [Bank Reconciliation Statement (BRS)](https://www.taxoras.online/services/bank-reconciliation): Resolving discrepancies between bank statements and company cash ledgers.
-13. [MSME / Udyam Registration Support](https://www.taxoras.online/services/msme-udyam-registration): Professional enterprise classification, 5-digit NIC code selection, and Section 43B(h) 45-day delayed payment statutory protection.
-14. [Balance Sheet & Financial Statements](https://www.taxoras.online/services/balance-sheet): Year-end balance sheets, Profit & Loss accounts, and depreciation schedules for bank loan approvals.
+5. [GST Annual Return Filing (GSTR-9 & 9C)](https://www.taxoras.online/services/gst-annual-return-gstr-9): 12-month reconciliation of GSTR-1, GSTR-3B, GSTR-2B, and books of accounts.
+6. [GST Nil Return Filing Services](https://www.taxoras.online/services/gst-nil-return-filing): Monthly or quarterly Nil GSTR-1 & 3B tracking for inactive GSTINs.
+7. [TDS Return Filing Online](https://www.taxoras.online/services/tds-return-filing): Quarterly Form 24Q and 26Q e-filing, FVU validation, and Challan 281 matching.
+8. [Form 24Q Salary TDS Return Filing](https://www.taxoras.online/services/form-24q-filing): Annexure I & II employee salary tax deductions, Annexure verification, and Form 16 Part A/B generation.
+9. [Form 26Q Vendor & Contractor TDS Return](https://www.taxoras.online/services/form-26q-filing): Section 194C, 194J, 194I, 194H vendor payments, lower deduction certificate handling, and Form 16A generation.
+10. [TDS Payment Assistance & Challan 281](https://www.taxoras.online/services/tds-payment): Timely 7th-of-month challan creation, correct major/minor head selection, and BSR code tracking.
+11. [TDS Return Correction & Default Resolution](https://www.taxoras.online/services/tds-correction-filing): TRACES Conso file retrieval, RPU C1–C5 revision statements, and PAN/challan mismatch clearance.
+12. [Income Tax Return (ITR) Filing](https://www.taxoras.online/services/income-tax-return): Preparation and e-filing for businesses, freelancers, and professionals (ITR-1, 2, 3, and ITR-4 Presumptive under 44AD/44ADA).
+13. [Daily Accounting Services](https://www.taxoras.online/services/daily-accounting): Upkeep of sales registers, purchase registers, journal vouchers, and monthly trial balances.
+14. [Small Business Bookkeeping Services](https://www.taxoras.online/services/bookkeeping-services): Cloud ledger maintenance on Tally Prime, Zoho Books, or Busy with expense categorization.
+15. [Bank Reconciliation Statement (BRS)](https://www.taxoras.online/services/bank-reconciliation): Resolving discrepancies between bank statements and company cash ledgers.
+16. [Debtors & Creditors Reconciliation](https://www.taxoras.online/services/debtors-creditors-reconciliation): Receivable aging, vendor balance confirmation, and MSME 45-day payment tracking.
+17. [MSME / Udyam Registration Support](https://www.taxoras.online/services/msme-udyam-registration): Professional enterprise classification, 5-digit NIC code selection, and Section 43B(h) 45-day delayed payment statutory protection.
+18. [Balance Sheet & Financial Statements](https://www.taxoras.online/services/balance-sheet): Year-end balance sheets, Profit & Loss accounts, and depreciation schedules for bank loan approvals.
 
 ---
 

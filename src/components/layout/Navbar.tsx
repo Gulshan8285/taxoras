@@ -54,7 +54,9 @@ export const Navbar: React.FC = () => {
         { title: "GST Registration", slug: "gst-registration", shortDescription: "New GSTIN & Composition schemes" },
         { title: "GST Return Filing", slug: "gst-return-filing", shortDescription: "Monthly GSTR-1, 3B & 2B Matching" },
         { title: "GSTR-1 Filing", slug: "gstr-1-filing", shortDescription: "Outward supply & B2B invoices" },
-        { title: "GSTR-3B Filing", slug: "gstr-3b-filing", shortDescription: "Tax settlement & ITC reconciliation" }
+        { title: "GSTR-3B Filing", slug: "gstr-3b-filing", shortDescription: "Tax settlement & ITC reconciliation" },
+        { title: "GSTR-9 Annual Return", slug: "gst-annual-return-gstr-9", shortDescription: "Annual 9 & 9C reconciliation" },
+        { title: "GST Nil Return Filing", slug: "gst-nil-return-filing", shortDescription: "Zero-sale monthly compliance" }
       ]
     },
     {
@@ -64,7 +66,8 @@ export const Navbar: React.FC = () => {
         { title: "TDS Return Filing", slug: "tds-return-filing", shortDescription: "Quarterly 24Q (Salary) & 26Q (Vendor)" },
         { title: "Form 24Q Filing", slug: "form-24q-filing", shortDescription: "Salary TDS & Form 16 prep" },
         { title: "Form 26Q Filing", slug: "form-26q-filing", shortDescription: "Vendor 194C, 194J, 194I & Form 16A" },
-        { title: "TDS Payment Assistance", slug: "tds-payment", shortDescription: "Challan 281 verification & timing" }
+        { title: "TDS Payment Assistance", slug: "tds-payment", shortDescription: "Challan 281 verification & timing" },
+        { title: "TDS Correction Filing", slug: "tds-correction-filing", shortDescription: "TRACES defaults & Conso revisions" }
       ]
     },
     {
@@ -144,7 +147,7 @@ export const Navbar: React.FC = () => {
                       onClick={() => setServicesDropdownOpen(false)}
                       className="text-xs font-semibold text-brand-blue hover:underline flex items-center gap-1"
                     >
-                      View All 15 Services Directory <ArrowRight className="w-3 h-3" />
+                      View All 18 Services Directory <ArrowRight className="w-3 h-3" />
                     </Link>
                   </div>
 

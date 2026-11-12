@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.canonicalUrl}/industries`,
   },
-  title: "Industry Accounting & Compliance Solutions | Taxoras India",
+  title: "Industry Accounting & Compliance Solutions Across India",
   description: "Specialized accounting, GST, and tax compliance solutions for E-Commerce, Retail, IT Exporters, Manufacturers, Healthcare, and Freelancers.",
   keywords: ["industry GST filing", "ecommerce accounting India", "retail GST compliance", "IT exporter LUT filing", "healthcare accounting"],
   openGraph: {

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.canonicalUrl}/refund-policy`,
   },
-  title: "Refund & Cancellation Policy | Taxoras",
+  title: "Refund & Cancellation Policy",
   description: "Transparent refund and cancellation terms for accounting and compliance consultancy services.",
 };
 

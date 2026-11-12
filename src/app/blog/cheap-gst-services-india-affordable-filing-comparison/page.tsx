@@ -79,7 +79,7 @@ const PRICING_MODELS: PricingComparisonItem[] = [
     actualMonthlyCost: "₹799 to ₹1,499/mo flat (zero hidden fees)",
     gstr2bIncluded: "100% Included in all retainers",
     noticeSupport: "Drafting support for REG-03 & ASMT-10 included",
-    humanAccountant: "Dedicated Chartered Accountant & WhatsApp manager",
+    humanAccountant: "Dedicated Compliance Specialist & WhatsApp manager",
     hiddenTrapRisk: "Zero (Pre-agreed transparent voucher limits)",
     verdict: "⭐ Best Value & Most Reliable for MSMEs, Startups & Traders"
   },

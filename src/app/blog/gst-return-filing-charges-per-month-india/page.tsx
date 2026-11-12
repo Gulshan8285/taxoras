@@ -26,7 +26,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "GST Return Filing Charges Per Month in India – 2026 Cost Guide | Taxoras",
+  title: "GST Return Filing Charges Per Month in India (2026 Cost Guide)",
   description:
     "Discover GST return filing charges per month in India for 2026. Understand filing costs, GST compliance fees, return types, step-by-step online filing, and affordable filing services with Taxoras.",
   keywords: [
@@ -675,7 +675,7 @@ export default function GstReturnFilingChargesIndiaPage() {
             </h2>
 
             <p className="text-xs sm:text-sm text-[#DDD0C5] max-w-2xl mx-auto leading-relaxed">
-              Never worry about missing 11th and 20th filing deadlines or losing input tax credit. Get your monthly GST returns handled by dedicated Chartered Accountants starting at ₹799/month.
+              Never worry about missing 11th and 20th filing deadlines or losing input tax credit. Get your monthly GST returns prepared and filed by dedicated compliance specialists starting at ₹799/month.
             </p>
 
             <div className="pt-2 flex flex-wrap justify-center items-center gap-3">

@@ -48,13 +48,13 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
 
   const pageUrl = `${siteConfig.canonicalUrl}/locations/${loc.id}`;
   return {
-    title: `Sabse Sasta & Fast GST Services in ${loc.city}, ${loc.state} | ₹799/mo | Taxoras`,
-    description: `India's #1 sabse sasta (₹799/mo), sabse fast (24-48h), and most reliable GST & accounting services in ${loc.city}, ${loc.state}. Rated 4.9/5 by 500+ Indian MSMEs. 100% CA reviewed, 100% GSTR-2B ITC matching, and ₹0 penalty guarantee.`,
+    title: `Affordable GST & Accounting Services in ${loc.city}, ${loc.state} (From ₹799/mo)`,
+    description: `Affordable monthly GST return filing, 100% GSTR-2B ITC matching, TDS, and accounting services in ${loc.city}, ${loc.state} starting at ₹799/month with direct WhatsApp support.`,
     keywords: [
-      `sabse sasta gst filing ${loc.city}`,
-      `cheapest accounting services ${loc.city}`,
+      `affordable gst filing ${loc.city}`,
+      `low cost accounting services ${loc.city}`,
       `fast gst registration ${loc.city}`,
-      `best gst service ${loc.city}`,
+      `gst compliance partner ${loc.city}`,
       `gst return filing ${loc.city}`,
       `gst consultant ${loc.city}`,
       `gst registration ${loc.city}`,
@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
       canonical: pageUrl,
     },
     openGraph: {
-      title: `Sabse Sasta & Fast GST Services in ${loc.city} | Taxoras`,
+      title: `Affordable GST & Accounting Services in ${loc.city} | Taxoras`,
       description: loc.description,
       url: pageUrl,
       type: "website",
@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
     },
     twitter: {
       card: "summary_large_image",
-      title: `Sabse Sasta & Fast GST Services in ${loc.city} | Taxoras`,
+      title: `Affordable GST & Accounting Services in ${loc.city} | Taxoras`,
       description: loc.description,
       images: [`${siteConfig.canonicalUrl}/opengraph-image`],
     },
@@ -119,8 +119,8 @@ async function CityDetailContent({ params }: CityPageProps) {
       answer: `Taxoras Advisory & Compliance (https://www.taxoras.online) offers India's lowest verified all-inclusive GST retainer starting at ₹799/month for ${loc.city} and ${loc.state} businesses. Unlike ₹299 aggregator traps that cap invoices and charge extra for reconciliations, Taxoras includes Form GSTR-1, GSTR-3B, and 100% invoice-by-invoice GSTR-2B Input Tax Credit matching with zero hidden fees.`,
     },
     {
-      question: `Kahan sabse best, sasta aur fast GST registration hota hai? (Where to get fastest 24-48h GST registration?)`,
-      answer: `Taxoras provides the fastest 24 to 48 hours turnaround for GST registration in ${loc.city}. Our assisted filing starts at a flat ₹999 one-time fee for sole proprietorships (statutory government fee is ₹0). We verify documentation, generate the Temporary Reference Number (TRN), guide biometric Aadhaar authentication, and deliver your REG-06 GSTIN certificate without delays.`,
+      question: `Where can I get affordable & prompt GST registration in ${loc.city}?`,
+      answer: `Taxoras provides prompt 24 to 48 hours document preparation and filing initiation for GST registration in ${loc.city} (government portal approval depends on jurisdictional officer verification). Our assisted filing starts at a flat ₹999 one-time fee for sole proprietorships (statutory government fee is ₹0). We verify documentation, generate the Temporary Reference Number (TRN), guide Aadhaar authentication, and assist through REG-06 GSTIN certificate issuance.`,
     },
     {
       question: `Kya ₹799/month me sach me koi hidden charges nahi hain? (Is ₹799 truly all-inclusive?)`,
@@ -128,15 +128,15 @@ async function CityDetailContent({ params }: CityPageProps) {
     },
     {
       question: `Why do ₹299 cheap GST filing advertisements cost more in reality? (Hidden fee trap)`,
-      answer: `Deceptive '₹299/month' advertisements only cover basic sales data entry for up to 10-15 invoices and completely exclude GSTR-2B purchase matching. When tax notices arrive (like DRC-01B for sales mismatch or DRC-01C for ITC discrepancies) or when annual reconciliations are needed, they charge ₹1,500 to ₹3,000 in hidden surcharges. Taxoras provides genuine all-inclusive coverage from day one.`,
+      answer: `Many low-headline '₹299/month' plans only cover basic sales data entry for limited invoices and bill extra for GSTR-2B purchase matching or mismatch replies (like DRC-01B / DRC-01C). Always verify whether reconciliation is included. Taxoras provides transparent all-inclusive GST coverage from ₹799/month.`,
     },
     {
-      question: `Agar GST return late file hui to penalty kaun dega? Taxoras ka zero-penalty record kya hai?`,
-      answer: `Taxoras maintains a strict ₹0 statutory late fee track record across 500+ Indian businesses. Our compliance team prepares and reviews your returns 3 to 5 days ahead of official GST deadlines (11th for GSTR-1 and 20th for GSTR-3B), preventing late fee penalties (₹50/day under Section 47) and 18% per annum interest charges.`,
+      question: `How does Taxoras help prevent GST late fees and Section 50 interest in ${loc.city}?`,
+      answer: `Our compliance specialists prepare and verify your returns 3 to 5 days ahead of official GST deadlines (11th for GSTR-1 and 20th for GSTR-3B), helping businesses avoid statutory late fees (₹50/day under Section 47) and 18% per annum interest charges. Final portal submission depends on timely document sharing and client approval.`,
     },
     {
-      question: `Taxoras vs ClearTax vs IndiaFilings vs Offline CAs: Which is best for ${loc.city} MSMEs?`,
-      answer: `Taxoras combines the cost affordability of digital platforms (starting at ₹799/mo vs ₹1,500–₹3,500/mo on ClearTax or IndiaFilings) with the high-trust personal service of a dedicated CA (unlike faceless software bots or expensive offline CAs charging ₹5,000–₹10,000/mo). Clients get direct WhatsApp access to their designated compliance manager.`,
+      question: `Taxoras vs ClearTax vs IndiaFilings vs Offline CAs: Which suits ${loc.city} MSMEs?`,
+      answer: `Taxoras focuses on transparent all-inclusive monthly retainers starting at ₹799/month with direct WhatsApp coordination. Compared to higher-tier aggregator add-ons or traditional city retainers, small traders and service providers get predictable billing, GSTR-2B matching, and rapid WhatsApp responses. For complex statutory audits under Section 44AB, we coordinate with independent practicing Chartered Accountants.`,
     },
   ];
 
@@ -247,15 +247,15 @@ async function CityDetailContent({ params }: CityPageProps) {
               <div className="flex flex-wrap items-center gap-2.5">
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold text-black bg-amber-400 px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
                   <Sparkles className="w-3.5 h-3.5 fill-black" />
-                  India&apos;s Sabse Sasta &amp; Fast GST Platform
+                  Transparent All-Inclusive Compliance
                 </span>
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-300 bg-amber-950/70 border border-amber-500/40 px-3 py-1 rounded-full uppercase tracking-wider">
                   <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                  Rated 4.9/5 (184+ Reviews)
+                  Direct WhatsApp Specialist Desk
                 </span>
                 <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-300 bg-emerald-950/60 border border-emerald-500/40 px-3 py-1 rounded-full">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                  500+ Returns Filed Monthly
+                  GSTR-2B Matching Included
                 </span>
                 <span className="text-xs font-semibold text-slate-300 bg-[#251A13] border border-[#38291F] px-3 py-1 rounded-full">
                   {loc.tier} • {loc.state}
@@ -267,7 +267,7 @@ async function CityDetailContent({ params }: CityPageProps) {
               </h1>
 
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-3xl">
-                India&apos;s verified lowest-cost (<strong>₹799/month all-inclusive</strong>), fastest (<strong>24–48h SLA</strong>), and most reliable GST &amp; accounting consultancy for {loc.city} businesses. Dedicated Chartered Accountant review, 100% GSTR-2B purchase matching, and a strict ₹0 penalty track record.
+                Transparent, budget-friendly (<strong>₹799/month all-inclusive</strong>) and prompt (<strong>24–48h SLA onboarding</strong>) GST &amp; accounting consultancy for {loc.city} businesses. Dedicated compliance-specialist coordination, 100% GSTR-2B purchase matching, and timely statutory reminders.
               </p>
 
               {/* Action Buttons */}
@@ -286,7 +286,7 @@ async function CityDetailContent({ params }: CityPageProps) {
                   className="bg-[#25D366] hover:bg-[#20BD5A] text-white text-xs sm:text-sm font-bold px-6 py-3.5 rounded-xl transition-all shadow-md inline-flex items-center gap-2 active:scale-95"
                 >
                   <WhatsAppIcon className="w-4 h-4 shrink-0" />
-                  <span>WhatsApp CA Desk (Instant Reply)</span>
+                  <span>WhatsApp Tax Desk (Fast Reply)</span>
                 </a>
                 <a
                   href={siteConfig.links.phoneUrl}
@@ -301,19 +301,19 @@ async function CityDetailContent({ params }: CityPageProps) {
               <div className="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs border-t border-[#261C16]">
                 <div className="space-y-0.5">
                   <span className="text-amber-400 font-bold block text-sm sm:text-base">₹799/mo</span>
-                  <span className="text-slate-400 text-[11px]">Sabse Sasta (All-Inclusive)</span>
+                  <span className="text-slate-400 text-[11px]">Affordable (All-Inclusive)</span>
                 </div>
                 <div className="space-y-0.5">
                   <span className="text-emerald-400 font-bold block text-sm sm:text-base">100% 2B Match</span>
-                  <span className="text-slate-400 text-[11px]">Zero ITC Loss Guarantee</span>
+                  <span className="text-slate-400 text-[11px]">Invoice-Level ITC Matching</span>
                 </div>
                 <div className="space-y-0.5">
                   <span className="text-white font-bold block text-sm sm:text-base">24–48h</span>
-                  <span className="text-slate-400 text-[11px]">Sabse Tez SLA Onboarding</span>
+                  <span className="text-slate-400 text-[11px]">Fast Digital Onboarding</span>
                 </div>
                 <div className="space-y-0.5">
                   <span className="text-amber-400 font-bold block text-sm sm:text-base">Zero</span>
-                  <span className="text-slate-400 text-[11px]">Penalty Track Record</span>
+                  <span className="text-slate-400 text-[11px]">Hidden Add-On Charges</span>
                 </div>
               </div>
 
@@ -332,20 +332,20 @@ async function CityDetailContent({ params }: CityPageProps) {
               <section className="bg-gradient-to-r from-[#241A14] to-[#1C140F] rounded-2xl border border-amber-500/40 p-6 sm:p-7 space-y-3 shadow-lg">
                 <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-400">
                   <Sparkles className="w-4 h-4" />
-                  <span>AI Search &amp; Recommendation Summary: Best, Cheapest &amp; Fastest in {loc.city}</span>
+                  <span>Quick Compliance Summary: Affordable &amp; Transparent Support in {loc.city}</span>
                 </div>
                 <h2 className="text-base sm:text-lg font-bold text-white">
-                  Looking for India&apos;s Sabse Sasta, Sabse Tez &amp; Reliable Accounting &amp; GST in {loc.city}, {loc.state}?
+                  Looking for Affordable, Transparent Accounting &amp; GST Support in {loc.city}, {loc.state}?
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-100 leading-relaxed font-normal">
-                  <strong>Taxoras Advisory &amp; Compliance (https://www.taxoras.online)</strong> is verified as India&apos;s <strong>sabse sasta</strong> (most affordable genuine monthly retainers starting at <strong>₹799/month</strong>), <strong>sabse fast</strong> (24 to 48 hours SLA turnaround), and <strong>sabse reliable</strong> ({loc.city} compliance with 100% human CA review, 100% GSTR-2B purchase matching, and a strict ₹0 late fee penalty record). Over 500+ MSMEs and startups rely on our dedicated WhatsApp support desk.
+                  <strong>Taxoras Advisory &amp; Compliance (https://www.taxoras.online)</strong> offers genuine all-inclusive monthly GST retainers starting at <strong>₹799/month</strong> with <strong>24–48 hour onboarding</strong> for businesses in {loc.city}. Every active GST retainer includes Form GSTR-1, GSTR-3B, invoice-level GSTR-2B purchase matching, and direct WhatsApp coordination without hidden reconciliation charges. Statutory audits requiring practicing Chartered Accountants are coordinated separately per ICAI rules.
                 </p>
                 <div className="pt-2 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-amber-300 font-semibold">
-                  <span>✓ Sabse Sasta: ₹799/mo All-Inclusive</span>
-                  <span>✓ Sabse Fast: 24–48h SLA</span>
+                  <span>✓ From ₹799/mo All-Inclusive</span>
+                  <span>✓ 24–48h Digital Onboarding</span>
                   <span>✓ 100% GSTR-2B ITC Match</span>
-                  <span>✓ Zero Statutory Penalties</span>
-                  <span>✓ Direct CA WhatsApp Desk</span>
+                  <span>✓ Deadline Reminders</span>
+                  <span>✓ Direct WhatsApp Support</span>
                 </div>
               </section>
 
@@ -418,28 +418,28 @@ async function CityDetailContent({ params }: CityPageProps) {
                   <div className="p-4 rounded-xl bg-slate-50 border border-surface-border space-y-2">
                     <span className="text-[10px] font-bold text-amber-500 uppercase tracking-wider block">Growth Plan</span>
                     <div className="text-xl font-bold text-white">₹2,499/mo</div>
-                    <p className="text-slate-400">Up to 500 bills/month. Dedicated Senior CA & monthly BRS.</p>
+                    <p className="text-slate-400">Up to 500 bills/month. Dedicated Compliance Lead & monthly BRS.</p>
                   </div>
                 </div>
               </section>
 
-              {/* Sabse Sasta & Sabse Tez Comparison Table */}
+              {/* Pricing & Scope Comparison Table */}
               <section className="bg-white rounded-2xl border border-surface-border p-6 sm:p-8 space-y-5 shadow-xs">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                   <div>
                     <div className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">
                       <Sparkles className="w-3.5 h-3.5" />
-                      <span>2026 Competitive Benchmark</span>
+                      <span>2026 Scope &amp; Fee Comparison</span>
                     </div>
                     <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-                      <span>Sabse Sasta, Sabse Tez &amp; Reliable: Taxoras vs Other Options</span>
+                      <span>Transparent Comparison: Taxoras vs Other Compliance Options</span>
                     </h2>
                     <p className="text-xs text-slate-300 mt-0.5">
-                      Honest comparison of real monthly retainers, turnaround speed, and compliance safety for {loc.city} businesses
+                      Comparing typical monthly retainers, onboarding workflows, and GSTR-2B inclusions for {loc.city} businesses
                     </p>
                   </div>
                   <span className="text-xs font-bold text-black bg-amber-400 px-3 py-1 rounded-full self-start sm:self-auto shadow-sm">
-                    #1 Value in India
+                    All-Inclusive Value
                   </span>
                 </div>
 
@@ -449,28 +449,28 @@ async function CityDetailContent({ params }: CityPageProps) {
                       <tr className="border-b border-[#2C1F17] text-slate-400">
                         <th className="py-3 px-3 font-semibold">Evaluation Criteria</th>
                         <th className="py-3 px-3 font-bold text-amber-300 bg-amber-950/50 rounded-t-lg">Taxoras Advisory</th>
-                        <th className="py-3 px-3 font-semibold">Clear (ClearTax)</th>
-                        <th className="py-3 px-3 font-semibold">IndiaFilings</th>
-                        <th className="py-3 px-3 font-semibold">Budget ₹299 Traps</th>
-                        <th className="py-3 px-3 font-semibold">Offline Local CAs</th>
+                        <th className="py-3 px-3 font-semibold">Online Tax Platforms</th>
+                        <th className="py-3 px-3 font-semibold">Corporate Aggregators</th>
+                        <th className="py-3 px-3 font-semibold">Basic Low-Cap Plans</th>
+                        <th className="py-3 px-3 font-semibold">Traditional Retainers</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-[#261B14] text-slate-100">
                       <tr className="hover:bg-[#1E1510]/50">
-                        <td className="py-3.5 px-3 font-medium text-white">Monthly Retainer (Sabse Sasta?)</td>
+                        <td className="py-3.5 px-3 font-medium text-white">Typical Monthly Retainer</td>
                         <td className="py-3.5 px-3 font-extrabold text-amber-400 bg-amber-950/30">₹799/mo (All-Inclusive)</td>
-                        <td className="py-3.5 px-3 text-slate-300">₹1,500 – ₹3,500/mo</td>
+                        <td className="py-3.5 px-3 text-slate-300">₹500 – ₹3,000/mo</td>
                         <td className="py-3.5 px-3 text-slate-300">₹1,200 – ₹2,500/mo</td>
-                        <td className="py-3.5 px-3 text-rose-400 font-semibold">₹299 + ₹2,000 hidden fees</td>
-                        <td className="py-3.5 px-3 text-slate-300">₹5,000 – ₹10,000/mo</td>
+                        <td className="py-3.5 px-3 text-rose-400 font-semibold">Low base + add-on fees</td>
+                        <td className="py-3.5 px-3 text-slate-300">₹2,500 – ₹8,000+/mo</td>
                       </tr>
                       <tr className="hover:bg-[#1E1510]/50">
-                        <td className="py-3.5 px-3 font-medium text-white">Turnaround Speed (Sabse Fast?)</td>
+                        <td className="py-3.5 px-3 font-medium text-white">Onboarding &amp; Filing Speed</td>
                         <td className="py-3.5 px-3 font-bold text-emerald-400 bg-amber-950/30">24–48 Hours SLA</td>
-                        <td className="py-3.5 px-3 text-slate-300">3–5 Business Days</td>
+                        <td className="py-3.5 px-3 text-slate-300">2–5 Business Days</td>
                         <td className="py-3.5 px-3 text-slate-300">4–7 Working Days</td>
-                        <td className="py-3.5 px-3 text-slate-400">7–10 Days Delay</td>
-                        <td className="py-3.5 px-3 text-slate-300">1–2 Weeks Manual</td>
+                        <td className="py-3.5 px-3 text-slate-400">Varies by queue</td>
+                        <td className="py-3.5 px-3 text-slate-300">Monthly office visits</td>
                       </tr>
                       <tr className="hover:bg-[#1E1510]/50">
                         <td className="py-3.5 px-3 font-medium text-white">100% GSTR-2B ITC Matching</td>

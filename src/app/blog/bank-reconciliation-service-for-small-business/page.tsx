@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Bank Reconciliation Service for Small Business in India | Taxoras",
+  title: "Bank Reconciliation Service for Small Business in India",
   description:
     "Explore bank reconciliation service for small business, costs, benefits, Challan 281 matching, and expert accounting support. Get accurate, audit-ready financial records with Taxoras.",
   keywords: [

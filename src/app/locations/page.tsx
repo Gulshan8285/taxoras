@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.canonicalUrl}/locations`,
   },
-  title: "Pan-India GST & Tax Compliance Locations | 28 States & UTs | Taxoras",
+  title: "Pan-India GST & Tax Compliance Locations (28 States & 8 UTs)",
   description: "Explore Taxoras accounting, GST return filing, and tax compliance coverage across all 28 Indian States & 8 Union Territories. Fast digital onboarding and nationwide CA review.",
   keywords: [
     "GST filing Delhi",

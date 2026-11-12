@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.canonicalUrl}/disclaimer`,
   },
-  title: "Professional & Regulatory Disclaimer | Taxoras",
+  title: "Professional & Regulatory Disclaimer",
   description: "Official regulatory disclaimer regarding accounting consultancy status, government portal independence, and statutory certification rules.",
 };
 

@@ -30,7 +30,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "GST Return Filing Charges Per Month | Cheap GST Filing Services in Noida | Taxoras",
+  title: "GST Return Filing Charges Per Month & Affordable Filing in Noida",
   description:
     "Wondering about GST return filing charges per month? Compare cheap GST return filing service options in Noida, GST registration consultant fees and TDS return filing 24Q 26Q online with Taxoras.",
   keywords: [

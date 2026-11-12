@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Udyam Registration Online Charges in India – Complete Cost Guide | Taxoras",
+  title: "Udyam Registration Online Charges in India – Complete Cost Guide",
   description:
     "Know the real Udyam registration online charges in India: official government fee is ₹0 (free). Learn eligibility, revised MSME limits, documents, and assisted registration support with Taxoras.",
   keywords: [

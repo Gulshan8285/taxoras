@@ -74,7 +74,7 @@ export const Footer: React.FC = () => {
               <li>
                 <Link href="/services" className="text-amber-400 font-semibold hover:text-white transition-colors flex items-center gap-2">
                   <ArrowRight className="w-3 h-3 text-amber-500" />
-                  All 15 Services Directory
+                  All 18 Services Directory
                 </Link>
               </li>
               <li>
@@ -96,6 +96,18 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/services/gst-annual-return-gstr-9" className="hover:text-amber-400 transition-colors flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-slate-500"></span>
+                  GSTR-9 &amp; 9C Annual Return
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/gst-nil-return-filing" className="hover:text-amber-400 transition-colors flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-slate-500"></span>
+                  GST Nil Return Filing
+                </Link>
+              </li>
+              <li>
                 <Link href="/services/gst-registration" className="hover:text-amber-400 transition-colors flex items-center gap-2">
                   <span className="w-1 h-1 rounded-full bg-slate-500"></span>
                   GST Registration Assistance
@@ -105,6 +117,12 @@ export const Footer: React.FC = () => {
                 <Link href="/services/tds-return-filing" className="hover:text-amber-400 transition-colors flex items-center gap-2">
                   <span className="w-1 h-1 rounded-full bg-slate-500"></span>
                   TDS Return Filing (24Q & 26Q)
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/tds-correction-filing" className="hover:text-amber-400 transition-colors flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-slate-500"></span>
+                  TDS Return Correction &amp; TRACES
                 </Link>
               </li>
               <li>

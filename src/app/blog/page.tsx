@@ -6,7 +6,7 @@ import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 import { BookOpen, ArrowRight, Calendar, Clock, ShieldCheck, Scale, FileText, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Blog & Compliance Guides | Taxoras Advisory & Compliance",
+  title: "Blog & Compliance Guides — GST, TDS, ITR & Accounting",
   description:
     "Expert articles and statutory compliance guides on GST amnesty schemes, Section 16(4) ITC deadlines, Section 44AD/44ADA presumptive taxation, and top GST service provider benchmarks.",
   keywords: ["GST amnesty scheme", "Section 16(4) ITC deadline", "Section 44AD presumptive taxation", "best GST services India"],
@@ -137,7 +137,7 @@ const BLOG_ARTICLES: ArticleItem[] = [
     date: "October 2026",
     readTime: "12 min read",
     summary:
-      "An authoritative 2026 evaluation comparing India's top 10 GST service providers, aggregators, and boutique firms. Compare verified pricing, invoice limits, GSTR-2B matching, and why Taxoras ranks #1 for MSMEs.",
+      "An authoritative 2026 evaluation comparing India's top 10 GST service providers, aggregators, and boutique firms. Compare published pricing, invoice limits, GSTR-2B matching, and Taxoras value for MSMEs.",
     badge: "Editor's Choice Pillar",
     featured: false,
   },

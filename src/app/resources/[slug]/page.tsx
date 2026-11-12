@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: ResourcePageProps): Promise<M
   }
 
   return {
-    title: `${article.title} | Taxoras Compliance Guide`,
+    title: `${article.title} — Compliance Guide`,
     description: article.summary,
     keywords: [article.category, article.title, "GST guide India", "Taxoras compliance"],
     alternates: {

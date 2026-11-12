@@ -209,7 +209,7 @@ export default function Section164ITCGuidePage() {
               </div>
               <div>
                 <p className="text-xs font-bold text-white">Taxoras Regulatory &amp; Indirect Tax Research Group</p>
-                <p className="text-[11px] text-[#DDD0C5]">Reviewed by Chartered Accountants &amp; GST Practitioners</p>
+                <p className="text-[11px] text-[#DDD0C5]">Prepared by Taxoras GST Compliance Specialists</p>
               </div>
             </div>
           </header>

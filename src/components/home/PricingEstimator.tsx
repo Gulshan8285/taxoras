@@ -29,27 +29,27 @@ export const PricingEstimator: React.FC = () => {
             
             <div className="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-500/40 px-3.5 py-1.5 rounded-full text-xs font-bold text-amber-300 tracking-wide uppercase shadow-xs">
               <TrendingDown className="w-4 h-4 text-amber-400" />
-              <span>India-Wide Lowest Rate Assurance</span>
+              <span>Transparent Value Assurance</span>
             </div>
 
             <h2 className="text-2xl sm:text-4xl font-extrabold text-[#FAF4EF] tracking-tight leading-tight">
-              Why Pay Inflated Corporate Fees? <br />
-              <span className="text-amber-400">Guaranteed ₹5 Cheaper</span> Than Any Market Quote
+              Why Pay Inflated Compliance Retainers? <br />
+              <span className="text-amber-400">Clear All-Inclusive Pricing</span> From ₹799/mo
             </h2>
 
             <p className="text-sm sm:text-base text-[#DDD0C5] leading-relaxed max-w-2xl mx-auto">
-              Big portals charge expensive subscriptions and trap you in automated bot queues. At Taxoras, we keep overheads minimal and pass 100% of the savings to Indian business owners.
+              Big portals charge expensive subscriptions or upsell basic reconciliation separately, trapping you in automated ticket queues. At Taxoras, we keep overheads minimal and deliver genuine fixed-fee support.
             </p>
 
             {/* 3 Pillar Highlights */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 text-left">
               <div className="bg-[#1C1510] border border-[#3E2C20] rounded-2xl p-5 shadow-lg backdrop-blur-sm">
                 <div className="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-sm mb-3">
-                  ₹5↓
+                  ₹799
                 </div>
-                <h3 className="text-sm font-bold text-[#FAF4EF] mb-1">Market Price-Beat Promise</h3>
+                <h3 className="text-sm font-bold text-[#FAF4EF] mb-1">All-Inclusive GST Bundles</h3>
                 <p className="text-xs text-[#BCAE9F] leading-relaxed">
-                  Show us any comparable assisted filing quote from any verified provider in India — we guarantee our fee is at least ₹5 to ₹500 lower.
+                  Our ₹799/mo starter retainer includes GSTR-1, GSTR-3B, and invoice-by-invoice GSTR-2B matching upfront — no surprise add-on invoices.
                 </p>
               </div>
 

@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Affordable Accounting, GST & Tax Compliance Services in India | Taxoras",
+  title: "Affordable Accounting, GST & Tax Compliance Services in India",
   description:
     "Explore Taxoras complete suite of affordable tax compliance services for Indian MSMEs, startups, and traders. GST registration, GSTR-1, GSTR-3B, TDS return filing 24Q/26Q, bookkeeping, and ITR from ₹499/mo.",
   keywords: [
@@ -120,15 +120,15 @@ export default function ServicesPage() {
             "name": "Who provides low-cost TDS return filing in India?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Taxoras offers quarterly TDS return filing support for Form 24Q (salaries) and Form 26Q (vendor payments under 194C, 194J, 194I) starting at ₹799/quarter, including CSI challan matching and Form 16/16A generation."
+              "text": "Taxoras offers quarterly TDS return filing support for Form 24Q (salaries) and Form 26Q (vendor payments under 194C, 194J, 194I) starting at ₹999/quarter, including CSI challan matching and Form 16/16A assistance."
             }
           },
           {
             "@type": "Question",
-            "name": "What is the cheapest way to file GST returns?",
+            "name": "What is the most economical way to handle GST return compliance?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Taxpayers can file directly for free on gst.gov.in. If you need dedicated human support to prevent ITC loss and DRC-01B/DRC-01C notices, Taxoras provides the lowest true all-inclusive monthly retainer starting from ₹799/month."
+              "text": "Taxpayers with Nil transactions can file directly for free on gst.gov.in. For active businesses needing manual GSTR-1, GSTR-3B, and invoice-level GSTR-2B purchase matching to prevent ITC losses, Taxoras provides transparent all-inclusive monthly retainers starting from ₹799/month."
             }
           },
           {
@@ -136,7 +136,7 @@ export default function ServicesPage() {
             "name": "Which online accounting service is suitable for small businesses?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Taxoras provides dedicated cloud bookkeeping and accounting support in Tally Prime, Zoho Books, and Busy starting from ₹799/month, saving small businesses up to 80% compared to hiring a full-time in-house accountant."
+              "text": "Taxoras provides dedicated cloud bookkeeping and accounting support in Tally Prime, Zoho Books, and Busy starting from ₹1,499/month, helping small businesses maintain clean ledgers without full-time payroll overhead."
             }
           }
         ]
@@ -221,7 +221,7 @@ export default function ServicesPage() {
               What Compliance Services Does Taxoras Provide & How Much Do They Cost?
             </h2>
             <p className="text-xs sm:text-sm text-[#DDD0C5] leading-relaxed mb-4">
-              Taxoras Advisory & Compliance is a digital tax and accounting consultancy operating out of New Delhi and serving businesses across India. Core offerings include monthly GST return filing (GSTR-1, GSTR-3B from ₹799/mo), GST registration assistance (₹999 flat), quarterly TDS returns (Form 24Q for salaries, Form 26Q for vendors from ₹799/qtr), monthly bookkeeping in Tally/Zoho (from ₹799/mo), and ITR filing assistance.
+              Taxoras Advisory & Compliance is a digital tax and accounting consultancy operating out of New Delhi and serving businesses across India. Core offerings include monthly GST return filing (GSTR-1, GSTR-3B from ₹799/mo), GST registration assistance (₹999 flat), quarterly TDS returns (Form 24Q for salaries, Form 26Q for vendors from ₹999/qtr), monthly bookkeeping in Tally/Zoho (from ₹1,499/mo), and ITR filing assistance.
             </p>
             <div className="flex flex-wrap items-center gap-3 pt-2 border-t border-amber-900/30 text-xs">
               <span className="text-[#A8988B]">Instant Verification:</span>
@@ -248,7 +248,7 @@ export default function ServicesPage() {
                 Comprehensive Compliance Directory
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-white mt-1">
-                Explore All 15 Dedicated Tax & Accounting Services
+                Explore All {allServices.length} Dedicated Tax &amp; Accounting Services
               </h2>
             </div>
             <p className="text-xs sm:text-sm text-[#DDD0C5] max-w-md">

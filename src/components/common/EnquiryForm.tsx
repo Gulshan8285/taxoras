@@ -32,8 +32,11 @@ interface EnquiryFormProps {
 const SERVICE_OPTIONS = [
   "GST Registration",
   "GST Return Filing",
+  "GST Annual Return Filing (GSTR-9 & 9C)",
+  "GST Nil Return Filing Services",
   "TDS Return Filing",
   "TDS Payment Assistance",
+  "TDS Return Correction & Default Resolution",
   "Day-to-Day Accounting",
   "MSME / Udyam Registration",
   "Bank Reconciliation",

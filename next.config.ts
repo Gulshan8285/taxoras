@@ -113,6 +113,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/services/tds-payment-assistance",
+        destination: "/services/tds-payment",
+        permanent: true,
+      },
+      {
         source: "/bookkeeping-services",
         destination: "/services/bookkeeping-services",
         permanent: true,

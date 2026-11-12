@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "TDS Return Filing 24Q & 26Q Online: Step-by-Step Guide | Taxoras",
+  title: "TDS Return Filing 24Q & 26Q Online: Step-by-Step Guide",
   description:
     "Learn how to complete TDS return filing 24Q 26Q online, understand filing steps, quarterly deadlines, Challan 281 payments, Form 138/140 updates, and get expert TDS assistance.",
   keywords: [

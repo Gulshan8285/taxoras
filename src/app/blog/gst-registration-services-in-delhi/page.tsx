@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "GST Registration Services in Delhi | Easy Online GST Help | Taxoras",
+  title: "GST Registration Services in Delhi — Easy Online GST Help",
   description:
     "Looking for GST registration services in Delhi? Get expert help with GST registration, documentation, Connaught Place/Nehru Place co-working verification, and ongoing GST filing.",
   keywords: [
