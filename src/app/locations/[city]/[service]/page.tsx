@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: ServiceCityProps): Promise<Me
 
   const pageUrl = `${siteConfig.canonicalUrl}/locations/${item.citySlug}/${item.serviceSlug}`;
   return {
-    title: `Affordable ${item.title} in ${loc.city} (From ₹799/mo)`,
+    title: `Affordable ${item.title} (${loc.city}, From ₹799/mo)`,
     description: `Affordable ${item.title.toLowerCase()} in ${loc.city}, ${loc.state} starting at ₹799/month. Includes GSTR-1, GSTR-3B, 100% GSTR-2B ITC matching, and direct WhatsApp support.`,
     keywords: [
       `affordable ${item.serviceSlug} ${loc.city}`,

@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   );
 
   return {
-    title: `${service.title} Online Services in India (Affordable & Assisted)`,
+    title: `${service.title} in India — Affordable Assisted Compliance`,
     description: service.shortDescription,
     keywords: combinedKeywords,
     alternates: {
