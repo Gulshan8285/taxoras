@@ -43,6 +43,28 @@ interface ArticleItem {
 
 const BLOG_ARTICLES: ArticleItem[] = [
   {
+    title: "GSTR-2A vs GSTR-2B Difference: How to Reconcile ITC in GSTR-3B & Avoid DRC-01C Notices (2026 Guide)",
+    slug: "/blog/gstr-2a-vs-2b-itc-reconciliation-guide",
+    category: "GST & ITC Reconciliation",
+    date: "November 2026",
+    readTime: "9 min read",
+    summary:
+      "Statutory comparison of GSTR-2A vs static GSTR-2B under Section 16(2)(aa), step-by-step monthly purchase matching workflow, and how Taxoras prevents automated DRC-01C notices from ₹799/mo.",
+    badge: "High-Impact Reconciliation",
+    featured: true,
+  },
+  {
+    title: "GST Notice Reply for DRC-01B & DRC-01C: Tax Mismatch Notice Reply Format & Process (2026 Guide)",
+    slug: "/blog/gst-notice-reply-drc-01b-drc-01c-guide",
+    category: "GST Notice & Audit Support",
+    date: "November 2026",
+    readTime: "10 min read",
+    summary:
+      "Complete statutory guide on answering automated GST liability and ITC mismatch notices DRC-01B & DRC-01C within the 7-day window. Reason codes breakdown, reply templates, and GSTR-1 unblocking.",
+    badge: "Urgent Compliance",
+    featured: false,
+  },
+  {
     title: "GST Return Filing Charges Per Month in India: Complete Cost Guide 2026",
     slug: "/blog/gst-return-filing-charges-per-month-india",
     category: "GST Pricing & National Guide",

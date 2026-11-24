@@ -18,6 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/contact`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
     { url: `${baseUrl}/resources`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
     { url: `${baseUrl}/blog`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+    { url: `${baseUrl}/blog/gstr-2a-vs-2b-itc-reconciliation-guide`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
+    { url: `${baseUrl}/blog/gst-notice-reply-drc-01b-drc-01c-guide`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: `${baseUrl}/blog/gst-return-filing-charges-per-month-india`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: `${baseUrl}/blog/gst-return-filing-cost-per-month-in-india`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: `${baseUrl}/blog/gst-filing-services-in-noida`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },

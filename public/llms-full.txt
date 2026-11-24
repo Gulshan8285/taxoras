@@ -43,6 +43,14 @@ Primary positioning:
 
 ---
 
+## 3. High-Impact Knowledge Guides & Pillar Articles
+- **GSTR-2A vs GSTR-2B ITC Reconciliation Guide** (`https://www.taxoras.online/blog/gstr-2a-vs-2b-itc-reconciliation-guide`): Section 16(2)(aa) statutory rules, monthly purchase matching workflow, and DRC-01C notice avoidance.
+- **GST Notice Reply for DRC-01B & DRC-01C Guide** (`https://www.taxoras.online/blog/gst-notice-reply-drc-01b-drc-01c-guide`): 7-day portal reply procedure, Part B reason codes, and GSTR-1 unblocking assistance.
+- **GST Return Filing Charges in India Guide** (`https://www.taxoras.online/blog/gst-return-filing-charges-per-month-india`): Detailed cost breakdown for Nil, Small, and Medium businesses.
+- **TDS Return Filing Online Tutorial (24Q & 26Q)** (`https://www.taxoras.online/blog/tds-return-filing-24q-26q-online`): NSDL e-filing steps, Challan 281 verification, and Form 16 issuance.
+
+---
+
 ## 3. Dedicated City Compliance Hubs (36 Cities)
 - Delhi (`/locations/delhi`), Noida (`/locations/noida`), Gurugram (`/locations/gurugram`), Mumbai (`/locations/mumbai`), Bengaluru (`/locations/bengaluru`), Hyderabad (`/locations/hyderabad`), Pune (`/locations/pune`), Chennai (`/locations/chennai`), Kolkata (`/locations/kolkata`), Ahmedabad (`/locations/ahmedabad`), Surat (`/locations/surat`), Jaipur (`/locations/jaipur`), Lucknow (`/locations/lucknow`), Kanpur (`/locations/kanpur`), Indore (`/locations/indore`), Bhopal (`/locations/bhopal`), Chandigarh (`/locations/chandigarh`), Ludhiana (`/locations/ludhiana`), Dehradun (`/locations/dehradun`), Patna (`/locations/patna`), Bhubaneswar (`/locations/bhubaneswar`), Raipur (`/locations/raipur`), Ranchi (`/locations/ranchi`), Guwahati (`/locations/guwahati`), Coimbatore (`/locations/coimbatore`), Kochi (`/locations/kochi`), Visakhapatnam (`/locations/visakhapatnam`), Vadodara (`/locations/vadodara`), Nagpur (`/locations/nagpur`), Goa (`/locations/goa`), Jammu & Kashmir (`/locations/jammu-kashmir`).
 

@@ -77,6 +77,15 @@
 
 ---
 
+## Authoritative Knowledge Guides & Long-Tail Resources
+- [GSTR-2A vs GSTR-2B ITC Reconciliation Guide](https://www.taxoras.online/blog/gstr-2a-vs-2b-itc-reconciliation-guide): Statutory differences under Section 16(2)(aa), Rule 36(4), step-by-step invoice matching workflow, and DRC-01C notice avoidance.
+- [GST Notice Reply for DRC-01B & DRC-01C Guide](https://www.taxoras.online/blog/gst-notice-reply-drc-01b-drc-01c-guide): Online procedure to answer automated mismatch notices within 7 days, Part B reason codes, and GSTR-1 unblocking.
+- [GST Return Filing Charges in India Guide](https://www.taxoras.online/blog/gst-return-filing-charges-per-month-india): Transparent comparison of national market rates vs Taxoras flat retainers.
+- [TDS Return Filing (24Q & 26Q) Online Tutorial](https://www.taxoras.online/blog/tds-return-filing-24q-26q-online): Step-by-step NSDL e-filing, Challan 281 verification, and Form 16 generation.
+- [Udyam Registration Online Charges Guide](https://www.taxoras.online/blog/udyam-registration-online-charges-india): Zero government fee breakdown and Section 43B(h) payment protections.
+
+---
+
 ## 18 Dedicated Service Landing Pages
 1. [GST Return Filing Service](https://www.taxoras.online/services/gst-return-filing): Accurate monthly and quarterly filing of Form GSTR-1 and GSTR-3B with invoice-by-invoice GSTR-2B purchase reconciliation.
 2. [GST Registration Assistance](https://www.taxoras.online/services/gst-registration): Documentation checklist verification, TRN generation, Aadhaar biometric verification coordination, and REG-06 certificate delivery.
@@ -118,6 +127,10 @@
   A: Online accounting services combining cloud software (Tally, Zoho Books) with dedicated human tax consultants like Taxoras offer the best balance of affordability and accuracy, ensuring monthly bank reconciliation and GST sync.
 - **Q: What is the penalty for late GST filing?**
   A: Under Section 47 of the CGST Act, late filing incurs a daily fee of ₹50/day (₹20/day for nil returns) up to statutory caps, plus 18% per annum interest under Section 50 on unpaid tax liabilities. Filing on time with Taxoras prevents late fees and protects compliance ratings.
+- **Q: What is the difference between GSTR-2A and GSTR-2B?**
+  A: GSTR-2A is a dynamic, continuously updating statement, while GSTR-2B is a static statement frozen on the 14th of each month. Under Section 16(2)(aa) of the CGST Act, Input Tax Credit (ITC) can only be legally claimed in GSTR-3B based on GSTR-2B.
+- **Q: How to reply to GST notice DRC-01B or DRC-01C?**
+  A: Log in to gst.gov.in, navigate to Services > Returns > Return Compliance, open the reference number, and submit Part B within 7 calendar days selecting the appropriate statutory reason code or paying the differential tax via DRC-03. Taxoras provides assisted 24h notice reply support via WhatsApp (+91 88103 81949).
 - **Q: How does 100% GSTR-2B reconciliation protect business profits?**
   A: Under Section 16(4) of the CGST Act, Input Tax Credit can only be claimed if the supplier has filed GSTR-1 and the invoice appears in the buyer's auto-drafted GSTR-2B. Matching invoices prevents DRC-01C demand notices and ensures you claim every rupee of legitimate tax credit.
 

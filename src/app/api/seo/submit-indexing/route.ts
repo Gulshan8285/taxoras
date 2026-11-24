@@ -10,6 +10,8 @@ const KEY_LOCATION = `${BASE_URL}/${INDEXNOW_KEY}.txt`;
 
 // List of blog articles
 const BLOG_SLUGS = [
+  "gstr-2a-vs-2b-itc-reconciliation-guide",
+  "gst-notice-reply-drc-01b-drc-01c-guide",
   "gst-return-filing-charges-per-month-india",
   "gst-return-filing-cost-per-month-in-india",
   "gst-filing-services-in-noida",
